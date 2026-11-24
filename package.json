@@ -103,7 +103,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "fake-indexeddb": "^6.2.8",
     "globals": "^17.14.0",
-    "jsdom": "^30.1.3",
+    "jsdom": "^31.0.1",
     "postcss": "^8.5.23",
     "size-limit": "^14.3.0",
     "tailwindcss": "^4.3.3",
@@ -118,7 +118,7 @@
   },
   "overrides": {
     "sharp": "^0.35.3",
-    "postcss": "^8.5.23",
+    "postcss": "$postcss",
     "@next/eslint-plugin-next": {
       "fast-glob": "file:./tools/next-eslint-glob"
     },

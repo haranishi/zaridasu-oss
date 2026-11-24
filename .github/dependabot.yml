@@ -43,6 +43,14 @@ updates:
       # overrides の持ち方を直す（例: tools を workspace にして alias で差し替える）まで、
       # 更新 PR を受けない。直したら、この ignore を外すこと。
       - dependency-name: "@opennextjs/cloudflare"
+      # leaflet.heat 1.x は 0.2.x の書き直し（ESM・型つき）。読み込むだけで L.heatLayer が増える
+      # 副作用が無くなり、`import { HeatLayer } from 'leaflet.heat'` で使う形に変わった。
+      # src/types/leaflet.heat.d.ts が L.heatLayer を宣言し、単体テストも leaflet.heat を差し替えて
+      # いるので、不要になった @ts-expect-error（TS2578）を消すだけで検査はすべて通るが、
+      # 本番ではヒートマップが描画されなくなる。MapView.tsx・型宣言・単体テストを作り直し、
+      # 実ブラウザで描画を確かめるまで、メジャー更新 PR を受けない。移行したら、この ignore を外すこと。
+      - dependency-name: "leaflet.heat"
+        update-types: ["version-update:semver-major"]
     labels:
       - "dependencies"
     commit-message:
