@@ -118,7 +118,7 @@
   },
   "overrides": {
     "sharp": "^0.35.3",
-    "postcss": "^8.5.23",
+    "postcss": "$postcss",
     "@next/eslint-plugin-next": {
       "fast-glob": "file:./tools/next-eslint-glob"
     },

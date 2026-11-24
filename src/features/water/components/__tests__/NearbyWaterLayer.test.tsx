@@ -103,10 +103,15 @@ describe('水域から選択・調査・情報提供', () => {
     find()
     const toggle = await screen.findByRole('button', { name: /非表示.*2 件/ })
     expect(toggle).toHaveClass('min-h-11')
-    expect(toggle.querySelector('[aria-hidden="true"]')).toHaveStyle({
+    const swatch = toggle.querySelector<HTMLElement>('[aria-hidden="true"]')
+    expect(swatch).not.toBeNull()
+    expect(swatch).toHaveStyle({
       backgroundColor: NEARBY_WATER_CONFIG.style.fillColor,
-      border: `1.5px solid ${NEARBY_WATER_CONFIG.style.color}`,
+      borderColor: NEARBY_WATER_CONFIG.style.color,
     })
+    // 計算後の枠線の幅は、jsdom 31 以降はブラウザと同じくデバイスピクセルへ丸められる（1.5px → 1px）。
+    // 宣言した幅は、丸められないインラインの値で確かめる。
+    expect(swatch!.style.borderWidth).toBe('1.5px')
   })
 
   it('一覧を開くと見出しへ、閉じると開いたボタンへフォーカスを移す', async () => {
