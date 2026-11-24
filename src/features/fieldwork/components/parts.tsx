@@ -12,6 +12,7 @@
 
 import { useRef, type ReactNode } from 'react'
 import { AlertTriangle, Check, Loader2, Lock, MapPin, SkipForward, X } from 'lucide-react'
+import type { TFunction } from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
 
 import { useTheme } from '@/context/ThemeContext'
@@ -285,7 +286,7 @@ export function SheetFrame({
 }
 
 /** 地点の表示名（名前が無ければ「地点 N」）。 */
-export function stopName(stop: { name: string | null; number: number }, t: (key: string, opts?: Record<string, unknown>) => string): string {
+export function stopName(stop: { name: string | null; number: number }, t: TFunction): string {
   return stop.name?.trim() || t('fieldwork.stops.defaultName', { n: stop.number })
 }
 

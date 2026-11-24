@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback, useRef } from 'react'
 import Image from 'next/image'
+import type { TFunction } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { supabase } from '@/lib/supabase/client'
 import { deletePost } from '@/lib/data/posts-admin'
@@ -15,7 +16,7 @@ import { maskIp } from '@/lib/maskIp'
 interface IpDisplayProps {
   ip: string | null
   sameIpCount: number
-  t: (key: string, options?: Record<string, unknown>) => string
+  t: TFunction
 }
 
 function IpDisplay({ ip, sameIpCount, t }: IpDisplayProps) {

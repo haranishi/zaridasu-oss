@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
+import type { TFunction } from 'i18next'
 import { describe, expect, it } from 'vitest'
 
 import ja from '@/locales/ja/translation.json'
@@ -12,11 +13,12 @@ import { errorMessage, errorReason, FieldworkError } from '../errors'
 
 const p0001 = (message: string) => ({ code: 'P0001', message })
 
-function t(key: string, opts?: Record<string, unknown>): string {
+// 画面の t() を再現する簡単な関数。errorMessage は i18next の TFunction を受け取るので、型だけ合わせる。
+const t = ((key: string, opts?: Record<string, unknown>): string => {
   const value = key.split('.').reduce<unknown>((o, k) => (o as Record<string, unknown> | undefined)?.[k], ja)
   if (typeof value !== 'string') return key
   return value.replace(/\{\{(\w+)\}\}/g, (_, name: string) => String(opts?.[name] ?? ''))
-}
+}) as unknown as TFunction
 
 describe('errorReason', () => {
   it.each([
