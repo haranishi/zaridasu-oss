@@ -1,0 +1,77 @@
+{
+  "profile": "oss-source-with-licensed-placeholders",
+  "source_revision": "a6b1c4003a83c521e98ddef9aae5319924be6b2e",
+  "replacements": [
+    {
+      "path": "public/images/american.png",
+      "source": "public/images/leaflet/marker-icon-2x.png",
+      "license": "BSD-2-Clause",
+      "notice": "public/images/leaflet/LICENSE"
+    },
+    {
+      "path": "public/images/bullfrog.png",
+      "source": "public/images/leaflet/marker-icon-2x.png",
+      "license": "BSD-2-Clause",
+      "notice": "public/images/leaflet/LICENSE"
+    },
+    {
+      "path": "public/images/home/bullfrog-v2.webp",
+      "source": "public/lp/hero.webp",
+      "license": "MIT",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "public/images/home/canal-v2.webp",
+      "source": "public/lp/hero.webp",
+      "license": "MIT",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "public/images/home/crayfish-v2.webp",
+      "source": "public/lp/hero.webp",
+      "license": "MIT",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "public/images/home/phone-v2.webp",
+      "source": "public/lp/hero.webp",
+      "license": "MIT",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "public/images/home/pond-v2.webp",
+      "source": "public/lp/hero.webp",
+      "license": "MIT",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "public/images/home/waterside-v2.webp",
+      "source": "public/lp/hero.webp",
+      "license": "MIT",
+      "notice": "LICENSE"
+    }
+  ],
+  "rewritten_references": {
+    "backend-project-url": [
+      "supabase/migrations/20260421000001_ai_analysis_webhooks.sql",
+      "supabase/migrations/20260425000004_notify_survey_request.sql",
+      "supabase/migrations/20260615000004_reverse_geocoding_place_enrichment.sql",
+      "supabase/migrations/20260615000006_lifecycle_notifications.sql",
+      "supabase/migrations/20260615000007_web_push_subscriptions.sql",
+      "supabase/migrations/20260616000003_ai_anomaly_detection.sql",
+      "supabase/migrations/20260717000001_webhook_secret_headers.sql",
+      "supabase/migrations/20260926175847_req316_notification_rpc_and_admin_guard.sql"
+    ],
+    "live-form-endpoint": [
+      "src/components/features/home/CampaignBanner.tsx",
+      "src/lib/constants.ts"
+    ],
+    "private-document-link": [
+      ".kiro/specs/home-hub-ui/design.md",
+      ".kiro/specs/home-hub-ui/spec.json",
+      ".kiro/specs/home-hub-ui/verification.md",
+      "docs/requirements/REQ-283-field-exploration-mode.md"
+    ]
+  },
+  "note": "These generic placeholders replace private or unverified artwork. They are not species illustrations or observation records."
+}

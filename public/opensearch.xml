@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>ザリダス</ShortName>
+  <Description>秋田県外来生物情報マップ検索</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://zaridasu.com/map?q={searchTerms}"/>
+  <Image width="16" height="16" type="image/x-icon">https://zaridasu.com/favicon.ico</Image>
+</OpenSearchDescription>

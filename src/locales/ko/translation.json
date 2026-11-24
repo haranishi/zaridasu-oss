@@ -1,0 +1,2577 @@
+{
+  "banner": {
+    "neverShowAgain": "다시 표시하지 않기"
+  },
+  "intro": {
+    "prompt": {
+      "kicker": "처음 오셨나요?",
+      "title": "아키타의 외래생물을 함께 지도에 기록해요",
+      "body": "질문 2개에 답하고 1분 안에 지도 보는 법을 알아보세요.",
+      "read": "1분 안내 보기",
+      "later": "나중에",
+      "never": "다시 표시하지 않기"
+    },
+    "modal": {
+      "title": "자리다스 이야기",
+      "prev": "이전",
+      "next": "다음",
+      "close": "닫기",
+      "progress": "{{current}} / {{total}}",
+      "neverShowAgain": "다시 표시하지 않기"
+    },
+    "slides": {
+      "1": {
+        "title": "연못에서 생물이 사라지고 있습니다",
+        "body": "미국가재는 1927년에 사람이 황소개구리의 먹이로 일본에 들여온 생물입니다. 수가 늘어난 연못에서는 수초가 사라지고 물이 갈색으로 흐려집니다. 그곳에 살던 작은 생물들도 조금씩 모습을 감춥니다.",
+        "imageAlt": "같은 연못의 두 가지 모습을 나란히 그린 그림. 왼쪽은 수초가 흔들리고 작은 물고기와 수생 곤충, 올챙이가 있는 맑은 연못. 오른쪽은 수초가 사라지고 물이 갈색으로 흐려져 바닥에 미국가재만 남아 있는 연못."
+      },
+      "2": {
+        "title": "하지만 어디에 있는지는 아직 모릅니다",
+        "body": "국가가 내놓은 지도로 알 수 있는 것은 대체로 시나 정 단위까지입니다. 옆 연못에 있는지까지는 알 수 없습니다. 아직 가재가 없는 물가도 곳곳에 남아 있습니다.",
+        "imageAlt": "지도의 세밀함을 비교한 그림. 왼쪽은 큰 구획을 통째로 한 가지 색으로 칠한 성긴 지도이며, 한 구획 안에 연못이 여러 개 있다. 오른쪽은 연못 하나하나에 작은 점이 찍힌 세밀한 지도.",
+        "quote": "確認情報がない場所にも、生息している可能性はあることに注意。 (일본어 원문. 자리다스의 비공식 번역: \"확인 정보가 없는 장소에도 서식하고 있을 가능성이 있다는 점에 주의.\")",
+        "quoteSource": "출처: 일본 환경성 홈페이지 「なぜそこら中に？　まだ大丈夫なところもあります！」 (2026년 8월 5일 이용)",
+        "quoteLink": "환경성 홈페이지에서 읽기"
+      },
+      "3": {
+        "title": "그래서 다 같이 지도를 만듭니다",
+        "body": "'발견했다'가 많이 모이면 연못 하나하나가 보이는 세밀한 지도가 됩니다. 어느 물가를 먼저 돌볼지 정할 수 있게 되고, 먼 곳의 이야기가 아니라 집 근처 연못의 이야기로 느끼는 계기도 됩니다.",
+        "imageAlt": "사람들의 '발견'이 지도가 되는 흐름을 그린 그림. 몇 사람이 스마트폰을 들고 물가에 서 있고, 그곳에서 작은 점들이 지도로 모여 연못 하나하나가 보이는 세밀한 분포도가 만들어진다. 가재 마스코트 자리군이 옆에서 지켜보고 있다."
+      },
+      "4": {
+        "title": "사용법은 세 가지뿐입니다",
+        "body": "발견하기, 찍어서 올리기, 지도에 표시되기. 이 세 가지뿐입니다. 사진이 없어도 '봤다'는 것만으로 소중한 제보가 됩니다. 1분이면 끝납니다.",
+        "imageAlt": "세 가지 절차를 왼쪽에서 오른쪽으로 늘어놓은 그림. 왼쪽은 물가에서 미국가재를 발견하는 장면, 가운데는 스마트폰으로 사진을 찍는 장면, 오른쪽은 지도에 붉은 점이 하나 찍힌 장면."
+      },
+      "5": {
+        "title": "기록하는 것만으로 충분합니다",
+        "body": "가져가지 않아도 괜찮습니다. 다른 장소에 놓아주는 것은 법으로 금지되어 있으니 생물은 그대로 두어 주세요. 집에서 기르고 계신 분은 지금까지와 똑같이 기를 수 있고, 절차도 필요 없습니다.",
+        "imageAlt": "사람이 물가에 쭈그려 앉아 스마트폰으로 미국가재의 사진을 찍고만 있는 그림. 손을 뻗지 않았고 양동이나 뜰채도 들고 있지 않다. 가재는 물속에 있다."
+      },
+      "6": {
+        "title": "한번 시작해 보시겠어요?",
+        "body": "가입하지 않아도 지도는 바로 볼 수 있습니다. 자리다스는 누구나 무료로 사용할 수 있습니다.",
+        "imageAlt": "가재 마스코트 자리군이 집게를 들어 맞이하는 그림. 뒤로 물가와 붉은 점이 몇 개 찍힌 지도가 보인다."
+      }
+    },
+    "cta": {
+      "map": "지도 보기",
+      "post": "제보해 보기",
+      "about": "더 자세히 보기",
+      "lp": "자리다스 소개 페이지 보기"
+    },
+    "drawer": {
+      "label": "자리다스란?"
+    }
+  },
+  "lang": {
+    "ja": "日本語",
+    "en": "English",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "header": {
+    "skipToMain": "본문으로 바로 가기",
+    "subtitle": "물가의 외래생물 기록 지도",
+    "menuOpen": "메뉴 열기",
+    "menuClose": "메뉴 닫기",
+    "mainNav": "메인 내비게이션",
+    "langSwitch": "언어 전환",
+    "userMenu": "사용자 메뉴",
+    "pageTitle": {
+      "home": "자리다스",
+      "trends": "트렌드",
+      "ranking": "랭킹",
+      "dashboard": "마이페이지",
+      "about": "사용법",
+      "terms": "이용약관",
+      "privacy": "개인정보"
+    }
+  },
+  "nav": {
+    "home": "홈",
+    "map": "지도 보기",
+    "trends": "트렌드",
+    "ranking": "랭킹",
+    "area": "지역별",
+    "about": "이용 방법・외래생물법",
+    "dashboard": "내 대시보드",
+    "admin": "관리자 패널",
+    "post": "정보 제출",
+    "login": "로그인",
+    "signup": "회원가입",
+    "logout": "로그아웃",
+    "switchLang": "언어 전환",
+    "contact": "문의하기",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침"
+  },
+  "species": {
+    "american": "아메리카가재",
+    "bullfrog": "황소개구리"
+  },
+  "infoType": {
+    "sighting": "목격",
+    "capture": "포획",
+    "trace": "흔적",
+    "damage": "농업 피해",
+    "absence": "부재 확인"
+  },
+  "filter": {
+    "all": "전체",
+    "period": "기간",
+    "species": "종류",
+    "infoType": "유형",
+    "municipality": "시구정촌",
+    "sort": "정렬",
+    "search": "검색",
+    "searchPlaceholder": "종류・장소・댓글로 검색",
+    "newest": "최신순",
+    "oldest": "오래된순",
+    "speciesSort": "종류순",
+    "week": "최근 7일",
+    "month": "최근 30일",
+    "threeMonths": "최근 3개월",
+    "allPeriod": "전체 기간",
+    "boundsFilter": "현재 지도 범위 내만",
+    "filter": "필터",
+    "reset": "초기화",
+    "apply": "적용",
+    "filterSettings": "필터 설정",
+    "appliedCount": "{{count}}개 적용 중",
+    "allMunicipalities": "전체 시구정촌",
+    "allSpecies": "전체 종류",
+    "allInfoTypes": "전체 유형",
+    "sortNewest": "최신순",
+    "sortOldest": "오래된순",
+    "sortSpecies": "종류순"
+  },
+  "map": {
+    "postButton": "정보 제출",
+    "areaCount": "구역 내 {{count}}건",
+    "totalCount": "/ 전체 {{total}}건",
+    "loadCount": "{{count}}건의 정보",
+    "loading": "로딩 중...",
+    "loadMore": "더 보기",
+    "noResults": "조건에 맞는 게시물이 없습니다",
+    "tab": {
+      "map": "🗺 지도",
+      "list": "📋 목록"
+    },
+    "legend": "범례",
+    "heatmapOn": "히트맵 ON",
+    "heatmap": "히트맵",
+    "locate": "현재 위치 표시",
+    "heatmapLegend": {
+      "title": "관찰 밀도",
+      "low": "적음",
+      "high": "많음",
+      "caption": "보고가 많은 곳일수록 진하게 표시됩니다 (개체수·조사 시간이 있으면 노력량당 밀도로 보정／부재 확인 제외)"
+    },
+    "filterActive": "필터 중: {{count}}건",
+    "currentLocation": "현재 위치",
+    "locateStop": "현재 위치 따라가기 중지",
+    "locateCancel": "현재 위치 확인 취소",
+    "locateResume": "현재 위치로 돌아가 따라가기",
+    "currentLocationAccuracy": "현재 위치 (오차 약 {{meters}}m)",
+    "locateFilterOff": "지도 범위가 서버로 전송되지 않도록 \"현재 지도 범위 내만\"을 껐습니다. 멈춰도 자동으로 다시 켜지지 않습니다.",
+    "locateFilterBusy": "따라가는 동안에는 \"현재 지도 범위 내만\"을 사용할 수 없습니다. 지도를 움직여 일시 정지하거나 따라가기를 멈추면 사용할 수 있습니다.",
+    "locateHint": {
+      "locating": "현재 위치를 확인하고 있습니다…\n다시 누르면 취소됩니다.",
+      "locatingSlow": "시간이 걸리고 있습니다.\n실외에서 더 잘 잡힙니다.\n다시 누르면 취소됩니다.",
+      "following": "지도가 현재 위치를 따라갑니다.\n다시 누르면 멈춥니다.",
+      "paused": "지도를 움직여서 일시 정지했습니다.\n이 버튼을 누르면 현재 위치로 돌아갑니다."
+    },
+    "locateError": {
+      "denied": "위치 정보 사용이 허용되지 않았습니다. 브라우저 설정에서 허용한 뒤, 오른쪽 아래의 화살표 버튼을 다시 눌러 주세요.",
+      "unsupported": "이 기기 또는 브라우저는 위치 정보를 지원하지 않습니다.",
+      "unavailable": "현재 위치를 가져오지 못했습니다. 실외에서 오른쪽 아래의 화살표 버튼을 다시 눌러 주세요.",
+      "timeout": "현재 위치를 가져오지 못해 취소했습니다. 실외에서 오른쪽 아래의 화살표 버튼을 다시 눌러 주세요."
+    },
+    "layerSelect": "지도 레이어",
+    "nearbyWater": {
+      "button": "주변 수역 찾기",
+      "loading": "수역 검색 중…",
+      "show": "표시",
+      "hide": "숨기기",
+      "count": "{{count}}개",
+      "empty": "이 범위에 등록된 수역을 찾지 못했습니다",
+      "error": "수역을 불러오지 못했습니다. 다시 시도해 주세요.",
+      "scope": "지도 중심 반경 {{radius}}km 내 검색",
+      "retry": "다시 시도",
+      "previous": "이전 검색 결과",
+      "genericName": "이름 없는 수역"
+    },
+    "layers": {
+      "osm": "표준 지도",
+      "pale": "밝은 지도",
+      "std": "상세 지도",
+      "photo": "항공사진"
+    },
+    "pin": {
+      "button": "핀을 꽂고 경로 찾기",
+      "hint": "지도를 탭해 핀을 꽂으세요 (길게 눌러도 됩니다)",
+      "cancel": "핀 모드 종료",
+      "title": "꽂은 핀",
+      "saveHere": "비공개로 저장",
+      "postHere": "여기서 게시",
+      "remove": "핀 지우기"
+    },
+    "spot": {
+      "legend": "비공개 스팟 (나만)",
+      "pending": "미전송 (연결되면 자동 전송)",
+      "privateNote": "비공개 (본인과 운영자만)",
+      "rename": "이름 변경",
+      "renameSave": "저장",
+      "renameFailed": "이름을 변경하지 못했습니다",
+      "delete": "삭제",
+      "deleteConfirm": "이 스팟을 삭제할까요? 되돌릴 수 없습니다.",
+      "deleteYes": "삭제",
+      "deleteFailed": "삭제하지 못했습니다",
+      "cancel": "취소"
+    }
+  },
+  "postForm": {
+    "title": "정보 제출하기",
+    "close": "닫기",
+    "location": "발견 장소",
+    "locationRequired": "*",
+    "locationHint": "지도를 탭/클릭하여 장소를 선택하세요",
+    "manualLocation": "지도를 사용하지 않고 위치 입력",
+    "manualLocationHint": "위도와 경도를 직접 입력하거나 현재 위치를 가져오세요.",
+    "latitude": "위도",
+    "longitude": "경도",
+    "coordinateRangeError": "위도는 -90~90, 경도는 -180~180 사이의 숫자로 입력하세요.",
+    "useCurrentLocation": "현재 위치 사용",
+    "locating": "현재 위치 가져오는 중…",
+    "geoUnsupported": "이 기기 또는 브라우저는 위치 정보 가져오기를 지원하지 않습니다.",
+    "geolocationRetryHint": "설정을 확인하고 '현재 위치 사용'을 다시 누르거나 위도와 경도를 입력하세요.",
+    "mapInstructions": "지도를 클릭하여 위치를 선택할 수 있습니다. 키보드에서는 지도에 초점을 맞추고 화살표 키로 중심을 이동한 다음 Enter 또는 Space를 눌러 확정하세요.",
+    "mapAriaLabel": "발견 장소를 선택하는 지도",
+    "locationSelected": "{{lat}}, {{lng}}",
+    "locationError": "지도를 탭하여 위치를 선택해 주세요",
+    "locationPrompt": "지도를 클릭하여 장소를 지정해 주세요",
+    "outsideTargetArea": "선택한 위치가 대상 지역(아키타현) 밖입니다. 그대로 게시할 수 있지만, 본 앱은 아키타현을 대상으로 합니다.",
+    "accuracyValue": "±{{meters}}m",
+    "accuracyManual": "수동 선택 (정확도 없음)",
+    "accuracy_good": "양호",
+    "accuracy_warn": "주의",
+    "accuracy_bad": "정확도 낮음",
+    "species": "종류",
+    "infoType": "유형",
+    "count": "개체수",
+    "countUnit": "（선택・마리）",
+    "countPlaceholder": "예: 3",
+    "countValidation": "개체수는 {{min}}～{{max}} 사이의 정수로 입력해 주세요",
+    "observedAt": "관찰 날짜",
+    "observedAtUnit": "（선택）",
+    "municipality": "시구정촌",
+    "municipalityFetching": "📍 취득 중…",
+    "municipalityPlaceholder": "선택해 주세요（선택）",
+    "comment": "댓글",
+    "commentUnit": "（선택・최대 {{max}}자）",
+    "commentPlaceholder": "목격 상황, 수, 장소 상세 등",
+    "commentValidation": "댓글은 {{max}}자 이내로 입력해 주세요",
+    "photos": "사진",
+    "photosUnit": "（선택・최대 {{max}}장）",
+    "addPhoto": "추가",
+    "photoTips": {
+      "summary": "📸 촬영 팁 (AI 정확도가 올라갑니다)",
+      "angle": "각도: 위 또는 비스듬한 위에서 특징이 보이게 촬영",
+      "frame": "구도: 몸 전체가 화면의 1/3~1/2에 들어오는 거리로 (너무 가깝거나 멀지 않게)",
+      "lighting": "밝기: 밝은 곳에서 그림자·역광을 피해 촬영",
+      "focus": "초점: 대상에 맞추고 흔들리지 않게 촬영",
+      "parts": "부위: 집게·이마뿔·몸 색이 보이도록 촬영",
+      "example": "좋은 예: 밝은 곳에서 몸 전체 선명 / 피하기: 어두움·너무 멂·흔들림"
+    },
+    "submit": "🦞 제출하기",
+    "submitting": "제출 중...",
+    "offline": "📡 오프라인 상태",
+    "offlineMessage": "⚠️ 오프라인 상태입니다. 연결이 복구되면 제출할 수 있습니다. 입력 내용은 자동 저장됩니다.",
+    "successMessage": "제출되었습니다！",
+    "draftRestored": "이전 입력 내용을 복원했습니다",
+    "draftClear": "지우기",
+    "loggedInPost": "로그인 사용자로 제출",
+    "loggedInDesc": "이 게시물은 「인증됨」으로 표시되어 신뢰성이 높아집니다.",
+    "honeypot": "website",
+    "errorClose": "오류 닫기",
+    "geoPermissionDenied": "위치 권한이 거부되었습니다. 브라우저 설정에서 위치 접근을 허용해 주세요.",
+    "geoTimeout": "위치 감지 시간이 초과되었습니다. 다시 시도해 주세요.",
+    "geoUnavailable": "위치 정보를 사용할 수 없습니다.",
+    "geoDefault": "위치를 가져올 수 없음",
+    "photoSizeError": "사진이 최대 크기를 초과합니다",
+    "draftSaved": "임시 저장되었습니다. 온라인 상태에서 내 페이지에서 전송할 수 있습니다.",
+    "absenceMode": "부재 확인 모드",
+    "absenceModeDesc": "조사했으나 외래종을 발견하지 못한 지점을 기록합니다. 심사 없이 즉시 지도에 반영됩니다.",
+    "surveyDuration": "조사 시간",
+    "surveyDurationUnit": "（선택・분）",
+    "surveyDurationPlaceholder": "예: 30",
+    "surveyDurationHint": "개체수와 함께 입력하면 지도 밀도 표시(노력량당 발견 수)에 반영됩니다",
+    "offlineNotice": "오프라인 상태입니다 — 임시 저장할 수 있습니다",
+    "uploadingPhotos": "사진 업로드 중... {{current}}/{{total}}",
+    "saving": "저장 중...",
+    "saveDraft": "임시 저장",
+    "photoPreview": "미리보기 {{n}}",
+    "removePhoto": "사진 {{n}} 삭제",
+    "exifDetected": "사진에서 위치 정보를 감지했습니다. 지도 핀에 적용하시겠습니까?",
+    "exifApply": "적용",
+    "exifClose": "닫기",
+    "temperaturePlaceholder": "예: 18.5",
+    "humidityPlaceholder": "예: 65",
+    "surveyLocked": "조사 의뢰에 연결된 결과이므로 종류는 의뢰에서 지정된 것으로 고정됩니다",
+    "warningClose": "경고 닫기",
+    "fileTypeError": "{{name}}: 지원하지 않는 파일 형식입니다 (JPEG, PNG, WebP, HEIC만 가능)",
+    "fileSizeError": "{{name}} 파일이 {{max}}MB를 초과합니다. 더 작은 사진을 선택하세요.",
+    "lowResolutionWarning": "이미지 해상도가 낮을 수 있습니다 ({{width}}x{{height}})",
+    "blurryWarning": "사진이 흔들렸을 수 있습니다. 그래도 게시할 수 있습니다",
+    "timeUntilHours": "{{hours}}시간 {{minutes}}분",
+    "timeUntilMinutes": "{{minutes}}분",
+    "loginRequired": "게시하려면 로그인이 필요합니다. 로그인 또는 회원가입 후 게시해 주세요.",
+    "rateLimitReached": "24시간 이내 게시 한도({{limit}}건)에 도달했습니다. 다음 게시는 {{time}} 후에 가능합니다.",
+    "selectLocation": "지도에서 위치를 선택해 주세요.",
+    "locationOutOfBounds": "위치 정보가 아키타현 범위를 벗어났습니다. 지도에서 올바른 위치를 선택해 주세요.",
+    "audioUploadFailed": "음성 파일 업로드에 실패했습니다.",
+    "rateLimitGeneric": "게시 한도에 도달했습니다. 잠시 후 다시 시도해 주세요.",
+    "photoUploadPartial": "사진 업로드에 실패했습니다 ({{total}}장 중 {{success}}장 성공). 다시 시도해 주세요.",
+    "draftSaveFailed": "임시 저장에 실패했습니다",
+    "offlineAudioDropWarning": "녹음한 음성은 오프라인 임시저장에 보관되지 않습니다. 온라인 상태에서 다시 게시하면 음성을 첨부할 수 있습니다.",
+    "disclosure": {
+      "label": "위치 공개",
+      "public": "공개",
+      "private": "비공개",
+      "publicHint": "지도에 표시됩니다 (보통 약 111m 흐리게 처리).",
+      "privateHint": "지도나 공개 데이터에 위치를 표시하지 않습니다 (본인과 운영자만 볼 수 있음). 희귀 생물이 사는 장소 등에 사용하세요. 댓글이나 사진에 장소를 알 수 있는 정보를 넣지 마세요. 비공개로 한 위치를 다시 공개하려면 운영자에게 연락해야 합니다."
+    },
+    "offlineLoginRequired": "오프라인에서 임시 저장하려면 로그인이 필요합니다",
+    "photoConversionError": "{{name}} 변환에 실패했습니다. 다른 사진이나 JPEG/PNG 파일을 선택하세요.",
+    "preparingPhotos": "사진 준비 중… ({{current}}/{{total}})",
+    "autoResizeHint": "사진을 선택하면 자동으로 줄입니다(한 장당 최대 {{max}}MB).",
+    "photosReady": "게시할 사진이 준비되었습니다(총 {{size}}MB)."
+  },
+  "postCard": {
+    "anonymous": "익명",
+    "official": "공식",
+    "verified": "인증됨",
+    "unknown": "불명",
+    "count": "{{count}}마리",
+    "detail": "상세 보기",
+    "edit": "수정",
+    "delete": "삭제",
+    "deleteConfirm": "이 게시물을 삭제하시겠습니까?",
+    "deleteCancel": "취소",
+    "deleteOk": "삭제",
+    "deleting": "삭제 중...",
+    "report": "신고",
+    "verifiedTitle": "로그인 사용자가 게시한 글",
+    "officialTitle": "관리 팀이 등록한 공식 데이터",
+    "editTitle": "이 게시물 수정",
+    "deleteTitle": "이 게시물 삭제"
+  },
+  "postList": {
+    "loadMoreError": "더 불러오기에 실패했습니다",
+    "signupPrompt": "가입하면 더 편리해요！",
+    "signupBenefit1": "💬 게시물에 댓글 작성",
+    "signupBenefit2": "📊 내 대시보드에서 이력 확인",
+    "signupButton": "무료 가입 →",
+    "noResults": "조건에 맞는 결과가 없습니다",
+    "tryFilter": "필터를 변경해 보세요",
+    "noFilterResults": "현재 필터 조건에 맞는 게시물이 없습니다",
+    "tryResetFilter": "필터를 초기화하여 모든 게시물을 볼 수 있습니다",
+    "resetFilter": "필터 초기화"
+  },
+  "comment": {
+    "title": "댓글",
+    "noComments": "아직 댓글이 없습니다",
+    "placeholder": "댓글을 입력...",
+    "submit": "댓글 작성",
+    "submitting": "작성 중...",
+    "deleteLabel": "삭제",
+    "officialBadge": "공식",
+    "adminPosting": "관리자로 게시（공식 뱃지가 붙습니다）",
+    "error": "댓글 작성에 실패했습니다",
+    "emailRequired": "⚠️ 이메일 확인이 필요합니다",
+    "emailRequiredDesc": "댓글을 작성하려면 이메일 확인을 완료해 주세요.",
+    "loginRequired": "💬 댓글 작성을 위해 회원가입이 필요합니다",
+    "loginRequiredDesc": "무료로 가입하면 사용할 수 있습니다",
+    "benefit1": "게시물에 댓글 작성 가능",
+    "benefit2": "내 대시보드에서 게시 이력 확인 가능",
+    "signup": "무료로 가입하기",
+    "login": "로그인",
+    "resendEmail": "확인 이메일 재전송",
+    "resendSending": "전송 중...",
+    "resendCooldown": "재전송（{{sec}}초 후）",
+    "deleteConfirmPrompt": "삭제하시겠습니까?",
+    "deleteConfirm": "삭제",
+    "deleteCancel": "취소",
+    "deleteConfirmAria": "댓글 삭제",
+    "deleteCancelAria": "댓글 삭제 취소",
+    "emptyTitle": "첫 댓글을 남겨보세요",
+    "deleteError": "댓글 삭제에 실패했습니다"
+  },
+  "detail": {
+    "title": "게시물 상세",
+    "edit": "수정",
+    "observedAt": "관찰일: {{date}}",
+    "postedAt": "게시일: {{date}}",
+    "location": "아키타현 {{municipality}}",
+    "count": "개체수: {{count}}마리",
+    "verified": "인증된 게시물",
+    "verifiedDesc": "로그인 사용자가 게시한 글",
+    "anonymous": "익명 게시물",
+    "official": "공식 정보",
+    "comment": "댓글",
+    "photos": "사진",
+    "expandPhoto": "사진 {{n}} 확대",
+    "foundAt": "발견 장소",
+    "coordinates": "좌표: {{lat}}, {{lng}}",
+    "like": "도움이 됨",
+    "share": "공유:",
+    "back": "지도로 돌아가기",
+    "report": "신고하기",
+    "notFound": "정보를 찾을 수 없습니다",
+    "backToMap": "홈으로 돌아가기",
+    "loading": "로딩 중...",
+    "unknown": "불명",
+    "emailNotConfirmed": "이메일 확인이 필요합니다",
+    "emailNotConfirmedLike": "좋아요를 누르려면 이메일 확인을 완료해 주세요.",
+    "resendEmail": "확인 이메일 재전송",
+    "resendSending": "전송 중...",
+    "resendCooldown": "재전송（{{sec}}초 후）",
+    "seoTitle": "{{species}} {{infoType}} 정보 - 아키타현 {{municipality}}",
+    "seoDescription": "아키타현 {{municipality}}에서 {{species}} {{infoType}}가 보고되었습니다 ({{date}}). {{comment}}",
+    "seoDescriptionFallback": "지도에서 상세 내용을 확인해 주세요.",
+    "locationPrefix": "아키타현",
+    "breadcrumbHome": "홈",
+    "pendingNotice": "심사 중 — 이 게시물은 아직 공개되지 않았습니다",
+    "pendingNoticeDesc": "관리자 심사 후 공개됩니다. 현재는 게시자 본인만 볼 수 있습니다.",
+    "rejectedNotice": "비승인 — 이 게시물은 공개되지 않았습니다",
+    "rejectedReason": "사유: {{reason}}",
+    "rejectedHint": "내용을 수정하여 재제출하거나 관리자에게 문의해 주세요.",
+    "breadcrumbSpeciesInfo": "{{species}} {{infoType}} 정보",
+    "areaOtherInfo": "{{municipality}}의 다른 외래생물 정보 보기",
+    "speciesMoreInfo": "{{species}}에 대해 자세히 알아보기",
+    "aiJudgment": "🤖 AI 판정",
+    "aiJudging": "판정 중…",
+    "aiDetectedSpecies": "검출 종",
+    "aiSpeciesMatch": "신고와의 일치",
+    "aiMatchYes": "✅ 일치",
+    "aiMatchNo": "❌ 불일치",
+    "aiConfidence": "신뢰도",
+    "aiImageQuality": "화질",
+    "aiPerPhotoTitle": "사진별 판정 ({{analyzed}}/{{total}}장)",
+    "aiPerPhotoError": "실패",
+    "aiNote": "AI에 의한 참고 정보입니다",
+    "aiSpeciesAmerican": "아메리카가재",
+    "aiSpeciesBullfrog": "황소개구리",
+    "aiSpeciesOther": "기타",
+    "aiSpeciesUnclear": "불명",
+    "aiQualityGood": "선명",
+    "aiQualityAcceptable": "보통",
+    "aiQualityPoor": "흐림",
+    "aiFeedbackTitle": "📸 회원님을 위한 촬영 피드백",
+    "aiErrorOwnerBody": "이번에는 사진으로 잘 판정하지 못했습니다. 다음에는 대상을 화면 중앙에 크게, 밝은 곳에서 초점을 맞춰 촬영하면 인식 정확도가 올라갑니다. 게시물은 그대로 기록되었습니다. 감사합니다!",
+    "aiMismatchTitle": "아쉬워요! 조금만 더하면 확실해집니다",
+    "aiMismatchBody": "AI는 「{{detected}}」일 가능성이 높다고 판정했습니다(신고와 조금 다른 것 같아요). 아래 팁을 참고해 다음에 한 장 더 찍어보세요.",
+    "aiAdviceIntro": "다음에 정확도를 높이는 팁:",
+    "aiAdvice": {
+      "angle": "위 또는 비스듬한 위에서 특징이 보이는 각도로 촬영",
+      "distance": "너무 가깝거나 멀지 않게, 대상이 화면의 1/3~1/2이 되는 거리에서 촬영",
+      "lighting": "밝은 곳에서 그림자·역광을 피해 촬영",
+      "focus": "대상에 초점을 맞추고 흔들리지 않게 촬영",
+      "closer": "조금 더 가까이에서 대상을 크게 촬영",
+      "whole_body": "몸 전체(집게·꼬리 등)가 들어오도록 촬영"
+    },
+    "coordinatesCoarse": "대략적인 위치",
+    "locationHidden": "이 기록의 정확한 위치는 공개되지 않습니다.",
+    "hideLocation": {
+      "button": "이 게시물의 위치를 비공개로 하기",
+      "confirm": "비공개로 하면 지도·공개 데이터·지역 페이지에서 위치와 지명이 사라집니다 (본인과 운영자만 볼 수 있음). 직접 다시 공개할 수 없습니다. 비공개로 할까요?",
+      "confirmYes": "비공개로 하기",
+      "cancel": "취소",
+      "done": "위치를 비공개로 했습니다",
+      "failed": "비공개로 하지 못했습니다. 다시 시도하세요",
+      "ownerNotice": "이 게시물의 위치는 비공개입니다. 지도와 좌표는 본인과 운영자에게만 표시됩니다."
+    }
+  },
+  "auth": {
+    "login": "로그인",
+    "signup": "회원가입",
+    "email": "이메일 주소",
+    "password": "비밀번호",
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "resetPassword": "비밀번호 재설정",
+    "submit": "전송",
+    "close": "닫기",
+    "tabs": {
+      "login": "로그인",
+      "signup": "회원가입",
+      "reset": "비밀번호 재설정"
+    },
+    "errors": {
+      "invalidCredentials": "이메일 또는 비밀번호가 올바르지 않습니다",
+      "emailNotConfirmed": "이메일 확인이 완료되지 않았습니다. 가입 시 받은 이메일의 링크를 클릭해 주세요.",
+      "alreadyRegistered": "이미 등록된 이메일 주소입니다",
+      "passwordTooShort": "비밀번호는 8자 이상이어야 합니다",
+      "passwordRequirements": "비밀번호는 8자 이상이며 영문자와 숫자를 각각 1자 이상 포함해야 합니다",
+      "passwordMismatch": "비밀번호가 일치하지 않습니다",
+      "resendFailed": "재전송에 실패했습니다. 잠시 후 다시 시도해 주세요.",
+      "googleFailed": "Google 로그인에 실패했습니다. 다시 시도해 주세요.",
+      "invalidEmail": "이메일 주소 형식이 올바르지 않습니다",
+      "captchaRequired": "\"로봇이 아닙니다\" 확인을 완료해 주세요.",
+      "captchaUnavailable": "보안 확인을 불러오지 못했습니다. 페이지를 새로고침한 후 다시 시도해 주세요."
+    },
+    "resendEmail": "확인 이메일 재전송",
+    "resendEmailSending": "전송 중...",
+    "resendEmailCooldown": "재전송（{{sec}}초 후）",
+    "emailSent": "확인 이메일이 전송되었습니다. 이메일의 링크를 클릭하여 계정을 활성화해 주세요.",
+    "emailResent": "확인 이메일을 재전송했습니다. 받은 편지함을 확인해 주세요.",
+    "resetSent": "비밀번호 재설정 이메일이 전송되었습니다.",
+    "signupRequired": "기록하려면 무료 가입이 필요합니다.",
+    "signupBenefits": {
+      "post": "사진과 장소를 함께 기록 보내기",
+      "comment": "기록에 댓글 작성",
+      "dashboard": "내 기록 이력과 통계 확인"
+    },
+    "passwordConfirm": "비밀번호 확인",
+    "passwordConfirmPlaceholder": "다시 입력",
+    "passwordMinLength": "8자 이상 (영문+숫자)",
+    "passwordRules": {
+      "minLength": "8자 이상",
+      "hasLetter": "영문자 포함",
+      "hasNumber": "숫자 포함"
+    },
+    "submitLogin": "로그인하기",
+    "submitSignup": "가입하기",
+    "submitReset": "이메일 전송",
+    "processing": "처리 중...",
+    "forgotPasswordLink": "비밀번호를 잊으셨나요?",
+    "goToLogin": "로그인하기",
+    "goToReset": "비밀번호 재설정",
+    "googleLogin": "Google로 계속하기",
+    "orDivider": "또는",
+    "tabsLabel": "인증 방법",
+    "signOutFailed": "로그아웃하지 못했습니다. 전파가 있는 곳에서 다시 로그아웃해 주세요",
+    "consent": {
+      "lead": "가입 전에 ",
+      "and": "과 ",
+      "tail": "을 확인해 주세요."
+    }
+  },
+  "survey": {
+    "formTitle": "조사 요청 작성",
+    "detailTitle": "조사 요청",
+    "navButton": "조사 요청",
+    "location": "조사가 필요한 장소",
+    "species": "대상 종류",
+    "speciesUnknown": "불명",
+    "reason": "조사 이유",
+    "reasonPlaceholder": "예: 이 장소에서 가재 소리를 들었습니다, 근처 연못에 있을 수 있습니다 등",
+    "reasonLabel": "조사 이유",
+    "urgency": "긴급도",
+    "urgencyNormal": "보통",
+    "urgencyUrgent": "긴급",
+    "submit": "조사 요청 제출",
+    "submitting": "제출 중...",
+    "respond": "조사 결과 게시",
+    "close": "이 요청을 닫기",
+    "closeConfirm": "이 조사 요청을 닫으시겠습니까? 닫은 후에는 다시 열 수 없습니다.",
+    "closeConfirmAction": "닫기 확정",
+    "closeFailed": "닫기에 실패했습니다. 잠시 후 다시 시도해 주세요.",
+    "notFound": "조사 요청을 찾을 수 없습니다",
+    "anonymous": "익명 사용자",
+    "viewProfile": "프로필 보기",
+    "viewDetail": "자세히 보기",
+    "relatedPosts": "관련 조사 결과 ({{count}}건)",
+    "markerTitle": "조사 요청",
+    "legendLabel": "조사 요청",
+    "status": {
+      "open": "모집 중",
+      "responded": "응답 있음",
+      "closed": "해결됨"
+    },
+    "errors": {
+      "noPosition": "지도를 탭하여 위치를 선택해 주세요",
+      "noReason": "조사 이유를 입력해 주세요",
+      "loginRequired": "로그인이 필요합니다",
+      "outOfBounds": "위치 정보가 아키타현 범위를 벗어났습니다.",
+      "reasonTooLong": "이유는 500자 이내로 입력해 주세요."
+    },
+    "mapLoading": "지도를 불러오는 중",
+    "commentDeleteLabel": "삭제",
+    "commentDeleteConfirmPrompt": "삭제하시겠습니까?",
+    "commentDeleteConfirm": "삭제",
+    "commentDeleteCancel": "취소",
+    "respondersEmptyTitle": "협력자를 모집하고 있어요",
+    "commentsEmptyTitle": "첫 댓글로 응원해 주세요",
+    "listEmptyTitle": "첫 조사 요청을 올려보세요",
+    "listEmptyDesc": "궁금한 장소의 조사를 함께 요청하고 같이 확인해 봐요.",
+    "listEmptyFiltered": "조건에 맞는 요청을 찾지 못했어요",
+    "resetFilters": "필터 초기화",
+    "createRequestCta": "조사 요청 올리기",
+    "respondError": "참여 상태 변경에 실패했습니다",
+    "commentDeleteError": "댓글 삭제에 실패했습니다"
+  },
+  "report": {
+    "title": "이 게시물을 신고하기",
+    "reasonLabel": "신고 사유",
+    "reasons": {
+      "spam": "스팸・중복 게시",
+      "wrongLocation": "위치가 명백히 잘못됨",
+      "inappropriate": "부적절한 콘텐츠",
+      "other": "기타"
+    },
+    "commentLabel": "추가 설명",
+    "commentOptional": "（선택）",
+    "commentPlaceholder": "자세한 내용이 있으면 입력해 주세요",
+    "errorNoReason": "사유를 선택해 주세요",
+    "errorSubmit": "제출에 실패했습니다. 다시 시도해 주세요.",
+    "done": "신고를 접수했습니다",
+    "doneDesc": "신고해 주셔서 감사합니다. 내용을 확인하겠습니다.",
+    "close": "닫기",
+    "cancel": "취소",
+    "submit": "신고하기"
+  },
+  "edit": {
+    "title": "게시물 편집",
+    "species": "종류",
+    "infoType": "유형",
+    "municipality": "시구정촌",
+    "municipalityPlaceholder": "선택해 주세요（선택）",
+    "count": "개체수",
+    "countOptional": "（선택）",
+    "countPlaceholder": "마리 수를 입력",
+    "observedAt": "관찰 날짜",
+    "observedAtOptional": "（선택）",
+    "comment": "댓글",
+    "photos": "사진",
+    "photosMax": "최대 {{max}}장",
+    "noPhotos": "사진 없음",
+    "cancel": "취소",
+    "save": "저장",
+    "saving": "저장 중..."
+  },
+  "delete": {
+    "title": "이 게시물을 삭제하시겠습니까?",
+    "irreversible": "이 작업은 되돌릴 수 없습니다.",
+    "cancel": "취소",
+    "confirm": "삭제",
+    "deleting": "삭제 중..."
+  },
+  "howTo": {
+    "title": "이용 방법・회원 혜택",
+    "step1Title": "위치 탭",
+    "step1Desc": "지도에서 발견한 장소를 탭하여 선택",
+    "step2Title": "정보 입력",
+    "step2Desc": "종류・유형・사진 등을 입력하여 제출",
+    "step3Title": "함께 공유",
+    "step3Desc": "아키타 전역의 외래생물 정보를 지도에서 확인 가능",
+    "benefitsTitle": "무료 가입으로 더 많은 기능을",
+    "benefit1": "게시물에 댓글 작성",
+    "benefit2": "대시보드에서 통계 확인",
+    "benefit3": "데이터를 CSV로 출력",
+    "signupButton": "무료로 가입하기"
+  },
+  "signupBanner": {
+    "title": "더 편리하게 사용하시겠어요？",
+    "benefit1": "게시물에 댓글 작성 가능",
+    "benefit2": "내 대시보드에서 게시 이력 확인 가능",
+    "signupButton": "무료로 가입하기",
+    "alreadyHaveAccount": "이미 계정이 있으신 분은",
+    "login": "로그인"
+  },
+  "app": {
+    "offline": "⚠️ 오프라인 상태입니다. 일부 기능을 사용할 수 없습니다."
+  },
+  "trends": {
+    "title": "트렌드",
+    "seoTitle": "출몰 트렌드・통계 데이터",
+    "seoDescription": "아키타현 내 외래종 출몰 정보 통계 데이터. 월별 추이, 종류별 비율, 시구정촌 순위를 제공합니다.",
+    "kpi": {
+      "totalPosts": "누적 게시물",
+      "thisMonth": "이번 달 게시물",
+      "municipalities": "보고 시구정촌",
+      "thisMonthInline": "이번 달 {{count}}건"
+    },
+    "monthlyChart": "월별 게시물 추이 (최근 12개월)",
+    "monthlyChartSole": "월별 보고 현황",
+    "speciesBreakdown": "종류별 비율",
+    "infoTypeBreakdown": "정보 유형별 비율",
+    "municipalityRank": "보고가 있는 시구정촌 ({{count}}곳)",
+    "municipalityCoverage": "이 내역에 포함된 것은 {{listed}}건입니다(누계 {{total}}건). 시구정촌이 기록되지 않은 제보는 포함되지 않습니다.",
+    "countSuffix": "건",
+    "dataNote": "데이터는 사용자 보고를 기반으로 하며 실시간으로 업데이트됩니다.",
+    "earlyStageNote": "보고는 아직 {{count}}건입니다. 이제 막 시작했기 때문에, 여러분의 한 건이 아직 비어 있는 지역을 가장 크게 채웁니다.",
+    "sparseTitle": "보고는 이제부터 쌓여 갑니다",
+    "soleMonthHeadline": "{{month}} {{count}}건",
+    "soleMonthNote": "지금까지 보고가 있었던 달은 이 한 달뿐입니다. 다른 달은 아직 0건이라 추이로는 읽을 수 없습니다."
+  },
+  "about": {
+    "title": "서비스 소개",
+    "serviceTitle": "Zaridasu",
+    "serviceDesc": "Zaridasu는 아키타현 내 외래생물（아메리카가재・황소개구리）의 출몰・분포 정보를 함께 공유하는 지도 서비스입니다. 목격・포획・흔적・농업 피해 등의 정보를 제출하여 지역 생태계 보전에 기여할 수 있습니다.",
+    "howToUse": "이용 방법",
+    "speciesGuide": "대상 외래생물 소개",
+    "law": "외래생물법 안내",
+    "lawSubtitle": "특정외래생물에 의한 생태계 등 피해 방지에 관한 법률",
+    "dataUsage": "데이터 활용",
+    "dataUsageDesc": "제출된 데이터는 아키타현 내 외래생물 분포 조사, 생태계 보전 연구, 행정의 외래종 대책 등에 활용될 수 있습니다. 개인을 특정할 수 있는 정보는 수집하지 않습니다.",
+    "contact": "문의하기",
+    "contactDesc": "버그 보고・의견・질문은 문의 양식을 이용해 주세요.",
+    "contactButton": "문의 양식 열기",
+    "relatedLinks": "관련 링크（일본 환경부）",
+    "steps": {
+      "1": "홈 화면에서 「정보 제출」 버튼을 탭",
+      "2": "지도에서 발견 장소를 탭하여 선택",
+      "3": "종류・유형・시구정촌 등을 입력",
+      "4": "사진을 첨부하여 게시(선택)"
+    },
+    "faq": {
+      "q1": "자리다스의 사용 방법은?",
+      "a1": "메인 화면에서 '정보 게시하기' 버튼을 누르고 지도에서 발견 장소를 선택합니다. 종류, 정보 유형, 시구정촌을 입력하고 사진을 첨부(선택)하여 게시합니다.",
+      "q2": "미국가재는 어떤 생물인가요?",
+      "a2": "미국가재(Procambarus clarkii)는 가장 널리 분포하는 외래종으로 붉은색이며 대형입니다. 농업용 수로, 논, 연못 등에 서식합니다. 2023년 6월부터 일본에서 '조건부 특정 외래생물'이 되었습니다. 집에서 반려동물로 기르는 것은 절차 없이 지금까지와 똑같이 할 수 있습니다. 다만 연못이나 하천 등 야외에 놓아주는 것, 그리고 팔고 사고 나눠 주고 수입하는 것은 금지되어 있습니다.",
+      "q3": "황소개구리는 어떤 생물인가요?",
+      "a3": "황소개구리(Lithobates catesbeianus)는 북미 원산의 대형 개구리로 몸길이 15~20cm입니다. 물가와 습지에 서식하며 토종 개구리, 물고기, 곤충 등을 잡아먹습니다. 2006년부터 '특정 외래생물'로 지정되어 기르는 것, 옮기는 것, 수입, 판매, 야외 방생이 원칙적으로 금지되어 있습니다(연구 등으로 허가를 받은 경우는 제외).",
+      "q4": "포획한 미국가재나 황소개구리는 어떻게 해야 하나요?",
+      "a4": "무리해서 잡을 필요는 없습니다. 발견하면 사진을 찍어 제보하는 것만으로 충분합니다. 미국가재는 그 자리에서 바로 놓아주는 것(캐치 앤 릴리스)은 문제가 없지만, 한번 집으로 가져간 개체를 나중에 야외에 놓아주는 것은 법으로 금지되어 있으므로, 끝까지 기를 수 있을지 잘 생각한 뒤에 데려가 주세요. 황소개구리는 허가가 없으면 집으로 가져가는 것 자체가 불가능합니다.",
+      "q5": "자리다스에 게시한 정보는 어떻게 사용되나요?",
+      "a5": "게시된 데이터는 아키타현 내 외래생물 분포 조사, 생태계 보전 연구, 행정 기관의 외래종 대책 등에 활용될 수 있습니다. 개인을 식별할 수 있는 정보는 수집하지 않습니다."
+    },
+    "species_info": {
+      "american": {
+        "status": "조건부 특정 외래생물",
+        "desc": "북미 원산의 대형 가재. 붉은색, 몸길이 10~15cm. 농업용 수로, 논, 연못 등에 널리 서식하며 수생 식물 피해와 농업 시설 파손을 일으킴. 2023년 6월부터 조건부 특정 외래생물. 집에서 반려동물로 기르는 것은 절차 없이 지금까지와 똑같이 할 수 있지만, 야외에 놓아주는 것과 팔고 사고 나눠 주고 수입하는 것은 금지되어 있습니다."
+      },
+      "bullfrog": {
+        "status": "특정 외래생물",
+        "desc": "북미 원산의 대형 개구리. 몸길이 15~20cm이며 낮은 울음소리가 특징. 물가, 습지, 논에 서식하며 토종 생물을 잡아먹음. 2006년부터 특정 외래생물. 미국가재와 달리 기르는 것과 옮기는 것도 허가가 없으면 할 수 없습니다."
+      }
+    },
+    "law_info": {
+      "american": {
+        "title": "미국가재",
+        "desc": "2023년 6월 1일부터 '조건부 특정 외래생물'이 되었습니다. 집에서 반려동물로 기르는 것은 지금까지와 똑같이 할 수 있고, 신청이나 신고 등의 절차도 필요하지 않습니다. 다만 <0>연못이나 하천 등 야외에 놓아주거나 도망가게 하는 것은 금지</0>되어 있습니다. 팔거나 사거나 나눠 주거나 수입하는 것도 할 수 없습니다.",
+        "rule1": "야외 방생・유기 ✕",
+        "rule2": "판매・구입・배포・수입 ✕",
+        "allowed": "집에서 기르기 ○ (절차 불필요)"
+      },
+      "bullfrog": {
+        "title": "황소개구리",
+        "desc": "2006년부터 '특정 외래생물'이 되었습니다. 미국가재와 달리 <0>기르는 것과 옮기는 것도 원칙적으로 할 수 없습니다</0>(연구 등으로 허가를 받은 경우는 제외). 야외에 놓아주는 것, 파는 것, 수입하는 것도 금지되어 있습니다.",
+        "rule1": "사육・운반 ✕ (허가 필요)",
+        "rule2": "야외 방생・판매・수입 ✕"
+      },
+      "warning": "발견했을 때는 사진을 찍어 제보하는 것만으로 충분합니다. 생물은 그대로 두어 주세요. 한번 집으로 가져간 개체를 나중에 야외에 놓아주는 것은 법으로 금지되어 있습니다. 황소개구리는 허가가 없으면 집으로 가져가는 것 자체가 불가능합니다.",
+      "envLink1": "미국가재・붉은귀거북 규제에 대하여 (환경성 홈페이지)",
+      "envLink2": "황소개구리 등 특정 외래생물 규제에 대하여 (환경성 홈페이지)",
+      "envLink3": "외래생물법에 대하여 (환경성 홈페이지)"
+    }
+  },
+  "footer": {
+    "aboutService": "서비스 소개",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침",
+    "contact": "문의하기",
+    "copyright": "© {{year}} Zaridasu. All rights reserved."
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "retry": "다시 시도",
+    "cancel": "취소",
+    "save": "저장",
+    "saving": "저장 중...",
+    "close": "닫기",
+    "required": "필수",
+    "optional": "선택",
+    "darkMode": "다크 모드로 전환",
+    "lightMode": "라이트 모드로 전환",
+    "loadError": "불러오지 못했습니다",
+    "backToTop": "처음으로 돌아가기",
+    "back": "뒤로"
+  },
+  "admin": {
+    "login": {
+      "title": "ザリダス 관리 패널",
+      "subtitle": "관리자만 접근 가능",
+      "email": "이메일 주소",
+      "password": "비밀번호",
+      "submit": "로그인",
+      "submitting": "로그인 중...",
+      "error": "이메일 또는 비밀번호가 올바르지 않습니다",
+      "rateLimited": "시도 횟수가 초과되었습니다. {{minutes}}분 후에 다시 시도해 주세요.",
+      "backToSite": "← 공개 사이트로 돌아가기"
+    },
+    "session": {
+      "timeoutWarning": "보안을 위해 곧 세션이 만료됩니다. 로그인을 유지하려면 페이지와 상호작용하세요."
+    },
+    "nav": {
+      "title": "관리 패널",
+      "dashboard": "대시보드",
+      "posts": "게시물 관리",
+      "reports": "신고 관리",
+      "users": "사용자 관리",
+      "comments": "댓글 관리",
+      "logs": "조작 로그",
+      "signOut": "로그아웃",
+      "publicSite": "공개 사이트",
+      "logout": "로그아웃",
+      "authChecking": "인증 확인 중...",
+      "spots": "비공개 스팟"
+    },
+    "errorBoundary": {
+      "title": "오류가 발생했습니다",
+      "description": "관리자 화면에서 오류가 발생했습니다. 다시 시도해 주세요.",
+      "errorId": "오류 ID: {{id}}",
+      "retry": "다시 시도",
+      "dashboard": "대시보드"
+    },
+    "dashboard": {
+      "title": "대시보드",
+      "loading": "데이터 로딩 중...",
+      "allPeriod": "전체 기간",
+      "kpi": {
+        "posts": "기간 내 게시물 수",
+        "verified": "인증된 게시물",
+        "verifiedRate": "인증률",
+        "pendingReports": "미처리 신고"
+      },
+      "chart": {
+        "monthly": "월별 게시물 수",
+        "monthlyDesc": "선택 기간의 월별 추이",
+        "postCount": "게시물 수"
+      },
+      "breakdown": {
+        "species": "종류별 분류",
+        "infoType": "정보 유형별"
+      },
+      "recentLogs": "최근 작업",
+      "viewAll": "전체 보기 →",
+      "adminFallback": "관리자",
+      "quickActions": {
+        "managePosts": "게시물 관리",
+        "managePostsDesc": "필터・삭제・CSV 내보내기",
+        "checkReports": "신고 확인",
+        "noPendingReports": "미처리 신고 없음",
+        "pendingReports": "{{count}}건의 미처리 신고가 있습니다"
+      },
+      "dateRange": {
+        "thisMonth": "이번 달",
+        "lastMonth": "지난 달",
+        "last3Months": "최근 3개월",
+        "last6Months": "최근 6개월",
+        "thisYear": "올해",
+        "allPeriod": "전체 기간"
+      }
+    },
+    "posts": {
+      "title": "게시물 관리",
+      "bulkDelete": "{{count}}건 일괄 삭제",
+      "bulkProgressApprove": "{{done}}/{{total}}건 승인 중...",
+      "bulkResult": {
+        "success": "일괄 처리: {{succeeded}}건 성공",
+        "withFailures": "{{succeeded}}건 성공・{{failed}}건 실패"
+      },
+      "pendingCountUnavailable": "심사 대기 건수를 불러올 수 없습니다",
+      "pendingEmpty": "심사 대기 중인 게시물이 없습니다",
+      "exportCsv": "CSV 내보내기",
+      "filter": {
+        "allSpecies": "전체 종류",
+        "allInfoTypes": "전체 유형",
+        "allMunicipalities": "전체 시구정촌",
+        "keyword": "키워드 검색",
+        "allPosts": "전체 게시물",
+        "verifiedOnly": "🔵 인증된 항목만",
+        "anonymousOnly": "⚪ 익명만"
+      },
+      "table": {
+        "range": "{{total}}건 중 {{from}}–{{to}}건",
+        "date": "게시 날짜",
+        "auth": "인증",
+        "municipality": "시구정촌",
+        "species": "종류",
+        "infoType": "유형",
+        "comment": "댓글",
+        "photo": "사진"
+      },
+      "badge": {
+        "anonymous": "익명",
+        "verified": "✓ 인증됨"
+      },
+      "action": {
+        "makeOfficial": "공식 지정",
+        "official": "★공식",
+        "delete": "삭제"
+      },
+      "statusPending": "심사 대기",
+      "statusApproved": "공개 중",
+      "statusRejected": "거부됨",
+      "statusAll": "전체",
+      "empty": "게시물이 없습니다",
+      "loading": "로딩 중...",
+      "prev": "← 이전",
+      "next": "다음 →",
+      "deleteDialog": {
+        "title": "이 게시물을 삭제하시겠습니까?",
+        "irreversible": "이 작업은 취소할 수 없습니다.",
+        "cancel": "취소",
+        "confirm": "삭제"
+      },
+      "bulkDialog": {
+        "title": "{{count}}건의 게시물을 일괄 삭제하시겠습니까?",
+        "desc": "선택한 게시물과 사진이 영구 삭제됩니다.",
+        "warning": "이 작업은 취소할 수 없습니다.",
+        "cancel": "취소",
+        "confirm": "{{count}}건 삭제"
+      },
+      "bulkProgress": "{{done}}/{{total}}건 삭제 중...",
+      "error": {
+        "fetchFailed": "데이터 로드 실패",
+        "deleteFailed": "게시물 삭제 실패",
+        "officialFailed": "공식 플래그 전환 실패",
+        "disclosureFailed": "공개 범위 변경에 실패했습니다."
+      },
+      "csvHeaders": {
+        "id": "ID",
+        "date": "게시 날짜",
+        "lat": "위도",
+        "lng": "경도",
+        "municipality": "시구정촌",
+        "species": "종류",
+        "infoType": "유형",
+        "comment": "댓글",
+        "photoCount": "사진 수",
+        "authType": "인증 유형"
+      },
+      "anonymousLabel": "익명",
+      "verifiedLabel": "인증됨",
+      "disclosure": {
+        "label": "위치 공개 범위",
+        "updated": "공개 범위를 변경했습니다.",
+        "speciesUpdated": "종별 기본 공개 범위를 변경했습니다.",
+        "speciesTitle": "종별 기본 공개 범위",
+        "speciesDesc": "새 게시물의 위치 공개 범위 기본값을 종별로 설정합니다.",
+        "apply": "적용",
+        "level": {
+          "precise": "정확한 위치",
+          "coarsened": "대략(약 111m)",
+          "hidden": "비공개"
+        }
+      }
+    },
+    "reports": {
+      "title": "신고 관리",
+      "tab": {
+        "pending": "미처리",
+        "resolved": "처리 완료"
+      },
+      "loading": "로딩 중...",
+      "emptyPending": "미처리 신고 없음",
+      "emptyResolved": "처리 완료 신고 없음",
+      "reason": {
+        "spam": "스팸・홍보",
+        "wrong_location": "위치 정보 오류",
+        "inappropriate": "부적절한 콘텐츠",
+        "other": "기타"
+      },
+      "ip": {
+        "none": "미취득",
+        "show": "표시",
+        "hide": "숨기기",
+        "sameCount": "동일 IP {{count}}건"
+      },
+      "reporterComment": "신고 코멘트: ",
+      "postDate": "게시: ",
+      "postDeleted": "대상 게시물이 삭제되었습니다",
+      "action": {
+        "deletePost": "게시물 삭제",
+        "dismiss": "기각"
+      },
+      "status": {
+        "resolved": "처리 완료"
+      },
+      "deleteDialog": {
+        "title": "이 게시물을 삭제하시겠습니까?",
+        "message": "게시물과 사진이 영구 삭제됩니다. 이 작업은 취소할 수 없습니다. 관련 신고도 함께 삭제됩니다.",
+        "confirm": "게시물 삭제",
+        "cancel": "취소"
+      },
+      "dismissDialog": {
+        "title": "이 신고를 기각하시겠습니까?",
+        "message": "이 신고를 처리 완료로 표시합니다. 게시물은 삭제되지 않습니다.",
+        "confirm": "기각",
+        "cancel": "취소"
+      },
+      "error": {
+        "deleteFailed": "게시물 삭제 실패",
+        "dismissFailed": "신고 상태 전환 실패"
+      }
+    },
+    "users": {
+      "title": "사용자 관리",
+      "summary": "전체 {{total}}명 / 관리자 {{adminCount}}명",
+      "refresh": "새로 고침",
+      "empty": "사용자를 찾을 수 없습니다",
+      "error": {
+        "fetchFailed": "사용자 목록 로드 실패: {{message}}",
+        "roleFailed": "권한 변경 실패",
+        "title": "오류"
+      },
+      "table": {
+        "email": "이메일 주소",
+        "registeredAt": "가입일",
+        "lastLogin": "마지막 로그인",
+        "role": "권한"
+      },
+      "role": {
+        "admin": "🛡️ 관리자",
+        "user": "일반 사용자"
+      },
+      "self": "나",
+      "action": {
+        "detail": "상세",
+        "grant": "관리자 부여",
+        "revoke": "권한 박탈",
+        "noChange": "변경 불가"
+      },
+      "modal": {
+        "postCount": "📍 게시물",
+        "commentCount": "💬 댓글",
+        "reportCount": "🚨 신고 수신",
+        "recentPosts": "최근 게시물",
+        "recentComments": "최근 댓글",
+        "noPosts": "게시물 없음",
+        "noComments": "댓글 없음",
+        "noData": "데이터 없음"
+      },
+      "grantDialog": {
+        "title": "관리자 권한을 부여하시겠습니까?",
+        "message": "이 작업을 통해 해당 사용자가 관리 패널에 접근할 수 있게 됩니다.",
+        "confirm": "부여"
+      },
+      "revokeDialog": {
+        "title": "관리자 권한을 박탈하시겠습니까?",
+        "message": "이 작업을 통해 해당 사용자의 관리 패널 접근이 비활성화됩니다.",
+        "confirm": "박탈"
+      },
+      "dialog": {
+        "cancel": "취소"
+      }
+    },
+    "comments": {
+      "title": "댓글 관리",
+      "filter": {
+        "keyword": "키워드 검색",
+        "officialOnly": "공식 댓글만"
+      },
+      "table": {
+        "range": "{{total}}건 중 {{from}}–{{to}}건",
+        "date": "날짜",
+        "type": "구분",
+        "content": "댓글 내용",
+        "post": "대상 게시물"
+      },
+      "badge": {
+        "official": "★ 공식",
+        "general": "일반"
+      },
+      "action": {
+        "delete": "삭제"
+      },
+      "empty": "댓글이 없습니다",
+      "loading": "로딩 중...",
+      "prev": "← 이전",
+      "next": "다음 →",
+      "deleteDialog": {
+        "title": "이 댓글을 삭제하시겠습니까?",
+        "irreversible": "이 작업은 취소할 수 없습니다.",
+        "cancel": "취소",
+        "confirm": "삭제"
+      },
+      "error": {
+        "deleteFailed": "댓글 삭제 실패"
+      }
+    },
+    "logs": {
+      "title": "조작 로그",
+      "subtitle": "관리자 작업 감사 로그",
+      "fetchFailed": "작업 로그를 불러오지 못했습니다. 다시 시도해 주세요.",
+      "exportCsv": "CSV 내보내기",
+      "filter": {
+        "allActions": "전체 작업 유형",
+        "allAdmins": "전체 관리자",
+        "myOnly": "내 작업만"
+      },
+      "total": "{{count}}건",
+      "loading": "로딩 중...",
+      "table": {
+        "date": "날짜",
+        "operator": "작업자",
+        "action": "작업 유형",
+        "target": "대상",
+        "details": "상세"
+      },
+      "empty": "로그가 없습니다",
+      "prev": "← 이전",
+      "next": "다음 →",
+      "action": {
+        "delete_post": "게시물 삭제",
+        "delete_comment": "댓글 삭제",
+        "resolve_report": "신고 처리",
+        "grant_admin": "관리자 부여",
+        "revoke_admin": "관리자 박탈",
+        "toggle_official": "공식 전환",
+        "login_success": "로그인 성공",
+        "login_failed": "로그인 실패",
+        "review_water_report": "수역 정보 검토"
+      },
+      "target": {
+        "post": "게시물",
+        "comment": "댓글",
+        "report": "신고",
+        "user": "사용자",
+        "water_report": "수역 정보"
+      },
+      "csv": {
+        "date": "날짜",
+        "operator": "작업자",
+        "action": "작업 유형",
+        "targetType": "대상 유형",
+        "targetId": "대상 ID",
+        "details": "상세"
+      }
+    },
+    "components": {
+      "statCard": {
+        "unit": "건"
+      },
+      "recentPosts": {
+        "title": "최근 게시물",
+        "viewAll": "전체 보기 →",
+        "empty": "게시물 없음",
+        "unknown": "불명",
+        "municipalityUnknown": "시구정촌 불명",
+        "anonymous": "익명",
+        "verified": "✓ 인증됨"
+      },
+      "municipalityRanking": {
+        "title": "시구정촌별 랭킹",
+        "noData": "데이터 없음",
+        "unit": "건"
+      },
+      "summaryCard": {
+        "title": "기간 비교",
+        "previousPeriod": "이전 기간",
+        "currentPeriod": "현재 기간",
+        "change": "증감",
+        "vsPrevious": "이전 기간 대비",
+        "unit": "건"
+      }
+    },
+    "aiAccuracy": {
+      "title": "⑤ AI 신뢰도 → 적중률",
+      "note": "AI 신뢰도(confidence)를 4개 구간으로 나누어 사람의 판정 결과와 AI 검출 종의 적중을 대조합니다. 승인된 게시물의 확정 종을 정답으로 간주하는 운영 프록시입니다(진정한 정밀도/재현율은 라벨링된 검증 세트가 필요).",
+      "empty": "AI 신뢰도가 있는 게시물이 아직 없습니다.",
+      "colBin": "신뢰도 구간",
+      "colTotal": "건수",
+      "colApproved": "승인",
+      "colRejected": "반려",
+      "colPending": "보류",
+      "colAutoApproved": "자동 승인",
+      "colApprovalRate": "승인율",
+      "colMatchRate": "적중률",
+      "binLt50": "~50%",
+      "bin50_70": "50~70%",
+      "bin70_90": "70~90%",
+      "bin90_100": "90~100%",
+      "summary": "전체",
+      "humanReviewed": "사람 검토분(자동 승인 제외 독립 검증)",
+      "humanMatchRate": "사람 승인의 적중률",
+      "avgConfidence": "평균 신뢰도",
+      "approvalRateDef": "승인율 = 승인 ÷ (승인 + 반려). 보류는 분모에서 제외.",
+      "matchRateDef": "적중률 = 승인이면서 AI 검출 종 = 확정 종 ÷ 승인.",
+      "caveat": "승인율은 자동 승인(신뢰도 연동)을 포함하므로 과대평가됩니다. 독립적인 근거는 사람 검토분의 적중률을 참조하세요."
+    },
+    "spots": {
+      "title": "비공개 스팟",
+      "exportCsv": "CSV 내보내기",
+      "noticeTitle": "취급 주의 (연구용·열람 전용)",
+      "noticeBody": "이용자가 비공개로 저장한 지점입니다. 희귀 생물의 서식지가 포함될 수 있습니다. 공개 페이지·공개 데이터·SNS·발표 자료에 정확한 위치를 싣지 마세요.",
+      "loading": "불러오는 중...",
+      "fetchFailed": "불러오지 못했습니다",
+      "empty": "아직 비공개 스팟이 없습니다",
+      "count": "{{count}}건",
+      "user": "이용자"
+    }
+  },
+  "account": {
+    "deleteLink": "계정 삭제",
+    "deleteTitle": "계정 삭제",
+    "deleteWarning": "계정을 삭제하면 다음과 같이 처리됩니다:",
+    "deleteKeepPosts": "게시물과 댓글은 익명으로 유지됩니다",
+    "deleteRemoveProfile": "프로필, 뱃지, 좋아요, 조사 요청, 비공개 스팟, 조사 계획, 희귀종 기록, 수역 정보(사진 포함)가 삭제됩니다",
+    "deleteIrreversible": "이 작업은 되돌릴 수 없습니다",
+    "deleteConfirmLabel": "확인을 위해 「삭제」를 입력해 주세요",
+    "deleteConfirmPlaceholder": "삭제",
+    "deleteConfirmWord": "삭제",
+    "deleteButton": "삭제",
+    "deleting": "삭제 중...",
+    "deleteError": "계정 삭제에 실패했습니다",
+    "deletePhotosFailed": "비공개 사진을 지우지 못해 탈퇴를 멈췄습니다. 전파가 있는 곳에서 다시 시도해 주세요",
+    "deleteFailedPhotosRemoved": "탈퇴하지 못했습니다(비공개 사진은 이미 삭제되었습니다). 다시 시도해 주세요"
+  },
+  "myPosts": {
+    "title": "내 게시물",
+    "empty": "아직 게시물이 없습니다.",
+    "emptyAction": "에서 첫 게시물을 올려보세요.",
+    "topPage": "메인 페이지로",
+    "detail": "상세보기",
+    "status": {
+      "pending": "심사 중",
+      "approved": "공개 중",
+      "rejected": "거부"
+    }
+  },
+  "dashboard": {
+    "pendingDrafts": "미전송 임시 저장 ({{count}}건)",
+    "sending": "전송 중...",
+    "sendAll": "모두 전송",
+    "offlineLabel": "오프라인",
+    "sendingProgress": "전송 중: {{current}}/{{total}}건",
+    "successCount": "{{count}}건 성공",
+    "failedCount": "{{count}}건 실패",
+    "sendingStatus": "전송 중",
+    "photoCount": "📷{{count}}장",
+    "deleteLabel": "삭제",
+    "cancelLabel": "취소",
+    "deleteTitle": "삭제",
+    "postImageAlt": "게시물 이미지",
+    "postThumbnailAlt": "게시물 사진 미리보기",
+    "unknown": "불명",
+    "statusPending": "🕐 심사 중",
+    "statusRejected": "✕ 거부",
+    "statusApproved": "✓ 공개 중",
+    "aiJudging": "⏳ 판정 중",
+    "aiConfirmed": "🤖 AI 확인 {{confidence}}%",
+    "aiMismatch": "⚠️ 종 불일치",
+    "aiUnclear": "🔍 판별 불능",
+    "audioJudging": "⏳ 음성 판정 중",
+    "audioConfirmed": "🎤 울음소리 일치 {{confidence}}%",
+    "audioMismatch": "⚠️ 울음소리 불일치",
+    "audioUnclear": "🔍 울음소리 판별 불능",
+    "audioPoorQuality": "🎤 음질 불량",
+    "aiImageReasonPrefix": "이미지 판정",
+    "aiAudioReasonPrefix": "음성 판정",
+    "aiConfidenceShort": "신뢰도 {{confidence}}%",
+    "audioQuality": {
+      "good": "음질: 양호",
+      "acceptable": "음질: 허용 범위",
+      "poor": "음질: 불량"
+    },
+    "rejectionReason": "거부 사유: {{reason}}",
+    "postPhotoAlt": "게시물 사진",
+    "editTitle": "수정",
+    "deletePostTitle": "삭제",
+    "sendFailed": "전송에 실패했습니다",
+    "canSendNow": "온라인으로 복귀했습니다. 미전송 임시 저장을 전송할 수 있습니다.",
+    "csvExportError": "CSV 내보내기에 실패했습니다.",
+    "legacyDrafts": "주인을 알 수 없는 오래된 임시 저장이 {{count}}건 있습니다(사용자별로 나누기 전에 저장된 것). 본인 것이라면 확인한 뒤 보낼 수 있습니다.",
+    "legacyDraftsDiscard": "버리기",
+    "legacyDraftsDiscarded": "오래된 임시 저장을 버렸습니다",
+    "legacyClaim": "내 것으로 보내기",
+    "legacyClaimConfirm": "이 임시 저장을 내 게시물로 보낼까요? 직접 저장한 것인지, 내용을 확인한 뒤 보내 주세요.",
+    "legacyDiscardConfirm": "이 임시 저장을 버릴까요? 되돌릴 수 없습니다.",
+    "legacyDraftsClaimed": "내 게시물로 보냈습니다",
+    "legacyDraftsClaimedQueued": "내 임시 저장으로 옮겼습니다. 전파가 있는 곳에서 보낼 수 있습니다"
+  },
+  "validation": {
+    "generic": "입력 내용을 확인해 주세요.",
+    "draftInvalid": "임시 저장 내용에 오류가 있어 전송하지 못했습니다.",
+    "location": {
+      "outOfBounds": "위치가 아키타현 범위를 벗어났습니다. 지도에서 올바른 위치를 선택해 주세요."
+    },
+    "species": {
+      "invalid": "유효하지 않은 종이 지정되었습니다."
+    },
+    "infoType": {
+      "invalid": "유효하지 않은 정보 종류가 지정되었습니다."
+    },
+    "weather": {
+      "invalid": "유효하지 않은 날씨가 지정되었습니다."
+    },
+    "surveyMethod": {
+      "invalid": "유효하지 않은 조사 방법이 지정되었습니다."
+    },
+    "locationSource": {
+      "invalid": "유효하지 않은 위치 취득 수단이 지정되었습니다."
+    },
+    "comment": {
+      "tooLong": "댓글은 500자 이내로 입력해 주세요."
+    },
+    "count": {
+      "invalid": "개체 수는 정수로 입력해 주세요.",
+      "range": "개체 수는 1~999 사이의 정수로 입력해 주세요."
+    },
+    "humidity": {
+      "range": "습도는 0~100 범위로 입력해 주세요."
+    },
+    "surveyDuration": {
+      "range": "조사 시간은 1~480분 범위로 입력해 주세요."
+    },
+    "content": {
+      "required": "본문을 입력해 주세요.",
+      "tooLong": "본문은 500자 이내로 입력해 주세요."
+    },
+    "reason": {
+      "required": "이유를 입력해 주세요.",
+      "tooLong": "이유는 300자 이내로 입력해 주세요."
+    },
+    "urgency": {
+      "invalid": "유효하지 않은 긴급도가 지정되었습니다."
+    },
+    "report": {
+      "reason": "유효하지 않은 신고 사유가 지정되었습니다."
+    },
+    "siteName": {
+      "required": "사이트 이름을 입력해 주세요.",
+      "tooLong": "사이트 이름은 100자 이내로 입력해 주세요."
+    },
+    "notes": {
+      "tooLong": "메모는 500자 이내로 입력해 주세요."
+    },
+    "displayName": {
+      "required": "닉네임을 입력해 주세요.",
+      "tooLong": "닉네임은 20자 이내로 입력해 주세요."
+    },
+    "bio": {
+      "tooLong": "자기소개는 100자 이내로 입력해 주세요."
+    }
+  },
+  "weather": {
+    "sectionTitle": "관찰 시 날씨",
+    "fetching": "날씨 취득 중...",
+    "autoLabel": "자동 취득",
+    "noData": "취득 불가",
+    "noPosition": "📍 지도에 핀을 꽂으면 자동으로 날씨를 취득합니다",
+    "switchManual": "직접 입력",
+    "switchAuto": "자동으로 돌아가기",
+    "label": "날씨",
+    "temperatureLabel": "기온 (°C)",
+    "humidityLabel": "습도 (%)",
+    "humidity": "습도 {{value}}%",
+    "sunny": "맑음",
+    "cloudy": "흐림",
+    "overcast": "흐림",
+    "rainy": "비",
+    "snowy": "눈",
+    "thunderstorm": "뇌우",
+    "unknown": "불명",
+    "fetchError": "날씨 정보를 가져오지 못했습니다"
+  },
+  "audio": {
+    "ariaLabel": "음성 미리듣기",
+    "previewError": "음성을 불러오지 못했습니다.",
+    "downloadFallback": "파일 열기",
+    "sectionTitle": "녹음된 울음소리",
+    "permission": {
+      "denied": "마이크 사용이 허용되지 않았습니다.",
+      "notFound": "마이크를 찾을 수 없습니다. 마이크가 연결되어 있는지 확인해 주세요.",
+      "busy": "다른 앱에서 마이크를 사용 중일 수 있습니다. 닫고 다시 시도해 주세요.",
+      "overconstrained": "마이크가 요청된 설정을 지원하지 않습니다.",
+      "insecure": "HTTPS 연결이 필요합니다.",
+      "unsupported": "이 브라우저는 녹음 기능을 지원하지 않습니다.",
+      "aborted": "녹음이 중단되었습니다. 다시 시도해 주세요.",
+      "unknown": "녹음을 시작할 수 없습니다.",
+      "showGuide": "허용 방법 보기",
+      "switchToUpload": "파일에서 선택",
+      "inAppWarning": "이 앱 내 브라우저에서는 마이크가 작동하지 않을 수 있습니다. Safari / Chrome 으로 다시 열어 주세요.",
+      "openInBrowser": "외부 브라우저에서 열기",
+      "copyUrl": "URL 복사",
+      "urlCopied": "URL 을 복사했습니다",
+      "guideTitle": "마이크 허용 방법",
+      "guideIntro": "이용 환경에 맞는 절차를 확인해 주세요.",
+      "guideClose": "닫기",
+      "guide": {
+        "safariIos": {
+          "title": "iPhone / iPad (Safari)",
+          "steps": "1. 설정 앱 열기\n2. Safari → 카메라·마이크 (또는 사이트 설정)\n3. 허용 또는 확인 선택\n4. 페이지 새로고침"
+        },
+        "chromeAndroid": {
+          "title": "Android (Chrome)",
+          "steps": "1. 주소창 왼쪽 🔒 아이콘 탭\n2. 사이트 설정 → 마이크 → 허용\n3. 페이지 새로고침"
+        },
+        "safariMacos": {
+          "title": "Mac (Safari)",
+          "steps": "1. Safari 메뉴 → 환경설정 → 웹사이트 → 마이크\n2. 이 사이트를 허용으로 변경\n3. 페이지 새로고침"
+        },
+        "chromeDesktop": {
+          "title": "PC (Chrome / Edge / Firefox)",
+          "steps": "1. 주소창 왼쪽 🔒 아이콘 클릭\n2. 마이크를 허용으로 변경\n3. 페이지 새로고침"
+        },
+        "generic": {
+          "title": "기타 브라우저",
+          "steps": "브라우저 사이트 설정에서 마이크 사용을 허용한 후 페이지를 새로고침해 주세요."
+        }
+      }
+    }
+  },
+  "lp": {
+    "hero": {
+      "title": "당신의 \"발견\"이 아키타의 자연을 지킵니다.",
+      "subtitle": "가재나 황소개구리를 발견하면 스마트폰으로 찍어 올리기만 하면 됩니다. 당신의 제보가 지도가 되어 아키타의 자연을 지키는 단서가 됩니다. 가입은 계속 무료입니다.",
+      "ctaPrimary": "무료로 참여하기",
+      "ctaSecondary": "가입 없이 지도 보기",
+      "imageAlt": "자리다스 지도 화면"
+    },
+    "problem": {
+      "title": "지금 아키타의 물가에서 일어나고 있는 일",
+      "item1Title": "사실, 늘어나고 있습니다",
+      "item1Body": "미국가재와 황소개구리는 원래 일본에 없던 생물입니다. 논과 수로의 작은 생물을 잡아먹으며 점점 늘어나고 있습니다.",
+      "item2Title": "어디에 있는지 아직 잘 모릅니다",
+      "item2Body": "자연을 지키는 첫걸음은 '어디에 있는지'를 아는 것. 하지만 아키타는 넓어서 조사할 사람이 부족합니다.",
+      "item3Title": "당신의 \"발견\"이 도움이 됩니다",
+      "item3Body": "산책 중에 본 한 마리, 논에서 들은 울음소리. 그 작은 제보가 아키타의 자연을 지키는 큰 단서가 됩니다.",
+      "moreLink": "이 생물들에 대해 자세히 보기"
+    },
+    "features": {
+      "title": "자리다스를 즐기는 방법",
+      "mapTitle": "당신의 제보가 바로 지도에 올라갑니다",
+      "mapBody": "올린 제보는 곧바로 아키타현 지도에 표시됩니다. '내가 발견한 한 마리'가 모두의 지도의 일부가 되는 것을 바로 볼 수 있습니다.",
+      "aiTitle": "이름을 몰라도 AI가 알려줍니다",
+      "aiBody": "사진이나 울음소리로 AI가 생물의 이름을 알려줍니다. 잘 찍는 요령도 알려주니 쓸수록 생물에 대해 잘 알게 됩니다.",
+      "requestsTitle": "당신의 제보가 연구에 쓰입니다",
+      "requestsBody": "'이 장소를 조사해 주세요'라는 연구자의 요청에 응답할 수 있습니다. 당신의 제보가 아키타의 자연을 지키는 조사에 그대로 활용됩니다.",
+      "gamificationTitle": "계속할수록 즐거워집니다",
+      "gamificationBody": "제보하면 배지를 받고 랭킹에도 오릅니다. 노력이 눈에 보여서 아이와 함께하는 생물 찾기에도 좋습니다."
+    },
+    "how": {
+      "title": "시작은 간단한 3단계",
+      "step1Title": "발견하기",
+      "step1Body": "논, 수로, 강가에서 가재나 황소개구리를 발견하면. 울음소리만 들어도 괜찮습니다.",
+      "step2Title": "찍어서 올리기",
+      "step2Body": "스마트폰으로 찍고 지도에서 위치를 고르기만 하면 됩니다. 1분이면 끝. 사진이 없어도 올릴 수 있습니다.",
+      "step3Title": "지도에 올라가기",
+      "step3Body": "내용 확인 후 모두의 지도에 표시됩니다. 당신의 제보가 아키타의 자연을 지키는 데 쓰입니다."
+    },
+    "stats": {
+      "title": "아키타 곳곳에서 제보가 모이고 있습니다",
+      "postsLabel": "모인 제보",
+      "postsUnit": "건",
+      "usersLabel": "함께 참여하는 사람",
+      "usersUnit": "명",
+      "areaLabel": "지원 지역",
+      "areaValue": "아키타현 전체 25개 시정촌",
+      "operator": "자리다스는 아키타의 자연을 사랑하는 한 대학생이 만든 무료 서비스입니다. 모인 제보는 아키타의 자연을 지키는 연구와 현·시의 활동에 활용됩니다."
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "q1": "돈이 드나요?",
+      "a1": "들지 않습니다. 가입을 포함해 모두 무료로 사용할 수 있습니다.",
+      "q2": "가입에 무엇이 필요한가요?",
+      "a2": "이메일 주소나 Google 계정만 있으면 됩니다. 이름이나 주소를 입력할 필요는 없습니다.",
+      "q3": "생물에 대해 잘 몰라도 괜찮나요?",
+      "a3": "괜찮습니다. 사진이나 울음소리로 AI가 이름을 알려줍니다. 구별법과 촬영 요령도 알려주니 점점 잘 알게 됩니다.",
+      "q4": "사진이 없어도 올릴 수 있나요?",
+      "a4": "올릴 수 있습니다. 사진은 없어도 괜찮습니다. '봤다', '울음소리를 들었다'만으로도 소중한 제보가 됩니다.",
+      "q5": "아키타현 밖에서도 쓸 수 있나요?",
+      "a5": "지도는 누구나 볼 수 있습니다. 제보를 올릴 수 있는 것은 아키타현 안에서 발견한 것만입니다.",
+      "q6": "발견하면 잡아야 하나요?",
+      "a6": "아니요, 본 것을 제보하는 것만으로 충분합니다. 잡은 경우에는 산 채로 다른 곳에 놓아주는 것이 법으로 금지되어 있으니 주의하세요.",
+      "a6Link": "규칙에 대해 자세히 보기",
+      "q7": "올린 위치를 보고 다른 사람이 우리 집을 알 수 있나요?",
+      "a7": "걱정하지 마세요. 지도에 표시되는 것은 '어디에서 발견했는지'뿐이며, 올린 사람의 이름이나 연락처는 표시되지 않습니다. 누가 제보했는지는 다른 사람이 알 수 없으니 안심하고 참여하세요.",
+      "a7Link": "개인정보 처리방침 보기"
+    },
+    "final": {
+      "title": "당신의 \"발견\"을 기다리고 있습니다.",
+      "subtitle": "가입은 무료. 이메일 주소나 Google 계정만 있으면 바로 시작할 수 있습니다."
+    },
+    "header": {
+      "login": "로그인",
+      "cta": "무료로 참여하기",
+      "logoLabel": "맨 위로 이동"
+    },
+    "sticky": {
+      "cta": "무료로 참여하기",
+      "note": "가입 30초 · 계속 무료"
+    },
+    "footer": {
+      "about": "서비스 소개",
+      "terms": "이용약관",
+      "privacy": "개인정보 처리방침",
+      "navLabel": "푸터",
+      "copyright": "© {{year}} 자리다스"
+    },
+    "marquee": {
+      "pause": "정지",
+      "play": "재생"
+    }
+  },
+  "errors": {
+    "unexpected": "예기치 않은 오류가 발생했습니다.",
+    "rateLimitServer": "게시가 집중되고 있습니다. 잠시 후 다시 시도해 주세요.",
+    "network": "통신 오류가 발생했습니다. 인터넷 연결을 확인해 주세요.",
+    "sessionExpired": "세션이 만료되었습니다. 다시 로그인해 주세요.",
+    "forbidden": "이 작업을 수행할 권한이 없습니다.",
+    "notFound": "파일을 찾을 수 없습니다.",
+    "tooManyRequests": "요청이 너무 많습니다. 잠시 후 다시 시도해 주세요.",
+    "generic": "오류가 발생했습니다. 다시 시도해 주세요."
+  },
+  "bottomNav": {
+    "map": "지도",
+    "trends": "트렌드",
+    "post": "게시",
+    "ranking": "랭킹",
+    "mypage": "마이페이지",
+    "postAction": "게시하기"
+  },
+  "drawer": {
+    "settingsMenu": "설정 메뉴",
+    "menu": "메뉴",
+    "mapSettings": "지도 설정",
+    "heatmap": "히트맵",
+    "mapType": "지도 종류",
+    "defaultMap": "기본 지도: {{name}}",
+    "setDefaultMap": "이 지도를 기본으로 설정",
+    "isDefaultMap": "이 지도가 기본 지도입니다",
+    "defaultMapHint": "이 브라우저에 저장하여 다음 방문부터 표시합니다.",
+    "defaultMapSaved": "기본 지도를 저장했습니다",
+    "defaultMapSaveError": "지도 설정을 저장하지 못했습니다. 브라우저의 저장 설정을 확인해 주세요.",
+    "createSurvey": "조사 의뢰하기",
+    "surveyList": "조사 의뢰 목록"
+  },
+  "home": {
+    "openGallery": "사진 갤러리 열기",
+    "photos": "사진",
+    "backToMap": "지도로 돌아가기",
+    "map": "지도",
+    "swipeHint": "스와이프로 전환",
+    "panelSwitch": "표시 전환 (지도 / 사진)"
+  },
+  "toast": {
+    "notifications": "알림"
+  },
+  "install": {
+    "iosTitle": "홈 화면에 추가하는 방법",
+    "iosStep1": "Safari 하단의 \"공유\" 버튼을 탭하세요",
+    "iosStep2": "\"홈 화면에 추가\"를 선택하세요",
+    "iosStep3": "\"추가\"를 탭하여 완료하세요",
+    "gotIt": "확인",
+    "useAsApp": "앱으로 사용하기",
+    "description": "홈 화면에 추가하면 앱처럼 실행할 수 있습니다. 알림과 오프라인 사용도 지원합니다.",
+    "addToHome": "홈 화면에 추가",
+    "seeHow": "추가 방법 보기",
+    "notNow": "지금은 안 함",
+    "close": "닫기"
+  },
+  "priorityArea": {
+    "label": "우선 조사 지역",
+    "title": "지금 관찰이 부족한 지역",
+    "description": "이 지역들은 최근 3개월간 보고가 적습니다. 근처에 계신다면 여러분의 관찰이 분포 파악에 큰 도움이 됩니다.",
+    "countSuffix": "({{count}}건)"
+  },
+  "photoGallery": {
+    "empty": "아직 사진이 첨부된 게시물이 없습니다",
+    "count": "사진 {{count}}건",
+    "emptyTitle": "첫 사진을 남겨보세요",
+    "emptyDesc": "사진 제보는 종 확인과 기록 작성에 큰 도움이 됩니다."
+  },
+  "share": {
+    "text": "{{species}} {{infoType}} 정보 (아키타현 {{municipality}})",
+    "defaultSpecies": "가재",
+    "appTitle": "자리다스",
+    "shareNative": "공유",
+    "copyLink": "링크 복사",
+    "linkCopied": "링크를 복사했습니다",
+    "copyFailed": "복사하지 못했습니다"
+  },
+  "authCallback": {
+    "errors": {
+      "otpExpired": "링크의 유효 기간이 만료되었습니다. 비밀번호 재설정을 다시 시도해 주세요.",
+      "authFailed": "인증에 실패했습니다",
+      "invalidLink": "인증 링크가 유효하지 않거나 만료되었습니다. 이메일 주소 등록을 다시 시도해 주세요.",
+      "updateFailed": "비밀번호 변경에 실패했습니다"
+    },
+    "error": {
+      "title": "인증에 실패했습니다",
+      "backToTop": "홈으로 돌아가기",
+      "retryHint": "홈 화면의 '로그인'에서 회원가입을 다시 시도해 주세요"
+    },
+    "recovery": {
+      "title": "새 비밀번호 설정",
+      "subtitle": "새 비밀번호를 입력해 주세요",
+      "passwordLabel": "새 비밀번호",
+      "passwordConfirmLabel": "비밀번호 (확인)",
+      "passwordConfirmPlaceholder": "다시 입력",
+      "submitting": "변경 중...",
+      "submit": "비밀번호 변경하기"
+    },
+    "confirmed": {
+      "title": "이메일 주소 확인이 완료되었습니다!",
+      "description": "계정이 활성화되었습니다. 모든 기능을 이용하실 수 있습니다.",
+      "redirecting": "3초 후 홈으로 이동합니다...",
+      "goToHome": "지금 홈으로 이동"
+    },
+    "loading": "인증 처리 중..."
+  },
+  "ranking": {
+    "period": {
+      "all": "전체 기간",
+      "month": "이번 달",
+      "year": "올해"
+    },
+    "breadcrumb": "랭킹",
+    "framing": {
+      "main": "여러분의 보고 하나하나가 아키타현 외래생물의 분포 파악과 제거·연구 활동에 활용됩니다.",
+      "sub": "양보다 '다양한 장소·종의 발견'이 분포 규명의 힘이 됩니다."
+    },
+    "viewSwitch": "보기 전환",
+    "tabDiversity": "발견의 다양성",
+    "tabLeaderboard": "게시물 수 (참고)",
+    "yourCollection": "나의 컬렉션",
+    "coverage": {
+      "infoType": "정보 종류 (목격·포획·흔적·피해·부재)",
+      "municipality": "방문한 시·군·구",
+      "species": "발견한 종"
+    },
+    "infoTypeComplete": "정보 종류 컴플리트! 5종의 관찰을 모두 보고했습니다",
+    "infoTypeCompleteShort": "정보 종류 컴플리트",
+    "diversityEmpty": {
+      "title": "아직 기록이 없습니다",
+      "desc": "게시물이 승인되면 발견의 다양성이 표시됩니다"
+    },
+    "you": "(나)",
+    "diversitySummary": "정보 종류 {{coverage}}/{{total}} · {{municipalities}}개 지역 · {{species}}종",
+    "leaderboardNote": "※ 게시물 수는 활동량의 참고 값입니다. 지속하기 쉬움은 '발견의 다양성'과 관련 있다고 보고됩니다.",
+    "yourActivity": "나의 활동량",
+    "reportCount": "{{count}}건의 보고",
+    "rankPosition": "{{rank}}위",
+    "leaderboardEmpty": "아직 랭킹 데이터가 없습니다",
+    "countUnit": "건",
+    "tabQuality": "검증된 품질",
+    "qualityNote": "‘좋아요’나 게시물 수가 아니라, 심사를 통과한 검증된 보고와 그 정확도(승인율·정점 관찰·GPS 정밀도)를 기립니다.",
+    "yourQuality": "내 기여의 품질",
+    "verifiedCount": "검증됨 {{count}}건",
+    "verifiedUnit": "검증됨",
+    "quality": {
+      "approvalRate": "승인율",
+      "structuredRate": "정점 관찰",
+      "gpsGoodRate": "GPS 정밀도"
+    },
+    "qualityEmpty": {
+      "title": "아직 검증된 보고가 없습니다",
+      "desc": "게시물이 승인되면 검증된 기여로 표시됩니다"
+    },
+    "qualitySummary": "검증됨 {{verified}}건 · 승인율 {{approval}} · 정점 관찰 {{structured}}",
+    "diversityEmptyTitle": "첫 발견을 기록해 보세요",
+    "qualityEmptyTitle": "첫 검증된 제보에 도전해 보세요",
+    "leaderboardEmptyTitle": "첫 제보를 올려보세요",
+    "earlyStageNote": "기록하고 있는 사람은 아직 {{count}}명입니다. 지금 참여하면 아무도 보고하지 않은 장소를 가장 먼저 기록할 수 있습니다.",
+    "sparseTitle": "기록하는 사람은 앞으로 늘어납니다"
+  },
+  "profilePage": {
+    "editTitle": "프로필 편집",
+    "iconLabel": "아이콘",
+    "nicknameLabel": "닉네임 (20자 이내)",
+    "nicknamePlaceholder": "익명 조사원",
+    "bioLabel": "자기소개 (100자 이내)",
+    "bioCount": "{{count}}/100",
+    "showInRanking": "랭킹에 표시하기",
+    "notifySurvey": "조사 의뢰 알림 메일 받기",
+    "save": "저장",
+    "header": "프로필",
+    "notFound": "프로필을 찾을 수 없습니다",
+    "stats": {
+      "posts": "게시물",
+      "comments": "댓글",
+      "activeArea": "활동권",
+      "municipalityCount": "{{count}}개 시·군·구"
+    },
+    "badges": "획득 배지",
+    "recentPosts": "최근 게시물",
+    "postPhotoAlt": "{{species}} 게시물 사진",
+    "viewRanking": "게시물 랭킹 보기",
+    "lifecycleSection": "알림 메일 수신 설정",
+    "notifyResearchAdopted": "내 관찰이 연구에 채택되면 알림 받기",
+    "notifyDormant": "한동안 쉬고 있을 때 다시 찾아오라는 메일 받기",
+    "notifyWeeklyDigest": "우리 지역 주간 요약 받기",
+    "pushSection": "푸시 알림 (즉시)",
+    "pushEnable": "이 기기에서 푸시 알림 받기",
+    "pushDenied": "알림이 차단되어 있습니다. 브라우저의 사이트 설정에서 허용해 주세요.",
+    "pushIosHint": "iPhone / iPad에서는 홈 화면에 추가한 앱으로 열면 푸시 알림을 사용할 수 있습니다. 그전까지는 이메일로 알려드립니다.",
+    "pushUnsupported": "사용 중인 환경은 푸시 알림을 지원하지 않습니다. 이메일로 알려드립니다."
+  },
+  "offline": {
+    "title": "오프라인 상태입니다",
+    "body1": "인터넷 연결이 없습니다.",
+    "body2": "연결을 확인한 후 다시 시도해 주세요.",
+    "reconnect": "다시 연결하기",
+    "backToTop": "홈으로 돌아가기"
+  },
+  "errorBoundary": {
+    "title": "오류가 발생했습니다",
+    "description": "예기치 않은 오류가 발생했습니다. 페이지를 새로고침해 주세요.",
+    "reload": "페이지 새로고침",
+    "mapTitle": "지도를 불러오지 못했습니다",
+    "mapDescription": "연결 상태를 확인한 후 다시 시도해 주세요.",
+    "mapRetry": "다시 시도"
+  },
+  "unsubscribe": {
+    "title": "메일 수신 거부",
+    "working": "수신 거부를 처리하고 있습니다…",
+    "done": "\"{{category}}\" 수신을 중지했습니다.",
+    "stopAll": "모든 알림 메일 중지하기",
+    "manageHint": "설정은 마이페이지에서 언제든지 변경할 수 있습니다.",
+    "invalid": "이 링크는 유효하지 않거나 이미 사용되었습니다.",
+    "error": "처리 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.",
+    "retry": "다시 시도",
+    "backHome": "자리다스로 돌아가기",
+    "categoryAll": "모든 알림 메일",
+    "category": {
+      "research_adopted": "연구 채택 알림",
+      "dormant_reengage": "재참여 안내",
+      "weekly_digest": "주간 요약"
+    }
+  },
+  "empty": {
+    "postCta": "관찰 기록 올리기",
+    "photoPostCta": "사진과 함께 올리기",
+    "contributionDesc": "당신의 제보가 아키타의 외래생물 지도를 키웁니다."
+  },
+  "area": {
+    "postsEmptyTitle": "{{municipality}}의 첫 발견을 기록해 보세요"
+  },
+  "like": {
+    "error": "좋아요 업데이트에 실패했습니다"
+  },
+  "profile": {
+    "saveError": "프로필 저장에 실패했습니다"
+  },
+  "achievement": {
+    "commentPosted": "댓글을 등록했습니다"
+  },
+  "progress": {
+    "title": "기여 레벨",
+    "levelLabel": "레벨",
+    "level": "레벨 {{level}}",
+    "xp": "누적 {{xp}} XP",
+    "toNext": "다음 레벨까지 {{remaining}} XP 남았습니다",
+    "verified": "지금까지 검증된 기여가 {{count}}건입니다",
+    "barLabel": "레벨 진행도"
+  },
+  "unlocks": {
+    "lockedAtLevel": "레벨 {{level}}에서 해제됩니다",
+    "lockedShort": "Lv{{level}}에서 해제",
+    "remainingXp": "{{xp}} XP 남았습니다",
+    "hint": "게시물이 승인되면 레벨이 올라 해제됩니다",
+    "features": {
+      "heatmap": "히트맵 보기",
+      "avatar_emoji_plus": "아바타 이모지(추가)",
+      "map_filters_advanced": "고급 필터",
+      "csv_export": "내 데이터 CSV 내보내기",
+      "profile_frame": "프로필 장식",
+      "collection": "컬렉션(도감·수조)",
+      "animation_themes": "해제 연출 테마"
+    }
+  },
+  "collection": {
+    "header": "나의 컬렉션",
+    "subtitle": "관찰한 생물의 도감과 수조입니다.",
+    "lockedHint": "게시물이 승인되어 기여 레벨이 오르면 해제됩니다.",
+    "dex": {
+      "title": "도감",
+      "progress": "{{observed}} / {{total}}종 관찰",
+      "emptyHint": "관찰을 게시하고 승인되면 종별 카드가 조금씩 채워집니다.",
+      "observed": "관찰함",
+      "notObserved": "미관찰",
+      "complete": "완성",
+      "infoTypes": "정보 종류",
+      "municipalities": "지역",
+      "verifiedCount": "검증됨 {{count}}건",
+      "firstObserved": "첫 관찰 {{date}}"
+    },
+    "aquarium": {
+      "title": "수조",
+      "capacity": "크기 {{count}}",
+      "summary": "{{count}}마리의 생물이 헤엄치고 있습니다.",
+      "empty": "아직 생물이 없습니다. 관찰을 게시해 보세요.",
+      "decorationsTitle": "장식",
+      "noDecorations": "장식은 레벨이 오르면 늘어납니다."
+    },
+    "decorations": {
+      "sand": "모래 바닥",
+      "plant": "수초",
+      "rock": "바위",
+      "driftwood": "유목"
+    },
+    "edu": {
+      "title": "이 생물에 대해 알아 두세요",
+      "body": "여기 등장하는 것은 외래생물법의 대상이 되는 생물입니다. 황소개구리는 살아 있는 개체의 사육·운반·야외 방출이 원칙적으로 금지되어 있습니다. 미국가재는 '조건부 특정 외래생물'로, 집에서 기르는 것은 절차 없이 가능하지만 야외에 놓아주는 것은 금지되어 있습니다. 이 수조는 어디까지나 가상의 기록입니다. 실제로 발견한 생물은 그대로 두고, 기록하는 것만으로 충분합니다.",
+      "learnMore": "이 생물과 올바른 대처 방법 배우기"
+    },
+    "viewer3d": {
+      "title": "3D 보기",
+      "view3d": "3D로 보기",
+      "back2d": "2D로 돌아가기",
+      "alt": "미국가재의 3D 모델입니다. 드래그하거나 회전 버튼으로 방향을 바꿀 수 있습니다.",
+      "hint": "드래그하여 돌려보며 관찰할 수 있습니다. 3D는 이 버튼을 눌렀을 때만 불러옵니다.",
+      "hint2dOnly": "사용 중인 환경에서는 2D 일러스트로 표시합니다.",
+      "loading": "3D를 불러오는 중입니다",
+      "errorNotice": "3D를 불러오지 못해 2D 일러스트로 표시하고 있습니다.",
+      "retry": "다시 시도",
+      "controls": "3D 모델 회전 조작",
+      "rotateLeft": "왼쪽으로 돌리기",
+      "rotateRight": "오른쪽으로 돌리기",
+      "pause": "자동 회전 멈추기",
+      "play": "자동 회전 재생"
+    }
+  },
+  "quests": {
+    "title": "조사 미션",
+    "subtitle": "무리하지 않는 선에서 기록의 질을 높이는 힌트입니다",
+    "optionalNote": "참여는 자유입니다. 하지 못해도 지금까지의 기록이 사라지지 않습니다",
+    "done": "달성했습니다",
+    "tryIt": "해 볼까요",
+    "progress": "{{current}} / {{target}}",
+    "items": {
+      "info_variety": {
+        "title": "기록 종류 늘리기",
+        "desc": "목격, 포획, 흔적, 농작물 피해, 부재 등 다양한 종류로 기록해 보세요"
+      },
+      "absence": {
+        "title": "없었다는 것도 기록하기",
+        "desc": "가재가 보이지 않은 장소도 소중한 데이터가 됩니다"
+      },
+      "new_area": {
+        "title": "새로운 시·군에서 관찰하기",
+        "desc": "아직 기록하지 않은 시·군에서도 관찰해 보세요"
+      },
+      "both_species": {
+        "title": "두 종류의 생물 관찰하기",
+        "desc": "미국가재와 황소개구리를 모두 기록해 보세요"
+      },
+      "structured": {
+        "title": "정점 관찰 해 보기",
+        "desc": "같은 장소를 정해 반복 관찰하면 변화를 알 수 있습니다"
+      },
+      "gps_precise": {
+        "title": "정확한 위치로 기록하기",
+        "desc": "GPS 정확도가 높은 곳(30미터 이내)에서 기록하면 지도가 더 정확해집니다"
+      },
+      "near_water": {
+        "title": "물가를 조사해 보기",
+        "desc": "지도의 '주변 수역 찾기'로 연못과 하천을 찾아 그 주변을 관찰해 보세요"
+      },
+      "effort_log": {
+        "title": "조사 기록 남기기",
+        "desc": "개체 수와 조사에 걸린 시간도 기록하면 밀도(노력량 대비) 지도에 반영됩니다"
+      }
+    }
+  },
+  "journey": {
+    "title": "다음에 할 수 있는 것",
+    "nextUnlockLabel": "다음에 해제되는 기능",
+    "allUnlocked": "모든 기능이 해제되었습니다",
+    "collectionLabel": "도감 수집 상황",
+    "collectionPct": "{{pct}}% 모았습니다",
+    "viewCollection": "도감·수조 보기"
+  },
+  "celebrate": {
+    "title": "알림",
+    "levelUp": "레벨 {{level}}이(가) 되었습니다",
+    "unlocked": "\"{{feature}}\"을(를) 사용할 수 있게 되었습니다",
+    "newCard": "도감에 \"{{name}}\"이(가) 추가되었습니다",
+    "encouragement": "계속해 주셔서 감사합니다",
+    "dismiss": "닫기"
+  },
+  "onboarding": {
+    "continue": "계속하기",
+    "back": "이전 화면으로",
+    "saving": "저장 중…",
+    "later": "나중에",
+    "stage": {
+      "question": "질문 {{current}} / {{total}}",
+      "mapGuide": "지도 보는 법"
+    },
+    "selectionHint": {
+      "region": "지역을 하나 선택해 주세요",
+      "seen": "목격 경험을 하나 선택해 주세요"
+    },
+    "area": {
+      "akita": "아키타"
+    },
+    "greet": {
+      "bubble": "안녕하세요, 자리예요.",
+      "effort": "질문 2개에 답하면 내 지역 지도부터 볼 수 있어요. 약 1분 걸려요."
+    },
+    "askRegion": {
+      "q": "아키타의 어느 지역에 살고 있어?",
+      "consent": "답변은 프로필에 저장되며, 지도의 처음 표시 위치를 설정하고 연구에 활용합니다.",
+      "consentLocal": "선택한 지역은 이 기기에 저장되며 지도의 시작 위치를 설정하는 데 사용됩니다."
+    },
+    "region": {
+      "akita_city": "아키타시",
+      "north": "북부 (노시로·오다테)",
+      "central": "중부 (오가·유리혼조)",
+      "south": "남부 (요코테·유자와)",
+      "other": "아키타 외 지역·잘 모르겠어요"
+    },
+    "askSeen": {
+      "q": "미국가재를 본 적 있어?",
+      "hint": "답변에 따라 다음 설명이 조금 달라져."
+    },
+    "seen": {
+      "yes": "있어요",
+      "no": "없어요",
+      "maybe": "아마도…"
+    },
+    "fact": {
+      "bubble": "모두의 기록이 모이면 연못마다 무엇이 발견됐는지 조금씩 알 수 있어요.",
+      "seenYes": "그 연못도 지도에 나와 있을까?",
+      "seenNo": "먼저 지도에서 가까운 곳의 기록을 살펴봐요.",
+      "labelCoarse": "국가 지도",
+      "labelFine": "우리가 만드는 지도",
+      "legend": "칠해진 칸＝국가 기록이 있는 지역. 점＝누군가가 발견한 1건."
+    },
+    "finish": {
+      "done": "준비 완료!",
+      "startMap": "{{area}} 지도부터 시작해요",
+      "bubble": "핀 하나는 발견 기록 하나를 뜻해요. 핀이 없는 곳에도 아직 기록되지 않은 생물이 있을 수 있어요.",
+      "diagramTitle": "지도 보는 법 (예시)",
+      "tipTitle": "발견하면 기록만 해도 충분해.",
+      "mapOnly": "지도 보기"
+    },
+    "error": {
+      "save": "답변을 저장하지 못했습니다. 다시 시도해 주세요.",
+      "retry": "다시 시도",
+      "later": "나중에"
+    },
+    "privacy": "온보딩에서 답한 거주 지역(5개 구분)과 목격 경험. 지도의 처음 표시 위치를 설정하고 연구에 활용합니다."
+  },
+  "route": {
+    "title": "여기까지 경로",
+    "approximate": "대략적인 위치",
+    "destinationLabel": "목적지",
+    "openAria": "{{provider}}에서 경로 찾기 (새 탭에서 열림)",
+    "provider": {
+      "google": "Google 지도",
+      "yahoo": "Yahoo! 맵",
+      "apple": "Apple 지도"
+    },
+    "providerShort": {
+      "google": "Google",
+      "yahoo": "Yahoo!",
+      "apple": "Apple"
+    }
+  },
+  "quickSave": {
+    "button": "비공개로 저장",
+    "title": "이 장소를 비공개로 저장",
+    "close": "닫기",
+    "locating": "현재 위치를 가져오는 중…",
+    "atCurrent": "현재 위치를 저장합니다",
+    "atPin": "핀 위치를 저장합니다",
+    "accuracy": "오차 약 {{m}}m",
+    "locateFailed": "현재 위치를 가져오지 못했습니다.",
+    "retryLocate": "다시 가져오기",
+    "useMapCenter": "지도 중심 사용",
+    "nameLabel": "이름",
+    "nameOptional": "(비워 두면 날짜와 시간이 들어갑니다)",
+    "namePlaceholder": "예: ○○늪의 송사리",
+    "noteLabel": "메모",
+    "notePlaceholder": "개체 수, 상황 등 (선택)",
+    "addNote": "+ 메모 추가",
+    "privacyNote": "비공개: 본인과 운영자(관리자)만 볼 수 있습니다. 공개 지도나 공개 데이터에는 표시되지 않습니다.",
+    "submit": "비공개로 저장",
+    "saving": "저장 중…",
+    "saved": "「{{name}}」을(를) 비공개로 저장했습니다",
+    "queued": "오프라인이라 기기에 저장했습니다. 연결되면 자동으로 전송합니다",
+    "defaultNamePrefix": "비공개 스팟",
+    "error": {
+      "login": "저장하려면 로그인하세요",
+      "rateLimit": "짧은 시간에 너무 많이 저장했습니다. 잠시 후 다시 시도하세요",
+      "queueFull": "기기에 저장할 수 있는 개수를 초과했습니다. 통신이 되는 곳에서 전송하세요",
+      "failed": "저장하지 못했습니다. 다시 시도하세요"
+    }
+  },
+  "fieldwork": {
+    "button": "조사",
+    "buttonProgress": "{{done}}/{{total}}",
+    "sheetClose": "닫기",
+    "common": {
+      "cancel": "취소",
+      "save": "저장",
+      "retry": "다시 시도"
+    },
+    "panel": {
+      "title": "조사",
+      "tabs": "조사 패널 전환",
+      "tabPlan": "조사 계획",
+      "tabRare": "희귀종 기록",
+      "collapse": "접기",
+      "close": "닫기(계획은 남습니다)",
+      "loading": "불러오는 중…",
+      "loadFailed": "계획을 불러오지 못했습니다",
+      "offlineCache": "오프라인이라 마지막으로 동기화한 내용({{time}})을 표시합니다. 계획 편집은 전파가 있는 곳에서 할 수 있습니다.",
+      "offlineNoCache": "오프라인이라 계획을 불러올 수 없습니다. 전파가 있는 곳에서 한 번 열어 두면 오프라인에서도 볼 수 있습니다.",
+      "collapseAria": "접기(지도를 넓게 보기. 계획은 남습니다)"
+    },
+    "plan": {
+      "today": "오늘의 계획",
+      "dated": "{{date}} 계획",
+      "emptyLead": "지도에서 장소를 고르고, 안내를 받으며 지점마다 결과를 남길 수 있습니다.\n전날 밤 집에서 만들어 두면 현장에서 바로 쓸 수 있습니다.",
+      "createToday": "오늘의 계획 만들기",
+      "openToday": "오늘의 계획 열기",
+      "defaultTitle": "{{date}} 조사",
+      "created": "계획을 만들었습니다",
+      "history": "지난 계획",
+      "historyEmpty": "다른 계획이 없습니다",
+      "statusDone": "종료",
+      "titleLabel": "제목",
+      "dateLabel": "예정일",
+      "edit": "제목과 예정일 바꾸기",
+      "progress": "{{done}}\u00a0/\u00a0{{total}}개 지점 종료(건너뜀 포함)",
+      "progressDetail": "완료\u00a0{{done}} · 건너뜀\u00a0{{skipped}} · 미조사\u00a0{{pending}}",
+      "actions": "계획 작업",
+      "finish": "이 계획 끝내기",
+      "finishConfirm": "이 계획을 끝낼까요? 기록은 그대로 남고 나중에 볼 수 있습니다.",
+      "finishYes": "끝내기",
+      "finishedToast": "계획을 끝냈습니다. 수고하셨습니다",
+      "finished": "이 계획은 종료되었습니다",
+      "reuse": "이 계획 다시 쓰기",
+      "reuseHint": "같은 지점·같은 순서로 오늘의 새 계획을 만듭니다(정기적인 재조사용)",
+      "reused": "같은 지점으로 오늘의 계획을 만들었습니다",
+      "noPlan": "아직 조사 계획이 없습니다",
+      "createPlan": "조사 계획 만들기",
+      "dayToday": "오늘({{date}})",
+      "dayTomorrow": "내일({{date}})",
+      "dayOther": "다른 날 고르기",
+      "tomorrow": "내일 계획"
+    },
+    "stops": {
+      "heading": "지점",
+      "empty": "아직 지점이 없습니다. 아래 '지점 추가'에서 넣어 주세요.",
+      "defaultName": "지점\u00a0{{n}}",
+      "status": {
+        "pending": "미조사",
+        "done": "완료",
+        "skipped": "건너뜀"
+      },
+      "rare": "희귀종 있음",
+      "unsent": "전송 대기",
+      "moveUp": "{{name}} 위로",
+      "moveDown": "{{name}} 아래로",
+      "menu": "{{name}} 메뉴",
+      "rename": "이름 바꾸기",
+      "note": "메모",
+      "remove": "빼기",
+      "nameLabel": "지점 이름",
+      "noteLabel": "지점 메모",
+      "removeConfirm": "이 지점을 계획에서 뺄까요? 만든 게시물과 희귀종 기록은 남습니다.",
+      "removeYes": "빼기"
+    },
+    "add": {
+      "heading": "지점 추가",
+      "pickOnMap": "지도에서 고르기",
+      "pickOnMapHint": "끝낼 때는 [끝내기]를 누르세요",
+      "pickBar": "지도를 눌러 지점 추가(현재 {{count}}개)",
+      "pickDone": "완료",
+      "fromSpots": "저장한 스폿에서 고르기",
+      "spotsEmpty": "비공개로 저장한 스폿이 아직 없습니다",
+      "spotsFailed": "스폿을 불러오지 못했습니다",
+      "spotsInPlan": "계획에 들어 있습니다",
+      "spotsAdd": "계획에 넣기({{count}})",
+      "current": "현재 위치 추가",
+      "locating": "현재 위치를 확인하는 중…",
+      "locateFailed": "현재 위치를 가져오지 못했습니다",
+      "added": "{{n}}번째 지점을 추가했습니다",
+      "addedMany": "{{count}}개 지점을 추가했습니다",
+      "offline": "오프라인이라 계획을 편집할 수 없습니다(지점 기록은 할 수 있습니다)"
+    },
+    "nav": {
+      "bulk": "남은 지점 한꺼번에 안내({{count}}개 지점)",
+      "bulkHint": "스마트폰에서는 한 번에 4개 지점(경유지 3곳+목적지)까지라서 4개씩 나눠서 엽니다",
+      "here": "현재 위치",
+      "segment": "경로{{index}}: {{from}} → {{stops}}"
+    },
+    "stop": {
+      "results": "이 지점의 기록: 있음\u00a0{{sighting}} · 없음\u00a0{{absence}} · 희귀종\u00a0{{rare}}",
+      "found": "있었다(게시하기)",
+      "foundMain": "있었다",
+      "foundSub": "게시하기",
+      "absent": "없었다",
+      "absentSub": "부재 기록",
+      "rare": "희귀종 기록",
+      "rareSub": "당신과 운영자만",
+      "skip": "건너뛰기",
+      "skipSub": "이유는 선택",
+      "undo": "되돌리기(미조사로)",
+      "skipReason": "건너뛰는 이유(선택 · 메모에 남습니다)",
+      "skipPlaceholder": "예: 물이 불어 다가갈 수 없음",
+      "skipConfirm": "건너뛰기",
+      "skipped": "이 지점을 건너뛰었습니다",
+      "undone": "미조사로 되돌렸습니다(기록은 지워지지 않았습니다)",
+      "privateLockReason": "이 지점의 기록은 위치를 공개하지 않습니다",
+      "offlineHint": "오프라인입니다. 없었다·건너뛰기·사진 없는 희귀종은 기기에 저장했다가 연결되면 보냅니다. 게시물은 임시 저장되며 이 지점과는 연결되지 않습니다.",
+      "linked": "게시물을 이 지점에 연결했습니다",
+      "linkQueued": "게시했습니다. 지점과의 연결은 연결되면 보냅니다",
+      "resultsNoRare": "이 지점의 기록: 있음\u00a0{{sighting}} · 없음\u00a0{{absence}}"
+    },
+    "position": {
+      "locating": "기록 위치: 현재 위치를 확인하는 중…(최대 8초)",
+      "gps": "기록 위치: 현재 위치(<nw>오차 약 {{m}}m</nw>)",
+      "gpsNoAccuracy": "기록 위치: 현재 위치",
+      "manual": "기록 위치: 지도 중심",
+      "freeFailed": "현재 위치를 가져오지 못했습니다",
+      "retry": "현재 위치 다시 가져오기",
+      "useMapCenter": "지도 중심 사용",
+      "map": "기록 위치: 이 지점의 좌표",
+      "reasonNoFix": "(현재 위치를 가져오지 못했기 때문)",
+      "reasonInaccurate": "(현재 위치의 오차가 100m보다 크기 때문)",
+      "reasonFar": "(지금 있는 곳에서 <nw>약 {{distance}}</nw> 떨어져 있기 때문)"
+    },
+    "absence": {
+      "title": "「없음」 기록",
+      "speciesLabel": "없었던 종",
+      "needSpecies": "종을 하나 이상 고르세요",
+      "minutesLabel": "조사 시간(분 · 선택)",
+      "minutesPlaceholder": "예: 30",
+      "minutesInvalid": "1~480분으로 입력하세요",
+      "disclosurePublic": "지도에는 위치를 약 100m 사방으로 반올림해 표시합니다",
+      "disclosurePrivate": "이 지점의 기록은 위치를 공개하지 않습니다",
+      "submit": "「없음」 기록({{count}}건)",
+      "submitting": "기록하는 중…",
+      "saved": "「없음」을 기록했습니다",
+      "review": "부재 기록은 운영자가 확인한 뒤 공개됩니다",
+      "reviewAdmin": "운영자 계정이므로 확인 없이 공개됩니다"
+    },
+    "rare": {
+      "title": "희귀종 기록",
+      "speciesLabel": "종",
+      "needSpecies": "종을 고르세요",
+      "otherLabel": "종 이름",
+      "otherPlaceholder": "예: 칠성장어",
+      "needLabel": "종 이름을 입력하세요",
+      "countLabel": "수(선택)",
+      "countInvalid": "수는 0~100000으로 입력하세요",
+      "observedLabel": "관찰 일시",
+      "noteLabel": "메모(선택)",
+      "notePlaceholder": "모습·환경 등",
+      "photosLabel": "사진(3장까지 · 선택)",
+      "photosAdd": "사진 고르기",
+      "photoAlt": "사진 {{n}}",
+      "photoRemove": "사진 {{n}} 빼기",
+      "photosExif": "촬영 위치 등의 정보(EXIF)를 지운 뒤 저장합니다",
+      "photosInvalid": "고를 수 없는 사진이 있었습니다(jpeg·png·webp, 20MB까지)",
+      "photosOffline": "오프라인에서는 사진을 첨부할 수 없습니다. 사진 없이 저장할 수 있습니다(연결되면 보냅니다).",
+      "privacy": "이 기록은 당신과 운영자만 볼 수 있습니다. 다른 사람의 지도·목록·공개 데이터에는 나오지 않습니다.",
+      "submit": "희귀종 기록하기(비공개)",
+      "submitting": "저장하는 중…",
+      "saved": "비공개로 기록했습니다(희귀종 탭에서 볼 수 있습니다)",
+      "duplicate": "이 기록은 이미 저장되어 있었습니다",
+      "retryUpload": "통신이 끊겼습니다. 다시 저장하세요(같은 기록은 늘어나지 않습니다)",
+      "countUnit": "개체"
+    },
+    "rareTab": {
+      "lead": "발견한 희귀종은 여기에 비공개로 남길 수 있습니다. 볼 수 있는 사람은 당신과 운영자뿐입니다.",
+      "show": "희귀종을 내 지도에 표시",
+      "on": "표시 중(나만)",
+      "off": "숨김",
+      "showHint": "다른 사람에게는 보이지 않습니다. 화면 캡처로 장소가 새지 않도록 평소에는 숨겨 둡니다.",
+      "record": "희귀종 기록하기",
+      "heading": "내 기록({{count}}건)",
+      "empty": "아직 기록이 없습니다",
+      "loadFailed": "기록을 불러오지 못했습니다",
+      "count": "{{count}}개체",
+      "atStop": "계획에서 기록",
+      "photos": "사진 {{count}}장 보기",
+      "privateNote": "비공개(당신과 운영자만)",
+      "delete": "삭제",
+      "deleteConfirm": "이 기록을 삭제할까요? 사진도 지워지며 되돌릴 수 없습니다.",
+      "deleteYes": "삭제하기",
+      "deleted": "기록을 삭제했습니다",
+      "photosLeft": "기록은 지웠지만 사진을 지우지 못했습니다",
+      "menu": "{{name}} 메뉴",
+      "photosPartlyLeft": "기록은 지웠지만 사진 {{count}}장을 지우지 못했습니다"
+    },
+    "queue": {
+      "pending": "전송 대기\u00a0{{count}}건",
+      "failed": "보내지 못한 기록이 있습니다. 전파가 있는 곳에서 다시 보내거나 버려 주세요",
+      "sendNow": "지금 보내기",
+      "sending": "보내는 중…",
+      "saved": "오프라인이라 기기에 저장했습니다. 연결되면 보냅니다",
+      "discard": "버리기",
+      "kind": {
+        "absence": "부재 기록",
+        "status_done": "지점을 완료로 표시",
+        "status_skipped": "지점 건너뛰기",
+        "status_pending": "지점을 미조사로 되돌리기",
+        "rare": "희귀종 기록",
+        "link": "게시물과 지점 연결",
+        "protect": "게시물 위치 비공개 처리"
+      },
+      "discardConfirm": "이 기록을 버릴까요? 되돌릴 수 없습니다.",
+      "discardYes": "버리기"
+    },
+    "error": {
+      "offline": "오프라인이라 지금은 할 수 없습니다",
+      "limit": "짧은 시간에 너무 많이 저장했습니다. 잠시 후 다시 시도하세요",
+      "postLimit": "게시 한도(24시간에 5건)에 도달했습니다. 시간을 두고 시도하세요",
+      "denied": "권한이 없거나 대상이 더 이상 없습니다",
+      "queueFull": "기기에 저장할 수 있는 건수의 한도입니다. 전파가 있는 곳에서 보내 주세요",
+      "photosOffline": "오프라인에서는 사진을 첨부할 수 없습니다",
+      "failed": "저장하지 못했습니다. 다시 시도하세요",
+      "planDayLimit": "계획은 하루 30개까지입니다. 내일 다시 시도하세요",
+      "planTotalLimit": "계획은 1인당 1000개까지입니다",
+      "stopHourLimit": "지점 추가는 1시간에 300개까지입니다. 잠시 후 다시 시도하세요",
+      "stopPlanLimit": "하나의 계획에 넣을 수 있는 지점은 100곳까지입니다",
+      "rareHourLimit": "희귀종 기록은 1시간에 60개까지입니다. 잠시 후 다시 시도하세요",
+      "rareTotalLimit": "희귀종 기록은 1인당 5000개까지입니다",
+      "reorderStale": "다른 화면에서 지점이 바뀌어 다시 불러왔습니다. 다시 정렬해 주세요",
+      "partialQueued": "일부만 기록했습니다. 나머지는 전송 대기에 넣었습니다({{reason}})",
+      "protectQueueFull": "전송 대기가 가득 차서, 근처 게시물을 비공개로 하는 처리를 기기에 남기지 못했습니다. 전파가 있는 곳에서 전송 대기를 보내 주세요"
+    },
+    "marker": {
+      "openStop": "이 지점 열기",
+      "rareTitle": "희귀종 기록(비공개)",
+      "legend": "희귀종 기록 (나만)"
+    },
+    "bridge": {
+      "addToPlan": "계획에 넣기",
+      "recordRare": "희귀종 기록",
+      "added": "「{{title}}」에 넣었습니다({{n}}번째)"
+    },
+    "admin": {
+      "nav": "희귀종 기록",
+      "title": "희귀종 기록",
+      "noticeTitle": "취급 주의: 외부에 공유하지 말 것",
+      "noticeBody": "이용자가 비공개로 남긴 희귀종 기록입니다. 장소가 알려지면 채집될 수 있으므로 화면 캡처나 CSV를 SNS·메일·공유 드라이브 등 외부에 공유하지 마세요. 공개 여부는 운영자가 개별적으로 판단합니다.",
+      "exportCsv": "CSV 내보내기",
+      "fetchFailed": "불러오지 못했습니다",
+      "empty": "아직 기록이 없습니다",
+      "count": "{{count}}건",
+      "countValue": "{{count}}개체",
+      "observed": "관찰",
+      "user": "이용자",
+      "fromPlan": "계획 지점에서",
+      "photoUnavailable": "표시할 수 없음",
+      "source": {
+        "gps": "현재 위치",
+        "map": "지도상의 위치"
+      },
+      "accuracy": "오차 약 {{m}}m"
+    },
+    "rareSpecies": {
+      "nihon_zarigani": "일본가재 (Cambaroides japonicus)",
+      "medaka": "송사리 (Oryzias)",
+      "zeni_tanago": "제니타나고 (Acheilognathus typus)",
+      "shinai_motsugo": "시나이모츠고 (Pseudorasbora pumila)",
+      "tohoku_sanshouo": "도호쿠도롱뇽 (Hynobius lichenatus)",
+      "kuro_sanshouo": "검은도롱뇽 (Hynobius nigrescens)",
+      "gengorou": "물방개류 (Dytiscidae)",
+      "tagame": "물장군 (Kirkaldyia deyrolli)",
+      "other": "기타"
+    },
+    "safety": {
+      "title": "안전을 위해",
+      "water": "물에 들어가지 않기",
+      "children": "아이들끼리만 가지 않기",
+      "trespass": "출입 금지 구역·사유지에 들어가지 않기"
+    },
+    "next": {
+      "label": "다음 지점",
+      "prefix": "다음:",
+      "open": "이 지점 열기(안내·기록)",
+      "tag": "다음"
+    },
+    "rareBand": {
+      "text": "희귀종 표시 중 · 화면 캡처 주의",
+      "hide": "숨기기"
+    },
+    "signOut": {
+      "title": "보내지 않은 조사 기록이 있습니다",
+      "body": "로그아웃하면 이 기기에서는 보낼 수 없게 됩니다.",
+      "send": "보낸 뒤 로그아웃",
+      "discard": "버리고 로그아웃",
+      "cancel": "취소",
+      "sending": "보내는 중…",
+      "sendFailed": "보내지 못한 기록이 있습니다. 전파가 있는 곳에서 다시 시도하세요",
+      "lead": "이 기기에 아직 보내지 않은 기록이 있습니다.",
+      "queued": "조사 전송 대기\u00a0{{count}}건",
+      "drafts": "오프라인에서 저장한 게시물 임시 저장\u00a0{{count}}건",
+      "sendBlocked": "제한 등으로 보낼 수 없는 기록이 있습니다. 조사 패널과 마이페이지에서 확인한 뒤, 버리거나 나중에 보내 주세요"
+    }
+  },
+  "water": {
+    "listTitle": "주변 수역",
+    "openList": "수역 목록",
+    "closeList": "목록 닫기",
+    "distance": "지도 중심에서 {{distance}}",
+    "genericName": "이름을 모르는 수역",
+    "community": "이용자가 제보한 수역",
+    "select": "지도에서 보기",
+    "selected": "선택됨",
+    "publicRecordCount": "주변 공개 기록 {{count}}건",
+    "publicRecordUnknown": "공개 기록을 확인할 수 없습니다",
+    "noPublicRecords": "공개 기록을 찾지 못한 후보",
+    "onlyNoRecords": "공개 기록이 없는 후보만",
+    "chooseNoRecord": "공개 기록이 없는 후보 선택",
+    "noCandidates": "조건에 맞는 수역이 없습니다.",
+    "recordsNote": "수역과 주변 150m의 공개 위치 기록을 기준으로 찾은 후보입니다. 조사된 적이 없거나 생물이 없다는 뜻은 아닙니다.",
+    "shoreHint": "위치는 물가 근처의 참고 지점입니다. 출입할 수 있는 곳을 확인한 뒤 조사해 주세요.",
+    "addToPlan": "조사 계획에 추가",
+    "reportButton": "지도에 없는 수역 제보",
+    "pickReportHint": "지도에서 수역의 위치를 선택해 주세요.",
+    "pickReportCancel": "위치 선택 취소",
+    "pickReportConfirm": "이 위치 제보하기",
+    "selectedPosition": "선택한 위치: {{lat}}, {{lng}}",
+    "publicReadFailed": "공개 기록을 확인하지 못했습니다. 후보 판정은 보류합니다.",
+    "communityReadFailed": "공개 수역 정보를 불러오지 못했습니다. 일부 수역이 표시되지 않았을 수 있습니다. 다시 검색해 주세요.",
+    "report": {
+      "title": "지도에 없는 수역 제보",
+      "name": "수역 이름",
+      "namePlaceholder": "이름을 모르면 “이름을 모르는 수역”으로 입력",
+      "note": "추가 설명(선택)",
+      "notePlaceholder": "주변 표지나 수역의 모습",
+      "position": "선택한 위치",
+      "photos": "수역 사진",
+      "addPhotos": "사진 추가",
+      "photoAlt": "수역 사진 {{number}}",
+      "removePhoto": "사진 {{number}} 삭제",
+      "photoHint": "사진은 자동으로 축소됩니다. JPEG·PNG·WebP·HEIC 사진 1~3장을 선택하세요. 읽을 수 없는 형식은 다른 사진으로 바꿔 주세요.",
+      "preparing": "사진 준비 중… {{current}}/{{total}}",
+      "privacy": "채택 후 이름과 대략적인 위치가 공개됩니다. 사진과 추가 설명은 본인과 관리자만 볼 수 있습니다.",
+      "submit": "정보 보내기",
+      "submitting": "전송 중…",
+      "success": "정보가 접수되었습니다. 관리자가 확인합니다.",
+      "status": {
+        "pending": "검토 대기",
+        "accepted": "채택됨",
+        "rejected": "미채택",
+        "all": "전체"
+      },
+      "errors": {
+        "name": "수역 이름을 80자 이내로 입력해 주세요.",
+        "note": "추가 설명은 1000자 이내로 입력해 주세요.",
+        "photos": "수역 사진 1~3장을 선택해 주세요.",
+        "position": "수역의 위치를 다시 선택해 주세요.",
+        "fileType": "JPEG·PNG·WebP·HEIC 사진을 선택해 주세요.",
+        "fileSize": "원본 사진은 한 장당 25MB 이하여야 합니다.",
+        "conversion": "사진을 변환할 수 없습니다. JPEG 등 다른 사진을 선택해 주세요.",
+        "save": "전송하지 못했습니다. 입력한 정보는 남아 있습니다. 같은 정보로 다시 시도해 주세요.",
+        "accountChanged": "로그인 상태가 바뀌었습니다. 이 화면을 닫고 다시 열어 주세요."
+      }
+    },
+    "admin": {
+      "nav": "수역 정보 제보",
+      "title": "수역 정보 제보 확인",
+      "notice": "사진·추가 설명·정확한 위치는 본인과 관리자만 볼 수 있습니다. 채택하면 확인한 이름과 대략적인 위치가 공개 수역 목록에 표시됩니다.",
+      "filter": "검토 상태",
+      "count": "{{count}}건 표시",
+      "limited": "이 상태의 최근 {{limit}}건을 표시합니다. 심사 대기 정보를 처리하면 다음 정보가 표시됩니다.",
+      "empty": "이 상태의 제보가 없습니다.",
+      "loadFailed": "제보를 불러오지 못했습니다. 다시 시도해 주세요.",
+      "photoUnavailable": "사진을 불러올 수 없습니다. 다시 시도할 수 있습니다.",
+      "publicName": "공개할 수역 이름",
+      "nameRequired": "공개할 이름을 80자 이내로 입력해 주세요.",
+      "accept": "채택하고 공개",
+      "reject": "채택하지 않기",
+      "unpublish": "공개 취소",
+      "saving": "저장 중…",
+      "acceptedNotice": "수역을 채택하고 이름과 대략적인 위치를 공개했습니다.",
+      "rejectedNotice": "제보를 채택하지 않았습니다.",
+      "unpublishedNotice": "공개를 취소하고 수역 목록에서 제외했습니다.",
+      "reviewFailed": "검토 결과를 저장하지 못했습니다. 다시 시도해 주세요."
+    }
+  },
+  "homeHub": {
+    "home": "홈",
+    "dex": "도감",
+    "myPage": "마이페이지",
+    "myRecords": "내 기록",
+    "backHome": "홈으로 돌아가기",
+    "navigation": "주 메뉴",
+    "campaigns": "참여 및 안내",
+    "carousel": "캐러셀",
+    "nextBanner": "다음 배너",
+    "more": "더 보기",
+    "hero": {
+      "eyebrow": "물가의 외래생물을 함께 기록하는 지도",
+      "title": "당신의 \"발견\"이\n아키타의 자연을 지킵니다.",
+      "description": "가재나 황소개구리를 발견하면 스마트폰으로 찍어 기록하기만 하면 됩니다. 당신의 기록이 지도가 되어 아키타의 자연을 지키는 단서가 됩니다. 가입은 계속 무료입니다.",
+      "signup": "무료로 가입하고 기록하기",
+      "map": "가입 없이 지도 보기",
+      "operator": "자리다스는 아키타의 자연을 사랑하는 한 대학생이 만든 무료 서비스입니다. 모인 기록은 아키타의 자연을 지키는 연구와 현·시의 활동에 활용됩니다.",
+      "about": "기록 활용 방식·문의"
+    },
+    "startRecording": "기록 시작",
+    "viewMap": "지도 보기",
+    "level": "Lv.{{level}}  물가 탐험가",
+    "totalXp": "총 {{count}} XP",
+    "nextXp": "다음 단계까지 {{count}} XP",
+    "levelProgress": "다음 레벨까지의 진행도",
+    "approved": "승인된 기록",
+    "speciesCount": "발견한 종",
+    "badges": "획득 배지",
+    "viewBadges": "내 배지 보기",
+    "badgeRule": "승인된 기록으로 배지와 XP를 얻습니다.",
+    "earned": "획득 완료",
+    "lockedBadge": "기록 {{count}}건 승인 후 획득",
+    "badgeNames": {
+      "0": "첫걸음",
+      "1": "탐험가",
+      "2": "가재 사냥꾼",
+      "3": "아키타의 눈"
+    },
+    "loading": "불러오는 중…",
+    "accountError": "내 기록의 일부를 불러오지 못했습니다.",
+    "profileError": "프로필을 불러오지 못했습니다.",
+    "progressError": "진행도를 불러오지 못했습니다",
+    "feedError": "기록을 불러오지 못했습니다. 연결을 확인하고 다시 시도해 주세요.",
+    "saveError": "이 기기에 저장할 수 없습니다. 브라우저 저장 설정을 확인해 주세요.",
+    "postRail": "기록 카드. 가로로 스크롤해 볼 수 있습니다",
+    "observation": "물가 관찰 기록",
+    "noPhoto": "사진 없는 기록",
+    "absenceRow": "{{species}} 찾지 못함",
+    "photolessRow": "{{species}}: {{type}}",
+    "groupCount": "{{count}}건",
+    "photoError": "사진을 표시할 수 없습니다",
+    "locationPrivate": "자세한 위치 비공개",
+    "likesDetail": "좋아요 {{count}}개. 상세 보기",
+    "commentsDetail": "댓글 {{count}}개. 대화 보기",
+    "save": "이 기기에 저장",
+    "unsave": "이 기기에서 저장 해제",
+    "viewSaved": "저장한 기록 보기 ({{count}})",
+    "savedTitle": "이 기기에 저장한 기록",
+    "savedNotice": "이 기기의 브라우저에 최대 200건을 저장합니다. 현재 공개 중인 기록만 표시합니다.",
+    "noSaved": "표시할 수 있는 저장 기록이 없습니다.",
+    "localSave": "이 기기와 브라우저에만 저장됩니다",
+    "pickup": "주목할 기록",
+    "pickupDescription": "최근 공개 기록에서 만나는 물가의 작은 발견.",
+    "newPosts": "새 기록",
+    "popular": "인기 기록",
+    "popularScope": "최근 공개 기록 24건을 좋아요 순으로 표시합니다.",
+    "questions": "새 질문",
+    "viewConversation": "대화 보기",
+    "readFaq": "자주 묻는 질문 보기",
+    "noPhotos": "아직 사진이 없습니다. 사진 없이도 기록할 수 있습니다.",
+    "noPosts": "공개된 기록이 아직 없습니다. 첫 발견을 남겨 보세요.",
+    "noPopular": "좋아요를 받은 기록이 아직 없습니다. 새 기록을 둘러보세요.",
+    "noQuestions": "최근 기록에 질문이 아직 없습니다. 기록 상세에서 질문할 수 있습니다.",
+    "gaps": {
+      "title": "아직 부족한 기록",
+      "description": "공개된 기록을 세어, 아직 적은 것을 보여 드립니다. ‘찾지 못했다’는 기록도 소중한 단서입니다.",
+      "action": "기록하기",
+      "count": "{{count}}건",
+      "species": {
+        "none": "{{species}} 기록이 아직 없습니다.",
+        "few": "{{species}} 기록은 {{count}}건뿐입니다.",
+        "description": "발견하면 사진과 위치를 남겨 주세요."
+      },
+      "absence": {
+        "title": "‘찾지 못했다’는 기록은 {{count}}건.",
+        "description": "찾은 장소와 시간이 조사의 단서가 됩니다."
+      },
+      "area": {
+        "title": "기록이 있는 시·정·촌은 {{total}}곳 중 {{count}}곳.",
+        "description": "다른 물가의 모습도 남겨 보세요."
+      },
+      "guide": {
+        "species": "기록이 적은 종 찾기",
+        "absence": "‘찾지 못했다’도 기록하기",
+        "area": "다른 시·정·촌의 물가도 기록하기"
+      }
+    },
+    "collections": "도감",
+    "speciesGuide": "특징과 물가 기록 보기",
+    "reading": "기록 가이드",
+    "guideByline": "자리다스 사용 안내",
+    "news": "공지",
+    "monitorTag": "조사 협조",
+    "monitorNews": "모니터 설문으로 사용 경험을 알려 주세요",
+    "guideTag": "사용 방법",
+    "guideNews": "기록 가이드 보기",
+    "tagline": "물가의 발견을 모두의 기록으로.",
+    "legalNav": "약관 및 문의",
+    "hintTitle": "주변 환경도 함께 기록해 주세요.",
+    "hintDescription": "생물을 찾지 못한 기록도 물가를 이해하는 데 도움이 됩니다.",
+    "recordingHints": "기록 가이드 보기",
+    "guideTitle": "기록 가이드",
+    "illustrationNote": "가이드와 배너의 사진은 생성된 설명용 이미지입니다. 기록 목록의 사진은 공개 기록입니다.",
+    "illustrationTag": "설명용 이미지",
+    "banner": {
+      "fieldwork": {
+        "tag": "함께 참여해요",
+        "title": "아키타의 물가를\n함께 기록해요.",
+        "caption": "가까운 발견부터 시작하세요"
+      },
+      "monitor": {
+        "tag": "모니터 설문",
+        "title": "사용 경험을\n들려주세요.",
+        "caption": "어려웠던 조작도 알려 주세요"
+      },
+      "research": {
+        "tag": "자리다스 소개",
+        "title": "작은 기록이\n조사로 이어집니다.",
+        "caption": "이 활동의 목적 알아보기"
+      }
+    },
+    "articles": {
+      "water": {
+        "title": "익숙한 수로를\n조금 더 살펴보세요."
+      },
+      "photos": {
+        "title": "가재의 모습을\n잘 전하는 사진 기록."
+      }
+    },
+    "guide": {
+      "water": "등굣길이나 산책길의 수로를 살펴보세요. 생물뿐 아니라 물의 흐름, 식물과 주변 환경도 관찰해 보세요.\n관찰한 시간과 장소를 남기면 물가를 연구하는 데 도움이 됩니다.",
+      "photos": "안전한 장소에서 생물 전체와 주변 환경을 촬영하세요. 너무 가까이 다가가거나 사진을 위해 생물을 옮길 필요는 없습니다.\n얼굴이나 개인 주소가 찍히지 않도록 주의하세요. 사진 없이도 기록할 수 있습니다.",
+      "species": "공개 기록이 아직 적은 종이 있습니다. 가까운 물가에서 발견하면 사진과 장소를 함께 기록해 주세요. 첫 기록이 그 종의 분포를 아는 단서가 됩니다.\n무리하게 잡거나 옮길 필요는 없습니다. 안전한 곳에서 관찰해 주세요.",
+      "area": "편할 때 다른 시정촌의 물가도 기록해 보세요. 퀘스트를 위해 일부러 멀리 나갈 필요는 없습니다. 승인된 기록은 내 도감에 반영됩니다.",
+      "absence": "찾았지만 발견하지 못했다면 부재 확인 기록을 남겨 주세요. 장소, 시간과 탐색 시간을 적어 주세요.\n한 번 찾지 못했다고 그곳에 생물이 없다는 뜻은 아닙니다."
+    },
+    "faq": {
+      "login": {
+        "question": "둘러보기만 해도 가입해야 하나요?",
+        "answer": "홈, 지도, 공개 기록은 가입 없이 볼 수 있습니다. 기록을 올리고 도감과 배지를 남기려면 가입 또는 로그인이 필요합니다."
+      },
+      "status": {
+        "question": "기록을 보내면 바로 공개되나요?",
+        "answer": "기록은 검토 후 공개됩니다. 마이페이지의 내 기록에서 검토 중이거나 반려된 기록을 확인할 수 있습니다."
+      },
+      "safety": {
+        "question": "관찰할 때 무엇을 주의해야 하나요?",
+        "answer": "출입이 허용된 안전한 장소에서 관찰하세요. 발밑, 수위와 날씨를 확인하고 무리하게 생물을 잡거나 옮기지 마세요. 기록보다 안전을 우선해 주세요."
+      }
+    }
+  },
+  "activityGrass": {
+    "title": "활동 기록",
+    "summary": "지난 1년간 <big>{{days}}</big>일 기록했습니다({{records}}건)",
+    "note": "심사 대기 중인 기록은 포함하고, 승인되지 않은 기록은 포함하지 않습니다.",
+    "hintScroll": "표를 오른쪽으로 밀면 1년 전까지 볼 수 있습니다.",
+    "hintSelect": "칸을 누르거나 아래 목록에서 날짜를 고르면 그날의 내역이 표시됩니다.",
+    "gridLabel": "기록한 날 달력(지난 1년). 화살표 키로 날짜를 이동합니다.",
+    "cellLabel": "{{date}}, 기록 {{count}}건",
+    "cellLabelNone": "{{date}}, 기록 없음",
+    "legendTitle": "하루 기록 수",
+    "legendRange": "{{from}}~{{to}}",
+    "legendOrMore": "{{n}} 이상",
+    "detailLabel": "선택한 날",
+    "detailLabelLatest": "마지막으로 기록한 날",
+    "detailDay": "{{date}} 기록 {{count}}건",
+    "detailNone": "{{date}} 기록 없음",
+    "detailBreakdown": "내역: {{items}}",
+    "detailPending": "그중 심사 대기 {{count}}건",
+    "typeCount": "{{type}} {{count}}건",
+    "itemSeparator": ", ",
+    "listOpen": "기록한 날 목록 열기",
+    "listClose": "기록한 날 목록 닫기",
+    "listCount": "{{count}}건",
+    "listMore": "더 보기 (남은 {{count}}일)",
+    "empty": "아직 기록이 없습니다. 첫 기록을 올리면 그날의 칸에 색이 칠해집니다.",
+    "emptyAction": "기록 올리기",
+    "loadError": "활동 기록을 불러오지 못했습니다."
+  }
+}

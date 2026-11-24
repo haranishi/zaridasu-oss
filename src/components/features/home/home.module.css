@@ -1,0 +1,205 @@
+.home {
+  --home-ink: #293d36;
+  --home-muted: #59665e;
+  --home-border: #dbe1d8;
+  --home-surface: #fff;
+  --home-soft: #f5f7f4;
+  --home-accent: #dc2626;
+  color: var(--home-ink);
+  background: var(--home-surface);
+  min-height: 100dvh;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.dark {
+  --home-ink: #e8eee9;
+  --home-muted: #b6c3b9;
+  --home-border: #35463c;
+  --home-surface: #111b17;
+  --home-soft: #1b2922;
+  --home-accent: #ff9690;
+}
+.home :where(a, button, summary):focus-visible {
+  outline: 3px solid var(--home-accent);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+/* 小窓（role=dialog）の中は除く。この指定はレイヤー外なので、Tailwind の余白（space-y・mb-*）より必ず勝ち、登録の小窓の文が詰まっていた */
+.home :where(h2, h3, p):not([role='dialog'] *) { margin: 0; }
+/* 日本語の行を、文節のまとまりで折り返す（対応ブラウザのみ。未対応でも通常どおり読める） */
+.home :where(p, h2, h3, strong) { word-break: auto-phrase; text-wrap: pretty; }
+.layout { display: grid; grid-template-areas: 'banner' 'profile' 'content'; gap: 24px; padding: 16px 16px calc(100px + env(safe-area-inset-bottom, 0px)); max-width: 1440px; margin: auto; }
+.bannerArea { grid-area: banner; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+.profileArea { grid-area: profile; min-width: 0; }
+/* 未ログインのスマホは、先頭のヒーローが主ボタンを持つ。本人カードの欄は会員だけ。 */
+.layoutGuest .profileArea { display: none; }
+.content { grid-area: content; display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.sidebar, .desktopHint { display: none; }
+.body { font-size: 14px; line-height: 1.65; white-space: pre-line; }
+.caption { display: block; color: var(--home-muted); font-size: 13px; line-height: 20px; overflow-wrap: anywhere; }
+.eyebrow { font-size: 12px; font-weight: 700; color: var(--home-muted); }
+.cover { object-fit: cover; }
+.cream, .rose, .water { --home-ink: #293d36; --home-muted: #59665e; color: var(--home-ink); }
+.cream { background: #f5e9c7; }
+.rose { background: #fff0ed; }
+.water { background: #ddecf0; }
+.hero { display: flex; flex-direction: column; gap: 12px; min-width: 0; padding-top: 4px; }
+.heroEyebrow { font-size: 12px; font-weight: 700; line-height: 18px; letter-spacing: .04em; color: var(--home-muted); }
+.heroTitle { font-size: clamp(22px, 7vw, 30px); line-height: 1.35; font-weight: 800; letter-spacing: -.02em; white-space: pre-line; text-wrap: balance; overflow-wrap: anywhere; }
+.heroLead { font-size: 15px; line-height: 1.75; }
+.heroActions { display: grid; gap: 8px; }
+.heroButton { min-height: 48px; font-size: 15px; font-weight: 700; }
+.heroOperator { font-size: 13px; line-height: 1.7; color: var(--home-muted); }
+.heroLinks { display: flex; flex-wrap: wrap; align-items: center; column-gap: 20px; }
+.heroAbout { display: inline-flex; align-items: center; gap: 2px; min-height: 44px; font-size: 13px; color: var(--home-muted); text-decoration: underline; text-underline-offset: 3px; }
+.heroGuide { display: inline-flex; align-items: center; gap: 2px; align-self: flex-start; min-height: 44px; font-size: 14px; font-weight: 700; color: var(--home-accent); text-decoration: none; }
+.illustrationTag { position: absolute; left: 4px; bottom: 4px; max-width: calc(100% - 8px); padding: 2px 6px; border-radius: 8px; background: rgb(0 0 0 / .62); color: #fff; font-size: 11px; line-height: 16px; pointer-events: none; }
+.campaign { display: flex; gap: 12px; padding: 16px; min-height: 152px; border-radius: 16px; }
+.campaignCopy { flex: 0 1 194px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-decoration: none; min-width: 0; }
+.campaignCaption { display: inline-flex; align-items: center; gap: 2px; }
+.campaignTitle { white-space: pre-line; font-size: 21px; font-weight: 700; line-height: 29px; letter-spacing: -.03em; }
+.campaignPhoto { position: relative; flex: 1; min-width: 80px; min-height: 120px; border-radius: 10px; overflow: hidden; }
+.campaignPosition { position: absolute; top: 8px; left: 8px; padding: 3px 6px; background: #fff; color: #293d36; font-size: 11px; line-height: 16px; border-radius: 6px; }
+.nextBanner { position: absolute; top: calc(50% - 22px); right: 4px; display: grid; place-items: center; border: 0; width: 44px; height: 44px; background: #fff; color: #293d36; border-radius: 50%; cursor: pointer; }
+.nextBanner:hover { background: #f5f7f4; }
+.profileCard { display: flex; flex-direction: column; gap: 12px; padding: 16px; border: 1px solid var(--home-border); border-radius: 16px; background: var(--home-surface); }
+.profileSkeleton { min-height: 196px; justify-content: center; color: var(--home-muted); }
+.profileIdentity { display: flex; align-items: center; gap: 12px; min-height: 48px; text-decoration: none; }
+.avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--home-soft); display: grid; place-items: center; flex-shrink: 0; font-size: 24px; }
+.identityCopy { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.identityCopy strong { font-size: 15px; overflow-wrap: anywhere; }
+.xpText { display: flex; justify-content: space-between; gap: 12px; color: var(--home-muted); font-size: 12px; }
+.xpText span:last-child { text-align: right; }
+.progress { height: 6px; border-radius: 6px; background: var(--home-border); overflow: hidden; }
+.progress > span { display: block; height: 100%; border-radius: inherit; background: #dc2626; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); text-align: center; }
+.stats div { display: flex; flex-direction: column; gap: 2px; }
+.stats strong { font-size: 20px; line-height: 28px; }
+.stats div > span { font-size: 11px; color: var(--home-muted); }
+.badgeLink { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px; border-radius: 12px; background: #f5e9c7; color: #293d36; border: 0; text-align: left; cursor: pointer; }
+.badgeLink span { flex: 1; }
+.badgeLink:disabled { opacity: .6; cursor: default; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; border: 1px solid var(--home-border); padding: 8px 12px; border-radius: 12px; background: var(--home-surface); text-align: center; text-decoration: none; font-size: 14px; line-height: 22px; cursor: pointer; }
+.button svg { flex-shrink: 0; }
+.primary { border-color: #dc2626; background: #dc2626; color: #fff; }
+.primary:hover { background: #b91c1c; }
+.inlineButton { display: inline-flex; align-items: center; justify-content: flex-start; gap: 4px; min-height: 44px; color: var(--home-accent); border: 0; background: transparent; font-size: 13px; text-decoration: none; cursor: pointer; }
+.section { display: flex; flex-direction: column; gap: 12px; min-width: 0; scroll-margin-top: 80px; }
+.sectionHeading { display: flex; align-items: center; gap: 12px; min-height: 44px; }
+.sectionHeading h2 { min-width: 0; flex: 1; font-size: 20px; font-weight: 700; line-height: 30px; }
+.subHeading { font-size: 14px; font-weight: 700; line-height: 22px; }
+.more { display: inline-flex; align-items: center; justify-content: flex-end; gap: 4px; min-height: 44px; font-size: 13px; text-decoration: none; color: var(--home-accent); flex-shrink: 0; }
+.rail { display: flex; gap: 12px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: thin; padding: 1px 1px 4px; min-width: 0; }
+.rail > * { scroll-snap-align: start; }
+.gapsSkeleton { min-height: 236px; }
+.gapCard { flex: 0 0 236px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-height: 172px; padding: 16px; border: 1px solid var(--home-border); border-radius: 12px; background: var(--home-surface); color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.gapStat { font-size: 20px; font-weight: 800; line-height: 1.2; letter-spacing: -.02em; }
+.gapTitle { font-size: 15px; font-weight: 700; line-height: 24px; }
+/* ボタンの中の span は、.home :where(p, h2, h3, strong) の文節折り返しが掛からない */
+.gapTitle, .gapCard .caption { word-break: auto-phrase; text-wrap: pretty; }
+.gapAction { margin-top: auto; display: inline-flex; align-items: center; gap: 2px; font-size: 13px; font-weight: 700; color: var(--home-accent); }
+.mosaic { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, 102px); gap: 6px; }
+.pickupPhoto { position: relative; min-width: 0; overflow: hidden; border-radius: 10px; background: var(--home-soft); }
+.pickupPhoto:first-child { grid-row: span 2; }
+.pickupPhoto:only-child { grid-column: 1 / -1; }
+/* 写真の枚数に合わせて、空きマスが出ないように組む（5枚が基本形） */
+.mosaic[data-count='2'] { grid-template-columns: 1fr 1fr; grid-template-rows: 150px; }
+.mosaic[data-count='2'] .pickupPhoto:first-child { grid-row: auto; }
+.mosaic[data-count='3'] { grid-template-columns: 2fr 1fr; }
+.mosaic[data-count='4'] .pickupPhoto:nth-child(4) { grid-column: 2 / 4; }
+.postCard { flex: 0 0 164px; border: 1px solid var(--home-border); border-radius: 12px; overflow: hidden; background: var(--home-surface); }
+.postPhoto { position: relative; display: block; height: 144px; background: var(--home-soft); }
+.noPhoto { width: 100%; height: 100%; min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--home-muted); font-size: 12px; text-align: center; padding: 12px; }
+.postBody { display: flex; flex-direction: column; gap: 6px; padding: 12px; min-width: 0; }
+.postBody h3 { white-space: pre-line; }
+.postTitle { font-weight: 700; font-size: 15px; line-height: 24px; text-decoration: none; overflow-wrap: anywhere; }
+.postActions { display: flex; align-items: center; justify-content: space-between; }
+.postActions > * { display: inline-flex; align-items: center; justify-content: center; gap: 4px; width: 44px; min-height: 44px; font-size: 12px; color: var(--home-muted); background: transparent; border: 0; cursor: pointer; text-decoration: none; }
+.postActions button[aria-pressed='true'] { color: var(--home-accent); }
+.postRows { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.postRow { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 8px 12px; border: 1px solid var(--home-border); border-radius: 12px; color: inherit; text-decoration: none; }
+.postRowDate { flex: 0 0 auto; width: 44px; font-size: 13px; font-weight: 700; color: var(--home-muted); }
+.postRowBody { flex: 1; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 8px; font-size: 13px; line-height: 20px; overflow-wrap: anywhere; }
+.postRowBody strong { grid-column: 1; grid-row: 1; font-size: 14px; }
+.postRowText { grid-column: 1 / -1; grid-row: 2; }
+.postRowCount { grid-column: 2; grid-row: 1; align-self: center; padding: 0 8px; border-radius: 10px; background: var(--home-soft); font-size: 12px; font-weight: 700; }
+.empty { padding: 20px 16px; background: var(--home-soft); border-radius: 12px; color: var(--home-muted); min-height: 128px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 8px; }
+/* 薄い面の上の赤い文字が4.5:1に届かないので、明るい配色のときだけ少し濃くする */
+.home:not(.dark) .empty { --home-accent: #b91c1c; }
+.feedSkeleton { display: flex; gap: 12px; height: 128px; }
+.feedSkeleton div { flex: 1; background: var(--home-soft); border-radius: 12px; }
+.questionCard { flex: 0 0 173px; min-width: 0; padding: 12px; background: var(--home-soft); border-radius: 12px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; }
+.questionPhoto { height: 102px; position: relative; overflow: hidden; border-radius: 8px; }
+.questionText { font-size: 14px; line-height: 22px; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.questionCard .caption { display: flex; align-items: center; gap: 6px; }
+.twoColumns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.collectionCard { border: 1px solid var(--home-border); border-radius: 12px; overflow: hidden; text-decoration: none; }
+.collectionPhoto { position: relative; height: 136px; }
+.articleCard { flex: 0 0 216px; min-width: 0; overflow: hidden; border: 1px solid var(--home-border); border-radius: 12px; text-decoration: none; }
+.articlePhoto { position: relative; height: 128px; }
+.newsItem { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 84px; padding: 12px; border-radius: 12px; background: var(--home-soft); text-decoration: none; }
+.newsItem > span { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.newsItem svg { flex-shrink: 0; }
+.homeEnd { display: flex; justify-content: center; align-items: center; gap: 6px; font-size: 12px; color: var(--home-muted); padding-top: 4px; }
+.legalLinks { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 4px; }
+.legalLinks a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px; font-size: 13px; color: var(--home-muted); text-decoration: underline; text-underline-offset: 3px; }
+.dialogBackdrop { position: fixed; inset: 0; z-index: 430; padding: 20px; display: flex; align-items: center; justify-content: center; }
+.backdropButton { position: absolute; inset: 0; border: 0; background: rgb(0 0 0 / .4); }
+.dialog { position: relative; width: 100%; max-width: 390px; max-height: 90dvh; overflow-y: auto; padding: 20px; background: var(--home-surface); border-radius: 16px; display: flex; flex-direction: column; gap: 16px; }
+.iconButton { width: 44px; height: 44px; flex-shrink: 0; display: grid; place-items: center; background: transparent; border: 0; cursor: pointer; }
+.badgeRow { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 12px; border: 1px solid var(--home-border); }
+.badgeMedal { font-size: 28px; }
+.savedRow { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--home-border); padding-bottom: 8px; }
+.savedRow > a { flex: 1; min-height: 44px; text-decoration: none; display: flex; flex-direction: column; justify-content: center; }
+.guide { max-width: 768px; padding: 24px 16px; margin: auto; display: flex; flex-direction: column; gap: 24px; }
+.guide h1 { font-size: 28px; line-height: 1.4; font-weight: 700; }
+.guide h2 { font-size: 22px; line-height: 1.5; font-weight: 700; white-space: pre-line; }
+.guide h3 { font-size: 17px; font-weight: 700; }
+.guide section { display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 80px; }
+.guide p { font-size: 16px; line-height: 1.9; white-space: pre-line; }
+.guideCover { position: relative; height: 220px; border-radius: 16px; overflow: hidden; }
+.faq { padding: 16px; border: 1px solid var(--home-border); border-radius: 12px; }
+.faq summary { cursor: pointer; min-height: 44px; font-size: 16px; font-weight: 700; }
+.faq p { padding-top: 12px; }
+@media (max-width: 599px) {
+  .rail { margin-inline: -16px; padding-inline: 17px; scroll-padding-inline: 17px; }
+}
+@media (min-width: 600px) {
+  .articleCard { flex-basis: calc((100% - 12px) / 2); }
+  .gapCard { flex-basis: calc((100% - 24px) / 3); }
+  .postCard { flex-basis: calc((100% - 24px) / 3); }
+  .questionCard { flex-basis: calc((100% - 12px) / 2); }
+  .heroActions { grid-template-columns: repeat(2, minmax(0, max-content)); }
+  .heroButton { padding-inline: 24px; }
+}
+@media (min-width: 1024px) {
+  .home { background: var(--home-soft); }
+  .layout { grid-template-columns: 180px minmax(0, 1fr) 280px; grid-template-areas: 'nav banner profile' 'nav content profile'; grid-template-rows: auto 1fr; column-gap: 24px; row-gap: 0; padding-bottom: 32px; }
+  .sidebar { grid-area: nav; display: flex; flex-direction: column; gap: 20px; padding: 16px; background: var(--home-surface); position: sticky; top: 72px; align-self: start; }
+  .sidebar nav { display: flex; flex-direction: column; gap: 8px; }
+  .sideTab { display: flex; align-items: center; gap: 16px; min-height: 44px; padding: 8px 12px; border-radius: 12px; border: 1px solid var(--home-border); font-size: 14px; text-align: left; cursor: pointer; }
+  .sideTab svg { flex-shrink: 0; }
+  .sideActive { background: #fdecec; color: #b91c1c; border-color: #f0b4b4; font-weight: 700; }
+  .dark .sideActive { background: #3a2422; color: #ff9690; border-color: #7a3b37; }
+  .bannerArea { padding: 16px 16px 24px; background: var(--home-surface); }
+  .content { padding: 0 16px 24px; background: var(--home-surface); }
+  .profileArea { align-self: start; position: sticky; top: 72px; }
+  .layoutGuest .profileArea { display: block; }
+  .hero { max-width: 680px; }
+  .desktopHint { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; padding: 16px; background: var(--home-surface); border-radius: 16px; }
+  .profileArea > .desktopHint:first-child { margin-top: 0; }
+  .desktopHint > svg { color: var(--home-accent); }
+  .desktopHint h2 { font-size: 15px; font-weight: 700; }
+}
+@media (min-width: 1360px) {
+  .layout { grid-template-columns: 200px minmax(0, 1fr) 304px; column-gap: 32px; }
+}
+@media (max-width: 359px) {
+  .campaign { gap: 8px; padding: 12px; }
+  .campaignCopy { flex-basis: 174px; }
+  .campaignTitle { font-size: 19px; line-height: 27px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .postCard, .articleCard, .collectionCard, .gapCard { transition: border-color 150ms ease; }
+  .postCard:hover, .articleCard:hover, .collectionCard:hover, .gapCard:hover { border-color: var(--home-muted); }
+}

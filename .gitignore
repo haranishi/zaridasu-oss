@@ -1,0 +1,72 @@
+# 依存パッケージ
+node_modules/
+
+# ビルド成果物
+dist/
+.next/
+rust/**/target/
+
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo
+
+# Deno のルート lockfile（authoritative なのは supabase/functions/deno.lock のみ）
+/deno.lock
+
+# REQ-100: Service Worker は public/sw.js.tpl から scripts/build-sw.mjs により生成
+public/sw.js
+
+# 環境変数（機密情報）
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ログ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite
+*.local
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+supabase/functions/.env
+.vercel
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Vitest coverage (REQ-282 FR-282-A1: 生成物はコミットしない)
+coverage/
+
+# Lighthouse CI の生成物 (REQ-306: lhci autorun がローカル実行のたびに作る。14MB規模)
+.lighthouseci/
+
+# UI採点ループのスクリーンショット (1周34枚×10MB規模。採点の入力であって成果物ではない)
+.agent-harness/runs/**/*-shots/
+
+# REQ-330: 画面の撮影に使う手元の道具と撮った画像（.shots/）。管理者のなりすまし（偽のログイン）を含むので、
+# フォルダごとコミットしない。
+.shots/
+
+# Local-only schema snapshot, runtime configuration and CLI metadata
+.local-dev/
+
+# Cloudflare build output, local state and secrets
+.open-next/
+.wrangler/
+.dev.vars
+.dev.vars.*

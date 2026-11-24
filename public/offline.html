@@ -1,0 +1,129 @@
+<!--
+  REQ-293: 以下の4言語文言は src/locales/{ja,en,ko,zh}/translation.json の
+  offline.* と二重管理です。public HTML は check-i18n-parity の検査対象外です。
+-->
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>オフラインです</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        background: #f6f7fb;
+        color: #1f2937;
+      }
+      .card {
+        width: min(560px, 100%);
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 12px 36px rgba(31, 41, 55, 0.08);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 1.5rem;
+      }
+      p {
+        margin: 0;
+        line-height: 1.75;
+        color: #4b5563;
+      }
+      .actions {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      button,
+      a {
+        border: 0;
+        border-radius: 10px;
+        padding: 10px 16px;
+        background: #2563eb;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        font: inherit;
+        text-decoration: none;
+      }
+      a {
+        background: #e5e7eb;
+        color: #1f2937;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main" aria-live="polite">
+      <h1 id="offline-title">オフラインです</h1>
+      <p id="offline-body1">インターネット接続がありません。</p>
+      <p id="offline-body2">接続を確認してから再度お試しください。</p>
+      <div class="actions">
+        <button id="offline-reconnect" type="button" onclick="location.reload()">再接続する</button>
+        <a id="offline-back-to-top" href="/">トップページへ戻る</a>
+      </div>
+    </main>
+    <script>
+      const messages = {
+        ja: {
+          title: 'オフラインです',
+          body1: 'インターネット接続がありません。',
+          body2: '接続を確認してから再度お試しください。',
+          reconnect: '再接続する',
+          backToTop: 'トップページへ戻る',
+        },
+        en: {
+          title: "You're offline",
+          body1: 'No internet connection.',
+          body2: 'Please check your connection and try again.',
+          reconnect: 'Reconnect',
+          backToTop: 'Back to home',
+        },
+        ko: {
+          title: '오프라인 상태입니다',
+          body1: '인터넷 연결이 없습니다.',
+          body2: '연결을 확인한 후 다시 시도해 주세요.',
+          reconnect: '다시 연결하기',
+          backToTop: '홈으로 돌아가기',
+        },
+        zh: {
+          title: '您已离线',
+          body1: '没有网络连接。',
+          body2: '请确认连接后重试。',
+          reconnect: '重新连接',
+          backToTop: '返回首页',
+        },
+      }
+      const preferences = [
+        ...(Array.isArray(navigator.languages) ? navigator.languages : []),
+        navigator.language,
+      ]
+      const language =
+        preferences
+          .map((value) => String(value || '').slice(0, 2).toLowerCase())
+          .find((value) => Object.prototype.hasOwnProperty.call(messages, value)) || 'ja'
+      const message = messages[language]
+
+      document.documentElement.lang = language
+      document.title = message.title
+      document.getElementById('offline-title').textContent = message.title
+      document.getElementById('offline-body1').textContent = message.body1
+      document.getElementById('offline-body2').textContent = message.body2
+      document.getElementById('offline-reconnect').textContent = message.reconnect
+      document.getElementById('offline-back-to-top').textContent = message.backToTop
+    </script>
+  </body>
+</html>

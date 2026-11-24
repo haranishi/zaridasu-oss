@@ -1,0 +1,72 @@
+# REQ-210 FR-210-01: 依存とビルド基盤(GitHub Actions)の自動更新・脆弱性追従。
+# 一人運用で継続可能な負荷に収めるため、すべて weekly・PR 上限は小さめ・グルーピングで抑制する
+# （NFR-210-02）。Dependabot alerts / security updates のリポジトリ設定有効化は別途必要
+# （.github/SECURITY_SETUP.md 参照）。
+version: 2
+updates:
+  # --- npm（リポジトリ root の package.json / package-lock.json）---
+  - package-ecosystem: "npm"
+    directory: "/"
+    # 依存更新は必ず develop で CI を通してから main へ入れる（ブランチ運用ルール）。
+    # 未指定だと既定ブランチ(main)へ直接 PR が来て develop を飛び越えるため明示する。
+    target-branch: "develop"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 5
+    # PR ノイズを抑えるため、本番依存と開発依存をそれぞれ 1 PR にまとめる。
+    # セキュリティ更新は groups の対象外（個別に即時 PR が来る）。
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+    ignore:
+      # typescript-eslint が TS 7.0 を未サポート（TS >=7.1 対応は
+      # typescript-eslint/typescript-eslint#10940 で追跡中）。typescript のメジャー更新 PR
+      # （例: PR #24 の 5.9.3→7.0.2）は lint が必ず落ちるため、対応されるまで受けない。
+      # typescript-eslint が TS 7 系をサポートしたらこの ignore を外すこと。
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+
+  # --- GitHub Actions（FR-210-04 で SHA 固定した uses: を追従更新する）---
+  # SHA ピン留めしたままでも Dependabot は新しい SHA + バージョンコメントへ PR を出す。
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    target-branch: "develop"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "chore(ci)"
+
+  # --- Docker（rls-tests ジョブが /tmp/Dockerfile.pg で FROM postgres:16 を使うが、
+  #     これはコミットされた Dockerfile ではなく CI 内ヒアドキュメント生成のため Dependabot の
+  #     監視対象にならない。将来コミット済み Dockerfile を追加した場合に備え雛形をコメントで残す。）
+  # - package-ecosystem: "docker"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"

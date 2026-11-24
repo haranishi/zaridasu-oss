@@ -1,0 +1,181 @@
+project_id = "zarigani-das"
+
+[api]
+enabled = true
+port = 54321
+# REQ-221 (FR-221-04): Data API の Exposed schemas を最小化。
+#   アプリは PostgREST（from()/rpc()）のみ利用し GraphQL を使っていない（src 全体で 0 件）ため、
+#   未使用の graphql_public を公開対象から外して Data API の攻撃面を減らす。
+#   public はアプリが直接 from() するため公開維持。
+#   内部テーブル（audit_logs / admin_login_attempts / experiment_assignments / ai_call_logs 系）の
+#   private スキーマ移設など大規模なスキーマ移動は回帰リスク・型再生成コストが大きいため別 REQ に
+#   切り出し、本 REQ では runbook の手動点検（GRANT 確認）に回す。
+#   ※本設定はローカル開発の Data API。本番 Dashboard 側の Exposed schemas も同値に揃えること
+#     （docs/runbooks/supabase-hardening-checklist.md 参照）。
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+
+[db.migrations]
+enabled = true
+schema_paths = []
+
+# REQ-298 FR-298-09: シードは無効にする。
+#   従来は enabled = true / sql_paths = ["./seed.sql"] を宣言していたが、supabase/seed.sql は
+#   一度も存在したことがなく、`supabase start` / `supabase db reset` がシード段階で警告を出していた。
+#   空ファイルを置く案もあったが、「存在するが中身が無いファイル」は
+#   「シードを使う運用なのに書き忘れている」と誤読されるため採らなかった。
+#   このプロジェクトはテストデータを migration（例 20260603000006_seed_experiments）と
+#   pgTAP のトランザクション内 fixture で用意しており、seed.sql を使う設計になっていない。
+#   シードを導入する場合は enabled = true に戻し、実ファイルを追加すること。
+[db.seed]
+enabled = false
+
+[realtime]
+enabled = true
+
+[studio]
+enabled = true
+port = 54323
+api_url = "http://127.0.0.1"
+
+# メールテストサーバー（Mailpit）
+[inbucket]
+enabled = true
+port = 54324
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[storage.s3_protocol]
+enabled = true
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/auth/callback", "http://127.0.0.1:3000/auth/callback"]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+refresh_token_reuse_interval = 10
+enable_signup = true
+enable_anonymous_sign_ins = false
+# REQ-245 (FR-245-01): サーバー側パスワード下限をクライアント強度ポリシー（REQ-152
+#   validatePasswordStrength = 8 文字以上 ＋ 英字 1 文字以上 ＋ 数字 1 文字以上）に一致させる。
+#   従来の 6 だと GoTrue へ直接サインアップすれば UI ポリシー（8+英数）を迂回して 6 文字で
+#   登録できたため、下限（length）と構成要件（letters+digits）の両方をサーバーでも強制する。
+#   password_requirements = "letters_digits" ＝「英字と数字の両方を必須」で REQ-152 と等価
+#   （大文字小文字・記号は要求しない）。NFR-245-02: これは新規登録/パスワード変更時のみ適用され、
+#   既存ユーザー（6 文字等）の**ログイン**には影響しない（GoTrue は login 時に弱パスワード検査をしない）。
+#   ※本設定はローカル開発の Auth。本番 Dashboard > Authentication > Passwords の
+#     「Minimum length」「Password Requirements」も同値（8 / letters+digits）に揃えること。
+minimum_password_length = 8
+password_requirements = "letters_digits"
+
+# REQ-292 (FR-292-01(a)): Password Verification Attempt Hook。
+#   GoTrue がパスワード検証の直後に public.admin_login_password_attempt(jsonb) を呼び、
+#   `/auth/v1/token?grant_type=password` の**直叩きも含む全ての**パスワード認証試行を
+#   admin_login_attempts と audit_logs に記録する。これが REQ-292 問題B（「フロントが自発的に
+#   失敗を申告したときにしか記録されず、サーバー側ロックが一度も発火しない」）の記録側の解消手段である。
+#   関数の定義と設計判断（常に decision=continue／reject は返さない／例外は握り潰して fail-open）は
+#   supabase/migrations/20260730000001_req292_authz_defects_anon_granted_rpc.sql を参照。
+#
+# ⚠ 既定を **enabled = false** にしている理由（意図的な保守判断・有効化は人手で行う）:
+#   1. このフックは管理者だけでなく **全ユーザーのパスワード認証経路**に入る。関数本体は
+#      EXCEPTION WHEN others で fail-open だが、**配線**は fail-open ではない。関数が存在しない
+#      （migration 未適用の DB に GoTrue が先に繋がる）・supabase_auth_admin への GRANT EXECUTE が
+#      無い・CLI / GoTrue のバージョンがフック未対応、のいずれでも
+#      **パスワードログインが全ユーザーで失敗し得る**。
+#   2. 本 migration だけで REQ-292 の問題A・C・D（ロックの自己解除／audit_logs 注入／メール存在確認
+#      オラクル）は既に閉じている。フックは「記録と可視化」専用（reject を返さない）なので、
+#      有効化を保留しても現状比のセキュリティ後退は無い。保留中に失うのは
+#      `/auth/v1/token` 直叩き失敗の記録だけである。
+#   3. 有効化後は「正しいパスワードでログインできること」の実測確認が必須（下記手順 4）。
+#      その確認を伴わずに config のコミットだけで全員の認証経路を変えるべきではない。
+#
+# 有効化手順（ローカル → 本番の順で、各段で必ず正常系を確認する）:
+#   1. `supabase db reset`（または `supabase db push`）で 20260730000001 を適用し、
+#      関数と supabase_auth_admin への GRANT が存在することを確認する:
+#        SELECT has_function_privilege('supabase_auth_admin',
+#                 'public.admin_login_password_attempt(jsonb)', 'EXECUTE');   -- → true
+#   2. 下の `enabled` を true にして `supabase stop && supabase start`（GoTrue の再起動が必要）。
+#   3. 誤ったパスワードで 5 回ログインを試し、記録が積まれることを確認する:
+#        SELECT * FROM audit_logs
+#          WHERE action='login_failed' AND details->>'source'='auth_hook'
+#          ORDER BY created_at DESC LIMIT 10;                   -- → 5 件
+#        SELECT * FROM admin_login_attempts;                    -- → attempt_count=5 / locked_until 非 NULL
+#   4. **正しいパスワードでログインできることを必ず確認する**（フックが reject を返さないこと）。
+#      失敗した場合は `enabled = false` に戻して GoTrue を再起動すれば即座に復旧する。
+#   5. 本番は Dashboard > Authentication > Hooks（Beta）> "Password Verification Attempt" に
+#      `public.admin_login_password_attempt` を指定して Enable し、3・4 を本番で再確認する
+#      （CLI で config を push する運用なら本ブロックの enabled=true をそのまま反映する）。
+[auth.hook.password_verification_attempt]
+enabled = false
+uri = "pg-functions://postgres/public/admin_login_password_attempt"
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = true
+secure_password_change = false
+max_frequency = "1s"
+otp_length = 6
+otp_expiry = 3600
+
+# REQ-219 (FR-219-06 / AC-06): 認証メール（確認・リセット・変更確認）の送信ドメイン方針。
+#   方針 (a)（推奨・本番）: カスタム SMTP（Resend）を有効化し、認証メールも送信ドメイン
+#     zarigani-das.com から自管理レピュテーションで送る。これにより通知メール（Resend HTTP API）と
+#     同一ドメインに揃い、SPF/DKIM/DMARC を 1 ドメインで整備できる（ブランド一貫・到達性向上）。
+#   方針 (b)（本番非推奨）: Supabase 既定の共有送信ドメインに依存する（DNS 整備不要だが
+#     ブランド不一致・送信レート/到達性が Supabase 依存。採用時は runbook に制約を記録）。
+#
+# ローカル開発では Mailpit（[inbucket]）にメールが溜まるため SMTP は有効化しない（本ブロックは
+# コメントアウトのまま）。本番で方針 (a) を採る場合は、原則 **Supabase Dashboard >
+# Authentication > Email > SMTP Settings** で設定する（秘密値 RESEND_SMTP_KEY を Git に置かないため）。
+# CLI で `config.toml` から本番反映する運用なら下記をアンコメントし、RESEND_SMTP_KEY は Secrets/env から注入する。
+# いずれの場合も送信ドメイン zarigani-das.com に対し SPF/DKIM/DMARC を整える
+# （手順: docs/runbooks/email-authentication.md。NFR-219-01: 秘密値はコミットしない）。
+# [auth.email.smtp]
+# enabled = true
+# host = "smtp.resend.com"
+# port = 465
+# user = "resend"
+# pass = "env(RESEND_SMTP_KEY)"
+# admin_email = "noreply@zarigani-das.com"
+# sender_name = "ザリダス"
+
+[auth.email.template.confirmation]
+subject = "メールアドレスの確認 - ザリダス"
+content_path = "./supabase/templates/confirm.html"
+
+[auth.email.template.recovery]
+subject = "パスワードのリセット - ザリダス"
+content_path = "./supabase/templates/recovery.html"
+
+[auth.email.template.email_change]
+subject = "メールアドレスの変更確認 - ザリダス"
+content_path = "./supabase/templates/email_change.html"
+
+[auth.sms]
+enable_signup = false
+enable_confirmations = false
+
+[auth.external.apple]
+enabled = false
+client_id = ""
+secret = ""
+
+[edge_runtime]
+enabled = true
+policy = "per_worker"
+inspector_port = 8083
+
+[analytics]
+enabled = true
+port = 54327
+backend = "postgres"

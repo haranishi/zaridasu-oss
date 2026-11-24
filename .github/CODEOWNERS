@@ -1,0 +1,32 @@
+# REQ-210 FR-210-10: CODEOWNERS による重要ファイルの変更ガード。
+# 一人運用のため所有者はリポジトリオーナー本人（@haranishi）。
+# branch protection で「CODEOWNERS レビュー必須」を有効にすると、これらのパスを変更する
+# PR はオーナーの承認が必要になる（設定手順は .github/SECURITY_SETUP.md）。
+#
+# 構文: 後勝ち（最後にマッチした行のオーナーが適用される）。先頭の "*" で既定所有者を置く。
+
+# 既定: すべてのファイルのオーナー
+*                               @haranishi
+
+# --- CI / ビルド基盤（サプライチェーン経路）---
+/.github/                       @haranishi
+/.github/workflows/             @haranishi
+/.github/dependabot.yml         @haranishi
+/.github/CODEOWNERS             @haranishi
+/.gitleaks.toml                 @haranishi
+
+# --- 依存ツリー（lockfile 改竄・悪性 postinstall 経路）---
+/package.json                   @haranishi
+/package-lock.json              @haranishi
+
+# --- アプリのセキュリティ感度が高い設定 / 入口 ---
+/next.config.ts                 @haranishi
+/next.config.*                  @haranishi
+/src/middleware.ts              @haranishi
+/middleware.*                   @haranishi
+
+# --- Supabase（RLS / マイグレーション / スキーマ / DB テスト）---
+/supabase/migrations/           @haranishi
+/supabase/tests/                @haranishi
+/supabase/schema.sql            @haranishi
+/supabase/config.toml           @haranishi

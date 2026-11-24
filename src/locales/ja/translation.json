@@ -1,0 +1,2577 @@
+{
+  "banner": {
+    "neverShowAgain": "今後表示しない"
+  },
+  "intro": {
+    "prompt": {
+      "kicker": "はじめての方へ",
+      "title": "秋田の外来生物を、みんなで地図に",
+      "body": "質問は2つだけ。地図の見方を1分で案内します。",
+      "read": "1分で案内を見る",
+      "later": "あとで",
+      "never": "今後表示しない"
+    },
+    "modal": {
+      "title": "ザリダスのはなし",
+      "prev": "前へ",
+      "next": "次へ",
+      "close": "閉じる",
+      "progress": "{{current}} / {{total}}",
+      "neverShowAgain": "今後表示しない"
+    },
+    "slides": {
+      "1": {
+        "title": "池から、生きものが消えていきます",
+        "body": "アメリカザリガニは、1927年に人がウシガエルの餌として日本に持ちこんだ生きものです。数が増えた池では水草がなくなり、水が茶色くにごります。そこにいた小さな生きものも、少しずつ姿を消していきます。",
+        "imageAlt": "同じ池の2つのすがたをならべた絵。左は水草がゆれ、小さな魚や水生昆虫、おたまじゃくしがいる澄んだ池。右は水草がなくなり、水が茶色くにごって、底にアメリカザリガニだけがいる池。"
+      },
+      "2": {
+        "title": "でも、どこにいるかが分かっていません",
+        "body": "国が出している地図で分かるのは、だいたい市や町のまとまりまでです。となりの池にいるかどうかまでは、分かりません。まだザリガニがいない水辺も、あちこちに残っています。",
+        "imageAlt": "地図の細かさをくらべた絵。左は大きな区画がまとめて一色にぬられた粗い地図で、ひとつの区画の中にいくつも池がある。右は池ひとつひとつに小さな点が付いた細かい地図。",
+        "quote": "確認情報がない場所にも、生息している可能性はあることに注意。",
+        "quoteSource": "出典：環境省ホームページ「なぜそこら中に？　まだ大丈夫なところもあります！」（2026年8月5日に利用）",
+        "quoteLink": "環境省ホームページで読む"
+      },
+      "3": {
+        "title": "だから、みんなで地図をつくります",
+        "body": "「見つけた」がたくさん集まると、池ひとつずつが見える細かい地図になります。どの水辺を先に守るかを決められるようになり、遠くの話ではなく近所の池の話として気づくきっかけにもなります。",
+        "imageAlt": "何人かの人が水辺でスマホを持って立ち、そこから小さな点が地図へ集まって、池ひとつずつが見える細かい分布図ができていく絵。ザリガニのマスコット「ザリくん」が横で見守っている。"
+      },
+      "4": {
+        "title": "つかいかたは、3つだけです",
+        "body": "見つける、撮ってのせる、地図にのる。この3つだけです。写真がなくても、「見かけた」だけで大切な報告になります。1分もあれば終わります。",
+        "imageAlt": "3つの手順を左から右へならべた絵。左は水辺でアメリカザリガニを見つけているところ、まん中はスマホで写真を撮っているところ、右は地図に赤い点がひとつ付いたところ。"
+      },
+      "5": {
+        "title": "記録するだけで大丈夫です",
+        "body": "持ち帰らなくて大丈夫です。別の場所に放すことは法律で禁止されているので、生きものはそのままにしておいてください。おうちで飼っている人は、これまで通り飼えます。手続きもいりません。",
+        "imageAlt": "人が水辺にしゃがんで、スマホでアメリカザリガニの写真を撮っているだけの絵。手はのばさず、バケツや網は持っていない。ザリガニは水の中にいる。"
+      },
+      "6": {
+        "title": "はじめてみませんか",
+        "body": "登録しなくても、地図はすぐに見られます。ザリダスは、だれでも無料で使えます。",
+        "imageAlt": "ザリガニのマスコット「ザリくん」がハサミをあげて迎えている絵。うしろに水辺と、赤い点がいくつか付いた地図が見える。"
+      }
+    },
+    "cta": {
+      "map": "地図を見る",
+      "post": "投稿してみる",
+      "about": "もっとくわしく",
+      "lp": "ザリダスの紹介ページを見る"
+    },
+    "drawer": {
+      "label": "ザリダスってなに？"
+    }
+  },
+  "lang": {
+    "ja": "日本語",
+    "en": "English",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "header": {
+    "skipToMain": "メインコンテンツへスキップ",
+    "subtitle": "水辺の外来生物を記録する地図",
+    "menuOpen": "メニューを開く",
+    "menuClose": "メニューを閉じる",
+    "mainNav": "メインナビゲーション",
+    "langSwitch": "言語を切り替える",
+    "userMenu": "ユーザーメニュー",
+    "pageTitle": {
+      "home": "ザリダス",
+      "trends": "トレンド",
+      "ranking": "ランキング",
+      "dashboard": "マイページ",
+      "about": "使い方",
+      "terms": "利用規約",
+      "privacy": "プライバシー"
+    }
+  },
+  "errors": {
+    "unexpected": "予期しないエラーが発生しました。",
+    "rateLimitServer": "投稿が集中しています。しばらく時間をおいてから再度お試しください。",
+    "network": "通信エラーが発生しました。インターネット接続を確認してください。",
+    "sessionExpired": "セッションが切れました。再度ログインしてください。",
+    "forbidden": "この操作を行う権限がありません。",
+    "notFound": "ファイルが見つかりませんでした。",
+    "tooManyRequests": "操作が多すぎます。しばらく時間をおいてから再試行してください。",
+    "generic": "エラーが発生しました。もう一度お試しください。"
+  },
+  "bottomNav": {
+    "map": "地図",
+    "trends": "トレンド",
+    "post": "投稿",
+    "ranking": "ランキング",
+    "mypage": "マイページ",
+    "postAction": "投稿する"
+  },
+  "drawer": {
+    "settingsMenu": "設定メニュー",
+    "menu": "メニュー",
+    "mapSettings": "マップ設定",
+    "heatmap": "ヒートマップ",
+    "mapType": "地図の種類",
+    "defaultMap": "デフォルト：{{name}}",
+    "setDefaultMap": "この地図をデフォルトにする",
+    "isDefaultMap": "この地図がデフォルトです",
+    "defaultMapHint": "このブラウザに保存し、次回から表示します。",
+    "defaultMapSaved": "デフォルトの地図を保存しました",
+    "defaultMapSaveError": "地図の設定を保存できませんでした。ブラウザの保存設定を確認してください。",
+    "createSurvey": "調査依頼を立てる",
+    "surveyList": "調査依頼一覧"
+  },
+  "home": {
+    "openGallery": "写真ギャラリーを開く",
+    "photos": "写真",
+    "backToMap": "地図に戻る",
+    "map": "地図",
+    "swipeHint": "スワイプで切替",
+    "panelSwitch": "表示の切替（地図 / 写真）"
+  },
+  "toast": {
+    "notifications": "通知"
+  },
+  "install": {
+    "iosTitle": "ホーム画面への追加方法",
+    "iosStep1": "Safari 下部の「共有」ボタンをタップ",
+    "iosStep2": "「ホーム画面に追加」を選択",
+    "iosStep3": "「追加」をタップして完了",
+    "gotIt": "わかりました",
+    "useAsApp": "アプリとして使う",
+    "description": "ホーム画面に追加するとアプリのように起動できます。通知やオフライン利用も対応。",
+    "addToHome": "ホーム画面に追加",
+    "seeHow": "追加方法を見る",
+    "notNow": "今は不要",
+    "close": "閉じる"
+  },
+  "priorityArea": {
+    "label": "優先調査エリア",
+    "title": "今、観察が足りていないエリア",
+    "description": "これらの地域はこの3か月の報告が少なめです。お近くなら、あなたの観察が分布の解明に大きく役立ちます。",
+    "countSuffix": "（{{count}}件）"
+  },
+  "photoGallery": {
+    "empty": "まだ写真付きの投稿がありません",
+    "count": "写真 {{count}} 件",
+    "emptyTitle": "最初の一枚を残そう",
+    "emptyDesc": "写真付きの報告は、種類の確認や記録づくりにとても役立ちます。"
+  },
+  "share": {
+    "text": "{{species}}の{{infoType}}情報（秋田県{{municipality}}）",
+    "defaultSpecies": "ザリガニ",
+    "appTitle": "ザリダス",
+    "shareNative": "共有",
+    "copyLink": "リンクをコピー",
+    "linkCopied": "リンクをコピーしました",
+    "copyFailed": "コピーできませんでした"
+  },
+  "nav": {
+    "home": "ホーム",
+    "map": "マップを見る",
+    "trends": "トレンド",
+    "ranking": "ランキング",
+    "area": "地域別",
+    "about": "使い方・外来種法",
+    "dashboard": "マイダッシュボード",
+    "admin": "管理画面へ",
+    "post": "情報を投稿する",
+    "login": "ログインする",
+    "signup": "新規登録する",
+    "logout": "ログアウト",
+    "switchLang": "言語切替",
+    "contact": "お問合せ",
+    "terms": "利用規約",
+    "privacy": "プライバシー"
+  },
+  "species": {
+    "american": "アメリカザリガニ",
+    "bullfrog": "ウシガエル"
+  },
+  "infoType": {
+    "sighting": "目撃",
+    "capture": "捕獲",
+    "trace": "痕跡",
+    "damage": "農業被害",
+    "absence": "不在確認"
+  },
+  "filter": {
+    "all": "すべて",
+    "period": "期間",
+    "species": "種類",
+    "infoType": "情報種別",
+    "municipality": "市区町村",
+    "sort": "並び替え",
+    "search": "キーワード検索",
+    "searchPlaceholder": "種類・場所・コメントで検索",
+    "newest": "新しい順",
+    "oldest": "古い順",
+    "speciesSort": "種類順",
+    "week": "直近1週間",
+    "month": "直近1ヶ月",
+    "threeMonths": "直近3ヶ月",
+    "allPeriod": "全期間",
+    "boundsFilter": "現在の地図範囲内のみ",
+    "filter": "フィルター",
+    "reset": "リセット",
+    "apply": "適用",
+    "filterSettings": "フィルター設定",
+    "appliedCount": "{{count}}件適用中",
+    "allMunicipalities": "全市区町村",
+    "allSpecies": "全種類",
+    "allInfoTypes": "全情報種別",
+    "sortNewest": "新着順",
+    "sortOldest": "古い順",
+    "sortSpecies": "種類別"
+  },
+  "map": {
+    "postButton": "情報を投稿",
+    "areaCount": "エリア内 {{count}} 件",
+    "totalCount": "全{{total}}件",
+    "loadCount": "{{count}} 件の情報",
+    "loading": "読み込み中...",
+    "loadMore": "もっと見る",
+    "noResults": "条件に一致する投稿がありません",
+    "tab": {
+      "map": "🗺 地図",
+      "list": "📋 一覧"
+    },
+    "legend": "凡例",
+    "heatmapOn": "ヒートマップON",
+    "heatmap": "ヒートマップ",
+    "locate": "現在地を表示",
+    "heatmapLegend": {
+      "title": "観察の密度",
+      "low": "少",
+      "high": "多",
+      "caption": "報告が多い場所ほど濃く表示されます（個体数・調査時間があれば努力量あたりの密度で補正／不在確認は除く）"
+    },
+    "filterActive": "絞込中: {{count}}件",
+    "currentLocation": "現在地",
+    "locateStop": "現在地の追従をやめる",
+    "locateCancel": "現在地の取得を取りやめる",
+    "locateResume": "現在地に戻って追従する",
+    "currentLocationAccuracy": "現在地（誤差 約{{meters}}m）",
+    "locateFilterOff": "地図の範囲をサーバーに送らないよう、「現在の地図範囲内のみ」をオフにしました。止めても自動では戻りません。",
+    "locateFilterBusy": "追従中は「現在の地図範囲内のみ」を使えません。地図を動かして一時停止にするか、追従を止めると使えます。",
+    "locateHint": {
+      "locating": "現在地を取得しています…\nもう一度押すと取りやめます。",
+      "locatingSlow": "時間がかかっています。\n屋外のほうが受信しやすくなります。\nもう一度押すと取りやめます。",
+      "following": "地図が現在地についていきます。\nもう一度押すと止まります。",
+      "paused": "地図を動かしたので、一時停止中です。\nこのボタンで現在地に戻ります。"
+    },
+    "locateError": {
+      "denied": "位置情報の使用が許可されていません。ブラウザの設定で許可してから、右下の矢印ボタンをもう一度押してください。",
+      "unsupported": "この端末またはブラウザは、位置情報の取得に対応していません。",
+      "unavailable": "現在地を取得できませんでした。屋外で、右下の矢印ボタンをもう一度押してください。",
+      "timeout": "現在地を取得できず、取りやめました。屋外で、右下の矢印ボタンをもう一度押してください。"
+    },
+    "layerSelect": "地図レイヤー",
+    "nearbyWater": {
+      "button": "近くの水域を探す",
+      "loading": "水域を検索中…",
+      "show": "表示",
+      "hide": "非表示",
+      "count": "{{count}} 件",
+      "empty": "この範囲には登録された水域が見つかりませんでした",
+      "error": "水域を取得できませんでした。再試行してください",
+      "scope": "地図の中心から半径{{radius}}kmを検索",
+      "retry": "再試行",
+      "previous": "前回の検索結果",
+      "genericName": "名称不明の水域"
+    },
+    "layers": {
+      "osm": "標準地図",
+      "pale": "淡色地図",
+      "std": "詳細地図",
+      "photo": "航空写真"
+    },
+    "pin": {
+      "button": "ピンを立てて経路を調べる",
+      "hint": "地図をタップしてピンを立てる（長押しでもOK）",
+      "cancel": "ピンモードをやめる",
+      "title": "立てたピン",
+      "saveHere": "非公開で保存",
+      "postHere": "ここで投稿",
+      "remove": "ピンを消す"
+    },
+    "spot": {
+      "legend": "非公開スポット（自分だけ）",
+      "pending": "未送信（つながったら自動で送ります）",
+      "privateNote": "非公開（あなたと運営だけ）",
+      "rename": "名前を変更",
+      "renameSave": "保存",
+      "renameFailed": "名前を変更できませんでした",
+      "delete": "削除",
+      "deleteConfirm": "このスポットを削除しますか？元に戻せません。",
+      "deleteYes": "削除する",
+      "deleteFailed": "削除できませんでした",
+      "cancel": "やめる"
+    }
+  },
+  "postForm": {
+    "title": "情報を投稿する",
+    "close": "閉じる",
+    "location": "発見場所",
+    "locationRequired": "*",
+    "locationHint": "地図をタップ/クリックして場所を指定",
+    "manualLocation": "地図を使わずに位置を入力",
+    "manualLocationHint": "緯度と経度を直接入力するか、現在地を取得してください。",
+    "latitude": "緯度",
+    "longitude": "経度",
+    "coordinateRangeError": "緯度は-90〜90、経度は-180〜180の数値で入力してください。",
+    "useCurrentLocation": "現在地を使う",
+    "locating": "現在地を取得中…",
+    "geoUnsupported": "この端末またはブラウザは位置情報の取得に対応していません。",
+    "geolocationRetryHint": "設定を確認して「現在地を使う」をもう一度押すか、緯度・経度を入力してください。",
+    "mapInstructions": "地図をクリックして選択できます。キーボードでは地図にフォーカスし、矢印キーで中心を移動して Enter または Space で確定します。",
+    "mapAriaLabel": "発見場所を選択する地図",
+    "locationSelected": "{{lat}}, {{lng}}",
+    "locationError": "地図をタップして場所を選択してください",
+    "locationPrompt": "地図をクリックして場所を指定してください",
+    "outsideTargetArea": "対象エリア（秋田県）外の位置が選択されています。このまま投稿できますが、本アプリは秋田県を対象としています。",
+    "accuracyValue": "±{{meters}}m",
+    "accuracyManual": "手動選択（精度なし）",
+    "accuracy_good": "良好",
+    "accuracy_warn": "注意",
+    "accuracy_bad": "精度が低い",
+    "geoPermissionDenied": "位置情報の許可が必要です。地図をタップして手動で選択してください。",
+    "geoTimeout": "位置情報の取得がタイムアウトしました。地図をタップして手動で選択してください。",
+    "geoUnavailable": "位置情報を取得できません。地図をタップして手動で選択してください。",
+    "geoDefault": "位置情報を取得できません。",
+    "photoSizeError": "写真のサイズが上限を超えています。",
+    "species": "種類",
+    "infoType": "情報種別",
+    "count": "個体数",
+    "countUnit": "（任意・匹）",
+    "countPlaceholder": "例: 3",
+    "countValidation": "個体数は{{min}}〜{{max}}の整数で入力してください",
+    "observedAt": "観察日",
+    "observedAtUnit": "（任意）",
+    "municipality": "市区町村",
+    "municipalityFetching": "📍 取得中…",
+    "municipalityPlaceholder": "選択してください（任意）",
+    "comment": "コメント",
+    "commentUnit": "（任意・{{max}}字以内）",
+    "commentPlaceholder": "目撃状況・数・場所の詳細など",
+    "commentValidation": "コメントは{{max}}字以内で入力してください",
+    "photos": "写真",
+    "photosUnit": "（任意・最大{{max}}枚）",
+    "addPhoto": "追加",
+    "photoTips": {
+      "summary": "📸 撮影のコツ（AI判定の精度が上がります）",
+      "angle": "角度：真上や斜め上から、特徴がわかる向きで撮る",
+      "frame": "寄り：全身が画面の1/3〜1/2に入る距離で（近すぎ・遠すぎを避ける）",
+      "lighting": "明るさ：明るい場所で、影や逆光を避ける",
+      "focus": "ピント：対象に合わせ、ブレないように撮る",
+      "parts": "部位：鋏（ハサミ）・額角・体色がわかるように写す",
+      "example": "良い例：明るい場所で全身くっきり／避ける：暗い・遠すぎ・ブレ"
+    },
+    "submit": "🦞 投稿する",
+    "submitting": "投稿中...",
+    "offline": "📡 オフライン中",
+    "offlineMessage": "⚠️ オフライン中です。接続を回復すると投稿できます。入力内容は自動保存されています。",
+    "successMessage": "投稿を受け付けました。管理者が確認後に公開されます。",
+    "draftRestored": "前回の入力内容を復元しました",
+    "draftClear": "クリア",
+    "loggedInPost": "ログイン済みで投稿",
+    "loggedInDesc": "この投稿は「確認済み」として信頼性が高く表示されます",
+    "honeypot": "website",
+    "errorClose": "エラーを閉じる",
+    "surveyLocked": "調査依頼に紐づく結果のため、種別は依頼で指定されたものに固定されます",
+    "warningClose": "警告を閉じる",
+    "fileTypeError": "{{name}}: 対応していないファイル形式です（JPEG, PNG, WebP, HEIC のみ）",
+    "fileSizeError": "{{name}} は{{max}}MBを超えています。小さい写真を選んでください。",
+    "lowResolutionWarning": "画像の解像度が低い可能性があります（{{width}}x{{height}}）",
+    "blurryWarning": "写真がブレている可能性があります。それでも投稿できます",
+    "timeUntilHours": "{{hours}}時間{{minutes}}分",
+    "timeUntilMinutes": "{{minutes}}分",
+    "loginRequired": "投稿にはログインが必要です。ログインまたは新規登録後に投稿してください。",
+    "rateLimitReached": "24時間以内の投稿上限（{{limit}}件）に達しました。次に投稿できるのは{{time}}後です。",
+    "selectLocation": "地図で位置を選択してください。",
+    "locationOutOfBounds": "位置情報が秋田県の範囲外です。地図上で正しい位置を選択してください。",
+    "audioUploadFailed": "音声ファイルのアップロードに失敗しました。",
+    "rateLimitGeneric": "投稿上限に達しました。しばらく時間をおいてから再度お試しください。",
+    "photoUploadPartial": "写真のアップロードに失敗しました（{{total}}枚中{{success}}枚成功）。再試行してください。",
+    "draftSaveFailed": "下書き保存に失敗しました",
+    "draftSaved": "下書きに保存しました。オンライン時にマイページから送信できます。",
+    "absenceMode": "不在確認モード",
+    "absenceModeDesc": "調査したが外来種を発見できなかった地点を記録します。審査なしで即座に地図に反映されます。",
+    "surveyDuration": "調査時間",
+    "surveyDurationUnit": "（任意・分）",
+    "surveyDurationPlaceholder": "例: 30",
+    "surveyDurationHint": "個体数と一緒に入れると、地図の密度表示（努力量あたりの発見数）に反映されます",
+    "offlineNotice": "オフラインです — 下書きとして端末に保存できます",
+    "uploadingPhotos": "写真をアップロード中... {{current}}/{{total}}",
+    "saving": "保存中...",
+    "saveDraft": "下書き保存",
+    "photoPreview": "プレビュー{{n}}",
+    "removePhoto": "写真{{n}}を削除",
+    "exifDetected": "写真の位置情報を検出しました。地図ピンに適用しますか？",
+    "exifApply": "適用",
+    "exifClose": "閉じる",
+    "temperaturePlaceholder": "例: 18.5",
+    "humidityPlaceholder": "例: 65",
+    "offlineAudioDropWarning": "録音した音声はオフラインの下書きには保存されません。オンラインに戻ってから投稿し直すと音声を添付できます。",
+    "disclosure": {
+      "label": "位置の公開",
+      "public": "公開",
+      "private": "非公開",
+      "publicHint": "地図に表示されます（通常は約111mぼかした位置）。",
+      "privateHint": "地図や公開データに位置を出しません（あなたと運営だけが見られます）。希少な生きものがいる場所などに。コメントや写真に場所が分かる情報を入れないでください。非公開にした位置を公開に戻すには運営への連絡が必要です。"
+    },
+    "offlineLoginRequired": "圏外で下書きに保存するにはログインが必要です",
+    "photoConversionError": "{{name}} を変換できませんでした。別の写真かJPEG・PNGを選んでください。",
+    "preparingPhotos": "写真を準備中…（{{current}}/{{total}}）",
+    "autoResizeHint": "写真を選ぶと自動で小さくします（1枚{{max}}MBまで）。",
+    "photosReady": "投稿用の写真を準備しました（合計{{size}}MB）。"
+  },
+  "postCard": {
+    "anonymous": "匿名",
+    "official": "公式",
+    "verified": "確認済み",
+    "unknown": "不明",
+    "count": "{{count}}匹",
+    "detail": "詳細を見る",
+    "edit": "編集",
+    "delete": "削除",
+    "deleteConfirm": "この投稿を削除しますか？",
+    "deleteCancel": "キャンセル",
+    "deleteOk": "削除する",
+    "deleting": "削除中...",
+    "report": "通報",
+    "verifiedTitle": "ログイン済みユーザーによる投稿です",
+    "officialTitle": "運営チームが登録した公式データです",
+    "editTitle": "この投稿を編集",
+    "deleteTitle": "この投稿を削除"
+  },
+  "postList": {
+    "loadMoreError": "追加データの取得に失敗しました",
+    "signupPrompt": "登録するともっと便利に！",
+    "signupBenefit1": "💬 投稿へのコメント",
+    "signupBenefit2": "📊 マイダッシュボードで履歴確認",
+    "signupButton": "無料登録 →",
+    "noResults": "該当する情報がありません",
+    "tryFilter": "フィルターを変更してみてください",
+    "noFilterResults": "フィルター条件に一致する投稿がありません",
+    "tryResetFilter": "フィルターをリセットして全件表示できます",
+    "resetFilter": "フィルターをリセット"
+  },
+  "comment": {
+    "title": "コメント",
+    "noComments": "まだコメントはありません",
+    "placeholder": "コメントを入力...",
+    "submit": "コメントする",
+    "submitting": "投稿中...",
+    "deleteLabel": "削除",
+    "officialBadge": "公式",
+    "adminPosting": "管理者として投稿（公式バッジが付きます）",
+    "error": "コメントの投稿に失敗しました",
+    "emailRequired": "⚠️ メールアドレスの確認が必要です",
+    "emailRequiredDesc": "コメントするにはメールアドレスの確認を完了してください。",
+    "loginRequired": "💬 コメントするには登録が必要です",
+    "loginRequiredDesc": "無料で登録するとこんなことができます",
+    "benefit1": "気になる投稿にコメントできる",
+    "benefit2": "マイダッシュボードで投稿履歴を確認できる",
+    "signup": "無料で登録する",
+    "login": "ログイン",
+    "resendEmail": "確認メールを再送信",
+    "resendSending": "送信中...",
+    "resendCooldown": "再送信（{{sec}}秒後）",
+    "deleteConfirmPrompt": "削除しますか？",
+    "deleteConfirm": "削除",
+    "deleteCancel": "取消",
+    "deleteConfirmAria": "コメントを削除",
+    "deleteCancelAria": "コメントの削除を取消",
+    "emptyTitle": "最初のコメントを書こう",
+    "deleteError": "コメントの削除に失敗しました"
+  },
+  "detail": {
+    "title": "投稿詳細",
+    "edit": "編集",
+    "observedAt": "観察日: {{date}}",
+    "postedAt": "投稿日: {{date}}",
+    "location": "秋田県 {{municipality}}",
+    "count": "個体数: {{count}}匹",
+    "verified": "確認済み投稿",
+    "verifiedDesc": "ログイン済みユーザーによる投稿",
+    "anonymous": "匿名投稿",
+    "official": "公式情報",
+    "comment": "コメント",
+    "photos": "写真",
+    "expandPhoto": "写真 {{n}} を拡大",
+    "foundAt": "発見場所",
+    "coordinates": "座標: {{lat}}, {{lng}}",
+    "like": "役に立った",
+    "share": "シェア:",
+    "back": "マップに戻る",
+    "report": "通報する",
+    "notFound": "情報が見つかりませんでした",
+    "backToMap": "トップに戻る",
+    "loading": "読み込み中...",
+    "unknown": "不明",
+    "emailNotConfirmed": "メールアドレスの確認が必要です",
+    "emailNotConfirmedLike": "いいねするにはメールアドレスの確認を完了してください。",
+    "resendEmail": "確認メールを再送信",
+    "resendSending": "送信中...",
+    "resendCooldown": "再送信（{{sec}}秒後）",
+    "seoTitle": "{{species}}の{{infoType}}情報 - 秋田県{{municipality}}",
+    "seoDescription": "秋田県{{municipality}}で{{species}}の{{infoType}}が報告されました（{{date}}）。{{comment}}",
+    "seoDescriptionFallback": "地図上で詳細をご確認ください。",
+    "locationPrefix": "秋田県",
+    "breadcrumbHome": "ホーム",
+    "pendingNotice": "審査中 — この投稿はまだ公開されていません",
+    "pendingNoticeDesc": "管理者の審査後に一般公開されます。現在は投稿者本人のみ閲覧できます。",
+    "rejectedNotice": "不承認 — この投稿は公開されていません",
+    "rejectedReason": "理由: {{reason}}",
+    "rejectedHint": "内容を修正して再投稿するか、管理者にお問い合わせください。",
+    "breadcrumbSpeciesInfo": "{{species}}の{{infoType}}情報",
+    "areaOtherInfo": "{{municipality}}の他の外来生物情報を見る",
+    "speciesMoreInfo": "{{species}}についてもっと知る",
+    "aiJudgment": "🤖 AI判定",
+    "aiJudging": "判定中…",
+    "aiDetectedSpecies": "検出種",
+    "aiSpeciesMatch": "申告との一致",
+    "aiMatchYes": "✅ 一致",
+    "aiMatchNo": "❌ 不一致",
+    "aiConfidence": "信頼度",
+    "aiImageQuality": "画質",
+    "aiPerPhotoTitle": "写真別判定 ({{analyzed}}/{{total}}枚)",
+    "aiPerPhotoError": "失敗",
+    "aiNote": "AIによる参考情報です",
+    "aiSpeciesAmerican": "アメリカザリガニ",
+    "aiSpeciesBullfrog": "ウシガエル",
+    "aiSpeciesOther": "その他",
+    "aiSpeciesUnclear": "不明",
+    "aiQualityGood": "鮮明",
+    "aiQualityAcceptable": "普通",
+    "aiQualityPoor": "不鮮明",
+    "aiFeedbackTitle": "📸 あなたへの撮影フィードバック",
+    "aiErrorOwnerBody": "今回は写真からうまく判定できませんでした。次回は対象を画面の中央に大きく、明るい場所でピントを合わせて撮ると認識精度が上がります。投稿はそのまま記録されています。ありがとうございます！",
+    "aiMismatchTitle": "おしい！もう少しで確実になります",
+    "aiMismatchBody": "AIは「{{detected}}」の可能性が高いと判定しました（申告と少し違うようです）。下のヒントを参考に、次回はもう一枚撮ってみてください。",
+    "aiAdviceIntro": "次回さらに精度を上げるコツ:",
+    "aiAdvice": {
+      "angle": "真上や斜め上から、特徴がわかる角度で撮る",
+      "distance": "近すぎ・遠すぎを避け、対象が画面の1/3〜1/2になる距離で撮る",
+      "lighting": "明るい場所で、影や逆光を避けて撮る",
+      "focus": "ピントを対象に合わせ、ブレないように撮る",
+      "closer": "もう少し近づいて、対象を大きく写す",
+      "whole_body": "体全体（ハサミ・尾なども）が入るように撮る"
+    },
+    "coordinatesCoarse": "おおよその位置",
+    "locationHidden": "この記録の詳しい位置は公開されていません",
+    "hideLocation": {
+      "button": "この投稿の位置を非公開にする",
+      "confirm": "非公開にすると、地図・公開データ・地域ページから位置と地名が消えます（あなたと運営だけが見られます）。ご自身では公開に戻せません。非公開にしますか？",
+      "confirmYes": "非公開にする",
+      "cancel": "やめる",
+      "done": "位置を非公開にしました",
+      "failed": "非公開にできませんでした。もう一度お試しください",
+      "ownerNotice": "この投稿の位置は非公開です。地図と座標はあなたと運営だけに表示されています。"
+    }
+  },
+  "auth": {
+    "login": "ログイン",
+    "signup": "新規登録",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "forgotPassword": "パスワードをお忘れの方",
+    "resetPassword": "パスワードリセット",
+    "submit": "送信",
+    "close": "閉じる",
+    "tabs": {
+      "login": "ログイン",
+      "signup": "新規登録",
+      "reset": "パスワード再設定"
+    },
+    "errors": {
+      "invalidCredentials": "メールアドレスまたはパスワードが正しくありません",
+      "emailNotConfirmed": "メールアドレスの確認が完了していません。登録時に届いたメールのリンクをクリックしてください。",
+      "alreadyRegistered": "このメールアドレスは既に登録されています",
+      "passwordTooShort": "パスワードは8文字以上で入力してください",
+      "passwordRequirements": "パスワードは8文字以上で、英字と数字をそれぞれ1文字以上含めてください",
+      "passwordMismatch": "パスワードが一致しません",
+      "resendFailed": "再送信に失敗しました。しばらくしてから再試行してください。",
+      "googleFailed": "Google認証に失敗しました。もう一度お試しください。",
+      "invalidEmail": "メールアドレスの形式が正しくありません",
+      "captchaRequired": "「私はロボットではありません」の確認を完了してください。",
+      "captchaUnavailable": "セキュリティ確認を読み込めませんでした。ページを再読み込みしてもう一度お試しください。"
+    },
+    "resendEmail": "確認メールを再送信する",
+    "resendEmailSending": "送信中...",
+    "resendEmailCooldown": "再送信（{{sec}}秒後）",
+    "emailSent": "確認メールを送信しました。メールのリンクをクリックしてアカウントを有効化してください。",
+    "emailResent": "確認メールを再送信しました。受信ボックスをご確認ください。",
+    "resetSent": "パスワードリセットメールを送信しました。",
+    "signupRequired": "記録するには、無料の登録が必要です。",
+    "signupBenefits": {
+      "post": "写真と場所つきで、記録を送れる",
+      "comment": "記録にコメントできる",
+      "dashboard": "自分の記録の履歴と統計を見返せる"
+    },
+    "passwordConfirm": "パスワード（確認）",
+    "passwordConfirmPlaceholder": "もう一度入力",
+    "passwordMinLength": "8文字以上（英字+数字）",
+    "passwordRules": {
+      "minLength": "8文字以上",
+      "hasLetter": "英字を含む",
+      "hasNumber": "数字を含む"
+    },
+    "submitLogin": "ログインする",
+    "submitSignup": "登録する",
+    "submitReset": "メールを送信",
+    "processing": "処理中...",
+    "forgotPasswordLink": "パスワードを忘れた方",
+    "goToLogin": "ログインはこちら",
+    "goToReset": "パスワードをリセット",
+    "googleLogin": "Googleで続ける",
+    "orDivider": "または",
+    "tabsLabel": "認証方法",
+    "signOutFailed": "ログアウトできませんでした。電波のある場所でもう一度ログアウトしてください",
+    "consent": {
+      "lead": "登録の前に、",
+      "and": "と",
+      "tail": "をご確認ください。"
+    }
+  },
+  "survey": {
+    "formTitle": "調査依頼を作成",
+    "detailTitle": "調査依頼",
+    "navButton": "調査依頼",
+    "location": "調査してほしい場所",
+    "species": "対象の種類",
+    "speciesUnknown": "不明",
+    "reason": "調査理由",
+    "reasonPlaceholder": "例: この場所でザリガニの鳴き声を聞いた、近くの池にいるかもしれない等",
+    "reasonLabel": "調査理由",
+    "urgency": "緊急度",
+    "urgencyNormal": "通常",
+    "urgencyUrgent": "急ぎ",
+    "submit": "調査依頼を投稿する",
+    "submitting": "投稿中...",
+    "respond": "調査結果を投稿する",
+    "close": "この依頼をクローズする",
+    "closeConfirm": "この調査依頼をクローズしますか？クローズすると再開できません。",
+    "closeConfirmAction": "クローズする",
+    "closeFailed": "クローズに失敗しました。時間をおいて再試行してください。",
+    "notFound": "調査依頼が見つかりません",
+    "anonymous": "匿名ユーザー",
+    "viewProfile": "プロフィールを見る",
+    "viewDetail": "詳細を見る",
+    "relatedPosts": "関連する調査結果 ({{count}}件)",
+    "markerTitle": "調査依頼",
+    "legendLabel": "調査依頼",
+    "mapLoading": "地図を読み込み中",
+    "status": {
+      "open": "募集中",
+      "responded": "対応あり",
+      "closed": "解決済み"
+    },
+    "errors": {
+      "noPosition": "地図をタップして場所を選択してください",
+      "noReason": "調査理由を入力してください",
+      "loginRequired": "ログインが必要です",
+      "outOfBounds": "位置情報が秋田県の範囲外です。",
+      "reasonTooLong": "理由は500文字以内で入力してください。"
+    },
+    "commentDeleteLabel": "削除",
+    "commentDeleteConfirmPrompt": "削除しますか？",
+    "commentDeleteConfirm": "削除",
+    "commentDeleteCancel": "取消",
+    "respondersEmptyTitle": "協力者を募集中です",
+    "commentsEmptyTitle": "最初のコメントで応援しよう",
+    "listEmptyTitle": "最初の調査依頼を立てよう",
+    "listEmptyDesc": "気になる場所の調査を呼びかけて、みんなで確かめましょう。",
+    "listEmptyFiltered": "条件に合う依頼が見つかりませんでした",
+    "resetFilters": "フィルタをリセット",
+    "createRequestCta": "調査依頼を立てる",
+    "respondError": "協力の更新に失敗しました",
+    "commentDeleteError": "コメントの削除に失敗しました"
+  },
+  "report": {
+    "title": "この投稿を通報する",
+    "reasonLabel": "通報理由",
+    "reasons": {
+      "spam": "スパム・連続投稿",
+      "wrongLocation": "場所が明らかに間違っている",
+      "inappropriate": "不適切なコンテンツ",
+      "other": "その他"
+    },
+    "commentLabel": "補足コメント",
+    "commentOptional": "（任意）",
+    "commentPlaceholder": "詳細があればご記入ください",
+    "errorNoReason": "理由を選択してください",
+    "errorSubmit": "送信に失敗しました。もう一度お試しください。",
+    "done": "通報を受け付けました",
+    "doneDesc": "ご報告ありがとうございます。内容を確認します。",
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "submit": "通報する"
+  },
+  "edit": {
+    "title": "投稿を編集",
+    "species": "種類",
+    "infoType": "情報種別",
+    "municipality": "市区町村",
+    "municipalityPlaceholder": "選択してください（任意）",
+    "count": "個体数",
+    "countOptional": "（任意）",
+    "countPlaceholder": "匹数を入力",
+    "observedAt": "観察日",
+    "observedAtOptional": "（任意）",
+    "comment": "コメント",
+    "photos": "写真",
+    "photosMax": "最大{{max}}枚",
+    "noPhotos": "写真なし",
+    "cancel": "キャンセル",
+    "save": "保存する",
+    "saving": "保存中..."
+  },
+  "delete": {
+    "title": "この投稿を削除しますか？",
+    "irreversible": "この操作は取り消せません。",
+    "cancel": "キャンセル",
+    "confirm": "削除する",
+    "deleting": "削除中..."
+  },
+  "howTo": {
+    "title": "ザリダスの使い方・会員特典",
+    "step1Title": "場所をタップ",
+    "step1Desc": "地図上で発見した場所をタップして選択",
+    "step2Title": "情報を入力",
+    "step2Desc": "種類・情報種別・写真などを入力して投稿",
+    "step3Title": "みんなで共有",
+    "step3Desc": "秋田全域の外来生物情報をマップで確認できる",
+    "benefitsTitle": "会員登録するともっと便利に（無料）",
+    "benefit1": "投稿にコメントできる",
+    "benefit2": "ダッシュボードで統計確認",
+    "benefit3": "データをCSVで出力",
+    "signupButton": "無料で登録する"
+  },
+  "signupBanner": {
+    "title": "目撃情報を投稿しませんか？",
+    "benefit1": "登録すると目撃・捕獲情報を投稿できる",
+    "benefit2": "マイダッシュボードで投稿履歴・審査状況を確認できる",
+    "signupButton": "無料で登録して投稿する",
+    "alreadyHaveAccount": "すでにアカウントをお持ちの方は",
+    "login": "ログイン"
+  },
+  "app": {
+    "offline": "⚠️ オフラインです。一部の機能が利用できません。"
+  },
+  "trends": {
+    "title": "トレンド",
+    "seoTitle": "出没トレンド・統計データ",
+    "seoDescription": "秋田県内のザリガニ出没情報の統計データ。月別件数推移・種類別内訳・市区町村ランキングを公開しています。",
+    "kpi": {
+      "totalPosts": "累計投稿数",
+      "thisMonth": "今月の投稿",
+      "municipalities": "報告市区町村",
+      "thisMonthInline": "今月 {{count}}件"
+    },
+    "monthlyChart": "月別投稿数推移（直近12ヶ月）",
+    "monthlyChartSole": "月別の報告状況",
+    "speciesBreakdown": "種類別内訳",
+    "infoTypeBreakdown": "情報種別内訳",
+    "municipalityRank": "報告のあった市区町村（{{count}}件）",
+    "municipalityCoverage": "この内訳に含まれるのは{{listed}}件です（累計{{total}}件）。市区町村が記録されていない報告は含まれません。",
+    "countSuffix": "件",
+    "dataNote": "データは投稿者の報告に基づきます。リアルタイムに更新されます。",
+    "earlyStageNote": "報告はまだ{{count}}件です。始まったばかりなので、あなたの1件が分布のわかっていない場所をいちばん大きく埋めます。",
+    "sparseTitle": "報告はこれから増えていきます",
+    "soleMonthHeadline": "{{month}}に{{count}}件",
+    "soleMonthNote": "報告があったのは、いまのところこの1ヶ月だけです。ほかの月はまだ0件なので、推移としてはまだ読めません。"
+  },
+  "about": {
+    "title": "このサービスについて",
+    "serviceTitle": "ザリダス",
+    "serviceDesc": "ザリダスは、秋田県内の外来生物（アメリカザリガニ・ウシガエル）の出没・分布情報をみんなで共有するマップサービスです。目撃・捕獲・痕跡・農業被害などの情報を投稿して、地域の生態系保全に貢献できます。",
+    "howToUse": "使い方",
+    "speciesGuide": "対象外来生物について",
+    "law": "外来生物法について",
+    "lawSubtitle": "特定外来生物による生態系等に係る被害の防止に関する法律",
+    "dataUsage": "データの利活用について",
+    "dataUsageDesc": "投稿されたデータは、秋田県内の外来生物（アメリカザリガニ・ウシガエル）の分布調査・生態系保全研究・行政の外来種対策などに活用される可能性があります。個人を特定できる情報は収集しておりません。",
+    "contact": "お問合せ",
+    "contactDesc": "バグ報告・ご意見・ご質問はお問合せフォームよりお送りください。",
+    "contactButton": "お問合せフォームを開く",
+    "relatedLinks": "関連リンク（環境省）",
+    "steps": {
+      "1": "トップ画面で「情報を投稿する」ボタンをタップ",
+      "2": "地図上で発見場所をタップして選択",
+      "3": "種類・情報種別・市区町村などを入力",
+      "4": "写真を添付して投稿（任意）"
+    },
+    "faq": {
+      "q1": "ザリダスの使い方は？",
+      "a1": "トップ画面で「情報を投稿する」ボタンをタップし、地図上で発見場所を選択。種類・情報種別・市区町村を入力し、写真を添付して投稿します（写真は任意）。",
+      "q2": "アメリカザリガニとはどんな生き物ですか？",
+      "a2": "アメリカザリガニ（Procambarus clarkii）は最も広く分布する外来種で、赤色で大型。農業用水路・水田・池などに生息します。2023年6月から「条件付特定外来生物」になりました。おうちでペットとして飼うことは、これまで通り手続きなくできます。ただし、池や川などの野外に放すこと、売る・買う・配る・輸入することは禁止されています。",
+      "q3": "ウシガエルとはどんな生き物ですか？",
+      "a3": "ウシガエル（Lithobates catesbeianus）は北米原産の大型カエルで、体長15〜20cm。水辺・湿地に生息し在来のカエル・魚類・昆虫などを捕食します。2006年から「特定外来生物」に指定されており、飼うこと・運ぶこと・輸入すること・売ること・野外に放すことは原則として禁止されています（研究などで許可を受けた場合をのぞきます）。",
+      "q4": "捕獲したアメリカザリガニやウシガエルはどうすればよいですか？",
+      "a4": "無理につかまえる必要はありません。見つけたら写真をとって報告するだけで大丈夫です。アメリカザリガニは、その場ですぐに放すこと（キャッチアンドリリース）は問題ありませんが、いったん持ち帰った個体をあとから野外に放すことは法律で禁止されています。持ち帰るなら、最後まで飼えるかどうかをよく考えてください。ウシガエルは、許可がないと持ち帰ること自体ができません。",
+      "q5": "ザリダスに投稿した情報はどのように使われますか？",
+      "a5": "投稿されたデータは、秋田県内の外来生物分布調査・生態系保全研究・行政の外来種対策などに活用される可能性があります。個人を特定できる情報は収集しておりません。"
+    },
+    "species_info": {
+      "american": {
+        "status": "条件付特定外来生物",
+        "desc": "北米原産の大型ザリガニ。赤色で体長10〜15cm。農業用水路・水田・ため池などに広く生息し、水草の食害や穴掘りによる農業被害を引き起こす。2023年6月から条件付特定外来生物。おうちでペットとして飼うことは手続きなくこれまで通りできますが、野外に放すこと、売る・買う・配る・輸入することは禁止されています。"
+      },
+      "bullfrog": {
+        "status": "特定外来生物",
+        "desc": "北米原産の大型カエル。体長15〜20cmで低い鳴き声が特徴。水辺・湿地・水田に生息し、在来のカエル・魚・昆虫・小型哺乳類などを捕食。生態系と農業の両面に深刻な影響を与える。2006年から特定外来生物。アメリカザリガニとちがって、飼うことや運ぶことも許可がなければできません。"
+      }
+    },
+    "law_info": {
+      "american": {
+        "title": "アメリカザリガニ",
+        "desc": "2023年6月1日から「条件付特定外来生物」になりました。おうちでペットとして飼うことは、これまで通りできます。申請や届出などの手続きもいりません。ただし、<0>池や川などの野外に放したり、逃がしたりすることは禁止</0>されています。売る・買う・配る・輸入することもできません。",
+        "rule1": "野外に放す・逃がす ✕",
+        "rule2": "売る・買う・配る・輸入する ✕",
+        "allowed": "おうちで飼う ○（手続きはいりません）"
+      },
+      "bullfrog": {
+        "title": "ウシガエル",
+        "desc": "2006年から「特定外来生物」になりました。アメリカザリガニとちがって、<0>飼うことや運ぶことも原則できません</0>（研究などで許可を受けた場合をのぞきます）。野外に放すこと、売ること、輸入することも禁止されています。",
+        "rule1": "飼う・運ぶ ✕（許可が必要）",
+        "rule2": "野外に放す・売る・輸入する ✕"
+      },
+      "warning": "見つけたときは、写真をとって報告するだけで大丈夫です。生きものはそのままにしておいてください。いったん持ち帰った個体をあとから野外に放すことは、法律で禁止されています。ウシガエルは、許可がないと持ち帰ること自体ができません。",
+      "envLink1": "アメリカザリガニ・アカミミガメの規制について（環境省ホームページ）",
+      "envLink2": "ウシガエルなど特定外来生物の規制について（環境省ホームページ）",
+      "envLink3": "外来生物法について（環境省ホームページ）"
+    }
+  },
+  "footer": {
+    "aboutService": "このサービスについて",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問合せ",
+    "copyright": "© {{year}} ザリダス. All rights reserved."
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "retry": "再試行",
+    "cancel": "キャンセル",
+    "save": "保存する",
+    "saving": "保存中...",
+    "close": "閉じる",
+    "required": "必須",
+    "optional": "任意",
+    "darkMode": "ダークモードに切り替え",
+    "lightMode": "ライトモードに切り替え",
+    "loadError": "読み込みに失敗しました",
+    "backToTop": "トップに戻る",
+    "back": "戻る"
+  },
+  "admin": {
+    "login": {
+      "title": "ザリダス 管理画面",
+      "subtitle": "管理者のみアクセス可能",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "submit": "ログイン",
+      "submitting": "ログイン中...",
+      "error": "メールアドレスまたはパスワードが正しくありません",
+      "rateLimited": "試行回数が多すぎます。{{minutes}}分後に再度お試しください。",
+      "backToSite": "← 一般サイトへ戻る"
+    },
+    "session": {
+      "timeoutWarning": "セキュリティのため、まもなくセッションが切れます。操作を続けるには画面を操作してください。"
+    },
+    "nav": {
+      "title": "管理画面",
+      "dashboard": "ダッシュボード",
+      "posts": "投稿管理",
+      "reports": "通報管理",
+      "users": "ユーザー管理",
+      "comments": "コメント管理",
+      "logs": "操作ログ",
+      "signOut": "サインアウト",
+      "publicSite": "一般サイト",
+      "logout": "ログアウト",
+      "authChecking": "認証確認中...",
+      "spots": "非公開スポット"
+    },
+    "errorBoundary": {
+      "title": "エラーが発生しました",
+      "description": "管理画面でエラーが発生しました。再試行してください。",
+      "errorId": "エラーID: {{id}}",
+      "retry": "再試行",
+      "dashboard": "ダッシュボード"
+    },
+    "dashboard": {
+      "title": "ダッシュボード",
+      "loading": "データを読み込み中...",
+      "allPeriod": "全期間",
+      "kpi": {
+        "posts": "期間内投稿数",
+        "verified": "確認済み投稿",
+        "verifiedRate": "確認済み率",
+        "pendingReports": "未対応通報"
+      },
+      "chart": {
+        "monthly": "月別投稿数",
+        "monthlyDesc": "選択期間の月別推移",
+        "postCount": "投稿数"
+      },
+      "breakdown": {
+        "species": "種類別内訳",
+        "infoType": "情報種別内訳"
+      },
+      "recentLogs": "最近の操作",
+      "viewAll": "すべて見る →",
+      "adminFallback": "管理者",
+      "quickActions": {
+        "managePosts": "投稿を管理する",
+        "managePostsDesc": "フィルター・削除・CSVエクスポート",
+        "checkReports": "通報を確認する",
+        "noPendingReports": "未対応の通報はありません",
+        "pendingReports": "{{count}}件の未対応通報があります"
+      },
+      "dateRange": {
+        "thisMonth": "今月",
+        "lastMonth": "先月",
+        "last3Months": "直近3ヶ月",
+        "last6Months": "直近6ヶ月",
+        "thisYear": "今年",
+        "allPeriod": "全期間"
+      }
+    },
+    "posts": {
+      "title": "投稿管理",
+      "bulkDelete": "{{count}}件を一括削除",
+      "bulkProgressApprove": "{{done}}/{{total}} 件承認中...",
+      "bulkResult": {
+        "success": "一括処理: {{succeeded}}件成功",
+        "withFailures": "{{succeeded}}件成功・{{failed}}件失敗"
+      },
+      "pendingCountUnavailable": "審査待ち件数を取得できません",
+      "pendingEmpty": "審査待ちの投稿はありません",
+      "exportCsv": "CSVエクスポート",
+      "filter": {
+        "allSpecies": "全種類",
+        "allInfoTypes": "全種別",
+        "allMunicipalities": "全市区町村",
+        "keyword": "キーワード検索",
+        "allPosts": "全投稿",
+        "verifiedOnly": "🔵 確認済みのみ",
+        "anonymousOnly": "⚪ 匿名のみ"
+      },
+      "table": {
+        "range": "{{total}}件中 {{from}}〜{{to}}件",
+        "date": "投稿日",
+        "auth": "認証",
+        "municipality": "市区町村",
+        "species": "種類",
+        "infoType": "種別",
+        "comment": "コメント",
+        "photo": "写真"
+      },
+      "badge": {
+        "anonymous": "匿名",
+        "verified": "✓ 確認済み"
+      },
+      "action": {
+        "makeOfficial": "公式化",
+        "official": "★公式",
+        "delete": "削除"
+      },
+      "statusPending": "審査待ち",
+      "statusApproved": "公開中",
+      "statusRejected": "却下済み",
+      "statusAll": "全件",
+      "empty": "投稿がありません",
+      "loading": "読み込み中...",
+      "prev": "← 前へ",
+      "next": "次へ →",
+      "deleteDialog": {
+        "title": "投稿を削除しますか？",
+        "irreversible": "この操作は取り消せません。",
+        "cancel": "キャンセル",
+        "confirm": "削除する"
+      },
+      "bulkDialog": {
+        "title": "{{count}}件の投稿を一括削除しますか？",
+        "desc": "選択した投稿と写真を完全に削除します。",
+        "warning": "この操作は取り消せません。",
+        "cancel": "キャンセル",
+        "confirm": "{{count}}件を削除する"
+      },
+      "bulkProgress": "{{done}}/{{total}} 件削除中...",
+      "error": {
+        "fetchFailed": "データの取得に失敗しました",
+        "deleteFailed": "投稿の削除に失敗しました",
+        "officialFailed": "公式フラグの切替に失敗しました",
+        "disclosureFailed": "公開レベルの変更に失敗しました"
+      },
+      "csvHeaders": {
+        "id": "ID",
+        "date": "投稿日時",
+        "lat": "緯度",
+        "lng": "経度",
+        "municipality": "市区町村",
+        "species": "種類",
+        "infoType": "情報種別",
+        "comment": "コメント",
+        "photoCount": "写真枚数",
+        "authType": "認証区分"
+      },
+      "anonymousLabel": "匿名",
+      "verifiedLabel": "確認済み",
+      "disclosure": {
+        "label": "位置の公開範囲",
+        "updated": "公開レベルを変更しました",
+        "speciesUpdated": "種の既定公開レベルを変更しました",
+        "speciesTitle": "種ごとの既定公開レベル",
+        "speciesDesc": "新しい投稿の位置公開レベルの初期値を種ごとに設定します",
+        "apply": "適用",
+        "level": {
+          "precise": "正確な位置",
+          "coarsened": "おおよそ（約111m）",
+          "hidden": "非公開"
+        }
+      }
+    },
+    "reports": {
+      "title": "通報管理",
+      "tab": {
+        "pending": "未対応",
+        "resolved": "対応済み"
+      },
+      "loading": "読み込み中...",
+      "emptyPending": "未対応の通報はありません",
+      "emptyResolved": "対応済みの通報はありません",
+      "reason": {
+        "spam": "スパム・宣伝",
+        "wrong_location": "位置情報の誤り",
+        "inappropriate": "不適切なコンテンツ",
+        "other": "その他"
+      },
+      "ip": {
+        "none": "取得なし",
+        "show": "表示",
+        "hide": "隠す",
+        "sameCount": "同IP {{count}}件"
+      },
+      "reporterComment": "通報コメント: ",
+      "postDate": "投稿: ",
+      "postDeleted": "対象投稿は削除済み",
+      "action": {
+        "deletePost": "投稿を削除",
+        "dismiss": "却下"
+      },
+      "status": {
+        "resolved": "対応済み"
+      },
+      "deleteDialog": {
+        "title": "投稿を削除しますか？",
+        "message": "対象の投稿と写真を完全に削除します。この操作は取り消せません。通報も同時に削除されます。",
+        "confirm": "投稿を削除",
+        "cancel": "キャンセル"
+      },
+      "dismissDialog": {
+        "title": "通報を却下しますか？",
+        "message": "この通報を対応済みとしてマークします。投稿は削除されません。",
+        "confirm": "却下する",
+        "cancel": "キャンセル"
+      },
+      "error": {
+        "deleteFailed": "投稿の削除に失敗しました",
+        "dismissFailed": "通報の対応済み切替に失敗しました"
+      }
+    },
+    "users": {
+      "title": "ユーザー管理",
+      "summary": "全{{total}}名 / 管理者{{adminCount}}名",
+      "refresh": "更新",
+      "empty": "ユーザーが見つかりません",
+      "error": {
+        "fetchFailed": "ユーザー一覧の取得に失敗しました: {{message}}",
+        "roleFailed": "権限の変更に失敗しました",
+        "title": "エラー"
+      },
+      "table": {
+        "email": "メールアドレス",
+        "registeredAt": "登録日",
+        "lastLogin": "最終ログイン",
+        "role": "権限"
+      },
+      "role": {
+        "admin": "🛡️ 管理者",
+        "user": "一般ユーザー"
+      },
+      "self": "あなた",
+      "action": {
+        "detail": "詳細",
+        "grant": "管理者に付与",
+        "revoke": "権限を剥奪",
+        "noChange": "変更不可"
+      },
+      "modal": {
+        "postCount": "📍 投稿",
+        "commentCount": "💬 コメント",
+        "reportCount": "🚨 通報受信",
+        "recentPosts": "直近の投稿",
+        "recentComments": "直近のコメント",
+        "noPosts": "投稿なし",
+        "noComments": "コメントなし",
+        "noData": "データなし"
+      },
+      "grantDialog": {
+        "title": "管理者権限を付与しますか？",
+        "message": "この操作により、対象ユーザーが管理画面にアクセスできるようになります。",
+        "confirm": "付与する"
+      },
+      "revokeDialog": {
+        "title": "管理者権限を剥奪しますか？",
+        "message": "この操作により、対象ユーザーの管理画面アクセスが無効になります。",
+        "confirm": "剥奪する"
+      },
+      "dialog": {
+        "cancel": "キャンセル"
+      }
+    },
+    "comments": {
+      "title": "コメント管理",
+      "filter": {
+        "keyword": "キーワード検索",
+        "officialOnly": "公式コメントのみ"
+      },
+      "table": {
+        "range": "{{total}}件中 {{from}}〜{{to}}件",
+        "date": "日時",
+        "type": "区分",
+        "content": "コメント内容",
+        "post": "投稿先"
+      },
+      "badge": {
+        "official": "★ 公式",
+        "general": "一般"
+      },
+      "action": {
+        "delete": "削除"
+      },
+      "empty": "コメントがありません",
+      "loading": "読み込み中...",
+      "prev": "← 前へ",
+      "next": "次へ →",
+      "deleteDialog": {
+        "title": "コメントを削除しますか？",
+        "irreversible": "この操作は取り消せません。",
+        "cancel": "キャンセル",
+        "confirm": "削除する"
+      },
+      "error": {
+        "deleteFailed": "コメントの削除に失敗しました"
+      }
+    },
+    "logs": {
+      "title": "操作ログ",
+      "subtitle": "管理者による操作の監査ログ",
+      "fetchFailed": "操作ログを読み込めませんでした。もう一度お試しください。",
+      "exportCsv": "CSVエクスポート",
+      "filter": {
+        "allActions": "全操作種別",
+        "allAdmins": "全員",
+        "myOnly": "自分のみ"
+      },
+      "total": "{{count}}件",
+      "loading": "読み込み中...",
+      "table": {
+        "date": "日時",
+        "operator": "操作者",
+        "action": "操作種別",
+        "target": "対象",
+        "details": "詳細"
+      },
+      "empty": "ログがありません",
+      "prev": "← 前へ",
+      "next": "次へ →",
+      "action": {
+        "delete_post": "投稿削除",
+        "delete_comment": "コメント削除",
+        "resolve_report": "通報処理",
+        "grant_admin": "管理者付与",
+        "revoke_admin": "管理者剥奪",
+        "toggle_official": "公式切替",
+        "login_success": "ログイン成功",
+        "login_failed": "ログイン失敗",
+        "review_water_report": "水域情報の審査"
+      },
+      "target": {
+        "post": "投稿",
+        "comment": "コメント",
+        "report": "通報",
+        "user": "ユーザー",
+        "water_report": "水域の情報提供"
+      },
+      "csv": {
+        "date": "日時",
+        "operator": "操作者",
+        "action": "操作種別",
+        "targetType": "対象種別",
+        "targetId": "対象ID",
+        "details": "詳細"
+      }
+    },
+    "components": {
+      "statCard": {
+        "unit": "件"
+      },
+      "recentPosts": {
+        "title": "最近の投稿",
+        "viewAll": "すべて見る →",
+        "empty": "投稿がありません",
+        "unknown": "不明",
+        "municipalityUnknown": "市区町村不明",
+        "anonymous": "匿名",
+        "verified": "✓ 確認済"
+      },
+      "municipalityRanking": {
+        "title": "市区町村別ランキング",
+        "noData": "データなし",
+        "unit": "件"
+      },
+      "summaryCard": {
+        "title": "期間比較",
+        "previousPeriod": "前の期間",
+        "currentPeriod": "今の期間",
+        "change": "増減",
+        "vsPrevious": "前期間比",
+        "unit": "件"
+      }
+    },
+    "aiAccuracy": {
+      "title": "⑤ AI 信頼度 → 的中率",
+      "note": "AI 信頼度（confidence）を4帯に分け、人手判定の結果と AI 検出種の的中を突合します。承認済み投稿の確定種を真値とみなす運用プロキシです（真の適合率/再現率はラベル付き検証セットが必要）。",
+      "empty": "AI 信頼度付きの投稿がまだありません。",
+      "colBin": "信頼度帯",
+      "colTotal": "件数",
+      "colApproved": "承認",
+      "colRejected": "却下",
+      "colPending": "保留",
+      "colAutoApproved": "自動承認",
+      "colApprovalRate": "承認率",
+      "colMatchRate": "的中率",
+      "binLt50": "〜50%",
+      "bin50_70": "50〜70%",
+      "bin70_90": "70〜90%",
+      "bin90_100": "90〜100%",
+      "summary": "全体",
+      "humanReviewed": "人手レビュー分（自動承認を除く独立検証）",
+      "humanMatchRate": "人手承認の的中率",
+      "avgConfidence": "平均信頼度",
+      "approvalRateDef": "承認率＝承認÷（承認＋却下）。保留は分母から除外。",
+      "matchRateDef": "的中率＝承認かつAI検出種＝確定種÷承認。",
+      "caveat": "承認率は自動承認（信頼度連動）を含むため上振れします。独立した根拠は人手レビュー分の的中率を参照してください。"
+    },
+    "spots": {
+      "title": "非公開スポット",
+      "exportCsv": "CSV出力",
+      "noticeTitle": "取り扱い注意（研究用・閲覧専用）",
+      "noticeBody": "利用者が「非公開で保存」した地点です。希少な生きものの生息地を含む可能性があります。公開ページ・公開データ・SNS・発表資料に正確な位置を載せないでください。",
+      "loading": "読み込み中...",
+      "fetchFailed": "読み込みに失敗しました",
+      "empty": "まだ非公開スポットはありません",
+      "count": "{{count}}件",
+      "user": "利用者"
+    }
+  },
+  "validation": {
+    "generic": "入力内容を確認してください。",
+    "draftInvalid": "下書きの内容に不備があるため送信できませんでした。",
+    "location": {
+      "outOfBounds": "位置情報が秋田県の範囲外です。地図上で正しい位置を選択してください。"
+    },
+    "species": {
+      "invalid": "無効な種類が指定されています。"
+    },
+    "infoType": {
+      "invalid": "無効な情報種別が指定されています。"
+    },
+    "weather": {
+      "invalid": "無効な天気が指定されています。"
+    },
+    "surveyMethod": {
+      "invalid": "無効な調査手法が指定されています。"
+    },
+    "locationSource": {
+      "invalid": "無効な位置取得手段が指定されています。"
+    },
+    "comment": {
+      "tooLong": "コメントは500字以内で入力してください。"
+    },
+    "count": {
+      "invalid": "個体数は整数で入力してください。",
+      "range": "個体数は1〜999の整数で入力してください。"
+    },
+    "humidity": {
+      "range": "湿度は0〜100の範囲で入力してください。"
+    },
+    "surveyDuration": {
+      "range": "調査時間は1〜480分の範囲で入力してください。"
+    },
+    "content": {
+      "required": "本文を入力してください。",
+      "tooLong": "本文は500字以内で入力してください。"
+    },
+    "reason": {
+      "required": "理由を入力してください。",
+      "tooLong": "理由は300字以内で入力してください。"
+    },
+    "urgency": {
+      "invalid": "無効な緊急度が指定されています。"
+    },
+    "report": {
+      "reason": "無効な通報理由が指定されています。"
+    },
+    "siteName": {
+      "required": "サイト名を入力してください。",
+      "tooLong": "サイト名は100字以内で入力してください。"
+    },
+    "notes": {
+      "tooLong": "メモは500字以内で入力してください。"
+    },
+    "displayName": {
+      "required": "ニックネームを入力してください。",
+      "tooLong": "ニックネームは20字以内で入力してください。"
+    },
+    "bio": {
+      "tooLong": "自己紹介は100字以内で入力してください。"
+    }
+  },
+  "weather": {
+    "sectionTitle": "観察時の天気",
+    "fetching": "天気を取得中...",
+    "autoLabel": "自動取得",
+    "noData": "取得できませんでした",
+    "fetchError": "天気情報を取得できませんでした。",
+    "noPosition": "📍 地図でピンを立てると自動取得されます",
+    "switchManual": "手動で入力",
+    "switchAuto": "自動に戻す",
+    "label": "天気",
+    "temperatureLabel": "気温 (°C)",
+    "humidityLabel": "湿度 (%)",
+    "humidity": "湿度{{value}}%",
+    "sunny": "晴れ",
+    "cloudy": "曇り",
+    "overcast": "曇り",
+    "rainy": "雨",
+    "snowy": "雪",
+    "thunderstorm": "雷雨",
+    "unknown": "不明"
+  },
+  "account": {
+    "deleteLink": "アカウントを削除する",
+    "deleteTitle": "アカウントの削除",
+    "deleteWarning": "アカウントを削除すると以下の処理が行われます：",
+    "deleteKeepPosts": "投稿・コメントは匿名として残ります",
+    "deleteRemoveProfile": "プロフィール・バッジ・いいね・調査依頼・非公開スポット・調査計画・希少種の記録・水域の情報提供（写真を含む）が削除されます",
+    "deleteIrreversible": "この操作は取り消せません",
+    "deleteConfirmLabel": "確認のため「削除」と入力してください",
+    "deleteConfirmPlaceholder": "削除",
+    "deleteConfirmWord": "削除",
+    "deleteButton": "削除する",
+    "deleting": "削除中...",
+    "deleteError": "アカウントの削除に失敗しました",
+    "deletePhotosFailed": "非公開の写真を削除できなかったため、退会は行いませんでした。通信できる場所で再試行してください",
+    "deleteFailedPhotosRemoved": "退会できませんでした（非公開の写真は削除済みです）。もう一度お試しください"
+  },
+  "myPosts": {
+    "title": "自分の投稿一覧",
+    "empty": "まだ投稿がありません。",
+    "emptyAction": "から投稿してみましょう。",
+    "topPage": "トップページ",
+    "detail": "詳細",
+    "status": {
+      "pending": "審査中",
+      "approved": "公開中",
+      "rejected": "却下"
+    }
+  },
+  "dashboard": {
+    "sendFailed": "送信に失敗しました",
+    "pendingDrafts": "未送信の下書き（{{count}}件）",
+    "sending": "送信中...",
+    "sendAll": "すべて送信",
+    "offlineLabel": "オフライン",
+    "sendingProgress": "送信中: {{current}}/{{total}}件",
+    "successCount": "{{count}}件成功",
+    "failedCount": "{{count}}件失敗",
+    "sendingStatus": "送信中",
+    "photoCount": "📷{{count}}枚",
+    "deleteLabel": "削除",
+    "cancelLabel": "取消",
+    "deleteTitle": "削除",
+    "postImageAlt": "投稿画像",
+    "postThumbnailAlt": "投稿写真サムネイル",
+    "unknown": "不明",
+    "statusPending": "🕐 審査中",
+    "statusRejected": "✕ 却下",
+    "statusApproved": "✓ 公開中",
+    "aiJudging": "⏳ 判定中",
+    "aiConfirmed": "🤖 AI確認 {{confidence}}%",
+    "aiMismatch": "⚠️ 種不一致",
+    "aiUnclear": "🔍 判別不能",
+    "audioJudging": "⏳ 音声判定中",
+    "audioConfirmed": "🎤 鳴き声一致 {{confidence}}%",
+    "audioMismatch": "⚠️ 鳴き声不一致",
+    "audioUnclear": "🔍 鳴き声判別不能",
+    "audioPoorQuality": "🎤 音質不良",
+    "aiImageReasonPrefix": "画像判定",
+    "aiAudioReasonPrefix": "音声判定",
+    "aiConfidenceShort": "信頼度 {{confidence}}%",
+    "audioQuality": {
+      "good": "音質: 良好",
+      "acceptable": "音質: 許容範囲",
+      "poor": "音質: 不良"
+    },
+    "rejectionReason": "却下理由: {{reason}}",
+    "postPhotoAlt": "投稿写真",
+    "editTitle": "編集",
+    "deletePostTitle": "削除",
+    "canSendNow": "オンラインに復帰しました。未送信の下書きを送信できます。",
+    "csvExportError": "CSVのエクスポートに失敗しました。",
+    "legacyDrafts": "持ち主の分からない古い下書きが{{count}}件あります（利用者ごとに分ける前に保存されたもの）。自分のものなら、確かめてから送れます。",
+    "legacyDraftsDiscard": "破棄する",
+    "legacyDraftsDiscarded": "古い下書きを破棄しました",
+    "legacyClaim": "自分のものとして送る",
+    "legacyClaimConfirm": "この下書きを自分の投稿として送りますか？ 自分で保存したものか、中身を確かめてから送ってください。",
+    "legacyDiscardConfirm": "この下書きを破棄しますか？ 元に戻せません。",
+    "legacyDraftsClaimed": "自分の投稿として送りました",
+    "legacyDraftsClaimedQueued": "自分の下書きに移しました。電波のある場所で送れます"
+  },
+  "audio": {
+    "ariaLabel": "音声プレビュー",
+    "previewError": "音声の読み込みに失敗しました。",
+    "downloadFallback": "ファイルを開く",
+    "sectionTitle": "録音された鳴き声",
+    "permission": {
+      "denied": "マイクの使用が許可されていません。",
+      "notFound": "マイクが見つかりません。デバイスにマイクが接続されているかご確認ください。",
+      "busy": "他のアプリがマイクを使用中の可能性があります。一度他のアプリを閉じてからお試しください。",
+      "overconstrained": "マイクが要求された設定をサポートしていません。",
+      "insecure": "HTTPS 接続が必要です。",
+      "unsupported": "このブラウザは録音機能に対応していません。",
+      "aborted": "録音が中断されました。もう一度お試しください。",
+      "unknown": "録音を開始できませんでした。",
+      "showGuide": "許可方法を見る",
+      "switchToUpload": "ファイルから選ぶ",
+      "inAppWarning": "このアプリ内ブラウザではマイクが使えない場合があります。Safari / Chrome で開き直してください。",
+      "openInBrowser": "外部ブラウザで開く",
+      "copyUrl": "URL をコピー",
+      "urlCopied": "URL をコピーしました",
+      "guideTitle": "マイクの許可方法",
+      "guideIntro": "ご利用環境に合わせた手順をご確認ください。",
+      "guideClose": "閉じる",
+      "guide": {
+        "safariIos": {
+          "title": "iPhone / iPad (Safari)",
+          "steps": "1. 設定アプリを開く\n2. Safari → カメラ・マイク（または「サイトの設定」）\n3. 「許可」または「確認」を選択\n4. このページを再読み込み"
+        },
+        "chromeAndroid": {
+          "title": "Android (Chrome)",
+          "steps": "1. アドレスバー左の 🔒（鍵）アイコンをタップ\n2. サイトの設定 → マイク → 許可\n3. このページを再読み込み"
+        },
+        "safariMacos": {
+          "title": "Mac (Safari)",
+          "steps": "1. メニューバーの Safari → 設定 → Web サイト → マイク\n2. このサイトを「許可」に変更\n3. ページを再読み込み"
+        },
+        "chromeDesktop": {
+          "title": "PC (Chrome / Edge / Firefox)",
+          "steps": "1. アドレスバー左の 🔒（鍵）アイコンをクリック\n2. 「マイク」を「許可」に変更\n3. ページを再読み込み"
+        },
+        "generic": {
+          "title": "その他のブラウザ",
+          "steps": "ブラウザのサイト設定からマイクの使用を許可してから、ページを再読み込みしてください。"
+        }
+      }
+    }
+  },
+  "lp": {
+    "hero": {
+      "title": "あなたの「見つけた」が、秋田の自然を守る。",
+      "subtitle": "ザリガニやウシガエルを見つけたら、スマホで撮ってのせるだけ。あなたの報告が地図になって、秋田の自然を守る手がかりになります。登録はずっと無料です。",
+      "ctaPrimary": "無料で参加する",
+      "ctaSecondary": "登録せずに地図を見る",
+      "imageAlt": "ザリダスの地図画面"
+    },
+    "problem": {
+      "title": "いま、秋田の水辺で起きていること",
+      "item1Title": "じつは、増えています",
+      "item1Body": "アメリカザリガニとウシガエルは、もともと日本にいなかった生きものです。田んぼや水路の小さな生きものを食べて、どんどん増えています。",
+      "item2Title": "どこにいるか、まだよく分かっていません",
+      "item2Body": "守るための第一歩は「どこにいるか」を知ること。でも秋田は広くて、調べる人の手が足りていません。",
+      "item3Title": "あなたの「見つけた」が、役に立ちます",
+      "item3Body": "散歩のとちゅうで見かけた1匹。田んぼで聞いた鳴き声。その小さな報告が、秋田の自然を守る大きな手がかりになります。",
+      "moreLink": "この生きものたちについてくわしく見る"
+    },
+    "features": {
+      "title": "ザリダスの楽しみかた",
+      "mapTitle": "あなたの報告が、すぐ地図にのる",
+      "mapBody": "のせた報告は、すぐに秋田県の地図に表示されます。「自分の見つけた1匹」がみんなの地図の一部になるのを、その場で見られます。",
+      "aiTitle": "名前を知らなくても、AIが教えてくれる",
+      "aiBody": "写真や鳴き声から、AIが生きものの名前を当ててくれます。上手な撮りかたのコツも教えてくれるので、使うほど生きものにくわしくなれます。",
+      "requestsTitle": "あなたの報告が、研究に使われる",
+      "requestsBody": "「この場所を調べてほしい」という研究者からのお願いに、答えることができます。あなたの報告が、そのまま秋田の自然を守る調査に役立ちます。",
+      "gamificationTitle": "続けるほど、楽しくなる",
+      "gamificationBody": "報告するとバッジがもらえて、ランキングにものります。がんばりが目に見えるから、お子さんといっしょの生きもの探しにもぴったりです。"
+    },
+    "how": {
+      "title": "はじめかたは、かんたん3ステップ",
+      "step1Title": "見つける",
+      "step1Body": "田んぼや水路、川辺で、ザリガニやウシガエルを見かけたら。鳴き声を聞いただけでも大丈夫です。",
+      "step2Title": "撮って、のせる",
+      "step2Body": "スマホで撮って、地図で場所を選ぶだけ。1分で終わります。写真がなくてものせられます。",
+      "step3Title": "地図にのる",
+      "step3Body": "内容を確認したあと、みんなの地図に表示されます。あなたの報告が、秋田の自然を守るために使われます。"
+    },
+    "stats": {
+      "title": "秋田のあちこちから、報告が集まっています",
+      "postsLabel": "集まった報告",
+      "postsUnit": "件",
+      "usersLabel": "いっしょに参加している人",
+      "usersUnit": "人",
+      "areaLabel": "対応エリア",
+      "areaValue": "秋田県の全25市町村",
+      "operator": "ザリダスは、秋田の自然が大好きなひとりの大学生がつくった、無料のサービスです。集まった報告は、秋田の自然を守る研究や、県や市の取り組みに役立てられます。"
+    },
+    "faq": {
+      "title": "よくある質問",
+      "q1": "お金はかかりますか？",
+      "a1": "かかりません。登録もふくめて、ぜんぶ無料で使えます。",
+      "q2": "登録には何が必要ですか？",
+      "a2": "メールアドレスか、Googleアカウントだけです。名前や住所を入力する必要はありません。",
+      "q3": "生きものにくわしくなくても大丈夫ですか？",
+      "a3": "大丈夫です。写真や鳴き声から、AIが名前を当ててくれます。見分けかたや撮りかたのコツも教えてくれるので、だんだんくわしくなれます。",
+      "q4": "写真がなくてものせられますか？",
+      "a4": "のせられます。写真はなくても大丈夫です。「見かけた」「鳴き声を聞いた」だけでも、大切な報告になります。",
+      "q5": "秋田県の外からも使えますか？",
+      "a5": "地図はどなたでも見られます。報告をのせられるのは、秋田県の中で見つけたものだけです。",
+      "q6": "見つけたら、つかまえないとダメですか？",
+      "a6": "いいえ、見かけた報告だけで十分です。もしつかまえた場合は、生きたまま別の場所ににがすことが法律で禁止されているので、注意してください。",
+      "a6Link": "きまりについてくわしく見る",
+      "q7": "のせた場所が、自分の家だと他の人にバレませんか？",
+      "a7": "ご安心ください。地図にのるのは「どこで見つけたか」だけで、のせた人の名前や連絡先は表示されません。だれが報告したかは他の人には分からないので、安心して参加できます。",
+      "a7Link": "プライバシーポリシーを見る"
+    },
+    "final": {
+      "title": "あなたの「見つけた」を、待っています。",
+      "subtitle": "登録は無料。メールアドレスか Googleアカウントがあれば、すぐはじめられます。"
+    },
+    "header": {
+      "login": "ログイン",
+      "cta": "無料で参加する",
+      "logoLabel": "ページの先頭へ戻る"
+    },
+    "sticky": {
+      "cta": "無料で参加する",
+      "note": "登録30秒・ずっと無料"
+    },
+    "footer": {
+      "about": "このサービスについて",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "navLabel": "フッター",
+      "copyright": "© {{year}} ザリダス"
+    },
+    "marquee": {
+      "pause": "動きを止める",
+      "play": "動きを再開"
+    }
+  },
+  "authCallback": {
+    "errors": {
+      "otpExpired": "リンクの有効期限が切れています。パスワードリセットを再度お試しください。",
+      "authFailed": "認証に失敗しました",
+      "invalidLink": "認証リンクが無効か期限切れです。再度メールアドレスの登録をお試しください。",
+      "updateFailed": "パスワードの更新に失敗しました"
+    },
+    "error": {
+      "title": "認証に失敗しました",
+      "backToTop": "トップページへ戻る",
+      "retryHint": "トップページの「ログイン」から新規登録を再度お試しください"
+    },
+    "recovery": {
+      "title": "新しいパスワードの設定",
+      "subtitle": "新しいパスワードを入力してください",
+      "passwordLabel": "新しいパスワード",
+      "passwordConfirmLabel": "パスワード（確認）",
+      "passwordConfirmPlaceholder": "もう一度入力",
+      "submitting": "更新中...",
+      "submit": "パスワードを更新する"
+    },
+    "confirmed": {
+      "title": "メールアドレスの確認が完了しました！",
+      "description": "アカウントが有効化されました。すべての機能をご利用いただけます。",
+      "redirecting": "3秒後にホームへ移動します...",
+      "goToHome": "今すぐホームへ"
+    },
+    "loading": "認証処理中..."
+  },
+  "ranking": {
+    "period": {
+      "all": "全期間",
+      "month": "今月",
+      "year": "今年"
+    },
+    "breadcrumb": "ランキング",
+    "framing": {
+      "main": "あなたの一つひとつの報告が、秋田県の外来生物の分布把握と除去・研究活動に役立てられています。",
+      "sub": "量よりも「いろいろな場所・種類の発見」が分布解明の力になります。"
+    },
+    "viewSwitch": "表示切替",
+    "tabDiversity": "発見の多様性",
+    "tabLeaderboard": "投稿数（参考）",
+    "yourCollection": "あなたのコレクション",
+    "coverage": {
+      "infoType": "情報種類（目撃・捕獲・痕跡・被害・不在）",
+      "municipality": "カバーした市区町村",
+      "species": "発見した種"
+    },
+    "infoTypeComplete": "情報種類コンプリート！5種すべての観察を報告しました",
+    "infoTypeCompleteShort": "情報種類コンプリート",
+    "diversityEmpty": {
+      "title": "まだ記録がありません",
+      "desc": "投稿が承認されると、発見の多様性が表示されます"
+    },
+    "you": "(あなた)",
+    "diversitySummary": "情報種類 {{coverage}}/{{total}}・{{municipalities}}地域・{{species}}種",
+    "leaderboardNote": "※ 投稿数は活動量の参考値です。継続のしやすさは「発見の多様性」と関連すると報告されています。",
+    "yourActivity": "あなたの活動量",
+    "reportCount": "{{count}}件の報告",
+    "rankPosition": "{{rank}}位",
+    "leaderboardEmpty": "まだランキングデータがありません",
+    "countUnit": "件",
+    "tabQuality": "検証済みの質",
+    "qualityNote": "「いいね」や投稿数の多さではなく、審査を通過した検証済みの報告と、その精度（承認率・定点観察・GPS精度）を称えます。",
+    "yourQuality": "あなたの貢献の質",
+    "verifiedCount": "検証済み {{count}} 件",
+    "verifiedUnit": "検証済み",
+    "quality": {
+      "approvalRate": "承認率",
+      "structuredRate": "定点観察",
+      "gpsGoodRate": "GPS精度"
+    },
+    "qualityEmpty": {
+      "title": "まだ検証済みの報告がありません",
+      "desc": "投稿が承認されると、検証済みの貢献として表示されます"
+    },
+    "qualitySummary": "検証済み {{verified}} 件・承認率 {{approval}}・定点観察 {{structured}}",
+    "diversityEmptyTitle": "最初の発見を記録しよう",
+    "qualityEmptyTitle": "最初の検証済み報告を目指そう",
+    "leaderboardEmptyTitle": "最初の報告を投稿しよう",
+    "earlyStageNote": "記録している人はまだ{{count}}人です。いま参加すると、まだ誰も報告していない場所を最初に記録できます。",
+    "sparseTitle": "記録する人はこれから増えていきます"
+  },
+  "profilePage": {
+    "editTitle": "プロフィール編集",
+    "iconLabel": "アイコン",
+    "nicknameLabel": "ニックネーム（20文字以内）",
+    "nicknamePlaceholder": "名無し調査員",
+    "bioLabel": "自己紹介（100文字以内）",
+    "bioCount": "{{count}}/100",
+    "showInRanking": "ランキングに表示する",
+    "notifySurvey": "調査依頼の通知メールを受け取る",
+    "save": "保存",
+    "header": "プロフィール",
+    "notFound": "プロフィールが見つかりません",
+    "stats": {
+      "posts": "投稿",
+      "comments": "コメント",
+      "activeArea": "活動圏",
+      "municipalityCount": "{{count}}市町村"
+    },
+    "badges": "獲得バッジ",
+    "recentPosts": "最近の投稿",
+    "postPhotoAlt": "{{species}}の投稿写真",
+    "viewRanking": "投稿ランキングを見る",
+    "lifecycleSection": "お知らせメールの受信設定",
+    "notifyResearchAdopted": "観察が研究に採用されたら知らせる",
+    "notifyDormant": "しばらくお休み中のお誘いメールを受け取る",
+    "notifyWeeklyDigest": "地域の週刊ダイジェストを受け取る",
+    "pushSection": "プッシュ通知（即時）",
+    "pushEnable": "この端末でプッシュ通知を受け取る",
+    "pushDenied": "通知がブロックされています。ブラウザのサイト設定で許可してください。",
+    "pushIosHint": "iPhone / iPad では、ホーム画面に追加したアプリから開くとプッシュ通知が使えます。それまではメールでお知らせします。",
+    "pushUnsupported": "お使いの環境はプッシュ通知に対応していません。メールでお知らせします。"
+  },
+  "offline": {
+    "title": "オフラインです",
+    "body1": "インターネット接続がありません。",
+    "body2": "接続を確認してから再度お試しください。",
+    "reconnect": "再接続する",
+    "backToTop": "トップページへ戻る"
+  },
+  "errorBoundary": {
+    "title": "エラーが発生しました",
+    "description": "予期しないエラーが発生しました。ページを再読み込みしてください。",
+    "reload": "ページを再読み込み",
+    "mapTitle": "地図の読み込みに失敗しました",
+    "mapDescription": "通信状況をご確認のうえ、もう一度お試しください。",
+    "mapRetry": "再試行"
+  },
+  "unsubscribe": {
+    "title": "メール配信停止",
+    "working": "配信停止の手続きをしています…",
+    "done": "「{{category}}」の配信を停止しました。",
+    "stopAll": "すべてのお知らせメールを停止する",
+    "manageHint": "設定はマイページからいつでも変更できます。",
+    "invalid": "このリンクは無効か、すでに使用済みです。",
+    "error": "手続き中にエラーが発生しました。時間をおいて再度お試しください。",
+    "retry": "もう一度試す",
+    "backHome": "ザリダスに戻る",
+    "categoryAll": "すべてのお知らせメール",
+    "category": {
+      "research_adopted": "研究採用のお知らせ",
+      "dormant_reengage": "お休み中のお誘い",
+      "weekly_digest": "週刊ダイジェスト"
+    }
+  },
+  "empty": {
+    "postCta": "観察を投稿する",
+    "photoPostCta": "写真付きで投稿する",
+    "contributionDesc": "あなたの報告が、秋田の外来生物マップを育てます。"
+  },
+  "area": {
+    "postsEmptyTitle": "{{municipality}}の最初の発見を記録しよう"
+  },
+  "like": {
+    "error": "いいねの更新に失敗しました"
+  },
+  "profile": {
+    "saveError": "プロフィールの保存に失敗しました"
+  },
+  "achievement": {
+    "commentPosted": "コメントを投稿しました"
+  },
+  "progress": {
+    "title": "貢献レベル",
+    "levelLabel": "レベル",
+    "level": "レベル {{level}}",
+    "xp": "累計 {{xp}} XP",
+    "toNext": "次のレベルまであと {{remaining}} XP です",
+    "verified": "検証済みの貢献が {{count}} 件たまりました",
+    "barLabel": "レベルの進捗"
+  },
+  "unlocks": {
+    "lockedAtLevel": "レベル {{level}} で解放されます",
+    "lockedShort": "Lv{{level}} で解放",
+    "remainingXp": "あと {{xp}} XP です",
+    "hint": "投稿が承認されるとレベルが上がって解放されます",
+    "features": {
+      "heatmap": "ヒートマップ表示",
+      "avatar_emoji_plus": "アバターの絵文字（追加）",
+      "map_filters_advanced": "高度な絞り込み",
+      "csv_export": "自分のデータの CSV 出力",
+      "profile_frame": "プロフィールの装飾",
+      "collection": "コレクション（図鑑・水槽）",
+      "animation_themes": "解放演出のテーマ"
+    }
+  },
+  "collection": {
+    "header": "あなたのコレクション",
+    "subtitle": "観察した生き物の図鑑と水槽です",
+    "lockedHint": "投稿が承認されて貢献レベルが上がると解放されます",
+    "dex": {
+      "title": "図鑑",
+      "progress": "{{observed}} / {{total}} 種を観察",
+      "emptyHint": "観察を投稿して承認されると、種ごとのカードが少しずつ埋まっていきます",
+      "observed": "観察済み",
+      "notObserved": "未観察",
+      "complete": "コンプリート",
+      "infoTypes": "情報の種類",
+      "municipalities": "市区町村",
+      "verifiedCount": "検証済み {{count}} 件",
+      "firstObserved": "はじめての観察 {{date}}"
+    },
+    "aquarium": {
+      "title": "水槽",
+      "capacity": "広さ {{count}}",
+      "summary": "{{count}} 匹の生き物が泳いでいます",
+      "empty": "まだ生き物がいません。観察を投稿してみましょう",
+      "decorationsTitle": "デコレーション",
+      "noDecorations": "デコレーションはレベルが上がると増えていきます"
+    },
+    "decorations": {
+      "sand": "砂底",
+      "plant": "水草",
+      "rock": "岩",
+      "driftwood": "流木"
+    },
+    "edu": {
+      "title": "この生き物について知っておきましょう",
+      "body": "ここに登場するのは、外来生物法の対象になっている生きものです。ウシガエルは、生きたままの飼育・運搬・野外への放出が原則として禁止されています。アメリカザリガニは「条件付特定外来生物」で、おうちで飼うことは手続きなくできますが、野外に放すことは禁止されています。この水槽はあくまでバーチャルな記録です。見つけた生きものはそのままにして、記録するだけで大丈夫です。",
+      "learnMore": "この生き物と正しい対処について学ぶ"
+    },
+    "viewer3d": {
+      "title": "3D ビュー",
+      "view3d": "3Dで見る",
+      "back2d": "2Dに戻る",
+      "alt": "アメリカザリガニの3Dモデルです。ドラッグ、または回転ボタンで向きを変えられます。",
+      "hint": "ドラッグで回して観察できます。3D はこのボタンを押したときだけ読み込まれます。",
+      "hint2dOnly": "お使いの環境では2Dのイラストで表示します。",
+      "loading": "3D を読み込んでいます",
+      "errorNotice": "3D の読み込みに失敗しました。2Dのイラストで表示しています。",
+      "retry": "再試行",
+      "controls": "3Dモデルの回転操作",
+      "rotateLeft": "左に回す",
+      "rotateRight": "右に回す",
+      "pause": "自動回転を止める",
+      "play": "自動回転を再生する"
+    }
+  },
+  "quests": {
+    "title": "調査ミッション",
+    "subtitle": "無理のない範囲で、記録の質を高めるヒントです",
+    "optionalNote": "参加は自由です。取り組めなくても、これまでの記録が失われることはありません",
+    "done": "達成しています",
+    "tryIt": "やってみましょう",
+    "progress": "{{current}} / {{target}}",
+    "items": {
+      "info_variety": {
+        "title": "記録の種類を増やす",
+        "desc": "目撃・捕獲・痕跡・農業被害・不在など、いろいろな種類で記録してみましょう"
+      },
+      "absence": {
+        "title": "いなかったことを記録する",
+        "desc": "ザリガニが見つからなかった場所も、大切なデータになります"
+      },
+      "new_area": {
+        "title": "新しい市町村で観察する",
+        "desc": "まだ記録していない市町村でも観察してみましょう"
+      },
+      "both_species": {
+        "title": "2種類の生きものを観察する",
+        "desc": "アメリカザリガニとウシガエルの両方を記録してみましょう"
+      },
+      "structured": {
+        "title": "定点観察をしてみる",
+        "desc": "同じ場所を決めて繰り返し観察すると、変化が見えてきます"
+      },
+      "gps_precise": {
+        "title": "正確な位置で記録する",
+        "desc": "GPS の精度が高い場所（30メートル以内）だと、地図がより正確になります"
+      },
+      "near_water": {
+        "title": "水辺を調べてみる",
+        "desc": "地図の『近くの水域を探す』で池や川を見つけて、そのまわりを観察してみましょう"
+      },
+      "effort_log": {
+        "title": "調査の記録を残す",
+        "desc": "個体数と調査にかけた時間も記録すると、密度（努力量あたり）マップに活きます"
+      }
+    }
+  },
+  "journey": {
+    "title": "次にできること",
+    "nextUnlockLabel": "次に解放される機能",
+    "allUnlocked": "すべての機能が解放されています",
+    "collectionLabel": "図鑑の収集ぐあい",
+    "collectionPct": "{{pct}}% 集まりました",
+    "viewCollection": "図鑑・水槽を見る"
+  },
+  "celebrate": {
+    "title": "おしらせ",
+    "levelUp": "レベル {{level}} に上がりました",
+    "unlocked": "「{{feature}}」が使えるようになりました",
+    "newCard": "図鑑に「{{name}}」が加わりました",
+    "encouragement": "続けてくださって、ありがとうございます",
+    "dismiss": "閉じる"
+  },
+  "onboarding": {
+    "continue": "つづける",
+    "back": "前の画面へ",
+    "saving": "保存中…",
+    "later": "あとで",
+    "stage": {
+      "question": "質問 {{current}} / {{total}}",
+      "mapGuide": "地図の見方"
+    },
+    "selectionHint": {
+      "region": "地域を1つ選んでください",
+      "seen": "目撃経験を1つ選んでください"
+    },
+    "area": {
+      "akita": "秋田"
+    },
+    "greet": {
+      "bubble": "はじめまして、ザリくんです。",
+      "effort": "2つの質問で、あなたの地域の地図を開くよ。約1分です。"
+    },
+    "askRegion": {
+      "q": "秋田の、どのあたりに住んでる？",
+      "consent": "答えは、あなたのプロフィールに保存されます（地図の初期位置と研究に使います）",
+      "consentLocal": "選んだ地域は、この端末に保存されます（地図の初期位置に使います）"
+    },
+    "region": {
+      "akita_city": "秋田市",
+      "north": "県北（能代・大館）",
+      "central": "県央（男鹿・由利本荘）",
+      "south": "県南（横手・湯沢）",
+      "other": "秋田の外・わからない"
+    },
+    "askSeen": {
+      "q": "アメリカザリガニ、見たことある？",
+      "hint": "答えると、次の説明が少し変わるよ"
+    },
+    "seen": {
+      "yes": "ある",
+      "no": "ない",
+      "maybe": "たぶん…"
+    },
+    "fact": {
+      "bubble": "みんなの記録で、池ごとの様子が少しずつわかる。",
+      "seenYes": "その池、地図に載っているかな？",
+      "seenNo": "まずは、近くの記録を地図で見てみよう。",
+      "labelCoarse": "国の地図",
+      "labelFine": "みんなの地図",
+      "legend": "ぬられたマス＝国の記録がある地域。点＝だれかが見つけた1件。"
+    },
+    "finish": {
+      "done": "じゅんび完了！",
+      "startMap": "{{area}}の地図から始めよう",
+      "bubble": "ひとつのピンが、ひとつの「見つけた」記録だよ。ピンがない場所にも、まだ記録されていない生きものがいるかもしれない。",
+      "diagramTitle": "地図の見方（イメージ）",
+      "tipTitle": "見つけたら、記録するだけでOK。",
+      "mapOnly": "地図を見る"
+    },
+    "error": {
+      "save": "保存できませんでした。もう一度お試しください。",
+      "retry": "もう一度",
+      "later": "あとで"
+    },
+    "privacy": "オンボーディングで答えた地域（5区分）と目撃経験。地図の初期位置と研究に使います。"
+  },
+  "route": {
+    "title": "ここへの経路",
+    "approximate": "おおよその位置",
+    "destinationLabel": "目的地",
+    "openAria": "{{provider}}で経路を調べる（新しいタブで開く）",
+    "provider": {
+      "google": "Googleマップ",
+      "yahoo": "Yahoo!マップ",
+      "apple": "Appleマップ"
+    },
+    "providerShort": {
+      "google": "Google",
+      "yahoo": "Yahoo!",
+      "apple": "Apple"
+    }
+  },
+  "quickSave": {
+    "button": "非公開で保存",
+    "title": "この場所を非公開で保存",
+    "close": "閉じる",
+    "locating": "現在地を取得しています…",
+    "atCurrent": "現在地を保存します",
+    "atPin": "ピンの位置を保存します",
+    "accuracy": "誤差 約{{m}}m",
+    "locateFailed": "現在地を取得できませんでした。",
+    "retryLocate": "もう一度取得",
+    "useMapCenter": "地図の中心を使う",
+    "nameLabel": "名前",
+    "nameOptional": "（空欄なら日時が入ります）",
+    "namePlaceholder": "例: 〇〇沼のメダカ",
+    "noteLabel": "メモ",
+    "notePlaceholder": "数・様子など（任意）",
+    "addNote": "＋ メモを追加",
+    "privacyNote": "非公開: あなたと運営（管理者）だけが見られます。地図の公開表示や公開データには出ません。",
+    "submit": "非公開で保存",
+    "saving": "保存しています…",
+    "saved": "「{{name}}」を非公開で保存しました",
+    "queued": "圏外のため端末に保存しました。つながったら自動で送ります",
+    "defaultNamePrefix": "非公開スポット",
+    "error": {
+      "login": "保存するにはログインしてください",
+      "rateLimit": "短時間に保存しすぎています。しばらくしてからお試しください",
+      "queueFull": "端末に保存できる件数の上限です。通信できる場所で送信してください",
+      "failed": "保存できませんでした。もう一度お試しください"
+    }
+  },
+  "fieldwork": {
+    "button": "調査",
+    "buttonProgress": "{{done}}/{{total}}",
+    "sheetClose": "閉じる",
+    "common": {
+      "cancel": "やめる",
+      "save": "保存",
+      "retry": "もう一度"
+    },
+    "panel": {
+      "title": "調査",
+      "tabs": "調査パネルの切り替え",
+      "tabPlan": "調査計画",
+      "tabRare": "希少種の記録",
+      "collapse": "畳む",
+      "close": "閉じる（計画は残ります）",
+      "loading": "読み込み中…",
+      "loadFailed": "計画を読み込めませんでした",
+      "offlineCache": "圏外のため、最後に同期した内容（{{time}}）を表示しています。計画の編集は電波のある場所でできます。",
+      "offlineNoCache": "圏外のため計画を読み込めません。電波のある場所で一度開いておくと、圏外でも見られます。",
+      "collapseAria": "畳む（地図を広く見る。計画は残ります）"
+    },
+    "plan": {
+      "today": "今日の計画",
+      "dated": "{{date}} の計画",
+      "emptyLead": "回る場所を地図で選び、案内を受けながら地点ごとに結果を残せます。\n前の晩に家で作っておくと、現地ですぐ使えます。",
+      "createToday": "今日の計画を作る",
+      "openToday": "今日の計画を開く",
+      "defaultTitle": "{{date}} の調査",
+      "created": "計画を作りました",
+      "history": "これまでの計画",
+      "historyEmpty": "ほかの計画はありません",
+      "statusDone": "終了",
+      "titleLabel": "題名",
+      "dateLabel": "予定日",
+      "edit": "題名と予定日を変える",
+      "progress": "{{done}}\u00a0/\u00a0{{total}}地点 終了（飛ばしを含む）",
+      "progressDetail": "済み\u00a0{{done}}・飛ばし\u00a0{{skipped}}・未調査\u00a0{{pending}}",
+      "actions": "計画の操作",
+      "finish": "この計画を終える",
+      "finishConfirm": "この計画を終えますか？ 記録はそのまま残り、あとから見られます。",
+      "finishYes": "終える",
+      "finishedToast": "計画を終えました。おつかれさまでした",
+      "finished": "この計画は終了しています",
+      "reuse": "この計画をもう一度使う",
+      "reuseHint": "同じ地点・同じ順番で、今日の新しい計画を作ります（定期的な再調査に）",
+      "reused": "同じ地点で今日の計画を作りました",
+      "noPlan": "調査の計画はまだありません",
+      "createPlan": "調査の計画を作る",
+      "dayToday": "今日（{{date}}）",
+      "dayTomorrow": "明日（{{date}}）",
+      "dayOther": "ほかの日を選ぶ",
+      "tomorrow": "明日の計画"
+    },
+    "stops": {
+      "heading": "地点",
+      "empty": "まだ地点がありません。下の「地点を足す」から入れてください。",
+      "defaultName": "地点\u00a0{{n}}",
+      "status": {
+        "pending": "未調査",
+        "done": "済み",
+        "skipped": "飛ばし"
+      },
+      "rare": "希少種あり",
+      "unsent": "送信待ち",
+      "moveUp": "{{name}} を上へ",
+      "moveDown": "{{name}} を下へ",
+      "menu": "{{name}} のメニュー",
+      "rename": "名前を変える",
+      "note": "メモ",
+      "remove": "外す",
+      "nameLabel": "地点の名前",
+      "noteLabel": "地点のメモ",
+      "removeConfirm": "この地点を計画から外しますか？ 作った投稿と希少種の記録は残ります。",
+      "removeYes": "外す"
+    },
+    "add": {
+      "heading": "地点を足す",
+      "pickOnMap": "地図で選ぶ",
+      "pickOnMapHint": "終わるときは［終わる］を押してください",
+      "pickBar": "地図を押して地点を足す（いま{{count}}地点）",
+      "pickDone": "終わる",
+      "fromSpots": "保存したスポットから選ぶ",
+      "spotsEmpty": "非公開で保存したスポットはまだありません",
+      "spotsFailed": "スポットを読み込めませんでした",
+      "spotsInPlan": "計画に入っています",
+      "spotsAdd": "計画に入れる（{{count}}）",
+      "current": "現在地を足す",
+      "locating": "現在地を確認しています…",
+      "locateFailed": "現在地を取得できませんでした",
+      "added": "{{n}}番目の地点を足しました",
+      "addedMany": "{{count}}地点を足しました",
+      "offline": "圏外のため計画は編集できません（地点の記録はできます）"
+    },
+    "nav": {
+      "bulk": "残りの地点をまとめて案内（{{count}}地点）",
+      "bulkHint": "スマホでは一度に4地点まで（経由地3か所＋目的地）なので、4地点ずつに分けて開きます",
+      "here": "現在地",
+      "segment": "経路{{index}}：{{from}} → {{stops}}"
+    },
+    "stop": {
+      "results": "この地点の記録：いた\u00a0{{sighting}}・いなかった\u00a0{{absence}}・希少種\u00a0{{rare}}",
+      "found": "いた（投稿する）",
+      "foundMain": "いた",
+      "foundSub": "投稿する",
+      "absent": "いなかった",
+      "absentSub": "不在を記録",
+      "rare": "希少種を記録",
+      "rareSub": "あなたと運営だけ",
+      "skip": "飛ばす",
+      "skipSub": "理由は任意",
+      "undo": "元に戻す（未調査にする）",
+      "skipReason": "飛ばす理由（任意・メモに残ります）",
+      "skipPlaceholder": "例: 増水で近づけない",
+      "skipConfirm": "飛ばす",
+      "skipped": "この地点を飛ばしました",
+      "undone": "未調査に戻しました（記録は消えていません）",
+      "privateLockReason": "この地点の記録は、位置を公開しません",
+      "offlineHint": "圏外です。いなかった・飛ばす・写真なしの希少種は端末に保存し、つながったら送ります。投稿は下書きに保存され、この地点とはつながりません。",
+      "linked": "投稿をこの地点につなぎました",
+      "linkQueued": "投稿はできました。地点とのつながりは、つながったら送ります",
+      "resultsNoRare": "この地点の記録：いた\u00a0{{sighting}}・いなかった\u00a0{{absence}}"
+    },
+    "position": {
+      "locating": "記録の位置：現在地を確認しています…（最大8秒）",
+      "gps": "記録の位置：現在地（<nw>誤差 約{{m}}m</nw>）",
+      "gpsNoAccuracy": "記録の位置：現在地",
+      "manual": "記録の位置：地図の中心",
+      "freeFailed": "現在地を取得できませんでした",
+      "retry": "現在地を取り直す",
+      "useMapCenter": "地図の中心を使う",
+      "map": "記録の位置：この地点の座標",
+      "reasonNoFix": "（現在地を取得できなかったため）",
+      "reasonInaccurate": "（現在地の誤差が100mより大きいため）",
+      "reasonFar": "（いまいる場所から<nw>約{{distance}}</nw>離れているため）"
+    },
+    "absence": {
+      "title": "「いなかった」を記録",
+      "speciesLabel": "いなかった種",
+      "needSpecies": "種を1つ以上選んでください",
+      "minutesLabel": "調査にかけた時間（分・任意）",
+      "minutesPlaceholder": "例: 30",
+      "minutesInvalid": "1〜480分で入れてください",
+      "disclosurePublic": "地図には位置を約100m四方に丸めて出します",
+      "disclosurePrivate": "この地点の記録は、位置を公開しません",
+      "submit": "「いなかった」を記録（{{count}}件）",
+      "submitting": "記録しています…",
+      "saved": "「いなかった」を記録しました",
+      "review": "不在の記録は、運営が確認してから公開されます",
+      "reviewAdmin": "運営のアカウントなので、確認なしで公開されます"
+    },
+    "rare": {
+      "title": "希少種を記録",
+      "speciesLabel": "種",
+      "needSpecies": "種を選んでください",
+      "otherLabel": "種の名前",
+      "otherPlaceholder": "例: スナヤツメ",
+      "needLabel": "種の名前を入れてください",
+      "countLabel": "数（任意）",
+      "countInvalid": "数は0〜100000で入れてください",
+      "observedLabel": "観察日時",
+      "noteLabel": "メモ（任意）",
+      "notePlaceholder": "様子・環境など",
+      "photosLabel": "写真（3枚まで・任意）",
+      "photosAdd": "写真を選ぶ",
+      "photoAlt": "写真 {{n}}",
+      "photoRemove": "写真 {{n}} を外す",
+      "photosExif": "撮影位置などの情報（EXIF）を消してから保存します",
+      "photosInvalid": "選べない写真がありました（jpeg・png・webp、20MBまで）",
+      "photosOffline": "圏外では写真を付けられません。写真なしで保存できます（つながったら送ります）。",
+      "privacy": "この記録は、あなたと運営だけが見られます。ほかの人の地図・一覧・公開データには出ません。",
+      "submit": "希少種を記録する（非公開）",
+      "submitting": "保存しています…",
+      "saved": "非公開で記録しました（希少種タブで見られます）",
+      "duplicate": "この記録はもう保存されていました",
+      "retryUpload": "通信が切れました。もう一度保存してください（同じ記録は増えません）",
+      "countUnit": "個体"
+    },
+    "rareTab": {
+      "lead": "見つけた希少種は、ここに非公開で残せます。見られるのはあなたと運営だけです。",
+      "show": "希少種を自分の地図に表示",
+      "on": "表示中（自分だけ）",
+      "off": "非表示",
+      "showHint": "ほかの人には見えません。画面写真から場所が漏れないよう、ふだんは隠しています。",
+      "record": "希少種を記録する",
+      "heading": "自分の記録（{{count}}件）",
+      "empty": "まだ記録はありません",
+      "loadFailed": "記録を読み込めませんでした",
+      "count": "{{count}}個体",
+      "atStop": "計画で記録",
+      "photos": "写真{{count}}枚を見る",
+      "privateNote": "非公開（あなたと運営だけ）",
+      "delete": "削除",
+      "deleteConfirm": "この記録を削除しますか？ 写真も消え、元に戻せません。",
+      "deleteYes": "削除する",
+      "deleted": "記録を削除しました",
+      "photosLeft": "記録は消しましたが、写真を消せませんでした",
+      "menu": "{{name}} のメニュー",
+      "photosPartlyLeft": "記録は消しましたが、写真の一部（{{count}}枚）を消せませんでした"
+    },
+    "queue": {
+      "pending": "送信待ち\u00a0{{count}}件",
+      "failed": "送れなかった記録があります。電波のある場所でもう一度送るか、破棄してください",
+      "sendNow": "今すぐ送る",
+      "sending": "送っています…",
+      "saved": "圏外のため端末に保存しました。つながったら送ります",
+      "discard": "破棄",
+      "kind": {
+        "absence": "いなかったの記録",
+        "status_done": "地点を済みにする",
+        "status_skipped": "地点を飛ばす",
+        "status_pending": "地点を未調査に戻す",
+        "rare": "希少種の記録",
+        "link": "投稿と地点のつなぎ",
+        "protect": "投稿の位置を非公開にする"
+      },
+      "discardConfirm": "この記録を破棄しますか？ 元に戻せません。",
+      "discardYes": "破棄する"
+    },
+    "error": {
+      "offline": "圏外のため、いまはできません",
+      "limit": "短時間に保存しすぎています。しばらくしてからお試しください",
+      "postLimit": "投稿の上限（24時間で5件）に達しました。時間をおいてください",
+      "denied": "権限がないか、対象がもうありません",
+      "queueFull": "端末に保存できる件数の上限です。電波のある場所で送ってください",
+      "photosOffline": "圏外では写真を付けられません",
+      "failed": "保存できませんでした。もう一度お試しください",
+      "planDayLimit": "計画は1日30件までです。明日またお試しください",
+      "planTotalLimit": "計画は1人1000件までです",
+      "stopHourLimit": "地点の追加は1時間に300件までです。しばらくしてからお試しください",
+      "stopPlanLimit": "1つの計画に入れられる地点は100か所までです",
+      "rareHourLimit": "希少種の記録は1時間に60件までです。しばらくしてからお試しください",
+      "rareTotalLimit": "希少種の記録は1人5000件までです",
+      "reorderStale": "ほかの画面で地点が変わっていたため、読み込み直しました。もう一度並べ替えてください",
+      "partialQueued": "一部だけ記録できました。残りは送信待ちに入れました（{{reason}}）",
+      "protectQueueFull": "近くの投稿を非公開にする処理を、送信待ちが満杯のため端末に残せませんでした。電波のある場所で送信待ちを送ってください"
+    },
+    "marker": {
+      "openStop": "この地点を開く",
+      "rareTitle": "希少種の記録（非公開）",
+      "legend": "希少種の記録（自分だけ）"
+    },
+    "bridge": {
+      "addToPlan": "計画に入れる",
+      "recordRare": "希少種を記録",
+      "added": "「{{title}}」に入れました（{{n}}番目）"
+    },
+    "admin": {
+      "nav": "希少種の記録",
+      "title": "希少種の記録",
+      "noticeTitle": "取り扱い注意：外部に出さない",
+      "noticeBody": "利用者が非公開で残した希少種の記録です。場所が知られると採られてしまうため、画面写真や CSV を SNS・メール・共有ドライブなど外部に出さないでください。公開の判断は運営が個別に行います。",
+      "exportCsv": "CSV を書き出す",
+      "fetchFailed": "読み込めませんでした",
+      "empty": "まだ記録はありません",
+      "count": "{{count}}件",
+      "countValue": "{{count}}個体",
+      "observed": "観察",
+      "user": "利用者",
+      "fromPlan": "計画の地点から",
+      "photoUnavailable": "表示できません",
+      "source": {
+        "gps": "現在地",
+        "map": "地図上の位置"
+      },
+      "accuracy": "誤差 約{{m}}m"
+    },
+    "rareSpecies": {
+      "nihon_zarigani": "ニホン\u200bザリガニ",
+      "medaka": "メダカ",
+      "zeni_tanago": "ゼニ\u200bタナゴ",
+      "shinai_motsugo": "シナイ\u200bモツゴ",
+      "tohoku_sanshouo": "トウホク\u200bサンショウウオ",
+      "kuro_sanshouo": "クロ\u200bサンショウウオ",
+      "gengorou": "ゲンゴロウ\u200bのなかま",
+      "tagame": "タガメ",
+      "other": "その他"
+    },
+    "safety": {
+      "title": "安全のために",
+      "water": "水に入らない",
+      "children": "子どもだけで行かない",
+      "trespass": "立入禁止の場所・私有地に入らない"
+    },
+    "next": {
+      "label": "次の地点",
+      "prefix": "次：",
+      "open": "この地点を開く（案内・記録）",
+      "tag": "次"
+    },
+    "rareBand": {
+      "text": "希少種を表示中・画面写真に注意",
+      "hide": "隠す"
+    },
+    "signOut": {
+      "title": "送っていない調査の記録があります",
+      "body": "ログアウトすると、この端末からは送れなくなります。",
+      "send": "送ってからログアウト",
+      "discard": "破棄してログアウト",
+      "cancel": "やめる",
+      "sending": "送っています…",
+      "sendFailed": "送れなかった記録があります。電波のある場所でもう一度お試しください",
+      "lead": "この端末に、まだ送っていない記録があります。",
+      "queued": "調査の送信待ち\u00a0{{count}}件",
+      "drafts": "圏外で保存した投稿の下書き\u00a0{{count}}件",
+      "sendBlocked": "上限などで送れない記録があります。調査パネルとマイページで確かめ、破棄するか、あとで送ってください"
+    }
+  },
+  "water": {
+    "listTitle": "近くの水域",
+    "openList": "水域の一覧",
+    "closeList": "一覧を閉じる",
+    "distance": "地図中心から {{distance}}",
+    "genericName": "名称不明の水域",
+    "community": "情報提供された水域",
+    "select": "地図で見る",
+    "selected": "選択中",
+    "publicRecordCount": "周辺の公開記録 {{count}}件",
+    "publicRecordUnknown": "公開記録を確認できません",
+    "noPublicRecords": "公開記録が見つからない候補",
+    "onlyNoRecords": "公開記録のない候補だけ",
+    "chooseNoRecord": "公開記録のない候補を選ぶ",
+    "noCandidates": "条件に合う水域が見つかりません。",
+    "recordsNote": "公開された位置情報と水域の周辺150mから探した候補です。未調査や、生きものがいないことを示すものではありません。",
+    "shoreHint": "地点は岸付近の目安です。立ち入りできる場所を確認して調査してください。",
+    "addToPlan": "計画に入れる",
+    "reportButton": "地図にない水域を知らせる",
+    "pickReportHint": "水域の位置を地図で選んでください。",
+    "pickReportCancel": "位置選択をやめる",
+    "pickReportConfirm": "この位置で情報提供",
+    "selectedPosition": "選んだ位置: {{lat}}, {{lng}}",
+    "publicReadFailed": "公開記録を確認できませんでした。候補の判定は保留しています。",
+    "communityReadFailed": "公開水域を取得できませんでした。一部の水域が表示されていない可能性があります。再検索してください。",
+    "report": {
+      "title": "地図未掲載の水域を報告",
+      "name": "水域の名前",
+      "namePlaceholder": "名前が分からない場合は「名称不明の水域」",
+      "note": "補足（任意）",
+      "notePlaceholder": "目印や、水域の様子など",
+      "position": "選んだ位置",
+      "photos": "水域の写真",
+      "addPhotos": "写真を追加",
+      "photoAlt": "水域の写真 {{number}}",
+      "removePhoto": "写真 {{number}}を削除",
+      "photoHint": "写真は自動で縮小します。JPEG・PNG・WebP・HEIC、1〜3枚。読み込めない形式は別の写真を選んでください。",
+      "preparing": "写真を準備中… {{current}}/{{total}}",
+      "privacy": "採用後、名前とおおよその位置が公開されます。写真と補足は本人・管理者だけが確認できます。",
+      "submit": "情報を送る",
+      "submitting": "送信中…",
+      "success": "情報を受け付けました。管理者が確認します。",
+      "status": {
+        "pending": "審査待ち",
+        "accepted": "採用済み",
+        "rejected": "見送り",
+        "all": "すべて"
+      },
+      "errors": {
+        "name": "水域の名前を80文字以内で入力してください。",
+        "note": "補足は1000文字以内で入力してください。",
+        "photos": "水域の写真を1〜3枚選んでください。",
+        "position": "水域の位置を選び直してください。",
+        "fileType": "JPEG・PNG・WebP・HEICの写真を選んでください。",
+        "fileSize": "写真は1枚25MB以内で選んでください。",
+        "conversion": "写真を変換できませんでした。JPEGなど別の写真を選んでください。",
+        "save": "送信できませんでした。入力は残っています。同じ情報で再試行してください。",
+        "accountChanged": "ログイン状態が変わりました。この画面を閉じて、もう一度開いてください。"
+      }
+    },
+    "admin": {
+      "nav": "水域の情報提供",
+      "title": "水域の情報提供を確認",
+      "notice": "写真・補足・詳細な位置は本人と管理者だけが確認できます。採用すると、確認した名称とおおよその位置が公開の水域一覧に表示されます。",
+      "filter": "審査状態",
+      "count": "{{count}}件を表示",
+      "limited": "この状態の最新{{limit}}件を表示しています。審査待ちは処理後に次の報告が表示されます。",
+      "empty": "この状態の情報提供はありません。",
+      "loadFailed": "情報提供を読み込めませんでした。再試行してください。",
+      "photoUnavailable": "写真を読み込めません。再試行できます。",
+      "publicName": "公開する水域の名前",
+      "nameRequired": "公開する名前を80文字以内で入力してください。",
+      "accept": "採用して公開",
+      "reject": "見送る",
+      "unpublish": "公開を取り消す",
+      "saving": "保存中…",
+      "acceptedNotice": "水域を採用し、名前とおおよその位置を公開しました。",
+      "rejectedNotice": "情報提供を見送りました。",
+      "unpublishedNotice": "公開を取り消し、水域一覧から外しました。",
+      "reviewFailed": "審査結果を保存できませんでした。再試行してください。"
+    }
+  },
+  "homeHub": {
+    "home": "ホーム",
+    "dex": "図鑑",
+    "myPage": "マイページ",
+    "myRecords": "自分の記録",
+    "backHome": "ホームに戻る",
+    "navigation": "メインメニュー",
+    "campaigns": "参加・ご案内",
+    "carousel": "カルーセル",
+    "nextBanner": "次のバナーを見る",
+    "more": "もっと見る",
+    "hero": {
+      "eyebrow": "水辺の外来生物を、みんなで記録する地図",
+      "title": "あなたの「見つけた」が、\n秋田の自然を守る。",
+      "description": "ザリガニやウシガエルを見つけたら、スマホで撮って記録するだけ。あなたの記録が地図になって、秋田の自然を守る手がかりになります。登録はずっと無料です。",
+      "signup": "無料で登録して記録する",
+      "map": "登録せずに地図を見る",
+      "operator": "ザリダスは、秋田の自然が大好きなひとりの大学生がつくった、無料のサービスです。集まった記録は、秋田の自然を守る研究や、県や市の取り組みに役立てられます。",
+      "about": "記録の使われ方・連絡先"
+    },
+    "startRecording": "記録をはじめる",
+    "viewMap": "地図を見てみる",
+    "level": "Lv.{{level}}  水辺の探索者",
+    "totalXp": "総合 {{count}} XP",
+    "nextXp": "次まで あと{{count}} XP",
+    "levelProgress": "次のレベルまでの進捗",
+    "approved": "承認された記録",
+    "speciesCount": "見つけた種類",
+    "badges": "獲得バッジ",
+    "viewBadges": "自分のバッジを見る",
+    "badgeRule": "承認された記録が、バッジとXPにつながります。",
+    "earned": "獲得済み",
+    "lockedBadge": "承認{{count}}件で獲得",
+    "badgeNames": {
+      "0": "はじめの一歩",
+      "1": "探索者",
+      "2": "ザリガニハンター",
+      "3": "秋田の目"
+    },
+    "loading": "読み込み中…",
+    "accountError": "自分の記録の一部を読み込めませんでした。",
+    "profileError": "プロフィールを取得できませんでした。",
+    "progressError": "進捗を取得できませんでした",
+    "feedError": "記録を読み込めませんでした。通信状況を確認して再試行してください。",
+    "saveError": "この端末に保存できませんでした。ブラウザの保存設定を確認してください。",
+    "postRail": "記録の一覧。横に送って閲覧できます",
+    "observation": "水辺の記録",
+    "noPhoto": "写真なしの記録",
+    "absenceRow": "{{species}}は見つからなかった",
+    "photolessRow": "{{species}}の{{type}}",
+    "groupCount": "{{count}}件",
+    "photoError": "写真を表示できません",
+    "locationPrivate": "場所の詳細は非公開",
+    "likesDetail": "いいね{{count}}件。詳細で確認",
+    "commentsDetail": "コメント{{count}}件。会話を見る",
+    "save": "この端末に保存する",
+    "unsave": "この端末の保存を解除する",
+    "viewSaved": "保存した記録を見る（{{count}}）",
+    "savedTitle": "この端末に保存した記録",
+    "savedNotice": "この端末・ブラウザ内に最大200件保存します。現在も公開されている記録だけを表示します。",
+    "noSaved": "表示できる保存済みの記録はありません。",
+    "localSave": "保存はこの端末・ブラウザ内のみです",
+    "pickup": "ピックアップ",
+    "pickupDescription": "水辺で出会う、小さな発見。最近の公開記録から。",
+    "newPosts": "新着の記録",
+    "popular": "人気の記録",
+    "popularScope": "直近24件の公開記録から、いいねの多い順に表示します。",
+    "questions": "新着のしつもん",
+    "viewConversation": "記録の会話を見る",
+    "readFaq": "よくある質問を見る",
+    "noPhotos": "写真付きの記録はまだありません。写真がなくても記録できます。",
+    "noPosts": "公開された記録はまだありません。最初の発見を残してみませんか。",
+    "noPopular": "いいねが付いた記録はまだありません。新着の記録ものぞいてみてください。",
+    "noQuestions": "最近の記録への質問はまだありません。記録の詳細から質問できます。",
+    "gaps": {
+      "title": "まだ足りない記録",
+      "description": "公開されている記録を数えて、まだ少ないものを並べています。「見つからなかった」記録も、大切な手がかりです。",
+      "action": "記録する",
+      "count": "{{count}}件",
+      "species": {
+        "none": "{{species}}の記録は、まだありません。",
+        "few": "{{species}}の記録は、{{count}}件だけです。",
+        "description": "見つけたら、写真と場所を残してください。"
+      },
+      "absence": {
+        "title": "「見つからなかった」の記録は、{{count}}件。",
+        "description": "探した場所と時間が、調査の手がかりに。"
+      },
+      "area": {
+        "title": "記録のある市町村は、{{total}}のうち{{count}}。",
+        "description": "ほかの水辺の様子も、残してみよう。"
+      },
+      "guide": {
+        "species": "記録の少ない種を探す",
+        "absence": "「見つからなかった」も記録する",
+        "area": "別の市町村の水辺も記録する"
+      }
+    },
+    "collections": "図鑑",
+    "speciesGuide": "特徴と水辺の記録を見る",
+    "reading": "記録ガイド",
+    "guideByline": "ザリダスの使い方",
+    "news": "お知らせ",
+    "monitorTag": "調査へのご協力",
+    "monitorNews": "モニターアンケートにご協力ください",
+    "guideTag": "使い方",
+    "guideNews": "記録ガイドを見る",
+    "tagline": "水辺の発見を、みんなの記録に。",
+    "legalNav": "規約・連絡先など",
+    "hintTitle": "写真と周りの様子を、一緒に。",
+    "hintDescription": "生き物が見つからなかった記録も、水辺を知る手がかりになります。",
+    "recordingHints": "記録ガイドを見る",
+    "guideTitle": "記録ガイド",
+    "illustrationNote": "このガイドと参加案内の写真は、説明用の生成画像です。新着などに並ぶ写真は、公開された記録のものです。",
+    "illustrationTag": "説明用の画像",
+    "banner": {
+      "fieldwork": {
+        "tag": "みんなで参加",
+        "title": "秋田の水辺を、\nみんなで記録。",
+        "caption": "身近な発見から、参加しよう"
+      },
+      "monitor": {
+        "tag": "モニターアンケート",
+        "title": "使ってみた感想を\n聞かせてください。",
+        "caption": "操作で迷ったことも、ぜひ"
+      },
+      "research": {
+        "tag": "ザリダスについて",
+        "title": "水辺の記録が、\n調査につながる。",
+        "caption": "この取り組みの目的を知る"
+      }
+    },
+    "articles": {
+      "water": {
+        "title": "いつもの水路に、\n少し目を向けてみる。"
+      },
+      "photos": {
+        "title": "ザリガニの記録、\n伝わる写真の残し方。"
+      }
+    },
+    "guide": {
+      "water": "通学や散歩の途中にある水路。生き物の姿だけでなく、水の流れ、草の生え方、周りの様子にも目を向けてみましょう。\n見つけた場所と日時を一緒に残すと、水辺を調べる手がかりになります。",
+      "photos": "安全な場所から、生き物の全体と周りの環境が分かる写真を撮ります。近づきすぎたり、撮影のために生き物を移動させたりする必要はありません。\n人の顔や住所などが写らないようにしてください。写真が撮れなくても記録できます。",
+      "species": "公開された記録がまだ少ない種があります。身近な水辺で見つけたら、写真と場所を添えて記録してください。最初の1件が、その種の分布を知る手がかりになります。\n捕獲や移動を無理に行う必要はありません。安全な場所から観察してください。",
+      "area": "異なる市町村の水辺を記録してみる提案です。新しい場所へ無理に出かける必要はありません。承認された記録が、自分の図鑑の市町村数に反映されます。",
+      "absence": "探したけれど見つからなかったときは、不在確認として記録します。探した場所と時間、どのくらい探したかを残してください。\n一度見つからなかったことは、その場所に生息していない証明にはなりません。"
+    },
+    "faq": {
+      "login": {
+        "question": "見るだけでも登録が必要ですか？",
+        "answer": "ホームや地図、公開された記録は登録せずに閲覧できます。自分の記録を投稿したり、図鑑やバッジを残したりする場合は登録・ログインが必要です。"
+      },
+      "status": {
+        "question": "送った記録はすぐに公開されますか？",
+        "answer": "記録は運営の確認を経て公開されます。確認待ちや差し戻しなどの状態は、マイページの自分の記録から確認できます。"
+      },
+      "safety": {
+        "question": "調査中は何に気を付ければよいですか？",
+        "answer": "立ち入りが許可された安全な場所から観察してください。足元や増水、天候に注意し、捕獲や移動を無理に行う必要はありません。危険を感じたら記録より安全を優先してください。"
+      }
+    }
+  },
+  "activityGrass": {
+    "title": "活動の記録",
+    "summary": "過去1年で<big>{{days}}</big>日、記録しました（{{records}}件）",
+    "note": "審査待ちは数え、承認されなかった記録は数えません。",
+    "hintScroll": "表を右へずらすと、1年前まで見られます。",
+    "hintSelect": "マスか、下の一覧から日を選ぶと、内訳が出ます。",
+    "gridLabel": "記録した日のカレンダー（過去1年）。矢印キーで日を移ります。",
+    "cellLabel": "{{date}}、記録{{count}}件",
+    "cellLabelNone": "{{date}}、記録なし",
+    "legendTitle": "1日の記録数",
+    "legendRange": "{{from}}〜{{to}}",
+    "legendOrMore": "{{n}}以上",
+    "detailLabel": "選んだ日",
+    "detailLabelLatest": "最後に記録した日",
+    "detailDay": "{{date}}　記録{{count}}件",
+    "detailNone": "{{date}}　記録はありません",
+    "detailBreakdown": "内訳：{{items}}",
+    "detailPending": "うち審査待ち{{count}}件",
+    "typeCount": "{{type}}{{count}}件",
+    "itemSeparator": "・",
+    "listOpen": "記録した日の一覧を開く",
+    "listClose": "記録した日の一覧を閉じる",
+    "listCount": "{{count}}件",
+    "listMore": "さらに表示（残り{{count}}日）",
+    "empty": "まだ記録がありません。最初の記録を投稿すると、その日のマスに色がつきます。",
+    "emptyAction": "記録を投稿する",
+    "loadError": "活動の記録を読み込めませんでした。"
+  }
+}

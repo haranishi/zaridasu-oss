@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <!--
+    ザリダス 空状態用マスコット（線画・単色）。
+    FR-225-11 / REQ-222 連動: 投稿ゼロ・検索0件・オフライン等のやさしい挿絵。
+    色は currentColor（利用側で text-* / brand HEX を当てる）。装飾用途のため aria-hidden を付与すること。
+    ポーズ: きょろきょろ見渡す（探している＝まだ何もない状態にやさしく寄り添う）。
+  -->
+  <!-- 触角 -->
+  <path d="M104 64 C92 42 74 30 56 28"/>
+  <path d="M136 64 C148 42 166 30 184 28"/>
+  <!-- 左ハサミ -->
+  <path d="M86 108 C62 102 44 108 34 124"/>
+  <path d="M34 124 C22 112 22 96 32 86"/>
+  <path d="M34 124 C26 134 14 130 14 118"/>
+  <!-- 右ハサミ -->
+  <path d="M154 108 C178 102 196 108 206 124"/>
+  <path d="M206 124 C218 112 218 96 208 86"/>
+  <path d="M206 124 C214 134 226 130 226 118"/>
+  <!-- 歩脚 -->
+  <path d="M94 142 C80 150 72 160 68 172"/>
+  <path d="M146 142 C160 150 168 160 172 172"/>
+  <!-- 尾扇（カール） -->
+  <path d="M104 172 C108 190 132 190 136 172 C148 182 146 196 132 200"/>
+  <!-- 体（丸） -->
+  <ellipse cx="120" cy="118" rx="42" ry="46"/>
+  <!-- 目（きょろっと横を見る）・口 -->
+  <circle cx="106" cy="110" r="6" fill="currentColor" stroke="none"/>
+  <circle cx="134" cy="110" r="6" fill="currentColor" stroke="none"/>
+  <path d="M110 132 C116 137 124 137 130 132"/>
+</svg>

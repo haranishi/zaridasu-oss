@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800">
+  <!--
+    REQ-206 (FR-206-01): LP ヒーロービジュアルのプレースホルダー。
+    ザリダスの「地図画面」を様式化したモック（実機スクショは後日差し替え前提）。
+    地図 + 位置ピン + 投稿カード + AI 判定バッジ。
+    NFR: 「大学」「卒業研究」等の語は入れない。
+  -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1f5f9"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#bae6fd"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#dc2626"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- 地図ベース -->
+  <rect width="1600" height="800" fill="url(#sky)"/>
+
+  <!-- 陸地ブロック（やわらかい多角形） -->
+  <g fill="#dce7da" stroke="#cbd5c5" stroke-width="2">
+    <path d="M-20 120 L420 60 L640 220 L520 420 L760 560 L520 820 L-20 820 Z"/>
+    <path d="M1660 80 L1180 40 L980 200 L1140 360 L1020 540 L1280 700 L1660 700 Z"/>
+  </g>
+
+  <!-- 川・水路（water） -->
+  <path d="M420 60 C560 220 480 380 760 560 C980 700 1080 760 1200 820 L760 820 C600 700 560 520 360 420 C260 360 200 240 240 120 Z" fill="url(#water)" fill-opacity="0.85"/>
+  <path d="M980 200 C900 320 1020 420 980 540 C950 640 1080 700 1140 760" fill="none" stroke="#7dd3fc" stroke-width="36" stroke-linecap="round" stroke-opacity="0.8"/>
+
+  <!-- 道路（グリッド風・薄い） -->
+  <g stroke="#ffffff" stroke-width="10" stroke-opacity="0.7" stroke-linecap="round">
+    <path d="M120 300 L1480 240"/>
+    <path d="M80 520 L1520 600"/>
+    <path d="M700 40 L640 780"/>
+    <path d="M1120 60 L1180 760"/>
+  </g>
+
+  <!-- 位置ピン（クラスタ） -->
+  <g>
+    <!-- ピンを描く: 影 + 雫 + 白丸 -->
+    <g transform="translate(360 300)">
+      <ellipse cx="0" cy="46" rx="20" ry="7" fill="#0f172a" fill-opacity="0.12"/>
+      <path d="M0 44 C-26 8 -28 -16 0 -36 C28 -16 26 8 0 44 Z" fill="url(#pin)"/>
+      <circle cx="0" cy="-10" r="13" fill="#ffffff"/>
+    </g>
+    <g transform="translate(540 460) scale(0.85)">
+      <ellipse cx="0" cy="46" rx="20" ry="7" fill="#0f172a" fill-opacity="0.12"/>
+      <path d="M0 44 C-26 8 -28 -16 0 -36 C28 -16 26 8 0 44 Z" fill="url(#pin)"/>
+      <circle cx="0" cy="-10" r="13" fill="#ffffff"/>
+    </g>
+    <g transform="translate(980 380) scale(0.9)">
+      <ellipse cx="0" cy="46" rx="20" ry="7" fill="#0f172a" fill-opacity="0.12"/>
+      <path d="M0 44 C-26 8 -28 -16 0 -36 C28 -16 26 8 0 44 Z" fill="url(#pin)"/>
+      <circle cx="0" cy="-10" r="13" fill="#ffffff"/>
+    </g>
+    <g transform="translate(1180 540) scale(0.8)">
+      <ellipse cx="0" cy="46" rx="20" ry="7" fill="#0f172a" fill-opacity="0.12"/>
+      <path d="M0 44 C-26 8 -28 -16 0 -36 C28 -16 26 8 0 44 Z" fill="url(#pin)"/>
+      <circle cx="0" cy="-10" r="13" fill="#ffffff"/>
+    </g>
+    <!-- クラスタバッジ（件数まとめピン） -->
+    <g transform="translate(820 260)">
+      <circle cx="0" cy="0" r="34" fill="#dc2626"/>
+      <circle cx="0" cy="0" r="34" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <text x="0" y="9" text-anchor="middle" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="26" font-weight="800" fill="#ffffff">12</text>
+    </g>
+  </g>
+
+  <!-- 投稿カード（右下・ガラス風） -->
+  <g filter="url(#card-shadow)">
+    <rect x="1060" y="430" width="470" height="300" rx="28" fill="#ffffff"/>
+    <!-- 写真サムネ -->
+    <rect x="1088" y="458" width="150" height="150" rx="18" fill="#fee2e2"/>
+    <!-- サムネ内のミニザリガニ -->
+    <g transform="translate(1163 533) scale(0.42)">
+      <ellipse cx="0" cy="6" rx="46" ry="52" fill="#ef4444"/>
+      <path d="M-34 -4 C-58 -10 -76 -4 -84 12" fill="none" stroke="#ef4444" stroke-width="13" stroke-linecap="round"/>
+      <path d="M34 -4 C58 -10 76 -4 84 12" fill="none" stroke="#ef4444" stroke-width="13" stroke-linecap="round"/>
+      <circle cx="-16" cy="-4" r="13" fill="#ffffff"/>
+      <circle cx="16" cy="-4" r="13" fill="#ffffff"/>
+      <circle cx="-14" cy="-2" r="6.5" fill="#7f1d1d"/>
+      <circle cx="14" cy="-2" r="6.5" fill="#7f1d1d"/>
+    </g>
+    <!-- AI 判定バッジ -->
+    <rect x="1262" y="466" width="240" height="40" rx="20" fill="#fef3c7"/>
+    <circle cx="1286" cy="486" r="10" fill="#f59e0b"/>
+    <text x="1304" y="493" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#92400e">AIが判定しました</text>
+    <!-- 種名 -->
+    <text x="1262" y="548" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="30" font-weight="800" fill="#0f172a">アメリカザリガニ</text>
+    <!-- メタ行 -->
+    <rect x="1262" y="566" width="180" height="14" rx="7" fill="#e2e8f0"/>
+    <rect x="1262" y="590" width="120" height="14" rx="7" fill="#e2e8f0"/>
+    <!-- 位置行 -->
+    <g transform="translate(1088 642)">
+      <path d="M10 26 C2 14 1 4 10 -6 C19 4 18 14 10 26 Z" fill="#dc2626"/>
+      <circle cx="10" cy="4" r="5" fill="#ffffff"/>
+      <text x="30" y="22" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="22" fill="#475569">秋田市・水路ぞい</text>
+    </g>
+    <!-- いいねピル -->
+    <rect x="1380" y="624" width="120" height="44" rx="22" fill="#fee2e2"/>
+    <path d="M1408 646 c-6 -7 -16 -2 -16 7 c0 8 16 17 16 17 c0 0 16 -9 16 -17 c0 -9 -10 -14 -16 -7 Z" fill="#dc2626"/>
+    <text x="1432" y="653" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#dc2626">24</text>
+  </g>
+
+  <!-- 検索バー（上部・ガラス風） -->
+  <g filter="url(#card-shadow)">
+    <rect x="70" y="60" width="430" height="64" rx="32" fill="#ffffff"/>
+    <circle cx="112" cy="92" r="13" fill="none" stroke="#94a3b8" stroke-width="4"/>
+    <line x1="122" y1="102" x2="134" y2="114" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="150" y="84" width="200" height="16" rx="8" fill="#e2e8f0"/>
+  </g>
+</svg>

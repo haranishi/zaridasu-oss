@@ -1,0 +1,30 @@
+# supabase/functions/.deploy-ignore — 意図的に本番へデプロイしない Edge Function
+#
+# REQ-285 FR-285-05 / FR-285-06。
+# scripts/check-edge-deploy-lag.sh がこのファイルを読み、ここに載っている関数だけを
+# 「未デプロイ検知」の対象から除外する。載っていない関数が本番に存在しない場合、
+# main では CI が赤になる。
+#
+# ルール:
+#   - 1 行 1 関数名（supabase/functions/<name>/ のディレクトリ名）。
+#   - 除外する理由を必ずコメントで添える。理由が書けないなら、それは除外ではなくデプロイ漏れ。
+#   - デプロイした関数はこの一覧から削除する（削除し忘れると CI が warning を出す）。
+
+# ── ライフサイクルメール（REQ-234）──────────────────────────────────────────
+# 2026-07-29 判断: 登録ユーザー 9 名・承認済み投稿 12 件という規模で、休眠再エンゲージ
+# メールと週次ダイジェストを自動配信する価値は薄いと判断し、**デプロイしない**ことにした。
+# 併せて pg_cron の該当ジョブ（jobid 1: lifecycle_dormant_reengage_daily /
+# jobid 2: lifecycle_weekly_digest）を active=false にして、未デプロイ関数への
+# 404 リクエストが出続けないようにしてある。
+#
+# 配信を開始するときの手順:
+#   1. supabase functions deploy notify-dormant-reengage notify-weekly-digest
+#   2. 自分宛てに手動実行して文面と配信停止リンク（/u/unsubscribe）を確認
+#   3. cron を active=true に戻す
+#      （SELECT cron.alter_job(1, active := true); SELECT cron.alter_job(2, active := true);）
+#   4. この 2 行をファイルから削除する
+#
+# 注意: pg_cron の schedule は UTC 基準。現行 '0 9 * * *' は JST 18:00、
+#       '0 0 * * 1' は JST 月曜 09:00 に相当する（REQ-285 FR-285-03 の未確定事項 4）。
+notify-dormant-reengage
+notify-weekly-digest

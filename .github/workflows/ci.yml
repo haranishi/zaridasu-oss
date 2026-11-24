@@ -1,0 +1,646 @@
+name: CI
+
+on:
+  # REQ-210 FR-210-06: pull_request（fork PR に secrets を渡さない安全側）を使う。
+  # pull_request_target は secrets が fork の untrusted コードに露出しうるため安易に導入しない。
+  # ブランチ運用ルール（main ← develop ← feat/*）。
+  #
+  # REQ-317 FR-317-01: push トリガーから develop を削除した。
+  #   本番配備はproduction.ymlへ分離する。pull_request は
+  #   マージプレビュー（refs/pull/N/merge）を検証しており、「PR で緑 → マージ → push で同一
+  #   ツリーを再検証」は原理的に重複だったため（private リポジトリで無料枠を実消費している）。
+  #   ⚠ 運用影響: **develop への push は CI 対象外＝ feat ブランチ + PR 運用が必須**。
+  #     develop へ直接 push すると一切検証されないまま develop が進む。必ず feat/* を切り
+  #     PR 経由でマージすること（現運用と同じ）。
+  #   pull_request 側は [main, develop] のまま維持するので、feat/* → develop の PR では
+  #   従来どおりフルゲートが走る（NFR-317-01: 検査項目そのものは減らさない）。
+  pull_request:
+    branches: [main, develop]
+
+# REQ-210 FR-210-05: workflow 全体の安全側デフォルトを read-only に固定する。
+# 個別ジョブは最小権限の原則に従い、必要な権限だけをジョブ内 permissions で上書き昇格する
+# （例: deploy の deployments: write、gitleaks の pull-requests: read、
+#  dependency-review の pull-requests: write）。
+# ※ 旧記述にあった codeql の security-events: write は、REQ-317 FR-317-05 で
+#   codeql.yml を削除したため現存しない。
+# OIDC を使う将来のジョブでは id-token: write を当該ジョブにのみ付与する（FR-210-09）。
+permissions:
+  contents: read
+
+# REQ-180 FR-180-03: 同一 ref への連続 push で古い実行をキャンセルし Runner を節約する。
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rust-geometry:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      RUSTUP_TOOLCHAIN: '1.99.0'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - run: rustup toolchain install 1.99.0 --profile minimal --component rustfmt,clippy --target wasm32-unknown-unknown
+      - run: cargo fmt --manifest-path rust/water-geometry/Cargo.toml --check
+      - run: cargo clippy --manifest-path rust/water-geometry/Cargo.toml --locked --all-targets -- -D warnings
+      - run: cargo test --manifest-path rust/water-geometry/Cargo.toml --locked
+      - run: npm run wasm:check
+      - name: Retain Rust rebuild diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: water-geometry-rebuild
+          path: |
+            rust/water-geometry/target/rebuild.json
+            rust/water-geometry/target/wasm32-unknown-unknown/release/zaridasu_water_geometry.wasm
+          retention-days: 3
+
+  test:
+    # REQ-317 FR-317-02: PR でのみ実行する。main push は「デプロイ作業」であって検証の場ではなく、
+    # マージ直前の PR がマージプレビュー（refs/pull/N/merge）で同一ツリーを検証済みのため。
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-key-for-ci-build
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run type-check
+      - run: npm run i18n:check
+      - run: npm run schema:check
+      - run: npm run auth-route:check
+      # REQ-330 AC-03: 非公開の 4 表（調査計画・希少種の記録）に触れる関数が許可リストと一致するか。
+      #   集計 RPC などの公開経路に希少種の記録が足されたらここで止まる（DB 不要・1 秒未満）。
+      - run: npm run private-tables:check
+      - run: npm run build
+      # REQ-297: ローカル実測約7秒で unit test と同じ suite を走らせるため、
+      # npm test との二重実行を避け、coverage 付き実行へ置き換える。
+      - run: npm run test:coverage
+      # 合成データ専用。rootと独立したlockを使い、既存credentialを試験へ渡さない。
+      - name: Install isolated local database trial
+        run: npm --prefix scripts/migration ci --ignore-scripts --userconfig=/dev/null --globalconfig="$RUNNER_TEMP/migration-npmrc"
+      - name: Check native Turso and local D1 contracts
+        run: env -i PATH="$PATH" HOME="$HOME" TMPDIR="$RUNNER_TEMP" LANG=C.UTF-8 CI=true npm --prefix scripts/migration run check
+
+  e2e:
+    # REQ-051: Playwright E2E（ホーム、admin ガード、404）
+    # REQ-317 FR-317-02: PR でのみ実行する（main push では同一ツリーの再検証になるため）。
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-key-for-ci-build
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      # REQ-180 FR-180-05: Playwright ブラウザバイナリをキャッシュ。
+      # キーは package-lock.json（= @playwright/test の版数）に連動させ、
+      # バージョン更新時は自動的にキャッシュが無効化される。
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+      - name: Install Playwright browsers (with deps)
+        # キャッシュヒット時はブラウザ本体の再 DL を避け、OS 依存パッケージのみ導入。
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
+      - name: Install Playwright browsers (full)
+        # キャッシュミス時はブラウザ本体 + OS 依存パッケージをまとめて導入。
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+      - run: npm run e2e
+      # Chromiumを再利用する。fixture builderはpreview固定のbuildとWrangler dry-runを実行する。
+      # 本番鍵・Cloudflare認証・remote bindingなし。外部送信は合成allowlistで拒否する。
+      - name: Build Cloudflare preview fixture and dry-run modules
+        run: npm run build:cloudflare:fixture
+      - name: Generate Cloudflare binding types
+        run: npm run cf-typegen
+      - name: Check Cloudflare and application types
+        run: |
+          npm run type-check:cloudflare
+          npm run type-check
+      - name: Check real workerd and preview browser contracts
+        run: npm run test:cloudflare
+      - name: Upload Playwright failure artifacts
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: playwright-failure-artifacts
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: warn
+
+  perf-budget:
+    # REQ-062: バンドルサイズと Lighthouse のリグレッション検知
+    #
+    # REQ-317 FR-317-03: **feat/* → develop の PR でのみ**計測する。
+    #   - main push で走らせない理由は FR-317-02 と同じ（同一ツリーの再検証）。
+    #   - リリース PR（base = main）でも省く理由: 直前の feat PR で**同一内容を計測済み**であり、
+    #     再計測にジョブ全体で約12分（課金12分＝1変更あたり最大のコスト項目）かかるため。
+    #     リリース PR は e2e までを統合の砦として維持し、性能計測だけを落とす判断
+    #     （REQ-317「方針: 実行ティア」）。
+    #   base_ref は pull_request イベントでのみ値を持つ（push では空文字）ので、
+    #   event_name の判定と併せて二重に効かせている。
+    if: github.event_name == 'pull_request' && github.base_ref == 'develop'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-key-for-ci-build
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
+      - name: Check bundle size
+        run: npm run size
+      # REQ-306 FR-306-01 / FR-306-07: 共有チャンクを含むルート単位の First Load JS をゲート。
+      - name: Check route First Load JS budgets
+        run: npm run size:routes
+      # REQ-180 FR-180-02: continue-on-error を撤去。.lighthouserc.json の
+      # error アサーション（performance/a11y/seo/CLS）違反で CI を fail させ、
+      # REQ-109 の Lighthouse 品質ゲートを実効化する。
+      - name: Run Lighthouse CI
+        run: npx --yes @lhci/cli@0.14 autorun
+      # REQ-306 FR-306-05 / FR-306-07: 低速 CPU・4G 相当の mobile TBT を error ゲート化。
+      # desktop 4 URL × 3 回 + mobile 2 URL × 3 回で計 18 回の計測になる。
+      # 2026-07-31 の CI 実測はジョブ全体で 10分22秒 と 11分06秒（timeout-minutes: 15）。
+      # 余裕は最短でも約3分54秒しかないため、URL や numberOfRuns を増やすときは
+      # 先に timeout を上げること。
+      - name: Run Lighthouse CI (mobile)
+        run: npx --yes @lhci/cli@0.14 autorun --config=.lighthouserc.mobile.json
+      - name: Diagnose layout shifts after a performance failure
+        if: failure()
+        run: node scripts/diagnose-layout-shifts.mjs
+      - name: Upload layout shift diagnostics
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: about-layout-shifts
+          path: .lighthouseci/about-layout-shifts.json
+          if-no-files-found: ignore
+          retention-days: 3
+
+  edge-functions:
+    # REQ-050: analyze-image Edge Function の Deno テスト
+    # CDN flake 対策（案 A）:
+    #   1. supabase/functions/deno.lock を commit して依存バージョンを固定
+    #   2. テスト前に retry 付きで deno cache し、CDN flake を最大 3 回吸収
+    #   3. deno test は --cached-only でフルオフライン実行（CDN 完全遮断）
+    # REQ-317 FR-317-02: PR でのみ実行する（main push では同一ツリーの再検証になるため）。
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      # dependabot が package.json を更新するたびに本ジョブが落ちる問題の恒久対応:
+      # Deno 2 はリポジトリルートの package.json をワークスペースとして自動検出し、
+      # supabase/functions/deno.lock の workspace.packageJson に npm 依存一覧を焼き込む。
+      # その結果、npm 依存のバンプだけで lockfile が out of date になり --frozen が fail
+      # していた（2026-08-03 の dependabot PR #32〜#35 の失敗原因）。Edge Functions は
+      # esm.sh の https import のみで package.json に依存しないため、検出自体を無効化して
+      # npm 側の更新と Deno lockfile を完全に分離する。
+      DENO_NO_PACKAGE_JSON: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # 注: lockfile は Deno 2 系の形式 ("version": "5") で生成しているため、
+      # CI も v2.x で揃える必要がある。
+      - uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.5
+        with:
+          deno-version: v2.x
+      # CDN flake 対策: 依存を事前にキャッシュ。失敗時は最大 3 回リトライ。
+      # --frozen で lockfile と不一致なら CI を fail させる。
+      - name: Cache Deno dependencies (with retry)
+        uses: nick-fields/retry@ad984534de44a9489a53aefd81eb77f87c70dc60 # v4.0.0
+        with:
+          timeout_minutes: 3
+          max_attempts: 3
+          retry_wait_seconds: 10
+          shell: bash
+          # bash の globstar はデフォルト無効なので明示的に有効化する。
+          # find ではなく shopt + ** を使うのは、CI 上で展開結果を可視化しやすいため。
+          command: |
+            shopt -s globstar
+            deno cache --lock=supabase/functions/deno.lock --frozen supabase/functions/**/*.ts
+      - name: Type-check Edge Functions
+        # REQ-297 / 2026-07-31 実測:
+        # node_modules 無しの一時コピーでも、上の cache 後は @types/node エラーなく check できた。
+        # そのため npm ci は追加しない。Deno 2.9.3 の check は --cached-only 非対応だが、
+        # 依存は lock + frozen で直前に取得済みであり、--reload なしではキャッシュを再利用する。
+        #
+        # 対象件数を必ずログに出し、0 件なら失敗させる。`**` は globstar を有効化し忘れると
+        # `*` と同じ1階層マッチに退化し、`<fn>/__tests__/*.ts` を取りこぼしたまま静かに緑になる
+        # （実測: globstar 無効だと 49 件中 29 件）。上の cache ステップは shopt で明示有効化して
+        # いるので現状は正しいが、この型検査ゲートは「実は何も見ていない」が最も危険なので、
+        # 展開に依存せず find で集め、件数を可視化する。REQ-306 の size-limit 自己点検
+        # （対象0件を検知して落とす）と同じ思想。
+        run: |
+          files=()
+          while IFS= read -r f; do files+=("$f"); done < <(find supabase/functions -name '*.ts' | sort)
+          echo "deno check 対象: ${#files[@]} ファイル"
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "::error::deno check の対象ファイルが 0 件です。パス構成が変わっていないか確認してください。"
+            exit 1
+          fi
+          deno check --lock=supabase/functions/deno.lock "${files[@]}"
+      - name: Run Edge Function tests (offline / cached-only)
+        # 型検査は直前の deno check で全 .ts に実施済み。test は型検査の二重実行を避け、
+        # 既存の CDN 完全遮断（--cached-only）を維持するため --no-check のままとする。
+        run: deno test --allow-env --allow-net --allow-read --lock=supabase/functions/deno.lock --cached-only --no-check supabase/functions/
+
+  rls-tests:
+    # REQ-048: pg-tap による RLS / トリガーの DB 直接テスト
+    # 注1 (REQ-282 FR-282-B2/C-1 実測反映): schema.sql を psql で直接適用する。
+    #      理由は「migrations/ を空DBへ頭から順次適用しても通らない」ことを 2026-07-18 に実測で確認した
+    #      ため（`supabase db reset` が 2本目 20240101000001 で失敗）。ベースライン3本（20240101000000/
+    #      000001/000002）は最終スキーマに合わせて**在庫的に後から編集**されており、例えば 000001 の
+    #      posts_public ビューが posts.survey_request_id を参照するが、その列は後発 migration（20260425*）
+    #      で追加される——from-scratch では未存在で ERROR 42703 になる。したがって「確定スキーマ＝
+    #      schema.sql を適用してテストする」現方式が正しい。migrations/ の from-scratch 再適用性の是正と
+    #      schema.sql との等価性検証（pg_dump 正規化 diff の CI ジョブ化）は REQ-281 FR-281-01 の課題。
+    # 注2: postgres:16 公式イメージには pgtap が同梱されないため、同イメージに
+    #      postgresql-16-pgtap を入れたカスタムイメージを CI で build して使う
+    # REQ-317 FR-317-02 / NFR-317-01: PR でのみ実行する。RLS ゲートは PR 経路では現行どおり
+    #   全て維持し、削るのは main push での「同一内容への再実行」だけ（検査項目は減らさない）。
+    if: github.event_name == 'pull_request'
+    # PostgreSQL 16 client packages are required by this job.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      PGHOST: localhost
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: postgres
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Build postgres image with pgTAP
+        run: |
+          cat > /tmp/Dockerfile.pg <<'EOF'
+          FROM postgres:16
+          RUN apt-get update \
+              && apt-get install -y --no-install-recommends postgresql-16-pgtap \
+              && rm -rf /var/lib/apt/lists/*
+          EOF
+          docker build -f /tmp/Dockerfile.pg -t pg-pgtap:local /tmp
+      - name: Start postgres container
+        run: |
+          docker run -d --name pg \
+            -e POSTGRES_PASSWORD=postgres \
+            -e POSTGRES_DB=postgres \
+            -p 5432:5432 \
+            pg-pgtap:local
+          for i in {1..60}; do
+            docker exec pg pg_isready -U postgres && break
+            sleep 1
+          done
+      - name: Install psql client and pg_prove on runner
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y postgresql-client-16 libtap-parser-sourcehandler-pgtap-perl
+      - name: Create pg-tap extension and required roles
+        run: |
+          psql -c "CREATE EXTENSION IF NOT EXISTS pgtap;"
+          psql -c "CREATE ROLE anon NOLOGIN;" || true
+          psql -c "CREATE ROLE authenticated NOLOGIN;" || true
+          psql -c "CREATE ROLE service_role NOLOGIN BYPASSRLS;" || true
+          psql -c "CREATE SCHEMA IF NOT EXISTS auth;"
+          psql -c "CREATE TABLE IF NOT EXISTS auth.users (id UUID PRIMARY KEY, email TEXT, raw_app_meta_data JSONB DEFAULT '{}'::jsonb, raw_user_meta_data JSONB DEFAULT '{}'::jsonb, created_at TIMESTAMPTZ DEFAULT NOW(), last_sign_in_at TIMESTAMPTZ);"
+          psql -c "CREATE OR REPLACE FUNCTION auth.uid() RETURNS UUID LANGUAGE sql STABLE AS \$\$ SELECT (current_setting('request.jwt.claims', true)::jsonb ->> 'sub')::uuid \$\$;"
+          psql -c "CREATE OR REPLACE FUNCTION auth.jwt() RETURNS JSONB LANGUAGE sql STABLE AS \$\$ SELECT current_setting('request.jwt.claims', true)::jsonb \$\$;"
+      - name: Create storage schema stub before schema.sql (REQ-330)
+        # schema.sql は写真置き場（post-photos / post-audio / rare-photos）の作成と storage.objects の
+        # ポリシーを含む。代役が無いまま流すと「storage.buckets does not exist」で黙って飛ばされ、
+        # 非公開の写真置き場 rare-photos の読み書きの制限を検査できなかった。
+        # 代役は冪等なので、下の REQ-169 の段でもう一度流しても結果は変わらない。
+        run: psql -v ON_ERROR_STOP=1 -f supabase/ci/storage_stub.sql
+      - name: Apply schema.sql
+        run: psql -v ON_ERROR_STOP=1 -f supabase/schema.sql
+      - name: Grant table permissions to anon/authenticated (Supabase default)
+        run: |
+          psql -c "GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;"
+          psql -c "GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO authenticated;"
+          psql -c "GRANT SELECT, INSERT ON ALL TABLES IN SCHEMA public TO anon;"
+          psql -c "GRANT ALL ON ALL TABLES IN SCHEMA public TO service_role;"
+          psql -c "GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO anon, authenticated, service_role;"
+          psql -c "GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO anon, authenticated, service_role;"
+          # security-hardening 要件1: Supabase は public スキーマの新しい関数にも anon / authenticated / service_role への
+          # EXECUTE を既定で付ける。それを再現して、migration 20261021120000 がこれから作る関数を閉じることを検査する。
+          psql -c "ALTER DEFAULT PRIVILEGES FOR ROLE postgres IN SCHEMA public GRANT EXECUTE ON FUNCTIONS TO anon, authenticated, service_role;"
+      - name: Create storage schema stub + apply storage RLS policies (REQ-169)
+        run: |
+          # storage スキーマ/objects/補助関数の最小スタブ（auth.users スタブと同様の位置づけ）
+          # REQ-330 以降は schema.sql より前に作成済み。冪等なので再実行しても変わらない。
+          psql -f supabase/ci/storage_stub.sql
+          # 検証対象の storage RLS ポリシー（REQ-135）を実 migration から適用し、定義のドリフトを防ぐ
+          psql -f supabase/migrations/20260513000007_storage_owner_folder_upload.sql
+      - name: Re-apply column protections after Supabase default grants (REQ-179/243/244)
+        # REQ-282 C-2: Supabase 既定の一括 GRANT SELECT がテーブルレベル SELECT を復活させ、列レベルの
+        # PII 保護（reporter_ip / lat / lng / accuracy 等）を上書きするため、既定 GRANT の「後」に該当
+        # migration を再適用して列保護を再確定する。対象と順序は宣言ファイルに外出しし、追加漏れを
+        # レビューで発見しやすくした（supabase/ci/reapply-after-grants.txt）。
+        run: |
+          set -euo pipefail
+          grep -vE '^\s*(#|$)' supabase/ci/reapply-after-grants.txt | while read -r f; do
+            echo "re-applying supabase/migrations/$f"
+            psql -f "supabase/migrations/$f"
+          done
+      - name: Create vault/pg_net stub + apply webhook wrapper migration (REQ-298 FR-298-07)
+        # pg_net webhook ラッパ 7 本（private.edge_webhook_headers / call_lifecycle_edge_function /
+        # call_notify_survey_request / call_send_push / run_ai_anomaly_check /
+        # private.call_ai_edge_function / private.trigger_enrich_place）は vault / pg_net を
+        # 前提とするため supabase/schema.sql に載っておらず、CI カバレッジが 0 だった。
+        # 通知・AI 解析・Web Push・逆ジオの**起動経路そのもの**であり、しかも全ラッパが
+        # `EXCEPTION WHEN OTHERS THEN NULL` の fail-soft なので、壊れても無言で no-op になる。
+        #
+        # storage RLS（REQ-169）と同じ「CI に無いスキーマをスタブして実 migration を適用する」方式。
+        # スタブに関数定義をコピーしないのが肝で、実 migration から適用するので定義のドリフトが起きない。
+        # net.http_post は実際に HTTP を投げず、呼び出し引数を net._stub_calls へ記録する。
+        # スタブが本番と乖離する点（非同期性・戻り値・実際に 200 が返るか）は
+        # supabase/ci/pgnet_vault_stub.sql の冒頭に明記してある。
+        run: |
+          psql -f supabase/ci/pgnet_vault_stub.sql
+          psql -f supabase/migrations/20260717000001_webhook_secret_headers.sql
+      - name: Apply internal RPC guards after wrapper definitions (REQ-316)
+        # これらの関数は migration にだけ定義がある（schema.sql に無い）。旧ラッパーと既定 GRANT の
+        # 「後」に本物の migration を当てる。テスト側で権限を直さない（直すと検査にならない）。
+        run: |
+          psql -v ON_ERROR_STOP=1 -f supabase/migrations/20260424000003_ai_call_logs.sql
+          psql -v ON_ERROR_STOP=1 -f supabase/migrations/20260926175847_req316_notification_rpc_and_admin_guard.sql
+      - name: Re-apply function EXECUTE revokes derived from schema.sql (REQ-298 FR-298-05)
+        # 一括 GRANT EXECUTE ON ALL FUNCTIONS が schema.sql の関数レベル REVOKE を打ち消すため、
+        # 既定 GRANT の「後」に再確定して本番と同じ権限状態でテストを走らせる。
+        #
+        # 【なぜ宣言ファイルではなく schema.sql からの導出なのか】
+        #   要件（FR-298-05）が挙げた選択肢は (a) reapply-after-grants.txt へ追記 /
+        #   (b) 専用 SQL ファイルを新設、の 2 つだった。どちらも「schema.sql に REVOKE を足したら
+        #   宣言側にも足す」という人手の同期が必要で、**追記漏れそのものが本 REQ の課題**である。
+        #   そこで schema.sql を唯一の情報源として毎回導出する方式にした。追記漏れが原理的に起きない。
+        #   （REQ-310 で公開データセットの列定義を単一ソース化したのと同じ考え方。)
+        #
+        # 抽出ルール: 行頭が REVOKE で、かつ ON FUNCTION を含む単一行の文だけを対象にする。
+        #   - 行頭アンカーにより、DO ブロック内の EXECUTE 'REVOKE ...'（動的SQL）を拾わない
+        #   - ON FUNCTION 条件により、テーブル REVOKE（admin_user_list / geo_cache 等）を拾わない
+        #     ※ テーブル REVOKE の再確定は reapply-after-grants.txt の担当範囲（本 REQ の対象外）
+        #   - ALTER DEFAULT PRIVILEGES ... REVOKE ... は行頭が ALTER なので対象外（既定権限の設定であり
+        #     既存関数の権限ではないため、再適用しても意味がない）
+        #
+        # 0 件チェックは必須。REQ-297 で「glob が静かに退化して対象が減っても緑のままだった」事故が
+        # あったため、ファイル集合を作るときは必ず件数をログに出して 0 件で落とす。
+        run: |
+          set -euo pipefail
+          revokes="$(grep -E '^REVOKE .* ON FUNCTION ' supabase/schema.sql || true)"
+          count="$(printf '%s\n' "${revokes}" | grep -c . || true)"
+          echo "schema.sql から抽出した関数 REVOKE: ${count} 文"
+          if [[ "${count}" -eq 0 ]]; then
+            echo "::error::schema.sql から関数レベルの REVOKE を 1 文も抽出できませんでした。抽出ルールか schema.sql の書式が変わっています"
+            exit 1
+          fi
+          printf '%s\n' "${revokes}"
+          printf '%s\n' "${revokes}" | psql -v ON_ERROR_STOP=1 -f -
+      - name: Close SECURITY DEFINER function EXECUTE by default (REQ-316 / security-hardening)
+        # 公開が仕様の関数（許可リスト）以外の SECURITY DEFINER 関数を、匿名と PUBLIC から閉じ、これから作る関数の
+        # 既定の権限も閉じる。上の一括 GRANT と schema.sql 由来の REVOKE の「後」の、最後の権限の確定。
+        # 許可リストと、閉じた結果は supabase/tests/req316_function_execute_default_closed.sql が検査する
+        # （テスト自身は権限を変えない）。
+        run: psql -v ON_ERROR_STOP=1 -f supabase/migrations/20261021120000_req316_function_execute_default_closed.sql
+      - name: Run pg-tap tests
+        run: pg_prove --ext .sql supabase/tests/
+
+  schema-drift:
+    # REQ-060: schema.sql が壊れていないかの smoke check
+    # 注: database.types.ts は手動で literal union 型（'american' | 'bullfrog' など）で
+    # 書かれており、Supabase CLI の自動生成版（string 型）より厳格なため、機械的 diff は
+    # 常に大差が出る。このジョブは「schema.sql が有効で型生成が完走すること」のみを検証し、
+    # 生成結果との diff は warning として表示するだけに留める。
+    # REQ-317 FR-317-02: PR でのみ実行する（main push では同一ツリーの再検証になるため）。
+    if: github.event_name == 'pull_request'
+    # PostgreSQL 16 client packages are required by this job.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      PGHOST: localhost
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: postgres
+      # supabase CLI は --db-url 指定でも内部で token ゲートを通すバージョンがあり、
+      # 未設定だと "Access token not provided ..." で gen types が exit 1 する。
+      # --db-url のローカル/サービスコンテナ接続では token は API 呼び出しに使われない
+      # （ゲート通過のための非空判定のみ）ので、ダミー値を渡して回避する。秘密情報ではない。
+      # 値に "placeholder" を含めるのは、gitleaks の generic ルール誤検知を避けるため
+      # （.gitleaks.toml の allowlist が placeholder[a-z0-9-]* を行単位で除外している）。
+      SUPABASE_ACCESS_TOKEN: sbp-placeholder-token-not-a-secret-local-only
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359 # v3.0.1
+        with:
+          # flake 対策: version を固定ピン留めする（edge-functions-deploy-lag と同様）。
+          # 'latest' は毎回 Supabase API へ問い合わせ Gateway Time-out で落ちうる。
+          # REQ-317 FR-317-04 で schema-drift は deploy の needs から外れたが、本ジョブは
+          # PR の品質ゲートであり、flake はマージ（＝結果的に本番反映）をブロックしうる。
+          # 固定版で API 解決を避け flake を排除する方針は維持する。
+          version: 2.106.0
+      - name: Apply schema.sql
+        run: |
+          sudo apt-get update && sudo apt-get install -y postgresql-client-16
+          psql -c "CREATE ROLE anon NOLOGIN;" || true
+          psql -c "CREATE ROLE authenticated NOLOGIN;" || true
+          psql -c "CREATE ROLE service_role NOLOGIN BYPASSRLS;" || true
+          psql -c "CREATE SCHEMA IF NOT EXISTS auth;"
+          psql -c "CREATE TABLE IF NOT EXISTS auth.users (id UUID PRIMARY KEY, email TEXT, raw_app_meta_data JSONB DEFAULT '{}'::jsonb, raw_user_meta_data JSONB DEFAULT '{}'::jsonb, created_at TIMESTAMPTZ DEFAULT NOW(), last_sign_in_at TIMESTAMPTZ);"
+          psql -c "CREATE OR REPLACE FUNCTION auth.uid() RETURNS UUID LANGUAGE sql STABLE AS \$\$ SELECT (current_setting('request.jwt.claims', true)::jsonb ->> 'sub')::uuid \$\$;"
+          psql -c "CREATE OR REPLACE FUNCTION auth.jwt() RETURNS JSONB LANGUAGE sql STABLE AS \$\$ SELECT current_setting('request.jwt.claims', true)::jsonb \$\$;"
+          psql -v ON_ERROR_STOP=1 -f supabase/ci/storage_stub.sql
+          psql -v ON_ERROR_STOP=1 -f supabase/schema.sql
+      - name: Enable host.docker.internal on the runner
+        # supabase gen types --db-url は pg_dump を Docker コンテナ内で実行するため、
+        # コンテナからは "localhost" が runner の postgres サービスに解決できない。
+        # Linux runner には host.docker.internal が無い（Docker Desktop 限定）ので
+        # 手動で /etc/hosts に追加し、--db-url のホストに使えるようにする。
+        run: echo "127.0.0.1 host.docker.internal" | sudo tee -a /etc/hosts
+      - name: Regenerate types (smoke check)
+        # ホストは localhost ではなく host.docker.internal を使う（上記コメント参照）。
+        # supabase gen types は内部で public.ecr.aws/supabase/postgres-meta:v0.96.1 イメージを
+        # docker pull する。共有 runner IP が AWS Public ECR の匿名転送上限
+        # （toomanyrequests: Data limit exceeded）に達すると同一 runner 上のリトライも全て失敗するため、
+        # ECR pull 失敗時は Docker Hub の同一公式イメージ（docker.io/supabase/postgres-meta:v0.96.1）へ
+        # フォールバックしてローカルタグ付けすることで ECR レート制限を回避する。
+        uses: nick-fields/retry@ad984534de44a9489a53aefd81eb77f87c70dc60 # v4.0.0
+        with:
+          timeout_minutes: 5
+          max_attempts: 3
+          retry_wait_seconds: 30
+          shell: bash
+          command: |
+            set -e
+            PG_META_ECR="public.ecr.aws/supabase/postgres-meta:v0.96.1"
+            PG_META_HUB="docker.io/supabase/postgres-meta:v0.96.1"
+            if ! docker image inspect "${PG_META_ECR}" >/dev/null 2>&1; then
+              docker pull "${PG_META_ECR}" || {
+                echo "::warning::ECR pull failed; falling back to Docker Hub (${PG_META_HUB})"
+                docker pull "${PG_META_HUB}"
+                docker tag "${PG_META_HUB}" "${PG_META_ECR}"
+              }
+            fi
+            supabase gen types typescript --db-url postgres://postgres:postgres@host.docker.internal:5432/postgres > .tmp.types.ts
+            echo "::notice::schema.sql から型生成に成功しました（行数: $(wc -l < .tmp.types.ts)）"
+      - name: Diff against committed types (informational)
+        run: |
+          echo "::group::src/types/database.types.ts との差分（手動メンテ型との乖離）"
+          diff -u src/types/database.types.ts .tmp.types.ts || true
+          echo "::endgroup::"
+
+  audit:
+    # REQ-210 FR-210-03: 依存の既知脆弱性を CI で監査する。
+    # lockfile を唯一の真実とし npm ci のみを使う（npm install で lockfile に差分を作らない）。
+    # script "audit" (= npm audit --omit=dev --audit-level=high) は high+ で exit 1 する。
+    #
+    # ✅ hard-fail 昇格済み (REQ-296 FR-296-05 / 2026-07-30):
+    #   REQ-210 導入時は既存 high (next / ws) があったため warning 化していたが、
+    #   REQ-296 で本番依存の high を 0 件にしたうえで、下記ステップのガード
+    #   (`if npm run audit; then ... else warning`) を外し hard-fail に昇格した。
+    #   以降、本番依存に high+ が現れたらこのジョブは落ちる（＝滞留を構造的に止める）。
+    #
+    # ⚠ 上流由来の新規 advisory で赤くなった場合の運用（warning 化に戻さないこと）:
+    #   (1) まず `npm audit fix` / 該当パッケージの更新で解消する。
+    #   (2) 直ちに修正できない場合のみ、.github/SECURITY_SETUP.md の
+    #       「依存監査 allowlist 台帳」に無視理由・影響評価・再評価期日を記録し、
+    #       package.json の overrides など明示的な手当てで audit を 0 件に戻す。
+    #   台帳に書かずに warning へ戻す運用は禁止（REQ-296 が解消した滞留の再発）。
+    #
+    # REQ-317 FR-317-02 / NFR-317-01: PR でのみ実行する。依存監査は PR 経路では現行どおり
+    #   hard-fail のまま維持し、削るのは main push での「同一 lockfile への再監査」だけ。
+    #   （上流の新規 advisory は Dependabot alerts と weekly の Dependabot PR で拾う。）
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      # 本番依存（runtime）の high+ 監査。high+ が 1 件でもあればこのジョブは fail する。
+      # （npm run audit = npm audit --omit=dev --audit-level=high。exit code をそのままジョブに伝える）
+      - name: Audit production dependencies (high+)
+        run: npm run audit
+      # devDependencies 込みは情報提供のみ（ビルド/テスト専用のため fail させない）。
+      - name: Audit all dependencies (informational, includes dev)
+        run: npm run audit:all
+      # CI専用native依存も独立lock全体を監査し、low以上を失敗判定する。
+      - name: Audit isolated local database trial lock
+        run: npm --prefix scripts/migration audit --package-lock-only --ignore-scripts --audit-level=low --userconfig=/dev/null --globalconfig="$RUNNER_TEMP/migration-npmrc"
+
+  gitleaks:
+    # REQ-210 FR-210-08 / REQ-017 NFR-017-01: secret scanning を CI でも実施し、
+    # ローカル pre-commit をすり抜けた秘密混入を検知する。
+    # placeholder / NEXT_PUBLIC_* の誤検知は .gitleaks.toml の allowlist で除外（NFR-210-04）。
+    # 検知時の一次対応は「まず失効(rotate)→次に履歴除去」（REQ-017 / 23_Leak_Response_Playbook）。
+    # REQ-317 FR-317-02 / NFR-317-01: PR でのみ実行する。secret scanning は PR 経路では現行どおり
+    #   維持し（マージ前に必ず 1 回通る）、削るのは main push での同一差分の再スキャンだけ。
+    #   push protection（GitHub 側の secret scanning）は本 workflow とは独立に効き続ける。
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      # gitleaks-action は PR スキャン時に GET /repos/{owner}/{repo}/pulls/{n}/commits を
+      # 叩くため pull-requests: read が必要。これが無いと private リポジトリで
+      # "Resource not accessible by integration (403)" になり PR で必ず落ちる。
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # gitleaks の差分/全履歴スキャンのため全 commit を取得する。
+          fetch-depth: 0
+      - name: Run gitleaks
+        uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          # commits API への認証に使う。上の pull-requests: read と併せて 403 を解消する。
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_CONFIG: .gitleaks.toml
+          # GITLEAKS_LICENSE は organization アカウントでのみ必須。本リポジトリは個人運用のため不要。
+
+  dependency-review:
+    # REQ-210 FR-210-02: PR で新規導入される依存の脆弱性 / ライセンスをレビューしブロックする。
+    # Dependency Review は base...head の比較が必要なため pull_request イベントでのみ実行する。
+    #
+    # ⚠ private リポジトリでは GitHub Advanced Security (GHAS・有料) と Dependency graph
+    #   有効化が必須で、未契約だと action が次のエラーで必ず失敗する:
+    #     "Dependency review is not supported on this repository. Please ensure that
+    #      Dependency graph is enabled along with GitHub Advanced Security ..."
+    #   本リポジトリ (haranishi/zaridasu) は private かつ GHAS 未契約のため、ジョブごと
+    #   スキップ（グレー表示）する。continue-on-error だとジョブは実行され Error ログが出て
+    #   △ 表示になり紛らわしいので、if でジョブ自体を起動しない方がクリーン。
+    #   ⇒ public 化 もしくは GHAS 契約で repository.private が false になれば自動的に実効化される。
+    #   それまでの新規依存の脆弱性検知は audit ジョブ + Dependabot alerts で代替する。
+    # if 条件: pull_request イベントのみ（base...head 比較が必要）かつ private リポジトリでないとき。
+    #   github.event.repository.private は pull_request / push 両イベントで参照可能。
+    if: ${{ github.event_name == 'pull_request' && !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      # fork PRでも読み取りだけで検査し、コメントの書込権限を要求しない。
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Dependency Review
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
+        with:
+          # high 以上の新規脆弱性が導入されたら fail させる。
+          fail-on-severity: high
+          comment-summary-in-pr: never

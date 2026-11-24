@@ -1,0 +1,15 @@
+{
+  "feature_name": "security-hardening",
+  "language": "ja",
+  "phase": "implementation",
+  "created_at": "2026-10-21",
+  "updated_at": "2026-10-21",
+  "scope": "REQ-316の積み残しの完了と、観点別レビューで確かめた脆弱性の是正（DB権限・回数制限・退会・AI審査・メディア取得・個人情報）",
+  "approvals": {
+    "requirements": { "generated": true, "approved": true },
+    "design": { "generated": true, "approved": true },
+    "tasks": { "generated": true, "approved": true }
+  },
+  "authorization": "2026-10-21: 本人が「SDDに沿って直すところを確認し、セキュリティを強化したい」と依頼。2026-10-19の自律実行ルールに従い、要件・設計・タスクの個別承認は取らずに確定した（承認の根拠は本人の依頼とこのルール）。本人の判断が要る項目は brief.md に分け、実装の対象にしていない。PRのマージと、本番へのmigration適用・設定変更は本人が行う。",
+  "ready_for_implementation": true
+}

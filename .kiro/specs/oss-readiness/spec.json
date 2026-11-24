@@ -1,0 +1,47 @@
+{
+  "feature_name": "oss-readiness",
+  "language": "ja",
+  "phase": "implementation",
+  "created_at": "2026-11-13",
+  "updated_at": "2026-11-24",
+  "scope": "稼働中サービスを保護したOSS公開準備。公開操作や不可逆操作は別の判断に残す。",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": true
+    }
+  },
+  "authorization": "2026-11-13: 本人が提示済みのOSS化の課題を一つずつ実行するよう依頼。自律実行の共通ルールに従い、調査・仕様・実装・検証・作業ブランチのGit操作を進める。公開・鍵の失効・履歴の書換え・権利条件の変更は保留する。 2026-11-14: 本人がmain/developの分離・外部参加の運用設定の調整を依頼。Googleキー対応は本人担当。GitHub権限境界と利用側workflowの必要最小限を実設定へ反映し、素材条件を整える。公開切替、権利の推測、本番DB変更は含めない。 2026-11-16: 本人が残件解決と実行可能な作業の続行を依頼。最新ソースexport、履歴なしprivate候補の作成・検証と安全なGit設定を続行する。Public切替・既存キー失効・本番変更は保留。候補名は任意確認中で、未回答ならzaridasu-ossを仮名にする。 2026-11-23: 本人が、追加点検で見つかった残件のうち実行できる作業の続行を依頼。履歴の書換え・GitHub設定の変更・Public切替・鍵の操作は保留する。 2026-11-24: 本人が、残件（鍵の交換・失効、本番Webhookと上限の確認、GitHubのメール非公開設定、行動規範、公開方法）をエージェントが実行するよう依頼。鍵の交換・失効、GitHubの設定変更、確認を実施した。履歴の書換えとPublic切替は含めない。",
+  "followup": "followup-20261123.md",
+  "addenda": [
+    {
+      "date": "2026-11-23",
+      "scope": "requirements 6-9, design 2026-11-23, tasks 11",
+      "approval": "追加点検の報告を受けた本人が、実行できる作業の続行を依頼した範囲で進めている。要件の文面そのものの個別承認は未取得。"
+    }
+  ],
+  "ready_for_implementation": true,
+  "verification": "verification.md",
+  "publication_ready": false,
+  "publication_candidate_verification": "publication-verification.md",
+  "publication_candidate": {
+    "repository": "haranishi/zaridasu-oss",
+    "visibility": "private",
+    "source_revision": "f70579c6cdc3e77d54469cc3d47f214aca83c9fa",
+    "source_commit": "8326b735a2c440799a4d016cd5a5246f2bb57f9d",
+    "develop_commit": "d29a66b0c2b4e01028c2fff282487ecefb14d685",
+    "main_promotion": "PR2 merged; all eight required checks passed",
+    "public_gates": "pending owner confirmations and final decision; additional automatic CI outputs require refresh before Public",
+    "main_commit": "dfa3978bf86707e1892b33aa1f14597f50f307e3",
+    "private_preparation_review": "APPROVED; tasks 9.4 and 9.5 VERIFIED",
+    "automatic_dependabot_refs_observed": 6
+  }
+}

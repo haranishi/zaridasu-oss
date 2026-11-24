@@ -1,0 +1,31 @@
+name: Proposal or question (提案・相談)
+description: Discuss a change before you implement it, or ask a question. 実装の前に、目的と影響を相談します。
+title: "[Proposal]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include API keys, tokens, real users' details, photos with private locations, or security exploit details.
+        For security issues, use "Report a vulnerability" under the Security tab (see SECURITY.md).
+        APIキー・利用者の情報・正確な非公開地点・攻撃の詳しい手順は書かないでください。セキュリティ上の問題は、Securityタブの「Report a vulnerability」から非公開で報告してください。
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Who is affected, and what is the problem? (誰の、どの場面の問題ですか)
+      description: Describe the user and the situation. 利用者と場面を書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What do you propose or ask? (提案・質問の内容)
+      description: A change you would like to make, or a question about the design or the code. 変更したい内容、または設計やコードへの質問。
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact (影響しそうな範囲)
+      description: Screens, data, permissions, or dependencies that may be affected. 画面・データ・権限・依存への影響が分かれば書いてください。
+    validations:
+      required: false

@@ -1,0 +1,14 @@
+# Source-only archives keep private tooling and production automation separate.
+# export-ignore affects git archive/downloaded source; it does not hide Git history.
+/.agent-harness export-ignore
+/.claude export-ignore
+.github/workflows/production.yml export-ignore
+.github/workflows/backup.yml export-ignore
+.gitleaksignore export-ignore
+
+# Unverified private artwork is replaced by oss:export with licensed placeholders.
+/scripts/__tests__/production-ci.test.ts export-ignore
+
+# Survey operations tooling points at live endpoints, so the public source leaves it out.
+/scripts/monitor-survey export-ignore
+/.kiro/specs/monitor-survey-gas export-ignore

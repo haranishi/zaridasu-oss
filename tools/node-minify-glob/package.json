@@ -1,0 +1,12 @@
+{
+  "name": "@zaridasu/node-minify-glob",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.cjs",
+  "dependencies": {
+    "tinyglobby": "0.2.17",
+    "picomatch": "4.0.4"
+  }
+}

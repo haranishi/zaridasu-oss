@@ -1,0 +1,10 @@
+{
+  "$schema": "./labels.schema.json",
+  "description": "REQ-075 Phase 0: AI 判定評価用の画像ラベル。各サンプルは tests/fixtures/images/<class>/ 配下に配置。",
+  "classes": ["bullfrog", "american", "native_frog", "other"],
+  "constraints": {
+    "max_size_bytes": 5242880,
+    "allowed_mime_types": ["image/jpeg", "image/png", "image/webp"]
+  },
+  "samples": []
+}

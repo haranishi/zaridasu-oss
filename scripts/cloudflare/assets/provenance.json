@@ -1,0 +1,47 @@
+{
+  "text": "秋田の外来生物調査水辺記録を共有ザリダス - 県情報マップ",
+  "retrieved": "2026-11-15",
+  "assets": {
+    "NotoSansJP-OFL.txt": {
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    "Twemoji-LICENSE-GRAPHICS.txt": {
+      "source": "https://raw.githubusercontent.com/twitter/twemoji/v14.0.2/LICENSE-GRAPHICS",
+      "bytes": 18524,
+      "sha256": "8ae9438818c26e4873b91d8c6ad620526c011e27e125677f13031eda903f007c"
+    },
+    "1f99e.svg": {
+      "source": "https://raw.githubusercontent.com/twitter/twemoji/v14.0.2/assets/svg/1f99e.svg",
+      "bytes": 6071,
+      "sha256": "c6ef048c73f3038412ca909ec412ebf53fe7dc9dbab6b13dec485cac8c11851a"
+    },
+    "noto-jp-subset.css": {
+      "source": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&text=%E7%A7%8B%E7%94%B0%E3%81%AE%E5%A4%96%E6%9D%A5%E7%94%9F%E7%89%A9%E8%AA%BF%E6%9F%BB%E6%B0%B4%E8%BE%BA%E8%A8%98%E9%8C%B2%E3%82%92%E5%85%B1%E6%9C%89%E3%82%B6%E3%83%AA%E3%83%80%E3%82%B9+-+%E7%9C%8C%E6%83%85%E5%A0%B1%E3%83%9E%E3%83%83%E3%83%97",
+      "bytes": 374,
+      "sha256": "471458333b4c8e5abcfa1212ae364eb279b6915d1e72bf733ad29ff11ec8a97f"
+    },
+    "noto-jp-detector.css": {
+      "source": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap",
+      "bytes": 117166,
+      "sha256": "3a100e2ea7b45c051de7b7b851aa74e29ca16db9627dbf746f6076de8cf706e9"
+    },
+    "noto-jp-subset.ttf": {
+      "source": "https://fonts.gstatic.com/l/font?kit=-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj75vY0rw_mMKlBJ5Lpibjw96Cv-7XHvm6JEPZ7D3QXd_S6VvSthF8rcgoTX4xWDJS-aMEn8a0DPA93thRpFz-tDpWp7Nro27L54ED-vEinuJRB3VkVatVwa1Sg8nCWgIv-S1IBHx86Zo-9vZyWbr7&skey=72472b0eb8793570&v=v57",
+      "bytes": 12404,
+      "sha256": "e5518c54649a8ab15656173cb4ff6b6e7edb322e38c589f2b3ca5e0e1fbd3f2a"
+    },
+    "noto-cjk-detector.css": {
+      "source": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Noto+Sans+HK&display=swap",
+      "bytes": 502837,
+      "sha256": "ab12038fb427c3861477707494963e4a051936fd49db86004b3e91864511ad7c"
+    },
+    "Leaflet marker (installed dependency)": {
+      "source": "https://github.com/Leaflet/Leaflet/blob/v1.9.4/dist/images/marker-icon-2x.png",
+      "local": "node_modules/leaflet/dist/images/marker-icon-2x.png",
+      "bytes": 2464,
+      "sha256": "00179c4c1ee830d3a108412ae0d294f55776cfeb085c60129a39aa6fc4ae2528"
+    }
+  }
+}

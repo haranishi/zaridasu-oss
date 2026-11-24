@@ -1,0 +1,65 @@
+# ソース索引：Context・Hook
+
+[全体の索引](source-map.md)へ戻る。ファイルを開き、担当する説明で責任・処理の流れ・制約を読む。
+
+| ファイル | 役割を説明する文書 |
+|---|---|
+| [src/context/AuthContext.tsx](<../../src/context/AuthContext.tsx>) | [認証・初回案内](authentication.md) |
+| [src/context/MapSettingsContext.tsx](<../../src/context/MapSettingsContext.tsx>) | [地図・投稿の表示と操作](map-posts.md) |
+| [src/context/ThemeContext.tsx](<../../src/context/ThemeContext.tsx>) | [共通UI・翻訳・テーマ](localization-ui.md) |
+| [src/context/ToastContext.tsx](<../../src/context/ToastContext.tsx>) | [共通UI・翻訳・テーマ](localization-ui.md) |
+| [src/context/__tests__/AuthContext.signOut.test.tsx](<../../src/context/__tests__/AuthContext.signOut.test.tsx>) | [検証・検証データ（検証）](validation.md) |
+| [src/context/__tests__/AuthContext.test.tsx](<../../src/context/__tests__/AuthContext.test.tsx>) | [検証・検証データ（検証）](validation.md) |
+| [src/context/__tests__/MapSettingsContext.test.tsx](<../../src/context/__tests__/MapSettingsContext.test.tsx>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useDetailSEO.test.ts](<../../src/hooks/__tests__/useDetailSEO.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useFocusTrap.test.tsx](<../../src/hooks/__tests__/useFocusTrap.test.tsx>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useLike.test.ts](<../../src/hooks/__tests__/useLike.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useOfflineQueue.test.ts](<../../src/hooks/__tests__/useOfflineQueue.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useOnboardingStatus.test.ts](<../../src/hooks/__tests__/useOnboardingStatus.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useOnlineStatus.test.ts](<../../src/hooks/__tests__/useOnlineStatus.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/usePrivateSpots.test.ts](<../../src/hooks/__tests__/usePrivateSpots.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useProfile.test.ts](<../../src/hooks/__tests__/useProfile.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useProgress.test.ts](<../../src/hooks/__tests__/useProgress.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useReverseGeocode.test.ts](<../../src/hooks/__tests__/useReverseGeocode.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useUnlocks.test.ts](<../../src/hooks/__tests__/useUnlocks.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/__tests__/useWeather.test.ts](<../../src/hooks/__tests__/useWeather.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/admin/__tests__/useAdminPosts.test.ts](<../../src/hooks/admin/__tests__/useAdminPosts.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/admin/__tests__/useAdminSessionTimeout.test.ts](<../../src/hooks/admin/__tests__/useAdminSessionTimeout.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/admin/useAdminKpi.ts](<../../src/hooks/admin/useAdminKpi.ts>) | [管理画面](frontend-admin.md) |
+| [src/hooks/admin/useAdminPosts.ts](<../../src/hooks/admin/useAdminPosts.ts>) | [管理画面](frontend-admin.md) |
+| [src/hooks/admin/useAdminSessionTimeout.ts](<../../src/hooks/admin/useAdminSessionTimeout.ts>) | [管理画面](frontend-admin.md) |
+| [src/hooks/admin/useAdminStats.ts](<../../src/hooks/admin/useAdminStats.ts>) | [管理画面](frontend-admin.md) |
+| [src/hooks/posts/__tests__/useDeletePost.test.ts](<../../src/hooks/posts/__tests__/useDeletePost.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/posts/__tests__/useEditPost.test.ts](<../../src/hooks/posts/__tests__/useEditPost.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/posts/__tests__/usePostForm.test.ts](<../../src/hooks/posts/__tests__/usePostForm.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/posts/__tests__/usePostList.test.ts](<../../src/hooks/posts/__tests__/usePostList.test.ts>) | [検証・検証データ（検証）](validation.md) |
+| [src/hooks/posts/useDeletePost.ts](<../../src/hooks/posts/useDeletePost.ts>) | [地図・投稿の表示と操作](map-posts.md) |
+| [src/hooks/posts/useEditPost.ts](<../../src/hooks/posts/useEditPost.ts>) | [地図・投稿の表示と操作](map-posts.md) |
+| [src/hooks/posts/usePostDraft.ts](<../../src/hooks/posts/usePostDraft.ts>) | [地図・投稿の表示と操作](map-posts.md) |
+| [src/hooks/posts/usePostForm.ts](<../../src/hooks/posts/usePostForm.ts>) | [地図・投稿の表示と操作](map-posts.md) |
+| [src/hooks/posts/usePostList.ts](<../../src/hooks/posts/usePostList.ts>) | [地図・投稿の表示と操作](map-posts.md) |
+| [src/hooks/survey/useSurveyRequestComments.ts](<../../src/hooks/survey/useSurveyRequestComments.ts>) | [調査依頼の画面](participation-surveys.md) |
+| [src/hooks/survey/useSurveyRequests.ts](<../../src/hooks/survey/useSurveyRequests.ts>) | [調査依頼の画面](participation-surveys.md) |
+| [src/hooks/survey/useSurveyResponses.ts](<../../src/hooks/survey/useSurveyResponses.ts>) | [調査依頼の画面](participation-surveys.md) |
+| [src/hooks/useBodyScrollLock.ts](<../../src/hooks/useBodyScrollLock.ts>) | [共通UI・翻訳・テーマ](localization-ui.md) |
+| [src/hooks/useCountUp.ts](<../../src/hooks/useCountUp.ts>) | [共通UI・翻訳・テーマ](localization-ui.md) |
+| [src/hooks/useCsvExport.ts](<../../src/hooks/useCsvExport.ts>) | [参加・継続を支える機能](participation.md) |
+| [src/hooks/useDetailSEO.ts](<../../src/hooks/useDetailSEO.ts>) | [検索・共有・公開URL](localization-ui-seo.md) |
+| [src/hooks/useEmailResend.ts](<../../src/hooks/useEmailResend.ts>) | [認証・初回案内](authentication.md) |
+| [src/hooks/useEscapeKey.ts](<../../src/hooks/useEscapeKey.ts>) | [共通UI・翻訳・テーマ](localization-ui.md) |
+| [src/hooks/useFocusTrap.ts](<../../src/hooks/useFocusTrap.ts>) | [共通UI・翻訳・テーマ](localization-ui.md) |
+| [src/hooks/useGeminiAuthBanner.ts](<../../src/hooks/useGeminiAuthBanner.ts>) | [通知・AI](notifications-ai.md) |
+| [src/hooks/useIntroStory.ts](<../../src/hooks/useIntroStory.ts>) | [認証・初回案内](authentication.md) |
+| [src/hooks/useLike.ts](<../../src/hooks/useLike.ts>) | [地図・投稿の表示と操作](map-posts.md) |
+| [src/hooks/useOfflineQueue.ts](<../../src/hooks/useOfflineQueue.ts>) | [PWA・未送信・画像処理](offline.md) |
+| [src/hooks/useOnboardingStatus.ts](<../../src/hooks/useOnboardingStatus.ts>) | [認証・初回案内](authentication.md) |
+| [src/hooks/useOnlineStatus.ts](<../../src/hooks/useOnlineStatus.ts>) | [PWA・未送信・画像処理](offline.md) |
+| [src/hooks/usePriorityAreas.ts](<../../src/hooks/usePriorityAreas.ts>) | [参加・継続を支える機能](participation.md) |
+| [src/hooks/usePrivateSpots.ts](<../../src/hooks/usePrivateSpots.ts>) | [非公開調査](fieldwork.md) |
+| [src/hooks/useProfile.ts](<../../src/hooks/useProfile.ts>) | [参加・継続を支える機能](participation.md) |
+| [src/hooks/usePushSubscription.ts](<../../src/hooks/usePushSubscription.ts>) | [通知・AI](notifications-ai.md) |
+| [src/hooks/useReverseGeocode.ts](<../../src/hooks/useReverseGeocode.ts>) | [外部連携](external-services.md) |
+| [src/hooks/useStats.ts](<../../src/hooks/useStats.ts>) | [参加・継続を支える機能](participation.md) |
+| [src/hooks/useToast.ts](<../../src/hooks/useToast.ts>) | [共通UI・翻訳・テーマ](localization-ui.md) |
+| [src/hooks/useUnlocks.ts](<../../src/hooks/useUnlocks.ts>) | [参加・継続を支える機能](participation.md) |
+| [src/hooks/useWeather.ts](<../../src/hooks/useWeather.ts>) | [外部連携](external-services.md) |

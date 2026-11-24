@@ -1,0 +1,2577 @@
+{
+  "banner": {
+    "neverShowAgain": "不再显示"
+  },
+  "intro": {
+    "prompt": {
+      "kicker": "初次使用",
+      "title": "一起绘制秋田的外来生物地图",
+      "body": "只需回答2个问题，1分钟了解地图怎么看。",
+      "read": "查看1分钟介绍",
+      "later": "以后再说",
+      "never": "不再显示"
+    },
+    "modal": {
+      "title": "Zaridasu 的故事",
+      "prev": "上一页",
+      "next": "下一页",
+      "close": "关闭",
+      "progress": "{{current}} / {{total}}",
+      "neverShowAgain": "不再显示"
+    },
+    "slides": {
+      "1": {
+        "title": "池塘里的生物正在消失",
+        "body": "克氏原螯虾是1927年由人们作为牛蛙的饵料带到日本的生物。在它们数量增多的池塘里，水草消失，池水变得浑浊发黄。原本生活在那里的小生物也在慢慢不见。",
+        "imageAlt": "把同一个池塘的两种样子并排画在一起的插图。左边是水草摇曳、有小鱼、水生昆虫和蝌蚪的清澈池塘。右边是水草消失、池水浑浊发黄、只剩克氏原螯虾待在池底的池塘。"
+      },
+      "2": {
+        "title": "但是，还不知道它们在哪里",
+        "body": "国家公布的地图，大致只能看到市或町这一层。旁边那个池塘里有没有，还是不知道。也还有一些水域尚未出现克氏原螯虾。",
+        "imageAlt": "比较地图精细程度的插图。左边是把大片区块整体涂成一种颜色的粗略地图，一个区块里有好几个池塘。右边是每个池塘上都标有小圆点的精细地图。",
+        "quote": "確認情報がない場所にも、生息している可能性はあることに注意。（日语原文。Zaridasu 的非官方翻译：“请注意，在没有确认记录的地方也可能有栖息。”）",
+        "quoteSource": "出处：日本环境省官方网站《なぜそこら中に？　まだ大丈夫なところもあります！》（2026年8月5日访问）",
+        "quoteLink": "在环境省官方网站上阅读"
+      },
+      "3": {
+        "title": "所以，我们一起来做这张地图",
+        "body": "当很多“我发现了”汇集起来，就能做成看得见每一个池塘的精细地图。这样就能决定先照看哪些水边，也会让人觉得这不是远方的事，而是自家附近池塘的事。",
+        "imageAlt": "描绘人们的“发现”汇成地图的插图。几个人拿着手机站在水边，小圆点从他们那里汇聚到地图上，形成能看见每个池塘的精细分布图。螯虾吉祥物 Zari-kun 在一旁守望。"
+      },
+      "4": {
+        "title": "使用方法只有三步",
+        "body": "发现、拍照并提交、出现在地图上。只有这三步。即使没有照片，只是“看到了”也是很重要的信息。用不了一分钟。",
+        "imageAlt": "把三个步骤从左到右排开的插图。左边是在水边发现克氏原螯虾，中间是用手机拍照，右边是地图上出现了一个红点。"
+      },
+      "5": {
+        "title": "只要记录下来就可以",
+        "body": "不用带回家。放到别的地方是法律禁止的，请让生物留在原处。已经在家饲养的人，可以照旧继续饲养，也不需要办手续。",
+        "imageAlt": "一个人蹲在水边，只是用手机给克氏原螯虾拍照的插图。没有伸手去抓，也没有拿水桶或网。螯虾待在水里。"
+      },
+      "6": {
+        "title": "要不要开始试试？",
+        "body": "不注册也可以马上查看地图。Zaridasu 对所有人都免费。",
+        "imageAlt": "螯虾吉祥物 Zari-kun 举起钳子迎接的插图。背后是水边，以及标有几个红点的地图。"
+      }
+    },
+    "cta": {
+      "map": "查看地图",
+      "post": "试着提交",
+      "about": "了解更多",
+      "lp": "查看 Zaridasu 介绍页"
+    },
+    "drawer": {
+      "label": "Zaridasu 是什么？"
+    }
+  },
+  "lang": {
+    "ja": "日本語",
+    "en": "English",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "header": {
+    "skipToMain": "跳到主内容",
+    "subtitle": "水边外来物种记录地图",
+    "menuOpen": "打开菜单",
+    "menuClose": "关闭菜单",
+    "mainNav": "主导航",
+    "langSwitch": "切换语言",
+    "userMenu": "用户菜单",
+    "pageTitle": {
+      "home": "小龙虾地图",
+      "trends": "趋势",
+      "ranking": "排行榜",
+      "dashboard": "我的页面",
+      "about": "使用方法",
+      "terms": "使用条款",
+      "privacy": "隐私"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "map": "查看地图",
+    "trends": "趋势",
+    "ranking": "排行榜",
+    "area": "按地区",
+    "about": "使用方法・外来生物法",
+    "dashboard": "我的控制台",
+    "admin": "管理面板",
+    "post": "提交目击信息",
+    "login": "登录",
+    "signup": "注册",
+    "logout": "退出登录",
+    "switchLang": "语言切换",
+    "contact": "联系我们",
+    "terms": "使用条款",
+    "privacy": "隐私政策"
+  },
+  "species": {
+    "american": "美国螯虾",
+    "bullfrog": "美国牛蛙"
+  },
+  "infoType": {
+    "sighting": "目击",
+    "capture": "捕获",
+    "trace": "痕迹",
+    "damage": "农业损害",
+    "absence": "不在确认"
+  },
+  "filter": {
+    "all": "全部",
+    "period": "时间段",
+    "species": "物种",
+    "infoType": "类型",
+    "municipality": "市区町村",
+    "sort": "排序",
+    "search": "搜索",
+    "searchPlaceholder": "按物种、地点、评论搜索",
+    "newest": "最新",
+    "oldest": "最旧",
+    "speciesSort": "按物种",
+    "week": "最近7天",
+    "month": "最近30天",
+    "threeMonths": "最近3个月",
+    "allPeriod": "全部时间",
+    "boundsFilter": "仅当前地图范围",
+    "filter": "筛选",
+    "reset": "重置",
+    "apply": "应用",
+    "filterSettings": "筛选设置",
+    "appliedCount": "已应用{{count}}项",
+    "allMunicipalities": "全部市区町村",
+    "allSpecies": "全部物种",
+    "allInfoTypes": "全部类型",
+    "sortNewest": "最新",
+    "sortOldest": "最旧",
+    "sortSpecies": "按物种"
+  },
+  "map": {
+    "postButton": "提交信息",
+    "areaCount": "区域内 {{count}} 件",
+    "totalCount": "/ 共{{total}}件",
+    "loadCount": "{{count}} 条信息",
+    "loading": "加载中...",
+    "loadMore": "加载更多",
+    "noResults": "未找到符合条件的结果",
+    "tab": {
+      "map": "🗺 地图",
+      "list": "📋 列表"
+    },
+    "legend": "图例",
+    "heatmapOn": "热力图开",
+    "heatmap": "热力图",
+    "locate": "显示当前位置",
+    "heatmapLegend": {
+      "title": "观测密度",
+      "low": "少",
+      "high": "多",
+      "caption": "报告越多的地区颜色越深（若填写数量与调查时间，则按单位投入的密度校正；不含未发现记录）"
+    },
+    "filterActive": "筛选中: {{count}}件",
+    "currentLocation": "当前位置",
+    "locateStop": "停止跟随当前位置",
+    "locateCancel": "取消获取当前位置",
+    "locateResume": "回到当前位置并继续跟随",
+    "currentLocationAccuracy": "当前位置（误差约 {{meters}} 米）",
+    "locateFilterOff": "为避免地图范围发送到服务器，已关闭“仅当前地图范围”。停止后也不会自动重新开启。",
+    "locateFilterBusy": "跟随期间无法使用“仅当前地图范围”。移动地图以暂停，或停止跟随后即可使用。",
+    "locateHint": {
+      "locating": "正在获取您的位置…\n再次点击可取消。",
+      "locatingSlow": "耗时较长。\n在室外更容易接收信号。\n再次点击可取消。",
+      "following": "地图会跟随您的位置。\n再次点击可停止。",
+      "paused": "因为您移动了地图，已暂停。\n点击此按钮可回到当前位置。"
+    },
+    "locateError": {
+      "denied": "未允许使用位置信息。请在浏览器设置中允许后，再次点击右下角的箭头按钮。",
+      "unsupported": "此设备或浏览器不支持获取位置信息。",
+      "unavailable": "无法获取当前位置。请到室外，再次点击右下角的箭头按钮。",
+      "timeout": "未能获取当前位置，已取消。请到室外，再次点击右下角的箭头按钮。"
+    },
+    "layerSelect": "地图图层",
+    "nearbyWater": {
+      "button": "查找附近水域",
+      "loading": "正在搜索水域…",
+      "show": "显示",
+      "hide": "隐藏",
+      "count": "{{count}} 处",
+      "empty": "此范围内未找到已登记的水域",
+      "error": "无法获取水域，请重试。",
+      "scope": "搜索地图中心半径{{radius}}公里内的水域",
+      "retry": "重试",
+      "previous": "上次搜索结果",
+      "genericName": "未命名水域"
+    },
+    "layers": {
+      "osm": "标准地图",
+      "pale": "淡色地图",
+      "std": "详细地图",
+      "photo": "航空照片"
+    },
+    "pin": {
+      "button": "放置图钉并查询路线",
+      "hint": "点击地图放置图钉（长按也可以）",
+      "cancel": "退出图钉模式",
+      "title": "放置的图钉",
+      "saveHere": "私密保存",
+      "postHere": "在此投稿",
+      "remove": "移除图钉"
+    },
+    "spot": {
+      "legend": "私密地点（仅自己）",
+      "pending": "未发送（联网后自动发送）",
+      "privateNote": "私密（仅你和运营方）",
+      "rename": "重命名",
+      "renameSave": "保存",
+      "renameFailed": "无法重命名",
+      "delete": "删除",
+      "deleteConfirm": "要删除这个地点吗？无法恢复。",
+      "deleteYes": "删除",
+      "deleteFailed": "无法删除",
+      "cancel": "取消"
+    }
+  },
+  "postForm": {
+    "title": "提交目击信息",
+    "close": "关闭",
+    "location": "发现地点",
+    "locationRequired": "*",
+    "locationHint": "点击地图选择地点",
+    "manualLocation": "不使用地图输入位置",
+    "manualLocationHint": "直接输入纬度和经度，或获取当前位置。",
+    "latitude": "纬度",
+    "longitude": "经度",
+    "coordinateRangeError": "纬度请输入 -90 至 90，经度请输入 -180 至 180 之间的数字。",
+    "useCurrentLocation": "使用当前位置",
+    "locating": "正在获取当前位置…",
+    "geoUnsupported": "此设备或浏览器不支持获取位置信息。",
+    "geolocationRetryHint": "请检查设置后再次按“使用当前位置”，或输入纬度和经度。",
+    "mapInstructions": "可点击地图选择位置。使用键盘时，请聚焦地图，用方向键移动中心，然后按 Enter 或 Space 确认。",
+    "mapAriaLabel": "用于选择发现地点的地图",
+    "locationSelected": "{{lat}}, {{lng}}",
+    "locationError": "请点击地图选择地点",
+    "locationPrompt": "请点击地图选择地点",
+    "outsideTargetArea": "所选位置在目标区域（秋田县）之外。仍可照常发布，但本应用以秋田县为对象。",
+    "accuracyValue": "±{{meters}}m",
+    "accuracyManual": "手动选择（无精度）",
+    "accuracy_good": "良好",
+    "accuracy_warn": "注意",
+    "accuracy_bad": "精度较低",
+    "species": "物种",
+    "infoType": "类型",
+    "count": "数量",
+    "countUnit": "（选填，只）",
+    "countPlaceholder": "例: 3",
+    "countValidation": "数量请输入{{min}}～{{max}}之间的整数",
+    "observedAt": "观察日期",
+    "observedAtUnit": "（选填）",
+    "municipality": "市区町村",
+    "municipalityFetching": "📍 获取中…",
+    "municipalityPlaceholder": "请选择（选填）",
+    "comment": "备注",
+    "commentUnit": "（选填，最多{{max}}字）",
+    "commentPlaceholder": "目击情况、数量、地点详情等",
+    "commentValidation": "备注请在{{max}}字以内",
+    "photos": "照片",
+    "photosUnit": "（选填，最多{{max}}张）",
+    "addPhoto": "添加",
+    "photoTips": {
+      "summary": "📸 拍摄小技巧（可提升 AI 识别准确度）",
+      "angle": "角度：从上方或斜上方、能看清特征的角度拍摄",
+      "frame": "构图：让整个身体占画面的 1/3～1/2（避免过近或过远）",
+      "lighting": "光线：在明亮处拍摄，避开阴影与逆光",
+      "focus": "对焦：对准目标，保持画面稳定",
+      "parts": "部位：拍清钳子、额角与体色",
+      "example": "好的示例：明亮处、全身清晰／避免：昏暗、过远、模糊"
+    },
+    "submit": "🦞 提交",
+    "submitting": "提交中...",
+    "offline": "📡 离线状态",
+    "offlineMessage": "⚠️ 当前处于离线状态。恢复网络后即可提交，输入内容已自动保存。",
+    "successMessage": "提交成功！",
+    "draftRestored": "已恢复上次输入内容",
+    "draftClear": "清除",
+    "loggedInPost": "以登录用户身份提交",
+    "loggedInDesc": "此帖子将显示为「已验证」，可信度更高。",
+    "honeypot": "website",
+    "errorClose": "关闭错误",
+    "geoPermissionDenied": "位置权限被拒绝。请在浏览器设置中允许位置访问。",
+    "geoTimeout": "位置检测超时。请重试。",
+    "geoUnavailable": "位置信息不可用。",
+    "geoDefault": "无法获取位置",
+    "photoSizeError": "照片超出最大尺寸",
+    "draftSaved": "已保存为草稿。在线后可从我的页面发送。",
+    "absenceMode": "不在确认模式",
+    "absenceModeDesc": "记录调查后未发现外来物种的地点。无需审核即可立即反映在地图上。",
+    "surveyDuration": "调查时间",
+    "surveyDurationUnit": "（选填，分钟）",
+    "surveyDurationPlaceholder": "例: 30",
+    "surveyDurationHint": "与数量一起填写后，会反映到地图的密度显示（单位调查投入的发现数）",
+    "offlineNotice": "处于离线状态 — 可以保存为草稿",
+    "uploadingPhotos": "正在上传照片... {{current}}/{{total}}",
+    "saving": "保存中...",
+    "saveDraft": "保存草稿",
+    "photoPreview": "预览 {{n}}",
+    "removePhoto": "删除照片 {{n}}",
+    "exifDetected": "检测到照片中的位置信息。是否应用到地图标记？",
+    "exifApply": "应用",
+    "exifClose": "关闭",
+    "temperaturePlaceholder": "例: 18.5",
+    "humidityPlaceholder": "例: 65",
+    "surveyLocked": "由于是与调查请求关联的结果，物种已固定为请求中指定的物种",
+    "warningClose": "关闭警告",
+    "fileTypeError": "{{name}}：不支持的文件格式（仅限 JPEG、PNG、WebP、HEIC）",
+    "fileSizeError": "{{name}} 超过{{max}}MB。请选择较小的照片。",
+    "lowResolutionWarning": "图像分辨率可能较低（{{width}}x{{height}}）",
+    "blurryWarning": "照片可能模糊。仍可发布",
+    "timeUntilHours": "{{hours}}小时{{minutes}}分钟",
+    "timeUntilMinutes": "{{minutes}}分钟",
+    "loginRequired": "发布需要登录。请登录或注册后再发布。",
+    "rateLimitReached": "已达到24小时内的发布上限（{{limit}}条）。下次可在{{time}}后发布。",
+    "selectLocation": "请在地图上选择位置。",
+    "locationOutOfBounds": "位置信息超出秋田县范围。请在地图上选择正确的位置。",
+    "audioUploadFailed": "音频文件上传失败。",
+    "rateLimitGeneric": "已达到发布上限。请稍后再试。",
+    "photoUploadPartial": "照片上传失败（{{total}}张中{{success}}张成功）。请重试。",
+    "draftSaveFailed": "草稿保存失败",
+    "offlineAudioDropWarning": "录制的音频不会保存到离线草稿中。恢复联网后重新发布即可附加音频。",
+    "disclosure": {
+      "label": "位置公开",
+      "public": "公开",
+      "private": "私密",
+      "publicHint": "会显示在地图上（通常模糊至约111米）。",
+      "privateHint": "不会在地图和公开数据中显示位置（仅你和运营方可见）。适用于有珍稀生物栖息的地点等。请不要在评论或照片中包含能看出地点的信息。私密的位置如需重新公开，需要联系运营方。"
+    },
+    "offlineLoginRequired": "离线保存草稿需要登录",
+    "photoConversionError": "无法转换{{name}}。请选择其他照片或JPEG、PNG文件。",
+    "preparingPhotos": "正在处理照片…（{{current}}/{{total}}）",
+    "autoResizeHint": "选择照片后会自动缩小（每张最多{{max}}MB）。",
+    "photosReady": "照片已准备好发布（总计{{size}}MB）。"
+  },
+  "postCard": {
+    "anonymous": "匿名",
+    "official": "官方",
+    "verified": "已验证",
+    "unknown": "不明",
+    "count": "{{count}}只",
+    "detail": "查看详情",
+    "edit": "编辑",
+    "delete": "删除",
+    "deleteConfirm": "确认删除此帖子？",
+    "deleteCancel": "取消",
+    "deleteOk": "删除",
+    "deleting": "删除中...",
+    "report": "举报",
+    "verifiedTitle": "由登录用户发布",
+    "officialTitle": "由管理团队注册的官方数据",
+    "editTitle": "编辑此帖子",
+    "deleteTitle": "删除此帖子"
+  },
+  "postList": {
+    "loadMoreError": "加载更多帖子失败",
+    "signupPrompt": "注册后功能更丰富！",
+    "signupBenefit1": "💬 对帖子发表评论",
+    "signupBenefit2": "📊 在我的控制台查看历史记录",
+    "signupButton": "免费注册 →",
+    "noResults": "没有符合条件的结果",
+    "tryFilter": "请尝试更改筛选条件",
+    "noFilterResults": "没有符合当前筛选条件的帖子",
+    "tryResetFilter": "重置筛选条件以查看所有帖子",
+    "resetFilter": "重置筛选"
+  },
+  "comment": {
+    "title": "评论",
+    "noComments": "暂无评论",
+    "placeholder": "输入评论...",
+    "submit": "发表",
+    "submitting": "发表中...",
+    "deleteLabel": "删除",
+    "officialBadge": "官方",
+    "adminPosting": "以管理员身份发表（将附官方标识）",
+    "error": "评论发表失败",
+    "emailRequired": "⚠️ 需要验证邮箱",
+    "emailRequiredDesc": "请先验证邮箱地址才能发表评论。",
+    "loginRequired": "💬 需要注册才能发表评论",
+    "loginRequiredDesc": "免费注册即可解锁以下功能",
+    "benefit1": "对帖子发表评论",
+    "benefit2": "在我的控制台查看投稿历史",
+    "signup": "免费注册",
+    "login": "登录",
+    "resendEmail": "重新发送确认邮件",
+    "resendSending": "发送中...",
+    "resendCooldown": "重新发送（{{sec}}秒后）",
+    "deleteConfirmPrompt": "确定删除？",
+    "deleteConfirm": "删除",
+    "deleteCancel": "取消",
+    "deleteConfirmAria": "删除评论",
+    "deleteCancelAria": "取消删除评论",
+    "emptyTitle": "来写下第一条评论吧",
+    "deleteError": "评论删除失败"
+  },
+  "detail": {
+    "title": "帖子详情",
+    "edit": "编辑",
+    "observedAt": "观察日期：{{date}}",
+    "postedAt": "发布日期：{{date}}",
+    "location": "秋田县 {{municipality}}",
+    "count": "数量：{{count}}只",
+    "verified": "已验证帖子",
+    "verifiedDesc": "由登录用户发布",
+    "anonymous": "匿名帖子",
+    "official": "官方信息",
+    "comment": "备注",
+    "photos": "照片",
+    "expandPhoto": "放大照片 {{n}}",
+    "foundAt": "发现地点",
+    "coordinates": "坐标：{{lat}}, {{lng}}",
+    "like": "有用",
+    "share": "分享：",
+    "back": "返回地图",
+    "report": "举报",
+    "notFound": "未找到该信息",
+    "backToMap": "返回首页",
+    "loading": "加载中...",
+    "unknown": "不明",
+    "emailNotConfirmed": "需要验证邮箱",
+    "emailNotConfirmedLike": "请先验证邮箱地址才能点赞。",
+    "resendEmail": "重新发送确认邮件",
+    "resendSending": "发送中...",
+    "resendCooldown": "重新发送（{{sec}}秒后）",
+    "seoTitle": "{{species}}的{{infoType}}信息 - 秋田县{{municipality}}",
+    "seoDescription": "在秋田县{{municipality}}报告了{{species}}的{{infoType}}（{{date}}）。{{comment}}",
+    "seoDescriptionFallback": "请在地图上查看详情。",
+    "locationPrefix": "秋田县",
+    "breadcrumbHome": "首页",
+    "pendingNotice": "审核中 — 此投稿尚未公开",
+    "pendingNoticeDesc": "经管理员审核后将公开发布。目前仅投稿者本人可见。",
+    "rejectedNotice": "未通过 — 此投稿未被公开",
+    "rejectedReason": "原因: {{reason}}",
+    "rejectedHint": "请修改内容后重新提交，或联系管理员。",
+    "breadcrumbSpeciesInfo": "{{species}}的{{infoType}}信息",
+    "areaOtherInfo": "查看{{municipality}}的其他外来生物信息",
+    "speciesMoreInfo": "进一步了解{{species}}",
+    "aiJudgment": "🤖 AI判定",
+    "aiJudging": "判定中…",
+    "aiDetectedSpecies": "检测物种",
+    "aiSpeciesMatch": "与申报的匹配",
+    "aiMatchYes": "✅ 匹配",
+    "aiMatchNo": "❌ 不匹配",
+    "aiConfidence": "置信度",
+    "aiImageQuality": "图像质量",
+    "aiPerPhotoTitle": "逐张判定 ({{analyzed}}/{{total}}张)",
+    "aiPerPhotoError": "失败",
+    "aiNote": "此为AI生成的参考信息",
+    "aiSpeciesAmerican": "美国螯虾",
+    "aiSpeciesBullfrog": "美国牛蛙",
+    "aiSpeciesOther": "其他",
+    "aiSpeciesUnclear": "不明",
+    "aiQualityGood": "清晰",
+    "aiQualityAcceptable": "一般",
+    "aiQualityPoor": "模糊",
+    "aiFeedbackTitle": "📸 给您的拍摄反馈",
+    "aiErrorOwnerBody": "这次未能从照片中准确判定。下次请将目标拍得更大、居中，在明亮处对焦拍摄以提高识别准确度。您的投稿已正常记录，谢谢！",
+    "aiMismatchTitle": "就差一点！再拍一张就更确定了",
+    "aiMismatchBody": "AI 判断最可能是「{{detected}}」（与您的申报略有不同）。请参考下面的提示，下次再拍一张。",
+    "aiAdviceIntro": "下次提高准确度的小技巧：",
+    "aiAdvice": {
+      "angle": "从上方或斜上方、能看清特征的角度拍摄",
+      "distance": "避免过近或过远，让目标占画面的 1/3～1/2",
+      "lighting": "在明亮处拍摄，避开阴影与逆光",
+      "focus": "对准目标对焦，保持画面稳定",
+      "closer": "再靠近一些，把目标拍得更大",
+      "whole_body": "拍下整个身体（钳子、尾部等）"
+    },
+    "coordinatesCoarse": "大致位置",
+    "locationHidden": "该记录的精确位置未公开。",
+    "hideLocation": {
+      "button": "将此投稿的位置设为私密",
+      "confirm": "设为私密后，位置和地名将从地图、公开数据和地区页面中移除（仅你和运营方可见）。你无法自行重新公开。要设为私密吗？",
+      "confirmYes": "设为私密",
+      "cancel": "取消",
+      "done": "位置已设为私密",
+      "failed": "无法设为私密，请重试",
+      "ownerNotice": "此投稿的位置为私密。地图和坐标仅向你和运营方显示。"
+    }
+  },
+  "auth": {
+    "login": "登录",
+    "signup": "注册",
+    "email": "电子邮箱",
+    "password": "密码",
+    "forgotPassword": "忘记密码？",
+    "resetPassword": "重置密码",
+    "submit": "提交",
+    "close": "关闭",
+    "tabs": {
+      "login": "登录",
+      "signup": "注册",
+      "reset": "重置密码"
+    },
+    "errors": {
+      "invalidCredentials": "邮箱或密码不正确",
+      "emailNotConfirmed": "邮箱尚未验证。请点击注册时收到的邮件中的链接。",
+      "alreadyRegistered": "该邮箱已被注册",
+      "passwordTooShort": "密码至少需要8位",
+      "passwordRequirements": "密码至少需要8位，且必须包含字母和数字",
+      "passwordMismatch": "两次输入的密码不一致",
+      "resendFailed": "重新发送失败，请稍后再试。",
+      "googleFailed": "Google登录失败，请重试。",
+      "invalidEmail": "电子邮件地址格式不正确",
+      "captchaRequired": "请完成\"我不是机器人\"验证。",
+      "captchaUnavailable": "无法加载安全验证。请刷新页面后重试。"
+    },
+    "resendEmail": "重新发送确认邮件",
+    "resendEmailSending": "发送中...",
+    "resendEmailCooldown": "重新发送（{{sec}}秒后）",
+    "emailSent": "确认邮件已发送，请点击邮件中的链接以激活账户。",
+    "emailResent": "确认邮件已重新发送，请检查收件箱。",
+    "resetSent": "密码重置邮件已发送。",
+    "signupRequired": "记录需要先免费注册。",
+    "signupBenefits": {
+      "post": "连同照片和地点发送记录",
+      "comment": "对记录发表评论",
+      "dashboard": "在控制台查看自己的记录历史和统计"
+    },
+    "passwordConfirm": "确认密码",
+    "passwordConfirmPlaceholder": "再次输入",
+    "passwordMinLength": "8位以上（字母+数字）",
+    "passwordRules": {
+      "minLength": "8位以上",
+      "hasLetter": "包含字母",
+      "hasNumber": "包含数字"
+    },
+    "submitLogin": "登录",
+    "submitSignup": "注册",
+    "submitReset": "发送邮件",
+    "processing": "处理中...",
+    "forgotPasswordLink": "忘记密码？",
+    "goToLogin": "前往登录",
+    "goToReset": "重置密码",
+    "googleLogin": "使用Google继续",
+    "orDivider": "或",
+    "tabsLabel": "认证方式",
+    "signOutFailed": "无法退出登录。请在有网络的地方再次退出登录",
+    "consent": {
+      "lead": "注册前，请阅读",
+      "and": "和",
+      "tail": "。"
+    }
+  },
+  "survey": {
+    "formTitle": "创建调查请求",
+    "detailTitle": "调查请求",
+    "navButton": "调查请求",
+    "location": "需要调查的地点",
+    "species": "目标物种",
+    "speciesUnknown": "未知",
+    "reason": "调查原因",
+    "reasonPlaceholder": "例：在这个地方听到了小龙虾的声音，附近的池塘可能有等",
+    "reasonLabel": "调查原因",
+    "urgency": "紧急程度",
+    "urgencyNormal": "普通",
+    "urgencyUrgent": "紧急",
+    "submit": "提交调查请求",
+    "submitting": "提交中...",
+    "respond": "提交调查结果",
+    "close": "关闭此请求",
+    "closeConfirm": "要关闭此调查请求吗？关闭后无法重新打开。",
+    "closeConfirmAction": "关闭请求",
+    "closeFailed": "关闭失败，请稍后重试。",
+    "notFound": "未找到调查请求",
+    "anonymous": "匿名用户",
+    "viewProfile": "查看个人资料",
+    "viewDetail": "查看详情",
+    "relatedPosts": "相关调查结果 ({{count}}条)",
+    "markerTitle": "调查请求",
+    "legendLabel": "调查请求",
+    "status": {
+      "open": "招募中",
+      "responded": "已回应",
+      "closed": "已解决"
+    },
+    "errors": {
+      "noPosition": "请点击地图选择地点",
+      "noReason": "请输入调查原因",
+      "loginRequired": "需要登录",
+      "outOfBounds": "位置信息超出秋田县范围。",
+      "reasonTooLong": "理由请控制在500字以内。"
+    },
+    "mapLoading": "正在加载地图",
+    "commentDeleteLabel": "删除",
+    "commentDeleteConfirmPrompt": "确定删除？",
+    "commentDeleteConfirm": "删除",
+    "commentDeleteCancel": "取消",
+    "respondersEmptyTitle": "正在招募协助者",
+    "commentsEmptyTitle": "用第一条评论来支持一下吧",
+    "listEmptyTitle": "发布第一个调查请求吧",
+    "listEmptyDesc": "为你好奇的地点发起调查，一起来确认吧。",
+    "listEmptyFiltered": "没有符合条件的请求",
+    "resetFilters": "重置筛选",
+    "createRequestCta": "发起调查请求",
+    "respondError": "协助状态更新失败",
+    "commentDeleteError": "评论删除失败"
+  },
+  "report": {
+    "title": "举报此帖子",
+    "reasonLabel": "举报原因",
+    "reasons": {
+      "spam": "垃圾信息・重复发帖",
+      "wrongLocation": "地点明显有误",
+      "inappropriate": "不当内容",
+      "other": "其他"
+    },
+    "commentLabel": "补充说明",
+    "commentOptional": "（选填）",
+    "commentPlaceholder": "如有详情请填写",
+    "errorNoReason": "请选择举报原因",
+    "errorSubmit": "提交失败，请再试一次。",
+    "done": "举报已受理",
+    "doneDesc": "感谢您的举报，我们将进行核查。",
+    "close": "关闭",
+    "cancel": "取消",
+    "submit": "举报"
+  },
+  "edit": {
+    "title": "编辑帖子",
+    "species": "物种",
+    "infoType": "类型",
+    "municipality": "市区町村",
+    "municipalityPlaceholder": "请选择（选填）",
+    "count": "数量",
+    "countOptional": "（选填）",
+    "countPlaceholder": "输入数量",
+    "observedAt": "观察日期",
+    "observedAtOptional": "（选填）",
+    "comment": "备注",
+    "photos": "照片",
+    "photosMax": "最多{{max}}张",
+    "noPhotos": "无照片",
+    "cancel": "取消",
+    "save": "保存",
+    "saving": "保存中..."
+  },
+  "delete": {
+    "title": "确认删除此帖子？",
+    "irreversible": "此操作无法撤销。",
+    "cancel": "取消",
+    "confirm": "删除",
+    "deleting": "删除中..."
+  },
+  "howTo": {
+    "title": "使用方法・会员特典",
+    "step1Title": "点击地点",
+    "step1Desc": "点击地图上发现的地点",
+    "step2Title": "输入信息",
+    "step2Desc": "输入物种、类型、照片等并提交",
+    "step3Title": "与大家共享",
+    "step3Desc": "在地图上查看秋田全县的外来生物信息",
+    "benefitsTitle": "免费注册解锁更多功能",
+    "benefit1": "对帖子发表评论",
+    "benefit2": "在控制台查看统计",
+    "benefit3": "以CSV格式导出数据",
+    "signupButton": "免费注册"
+  },
+  "signupBanner": {
+    "title": "想要更多功能？",
+    "benefit1": "对感兴趣的帖子发表评论",
+    "benefit2": "在我的控制台查看投稿历史",
+    "signupButton": "免费注册",
+    "alreadyHaveAccount": "已有账户？",
+    "login": "登录"
+  },
+  "app": {
+    "offline": "⚠️ 当前处于离线状态。部分功能不可用。"
+  },
+  "trends": {
+    "title": "趋势",
+    "seoTitle": "出没趋势・统计数据",
+    "seoDescription": "秋田县内外来物种出没信息的统计数据。展示月度趋势、物种分类和市区町村排名。",
+    "kpi": {
+      "totalPosts": "累计投稿",
+      "thisMonth": "本月投稿",
+      "municipalities": "报告市区町村",
+      "thisMonthInline": "本月 {{count}} 条"
+    },
+    "monthlyChart": "月度投稿趋势（近12个月）",
+    "monthlyChartSole": "月度报告情况",
+    "speciesBreakdown": "物种分类",
+    "infoTypeBreakdown": "信息类别",
+    "municipalityRank": "有报告的市区町村（{{count}}个）",
+    "municipalityCoverage": "此明细包含{{listed}}条（累计{{total}}条）。未记录市区町村的报告不计入其中。",
+    "countSuffix": "条",
+    "dataNote": "数据基于用户报告，实时更新。",
+    "earlyStageNote": "目前只有{{count}}条报告。项目刚刚起步，您的一条报告能填补地图上最大的空白。",
+    "sparseTitle": "报告才刚刚开始积累",
+    "soleMonthHeadline": "{{month}} {{count}}条",
+    "soleMonthNote": "目前只有这一个月有报告，其他月份仍为 0 条，还看不出变化趋势。"
+  },
+  "about": {
+    "title": "关于本服务",
+    "serviceTitle": "Zaridasu",
+    "serviceDesc": "Zaridasu 是一项地图服务，用于在秋田县内共享外来生物（美国螯虾・美国牛蛙）的目击及分布信息。通过提交目击、捕获、痕迹、农业损害等信息，为当地生态系统保护做出贡献。",
+    "howToUse": "使用方法",
+    "speciesGuide": "关于目标外来物种",
+    "law": "关于外来生物法",
+    "lawSubtitle": "《防止特定外来生物损害生态系统等法律》",
+    "dataUsage": "数据利用",
+    "dataUsageDesc": "提交的数据可能用于秋田县外来生物分布调查、生态系统保护研究及行政外来种对策等。不收集可识别个人信息。",
+    "contact": "联系我们",
+    "contactDesc": "如需报告错误、提供反馈或提问，请使用联系表单。",
+    "contactButton": "打开联系表单",
+    "relatedLinks": "相关链接（日本环境省）",
+    "steps": {
+      "1": "在首页点击「提交目击信息」按钮",
+      "2": "在地图上点击选择发现地点",
+      "3": "输入物种、类型、市区町村等信息",
+      "4": "上传照片并投稿（可选）"
+    },
+    "faq": {
+      "q1": "Zaridasu 的使用方法是？",
+      "a1": "在首页点击“提交信息”按钮，在地图上选择发现地点。输入物种、信息类型、市区町村，并上传照片（可选）后提交。",
+      "q2": "克氏原螯虾（小龙虾）是什么样的生物？",
+      "a2": "克氏原螯虾（Procambarus clarkii）是分布最广的外来入侵物种，呈红色且体型较大。生活在农业水渠、稻田和池塘中。自2023年6月起在日本被指定为“有条件特定外来生物”。在家中作为宠物饲养可以照旧进行，无需手续。但是，禁止放生到池塘、河流等野外，也禁止贩卖、购买、散发和进口。",
+      "q3": "牛蛙是什么样的生物？",
+      "a3": "牛蛙（Lithobates catesbeianus）是原产于北美的中大型蛙类，体长15-20厘米。生活在水边和湿地，捕食当地的青蛙、鱼类和昆虫。自2006年起被指定为“特定外来生物”，原则上禁止饲养、运输、进口、贩卖和放生（因研究等目的取得许可的情况除外）。",
+      "q4": "捕捉到的克氏原螯虾或牛蛙该如何处理？",
+      "a4": "不需要勉强去捕捉。发现后拍照并提交信息就足够了。克氏原螯虾当场立即放回（钓获放流）没有问题，但一旦带回家的个体，之后再放归野外是违法的，因此带回前请先想清楚能否养到最后。牛蛙则连带回家本身也需要许可。",
+      "q5": "投稿到 Zaridasu 的信息将如何被使用？",
+      "a5": "投稿的数据可能用于秋田县内的外来生物分布调查、生态系统保护研究以及行政部门的外来物种对策。我们不收集可识别个人的信息。"
+    },
+    "species_info": {
+      "american": {
+        "status": "有条件特定外来生物",
+        "desc": "原产于北美的中大型螯虾。红色，体长10-15厘米。广泛栖息于农业水渠、稻田和池塘，导致水草受损和农业设施破坏。2023年6月起被指定为有条件特定外来生物。在家中作为宠物饲养可以照旧进行且无需手续，但禁止放生到野外，也禁止贩卖、购买、散发和进口。"
+      },
+      "bullfrog": {
+        "status": "特定外来生物",
+        "desc": "原产于北美的中大型蛙类。体长15-20厘米，叫声低沉。栖息于水边、湿地和稻田，捕食当地青蛙、鱼、昆虫和小型哺乳动物。自2006年起被指定为特定外来生物。与克氏原螯虾不同，饲养和运输也需要许可。"
+      }
+    },
+    "law_info": {
+      "american": {
+        "title": "克氏原螯虾",
+        "desc": "自2023年6月1日起被指定为“有条件特定外来生物”。在家中作为宠物饲养可以照旧进行，无需申请或申报等手续。但是，<0>禁止放生或遗弃到池塘、河流等野外</0>。也不可以贩卖、购买、散发或进口。",
+        "rule1": "野外放生・遗弃 ✕",
+        "rule2": "贩卖・购买・散发・进口 ✕",
+        "allowed": "在家饲养 ○（无需手续）"
+      },
+      "bullfrog": {
+        "title": "牛蛙",
+        "desc": "自2006年起被指定为“特定外来生物”。与克氏原螯虾不同，<0>饲养和运输原则上也不被允许</0>（因研究等目的取得许可的情况除外）。野外放生、贩卖和进口同样被禁止。",
+        "rule1": "饲养・运输 ✕（需要许可）",
+        "rule2": "野外放生・贩卖・进口 ✕"
+      },
+      "warning": "发现时，拍照并提交信息就足够了。请让生物留在原处。一旦带回家的个体，之后再放归野外是违法的。牛蛙则连带回家本身也需要许可。",
+      "envLink1": "关于克氏原螯虾和红耳龟的规定（环境省官方网站）",
+      "envLink2": "关于牛蛙等特定外来生物的规定（环境省官方网站）",
+      "envLink3": "关于外来生物法（环境省官方网站）"
+    }
+  },
+  "footer": {
+    "aboutService": "关于本服务",
+    "terms": "使用条款",
+    "privacy": "隐私政策",
+    "contact": "联系我们",
+    "copyright": "© {{year}} Zaridasu. 保留所有权利。"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "cancel": "取消",
+    "save": "保存",
+    "saving": "保存中...",
+    "close": "关闭",
+    "required": "必填",
+    "optional": "选填",
+    "darkMode": "切换至深色模式",
+    "lightMode": "切换至浅色模式",
+    "loadError": "加载失败",
+    "backToTop": "返回首页",
+    "back": "返回"
+  },
+  "admin": {
+    "login": {
+      "title": "ザリダス 管理面板",
+      "subtitle": "仅限管理员访问",
+      "email": "电子邮件",
+      "password": "密码",
+      "submit": "登录",
+      "submitting": "登录中...",
+      "error": "邮箱或密码不正确",
+      "rateLimited": "尝试次数过多，请在{{minutes}}分钟后重试。",
+      "backToSite": "← 返回公开网站"
+    },
+    "session": {
+      "timeoutWarning": "出于安全考虑，您的会话即将过期。请操作页面以保持登录状态。"
+    },
+    "nav": {
+      "title": "管理面板",
+      "dashboard": "仪表盘",
+      "posts": "投稿管理",
+      "reports": "举报管理",
+      "users": "用户管理",
+      "comments": "评论管理",
+      "logs": "操作日志",
+      "signOut": "退出登录",
+      "publicSite": "公开网站",
+      "logout": "退出",
+      "authChecking": "验证中...",
+      "spots": "私密地点"
+    },
+    "errorBoundary": {
+      "title": "发生错误",
+      "description": "管理页面发生错误，请重试。",
+      "errorId": "错误 ID：{{id}}",
+      "retry": "重试",
+      "dashboard": "仪表盘"
+    },
+    "dashboard": {
+      "title": "仪表盘",
+      "loading": "数据加载中...",
+      "allPeriod": "全部时间",
+      "kpi": {
+        "posts": "期间内投稿数",
+        "verified": "已验证投稿",
+        "verifiedRate": "验证率",
+        "pendingReports": "待处理举报"
+      },
+      "chart": {
+        "monthly": "每月投稿数",
+        "monthlyDesc": "所选期间的月度趋势",
+        "postCount": "投稿数"
+      },
+      "breakdown": {
+        "species": "物种分类",
+        "infoType": "信息类型"
+      },
+      "recentLogs": "最近操作",
+      "viewAll": "查看全部 →",
+      "adminFallback": "管理员",
+      "quickActions": {
+        "managePosts": "管理投稿",
+        "managePostsDesc": "筛选・删除・CSV导出",
+        "checkReports": "查看举报",
+        "noPendingReports": "没有待处理举报",
+        "pendingReports": "有{{count}}条待处理举报"
+      },
+      "dateRange": {
+        "thisMonth": "本月",
+        "lastMonth": "上月",
+        "last3Months": "最近3个月",
+        "last6Months": "最近6个月",
+        "thisYear": "今年",
+        "allPeriod": "全部时间"
+      }
+    },
+    "posts": {
+      "title": "投稿管理",
+      "bulkDelete": "批量删除 {{count}} 条",
+      "bulkProgressApprove": "正在批准 {{done}}/{{total}}...",
+      "bulkResult": {
+        "success": "批量处理：成功 {{succeeded}} 条",
+        "withFailures": "成功 {{succeeded}} 条・失败 {{failed}} 条"
+      },
+      "pendingCountUnavailable": "无法获取待审核数量",
+      "pendingEmpty": "没有待审核的投稿",
+      "exportCsv": "导出CSV",
+      "filter": {
+        "allSpecies": "全部物种",
+        "allInfoTypes": "全部类型",
+        "allMunicipalities": "全部市区町村",
+        "keyword": "关键词搜索",
+        "allPosts": "全部投稿",
+        "verifiedOnly": "🔵 仅已验证",
+        "anonymousOnly": "⚪ 仅匿名"
+      },
+      "table": {
+        "range": "第{{from}}–{{to}}条，共{{total}}条",
+        "date": "投稿日期",
+        "auth": "验证",
+        "municipality": "市区町村",
+        "species": "物种",
+        "infoType": "类型",
+        "comment": "评论",
+        "photo": "照片"
+      },
+      "badge": {
+        "anonymous": "匿名",
+        "verified": "✓ 已验证"
+      },
+      "action": {
+        "makeOfficial": "设为官方",
+        "official": "★官方",
+        "delete": "删除"
+      },
+      "statusPending": "待审核",
+      "statusApproved": "已发布",
+      "statusRejected": "已拒绝",
+      "statusAll": "全部",
+      "empty": "没有投稿",
+      "loading": "加载中...",
+      "prev": "← 上一页",
+      "next": "下一页 →",
+      "deleteDialog": {
+        "title": "删除此投稿？",
+        "irreversible": "此操作无法撤销。",
+        "cancel": "取消",
+        "confirm": "删除"
+      },
+      "bulkDialog": {
+        "title": "批量删除 {{count}} 条投稿？",
+        "desc": "所选投稿和照片将被永久删除。",
+        "warning": "此操作无法撤销。",
+        "cancel": "取消",
+        "confirm": "删除 {{count}} 条"
+      },
+      "bulkProgress": "正在删除 {{done}}/{{total}}...",
+      "error": {
+        "fetchFailed": "数据获取失败",
+        "deleteFailed": "投稿删除失败",
+        "officialFailed": "官方标志切换失败",
+        "disclosureFailed": "公开范围修改失败。"
+      },
+      "csvHeaders": {
+        "id": "ID",
+        "date": "投稿日期",
+        "lat": "纬度",
+        "lng": "经度",
+        "municipality": "市区町村",
+        "species": "物种",
+        "infoType": "类型",
+        "comment": "评论",
+        "photoCount": "照片数",
+        "authType": "验证类型"
+      },
+      "anonymousLabel": "匿名",
+      "verifiedLabel": "已验证",
+      "disclosure": {
+        "label": "位置公开范围",
+        "updated": "已修改公开范围。",
+        "speciesUpdated": "已修改物种默认公开范围。",
+        "speciesTitle": "各物种的默认公开范围",
+        "speciesDesc": "按物种设置新投稿的位置公开范围默认值。",
+        "apply": "应用",
+        "level": {
+          "precise": "精确位置",
+          "coarsened": "大致（约111m）",
+          "hidden": "不公开"
+        }
+      }
+    },
+    "reports": {
+      "title": "举报管理",
+      "tab": {
+        "pending": "待处理",
+        "resolved": "已处理"
+      },
+      "loading": "加载中...",
+      "emptyPending": "没有待处理举报",
+      "emptyResolved": "没有已处理举报",
+      "reason": {
+        "spam": "垃圾信息・宣传",
+        "wrong_location": "位置信息错误",
+        "inappropriate": "不当内容",
+        "other": "其他"
+      },
+      "ip": {
+        "none": "未获取",
+        "show": "显示",
+        "hide": "隐藏",
+        "sameCount": "同IP {{count}}条"
+      },
+      "reporterComment": "举报备注: ",
+      "postDate": "投稿: ",
+      "postDeleted": "目标投稿已删除",
+      "action": {
+        "deletePost": "删除投稿",
+        "dismiss": "驳回"
+      },
+      "status": {
+        "resolved": "已处理"
+      },
+      "deleteDialog": {
+        "title": "删除此投稿？",
+        "message": "目标投稿和照片将被永久删除。此操作无法撤销。相关举报也将同时删除。",
+        "confirm": "删除投稿",
+        "cancel": "取消"
+      },
+      "dismissDialog": {
+        "title": "驳回此举报？",
+        "message": "此举报将被标记为已处理。投稿不会被删除。",
+        "confirm": "驳回",
+        "cancel": "取消"
+      },
+      "error": {
+        "deleteFailed": "投稿删除失败",
+        "dismissFailed": "举报状态切换失败"
+      }
+    },
+    "users": {
+      "title": "用户管理",
+      "summary": "共{{total}}名 / 管理员{{adminCount}}名",
+      "refresh": "刷新",
+      "empty": "未找到用户",
+      "error": {
+        "fetchFailed": "用户列表获取失败: {{message}}",
+        "roleFailed": "权限修改失败",
+        "title": "错误"
+      },
+      "table": {
+        "email": "电子邮件",
+        "registeredAt": "注册日期",
+        "lastLogin": "最后登录",
+        "role": "权限"
+      },
+      "role": {
+        "admin": "🛡️ 管理员",
+        "user": "普通用户"
+      },
+      "self": "您",
+      "action": {
+        "detail": "详情",
+        "grant": "授予管理员",
+        "revoke": "撤销权限",
+        "noChange": "不可修改"
+      },
+      "modal": {
+        "postCount": "📍 投稿",
+        "commentCount": "💬 评论",
+        "reportCount": "🚨 被举报",
+        "recentPosts": "最近投稿",
+        "recentComments": "最近评论",
+        "noPosts": "无投稿",
+        "noComments": "无评论",
+        "noData": "无数据"
+      },
+      "grantDialog": {
+        "title": "授予管理员权限？",
+        "message": "此操作将允许该用户访问管理面板。",
+        "confirm": "授予"
+      },
+      "revokeDialog": {
+        "title": "撤销管理员权限？",
+        "message": "此操作将禁止该用户访问管理面板。",
+        "confirm": "撤销"
+      },
+      "dialog": {
+        "cancel": "取消"
+      }
+    },
+    "comments": {
+      "title": "评论管理",
+      "filter": {
+        "keyword": "关键词搜索",
+        "officialOnly": "仅官方评论"
+      },
+      "table": {
+        "range": "第{{from}}–{{to}}条，共{{total}}条",
+        "date": "日期",
+        "type": "类型",
+        "content": "评论内容",
+        "post": "目标投稿"
+      },
+      "badge": {
+        "official": "★ 官方",
+        "general": "普通"
+      },
+      "action": {
+        "delete": "删除"
+      },
+      "empty": "没有评论",
+      "loading": "加载中...",
+      "prev": "← 上一页",
+      "next": "下一页 →",
+      "deleteDialog": {
+        "title": "删除此评论？",
+        "irreversible": "此操作无法撤销。",
+        "cancel": "取消",
+        "confirm": "删除"
+      },
+      "error": {
+        "deleteFailed": "评论删除失败"
+      }
+    },
+    "logs": {
+      "title": "操作日志",
+      "subtitle": "管理员操作审计日志",
+      "fetchFailed": "无法加载操作日志。请重试。",
+      "exportCsv": "导出CSV",
+      "filter": {
+        "allActions": "全部操作类型",
+        "allAdmins": "全部管理员",
+        "myOnly": "仅我的操作"
+      },
+      "total": "共{{count}}条",
+      "loading": "加载中...",
+      "table": {
+        "date": "日期",
+        "operator": "操作者",
+        "action": "操作类型",
+        "target": "目标",
+        "details": "详情"
+      },
+      "empty": "没有日志",
+      "prev": "← 上一页",
+      "next": "下一页 →",
+      "action": {
+        "delete_post": "删除投稿",
+        "delete_comment": "删除评论",
+        "resolve_report": "处理举报",
+        "grant_admin": "授予管理员",
+        "revoke_admin": "撤销管理员",
+        "toggle_official": "切换官方",
+        "login_success": "登录成功",
+        "login_failed": "登录失败",
+        "review_water_report": "审核水域信息"
+      },
+      "target": {
+        "post": "投稿",
+        "comment": "评论",
+        "report": "举报",
+        "user": "用户",
+        "water_report": "水域信息"
+      },
+      "csv": {
+        "date": "日期",
+        "operator": "操作者",
+        "action": "操作类型",
+        "targetType": "目标类型",
+        "targetId": "目标ID",
+        "details": "详情"
+      }
+    },
+    "components": {
+      "statCard": {
+        "unit": "条"
+      },
+      "recentPosts": {
+        "title": "最近投稿",
+        "viewAll": "查看全部 →",
+        "empty": "没有投稿",
+        "unknown": "不明",
+        "municipalityUnknown": "市区町村不明",
+        "anonymous": "匿名",
+        "verified": "✓ 已验证"
+      },
+      "municipalityRanking": {
+        "title": "市区町村排名",
+        "noData": "无数据",
+        "unit": "条"
+      },
+      "summaryCard": {
+        "title": "期间对比",
+        "previousPeriod": "上一期间",
+        "currentPeriod": "本期间",
+        "change": "增减",
+        "vsPrevious": "与上期比",
+        "unit": "条"
+      }
+    },
+    "aiAccuracy": {
+      "title": "⑤ AI 置信度 → 命中率",
+      "note": "将 AI 置信度（confidence）分为 4 个区间，把人工判定结果与 AI 检出物种的命中进行比对。以已通过帖子的确定物种作为真值，属于运营代理指标（真正的精确率/召回率需要带标注的验证集）。",
+      "empty": "尚无带 AI 置信度的帖子。",
+      "colBin": "置信度区间",
+      "colTotal": "数量",
+      "colApproved": "通过",
+      "colRejected": "驳回",
+      "colPending": "待审",
+      "colAutoApproved": "自动通过",
+      "colApprovalRate": "通过率",
+      "colMatchRate": "命中率",
+      "binLt50": "≤50%",
+      "bin50_70": "50–70%",
+      "bin70_90": "70–90%",
+      "bin90_100": "90–100%",
+      "summary": "整体",
+      "humanReviewed": "人工审核部分（不含自动通过的独立验证）",
+      "humanMatchRate": "人工通过的命中率",
+      "avgConfidence": "平均置信度",
+      "approvalRateDef": "通过率＝通过÷（通过＋驳回）。待审不计入分母。",
+      "matchRateDef": "命中率＝通过且 AI 检出物种＝确定物种÷通过。",
+      "caveat": "通过率因包含自动通过（与置信度联动）而偏高。独立依据请参考人工审核部分的命中率。"
+    },
+    "spots": {
+      "title": "私密地点",
+      "exportCsv": "导出CSV",
+      "noticeTitle": "注意处理（研究用・仅查看）",
+      "noticeBody": "这些是用户私密保存的地点，可能包含珍稀生物的栖息地。请不要在公开页面、公开数据、社交媒体或发表资料中刊登准确位置。",
+      "loading": "加载中...",
+      "fetchFailed": "加载失败",
+      "empty": "还没有私密地点",
+      "count": "{{count}}个",
+      "user": "用户"
+    }
+  },
+  "account": {
+    "deleteLink": "删除账户",
+    "deleteTitle": "删除账户",
+    "deleteWarning": "删除账户后将执行以下操作：",
+    "deleteKeepPosts": "您的帖子和评论将作为匿名保留",
+    "deleteRemoveProfile": "您的个人资料、徽章、点赞、调查请求、私密地点、调查计划、珍稀物种记录和水域信息（含照片）将被删除",
+    "deleteIrreversible": "此操作无法撤销",
+    "deleteConfirmLabel": "请输入「删除」以确认",
+    "deleteConfirmPlaceholder": "删除",
+    "deleteConfirmWord": "删除",
+    "deleteButton": "删除",
+    "deleting": "删除中...",
+    "deleteError": "账户删除失败",
+    "deletePhotosFailed": "未能删除私密照片，因此已停止注销。请在有网络的地方重试",
+    "deleteFailedPhotosRemoved": "无法注销（私密照片已删除）。请重试"
+  },
+  "myPosts": {
+    "title": "我的投稿",
+    "empty": "还没有投稿。",
+    "emptyAction": "开始提交第一条信息吧。",
+    "topPage": "前往首页",
+    "detail": "详情",
+    "status": {
+      "pending": "审核中",
+      "approved": "已发布",
+      "rejected": "已拒绝"
+    }
+  },
+  "dashboard": {
+    "pendingDrafts": "未发送的草稿（{{count}}条）",
+    "sending": "发送中...",
+    "sendAll": "全部发送",
+    "offlineLabel": "离线",
+    "sendingProgress": "发送中: {{current}}/{{total}}条",
+    "successCount": "{{count}}条成功",
+    "failedCount": "{{count}}条失败",
+    "sendingStatus": "发送中",
+    "photoCount": "📷{{count}}张",
+    "deleteLabel": "删除",
+    "cancelLabel": "取消",
+    "deleteTitle": "删除",
+    "postImageAlt": "投稿图片",
+    "postThumbnailAlt": "投稿照片缩略图",
+    "unknown": "不明",
+    "statusPending": "🕐 审核中",
+    "statusRejected": "✕ 已拒绝",
+    "statusApproved": "✓ 已发布",
+    "aiJudging": "⏳ 判定中",
+    "aiConfirmed": "🤖 AI确认 {{confidence}}%",
+    "aiMismatch": "⚠️ 物种不匹配",
+    "aiUnclear": "🔍 无法判别",
+    "audioJudging": "⏳ 音频判定中",
+    "audioConfirmed": "🎤 叫声匹配 {{confidence}}%",
+    "audioMismatch": "⚠️ 叫声不匹配",
+    "audioUnclear": "🔍 叫声无法判别",
+    "audioPoorQuality": "🎤 音质不佳",
+    "aiImageReasonPrefix": "图像判定",
+    "aiAudioReasonPrefix": "音频判定",
+    "aiConfidenceShort": "置信度 {{confidence}}%",
+    "audioQuality": {
+      "good": "音质: 良好",
+      "acceptable": "音质: 可接受",
+      "poor": "音质: 不佳"
+    },
+    "rejectionReason": "拒绝原因: {{reason}}",
+    "postPhotoAlt": "投稿照片",
+    "editTitle": "编辑",
+    "deletePostTitle": "删除",
+    "sendFailed": "发送失败",
+    "canSendNow": "已恢复在线。现在可以发送未发送的草稿。",
+    "csvExportError": "CSV 导出失败。",
+    "legacyDrafts": "有{{count}}条无法确定所有者的旧草稿（在按用户区分之前保存）。如果是你的，可以确认后发送。",
+    "legacyDraftsDiscard": "丢弃",
+    "legacyDraftsDiscarded": "已丢弃旧草稿",
+    "legacyClaim": "作为自己的发送",
+    "legacyClaimConfirm": "要把这条草稿作为自己的帖子发送吗？请确认是自己保存的，并检查内容后再发送。",
+    "legacyDiscardConfirm": "要丢弃这条草稿吗？此操作无法撤销。",
+    "legacyDraftsClaimed": "已作为自己的帖子发送",
+    "legacyDraftsClaimedQueued": "已移到你的草稿。可以在有网络的地方发送"
+  },
+  "validation": {
+    "generic": "请检查输入内容。",
+    "draftInvalid": "草稿内容有误，无法发送。",
+    "location": {
+      "outOfBounds": "位置超出秋田县范围。请在地图上选择正确的位置。"
+    },
+    "species": {
+      "invalid": "指定了无效的物种。"
+    },
+    "infoType": {
+      "invalid": "指定了无效的信息类型。"
+    },
+    "weather": {
+      "invalid": "指定了无效的天气。"
+    },
+    "surveyMethod": {
+      "invalid": "指定了无效的调查方法。"
+    },
+    "locationSource": {
+      "invalid": "指定了无效的位置获取方式。"
+    },
+    "comment": {
+      "tooLong": "评论请控制在500字以内。"
+    },
+    "count": {
+      "invalid": "数量请输入整数。",
+      "range": "数量请输入1～999之间的整数。"
+    },
+    "humidity": {
+      "range": "湿度请输入0～100之间的数值。"
+    },
+    "surveyDuration": {
+      "range": "调查时间请输入1～480分钟之间的数值。"
+    },
+    "content": {
+      "required": "请输入正文。",
+      "tooLong": "正文请控制在500字以内。"
+    },
+    "reason": {
+      "required": "请输入理由。",
+      "tooLong": "理由请控制在300字以内。"
+    },
+    "urgency": {
+      "invalid": "指定了无效的紧急程度。"
+    },
+    "report": {
+      "reason": "指定了无效的举报理由。"
+    },
+    "siteName": {
+      "required": "请输入站点名称。",
+      "tooLong": "站点名称请控制在100字以内。"
+    },
+    "notes": {
+      "tooLong": "备注请控制在500字以内。"
+    },
+    "displayName": {
+      "required": "请输入昵称。",
+      "tooLong": "昵称请控制在20字以内。"
+    },
+    "bio": {
+      "tooLong": "个人简介请控制在100字以内。"
+    }
+  },
+  "weather": {
+    "sectionTitle": "观测时的天气",
+    "fetching": "正在获取天气...",
+    "autoLabel": "自动获取",
+    "noData": "无法获取",
+    "noPosition": "📍 在地图上标记位置后可自动获取天气",
+    "switchManual": "手动输入",
+    "switchAuto": "恢复自动",
+    "label": "天气",
+    "temperatureLabel": "气温 (°C)",
+    "humidityLabel": "湿度 (%)",
+    "humidity": "湿度{{value}}%",
+    "sunny": "晴天",
+    "cloudy": "多云",
+    "overcast": "阴天",
+    "rainy": "雨天",
+    "snowy": "雪天",
+    "thunderstorm": "雷雨",
+    "unknown": "未知",
+    "fetchError": "获取天气信息失败"
+  },
+  "audio": {
+    "ariaLabel": "音频预览",
+    "previewError": "音频加载失败。",
+    "downloadFallback": "打开文件",
+    "sectionTitle": "录制的叫声",
+    "permission": {
+      "denied": "未允许使用麦克风。",
+      "notFound": "未找到麦克风，请确认设备已连接麦克风。",
+      "busy": "其他应用可能正在使用麦克风，请关闭后重试。",
+      "overconstrained": "麦克风不支持所请求的设置。",
+      "insecure": "需要 HTTPS 连接。",
+      "unsupported": "当前浏览器不支持录音功能。",
+      "aborted": "录音被中断,请重试。",
+      "unknown": "无法开始录音。",
+      "showGuide": "查看授权方法",
+      "switchToUpload": "改为选择文件",
+      "inAppWarning": "在此应用内浏览器中可能无法使用麦克风,请用 Safari / Chrome 重新打开。",
+      "openInBrowser": "在外部浏览器中打开",
+      "copyUrl": "复制网址",
+      "urlCopied": "已复制网址",
+      "guideTitle": "麦克风授权方法",
+      "guideIntro": "请按照适合您设备的步骤操作。",
+      "guideClose": "关闭",
+      "guide": {
+        "safariIos": {
+          "title": "iPhone / iPad (Safari)",
+          "steps": "1. 打开设置应用\n2. Safari → 相机·麦克风（或站点设置）\n3. 选择「允许」或「询问」\n4. 重新加载本页"
+        },
+        "chromeAndroid": {
+          "title": "Android (Chrome)",
+          "steps": "1. 点击地址栏左侧的 🔒 图标\n2. 站点设置 → 麦克风 → 允许\n3. 重新加载本页"
+        },
+        "safariMacos": {
+          "title": "Mac (Safari)",
+          "steps": "1. Safari 菜单 → 设置 → 网站 → 麦克风\n2. 将此站点更改为「允许」\n3. 重新加载页面"
+        },
+        "chromeDesktop": {
+          "title": "PC (Chrome / Edge / Firefox)",
+          "steps": "1. 点击地址栏左侧的 🔒 图标\n2. 将麦克风更改为「允许」\n3. 重新加载页面"
+        },
+        "generic": {
+          "title": "其他浏览器",
+          "steps": "请在浏览器的站点设置中允许使用麦克风,然后重新加载本页。"
+        }
+      }
+    }
+  },
+  "lp": {
+    "hero": {
+      "title": "你的一次“发现”，守护秋田的自然。",
+      "subtitle": "发现小龙虾或牛蛙，用手机拍下来上传即可。你的报告会汇入地图，成为守护秋田自然的线索。注册永久免费。",
+      "ctaPrimary": "免费参加",
+      "ctaSecondary": "不注册先看地图",
+      "imageAlt": "Zaridasu 地图界面"
+    },
+    "problem": {
+      "title": "秋田的水边正在发生的事",
+      "item1Title": "其实，它们正在增加",
+      "item1Body": "克氏原螯虾（小龙虾）和牛蛙原本不是日本的生物。它们捕食稻田和水渠里的小生物，数量不断增加。",
+      "item2Title": "它们在哪里，还不清楚",
+      "item2Body": "守护自然的第一步是了解“它们在哪里”。但秋田很大，调查的人手远远不够。",
+      "item3Title": "你的“发现”能帮上忙",
+      "item3Body": "散步时看到的一只，稻田边听到的叫声。这些小小的报告，会成为守护秋田自然的重要线索。",
+      "moreLink": "进一步了解这些生物"
+    },
+    "features": {
+      "title": "Zaridasu 的乐趣",
+      "mapTitle": "你的报告立刻出现在地图上",
+      "mapBody": "上传的报告会立即显示在秋田县的地图上。亲眼看到“自己发现的那一只”成为大家地图的一部分。",
+      "aiTitle": "不知道名字？AI 来告诉你",
+      "aiBody": "AI 能根据照片和叫声识别生物的名字，还会教你拍摄技巧，越用越懂生物。",
+      "requestsTitle": "你的报告会被用于研究",
+      "requestsBody": "可以回应研究者“希望调查这个地点”的请求。你的报告将直接用于守护秋田自然的调查。",
+      "gamificationTitle": "越坚持，越有趣",
+      "gamificationBody": "上传报告可以获得徽章，还能登上排行榜。努力看得见，也很适合和孩子一起寻找生物。"
+    },
+    "how": {
+      "title": "简单3步，轻松开始",
+      "step1Title": "发现",
+      "step1Body": "在稻田、水渠、河边看到小龙虾或牛蛙时。只听到叫声也可以。",
+      "step2Title": "拍下并上传",
+      "step2Body": "用手机拍照，在地图上选择地点即可。1分钟完成。没有照片也能上传。",
+      "step3Title": "登上地图",
+      "step3Body": "经过内容确认后，会显示在大家的地图上。你的报告将用于守护秋田的自然。"
+    },
+    "stats": {
+      "title": "来自秋田各地的报告正在汇集",
+      "postsLabel": "已收集的报告",
+      "postsUnit": "条",
+      "usersLabel": "共同参与的人",
+      "usersUnit": "人",
+      "areaLabel": "覆盖范围",
+      "areaValue": "秋田县全部25个市町村",
+      "operator": "Zaridasu 是由一位热爱秋田自然的大学生开发的免费服务。收集的报告将用于守护秋田自然的研究以及县市的相关工作。"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "需要花钱吗？",
+      "a1": "不需要。包括注册在内，全部免费。",
+      "q2": "注册需要什么？",
+      "a2": "只需要邮箱地址或 Google 账号。无需填写姓名和住址。",
+      "q3": "不了解生物也可以吗？",
+      "a3": "没问题。AI 会根据照片和叫声识别名字，还会教你辨别方法和拍摄技巧，慢慢就会越来越懂。",
+      "q4": "没有照片也能上传吗？",
+      "a4": "可以。照片是可选的。“看到了”“听到了叫声”也是宝贵的报告。",
+      "q5": "在秋田县以外也能使用吗？",
+      "a5": "地图任何人都可以查看。但只能上传在秋田县内发现的报告。",
+      "q6": "发现后必须捕捉吗？",
+      "a6": "不必。只报告看到的情况就足够了。如果捕捉了，请注意：法律禁止将其活着放生到其他地方。",
+      "a6Link": "了解相关规定",
+      "q7": "别人会从我上传的位置看出我家在哪里吗？",
+      "a7": "请放心。地图上只显示「在哪里发现的」，不会显示上传者的姓名或联系方式。其他人无法得知是谁报告的，您可以安心参与。",
+      "a7Link": "查看隐私政策"
+    },
+    "final": {
+      "title": "期待你的“发现”。",
+      "subtitle": "注册免费。只需邮箱地址或 Google 账号，即可立即开始。"
+    },
+    "header": {
+      "login": "登录",
+      "cta": "免费参加",
+      "logoLabel": "返回顶部"
+    },
+    "sticky": {
+      "cta": "免费参加",
+      "note": "注册仅需30秒 · 永久免费"
+    },
+    "footer": {
+      "about": "关于本服务",
+      "terms": "服务条款",
+      "privacy": "隐私政策",
+      "navLabel": "页脚",
+      "copyright": "© {{year}} Zaridasu"
+    },
+    "marquee": {
+      "pause": "暂停",
+      "play": "播放"
+    }
+  },
+  "errors": {
+    "unexpected": "发生了意外错误。",
+    "rateLimitServer": "发布过于频繁。请稍后再试。",
+    "network": "发生通信错误。请检查您的网络连接。",
+    "sessionExpired": "会话已过期。请重新登录。",
+    "forbidden": "您没有执行此操作的权限。",
+    "notFound": "找不到文件。",
+    "tooManyRequests": "操作过于频繁。请稍后再试。",
+    "generic": "发生错误。请重试。"
+  },
+  "bottomNav": {
+    "map": "地图",
+    "trends": "趋势",
+    "post": "发布",
+    "ranking": "排行榜",
+    "mypage": "我的页面",
+    "postAction": "发布信息"
+  },
+  "drawer": {
+    "settingsMenu": "设置菜单",
+    "menu": "菜单",
+    "mapSettings": "地图设置",
+    "heatmap": "热力图",
+    "mapType": "地图类型",
+    "defaultMap": "默认：{{name}}",
+    "setDefaultMap": "将此地图设为默认",
+    "isDefaultMap": "此地图已设为默认",
+    "defaultMapHint": "保存在此浏览器中，下次访问时显示。",
+    "defaultMapSaved": "默认地图已保存",
+    "defaultMapSaveError": "无法保存地图设置。请检查浏览器的存储设置。",
+    "createSurvey": "发起调查请求",
+    "surveyList": "调查请求列表"
+  },
+  "home": {
+    "openGallery": "打开照片库",
+    "photos": "照片",
+    "backToMap": "返回地图",
+    "map": "地图",
+    "swipeHint": "滑动切换",
+    "panelSwitch": "切换显示（地图 / 照片）"
+  },
+  "toast": {
+    "notifications": "通知"
+  },
+  "install": {
+    "iosTitle": "添加到主屏幕的方法",
+    "iosStep1": "点击 Safari 底部的\"分享\"按钮",
+    "iosStep2": "选择\"添加到主屏幕\"",
+    "iosStep3": "点击\"添加\"完成",
+    "gotIt": "知道了",
+    "useAsApp": "作为应用使用",
+    "description": "添加到主屏幕后可像应用一样启动。支持通知和离线使用。",
+    "addToHome": "添加到主屏幕",
+    "seeHow": "查看添加方法",
+    "notNow": "暂时不用",
+    "close": "关闭"
+  },
+  "priorityArea": {
+    "label": "优先调查区域",
+    "title": "当前观察不足的区域",
+    "description": "这些区域最近三个月的报告较少。如果您在附近，您的观察将极大地帮助查明分布情况。",
+    "countSuffix": "（{{count}}条）"
+  },
+  "photoGallery": {
+    "empty": "还没有带照片的发布",
+    "count": "照片 {{count}} 条",
+    "emptyTitle": "分享第一张照片吧",
+    "emptyDesc": "带照片的报告更便于确认物种、建立记录。"
+  },
+  "share": {
+    "text": "{{species}}的{{infoType}}信息（秋田县{{municipality}}）",
+    "defaultSpecies": "小龙虾",
+    "appTitle": "Zaridasu",
+    "shareNative": "分享",
+    "copyLink": "复制链接",
+    "linkCopied": "已复制链接",
+    "copyFailed": "复制失败"
+  },
+  "authCallback": {
+    "errors": {
+      "otpExpired": "链接已过期。请重新尝试重置密码。",
+      "authFailed": "认证失败",
+      "invalidLink": "认证链接无效或已过期。请重新尝试注册邮箱地址。",
+      "updateFailed": "密码更新失败"
+    },
+    "error": {
+      "title": "认证失败",
+      "backToTop": "返回首页",
+      "retryHint": "请从首页的“登录”重新尝试注册"
+    },
+    "recovery": {
+      "title": "设置新密码",
+      "subtitle": "请输入新密码",
+      "passwordLabel": "新密码",
+      "passwordConfirmLabel": "密码（确认）",
+      "passwordConfirmPlaceholder": "再次输入",
+      "submitting": "更新中...",
+      "submit": "更新密码"
+    },
+    "confirmed": {
+      "title": "邮箱地址确认完成！",
+      "description": "账号已激活。您可以使用所有功能。",
+      "redirecting": "3秒后跳转到首页...",
+      "goToHome": "立即前往首页"
+    },
+    "loading": "认证处理中..."
+  },
+  "ranking": {
+    "period": {
+      "all": "全部时间",
+      "month": "本月",
+      "year": "今年"
+    },
+    "breadcrumb": "排行榜",
+    "framing": {
+      "main": "您的每一条报告，都将用于秋田县外来生物的分布掌握、清除与研究活动。",
+      "sub": "比起数量，“发现各种地点和种类”更能助力分布的解明。"
+    },
+    "viewSwitch": "切换显示",
+    "tabDiversity": "发现的多样性",
+    "tabLeaderboard": "发布数（参考）",
+    "yourCollection": "您的收藏",
+    "coverage": {
+      "infoType": "信息种类（目击·捕获·痕迹·损害·不在）",
+      "municipality": "覆盖的市区町村",
+      "species": "发现的物种"
+    },
+    "infoTypeComplete": "信息种类全部完成！您已报告全部5种观察",
+    "infoTypeCompleteShort": "信息种类全部完成",
+    "diversityEmpty": {
+      "title": "还没有记录",
+      "desc": "发布通过审核后，将显示发现的多样性"
+    },
+    "you": "(您)",
+    "diversitySummary": "信息种类 {{coverage}}/{{total}}·{{municipalities}}个地区·{{species}}种",
+    "leaderboardNote": "※ 发布数是活动量的参考值。据报告，持续的便利度与“发现的多样性”相关。",
+    "yourActivity": "您的活动量",
+    "reportCount": "{{count}}条报告",
+    "rankPosition": "第{{rank}}名",
+    "leaderboardEmpty": "还没有排行榜数据",
+    "countUnit": "条",
+    "tabQuality": "已验证质量",
+    "qualityNote": "我们表彰通过审核的已验证报告及其精度（通过率、定点观测、GPS 精度），而非点赞数或发布数量。",
+    "yourQuality": "你的贡献质量",
+    "verifiedCount": "已验证 {{count}} 条",
+    "verifiedUnit": "已验证",
+    "quality": {
+      "approvalRate": "通过率",
+      "structuredRate": "定点观测",
+      "gpsGoodRate": "GPS 精度"
+    },
+    "qualityEmpty": {
+      "title": "尚无已验证的报告",
+      "desc": "帖子通过审核后，将作为已验证贡献显示在此处"
+    },
+    "qualitySummary": "已验证 {{verified}} 条 · 通过率 {{approval}} · 定点观测 {{structured}}",
+    "diversityEmptyTitle": "记录你的第一个发现",
+    "qualityEmptyTitle": "向第一条已验证报告发起挑战",
+    "leaderboardEmptyTitle": "发布你的第一条报告",
+    "earlyStageNote": "目前只有{{count}}人在记录。现在参与，您就能第一个记录尚无人报告的地点。",
+    "sparseTitle": "记录的人还会不断增加"
+  },
+  "profilePage": {
+    "editTitle": "编辑资料",
+    "iconLabel": "图标",
+    "nicknameLabel": "昵称（20字以内）",
+    "nicknamePlaceholder": "无名调查员",
+    "bioLabel": "个人简介（100字以内）",
+    "bioCount": "{{count}}/100",
+    "showInRanking": "在排行榜中显示",
+    "notifySurvey": "接收调查请求的通知邮件",
+    "save": "保存",
+    "header": "个人资料",
+    "notFound": "未找到个人资料",
+    "stats": {
+      "posts": "发布",
+      "comments": "评论",
+      "activeArea": "活动范围",
+      "municipalityCount": "{{count}}个市区町村"
+    },
+    "badges": "已获得徽章",
+    "recentPosts": "最近的发布",
+    "postPhotoAlt": "{{species}}的发布照片",
+    "viewRanking": "查看发布排行榜",
+    "lifecycleSection": "邮件通知设置",
+    "notifyResearchAdopted": "当我的观察被用于研究时通知我",
+    "notifyDormant": "当我久未登录时发送友好提醒",
+    "notifyWeeklyDigest": "发送我所在地区的每周摘要",
+    "pushSection": "推送通知（即时）",
+    "pushEnable": "在此设备上接收推送通知",
+    "pushDenied": "通知已被屏蔽。请在浏览器的站点设置中允许通知。",
+    "pushIosHint": "在 iPhone / iPad 上，从添加到主屏幕的应用打开时即可使用推送通知。在此之前，我们将通过邮件通知您。",
+    "pushUnsupported": "您的环境不支持推送通知。我们将改为通过邮件通知您。"
+  },
+  "offline": {
+    "title": "您已离线",
+    "body1": "没有网络连接。",
+    "body2": "请确认连接后重试。",
+    "reconnect": "重新连接",
+    "backToTop": "返回首页"
+  },
+  "errorBoundary": {
+    "title": "发生了错误",
+    "description": "发生了意外错误，请重新加载页面。",
+    "reload": "重新加载页面",
+    "mapTitle": "地图加载失败",
+    "mapDescription": "请检查网络连接后重试。",
+    "mapRetry": "重试"
+  },
+  "unsubscribe": {
+    "title": "退订邮件",
+    "working": "正在处理您的退订请求…",
+    "done": "您已退订“{{category}}”。",
+    "stopAll": "停止所有通知邮件",
+    "manageHint": "您可以随时在个人主页更改这些设置。",
+    "invalid": "此链接无效或已被使用。",
+    "error": "处理时发生错误，请稍后再试。",
+    "retry": "再试一次",
+    "backHome": "返回 Zaridasu",
+    "categoryAll": "所有通知邮件",
+    "category": {
+      "research_adopted": "研究采用通知",
+      "dormant_reengage": "回访提醒",
+      "weekly_digest": "每周摘要"
+    }
+  },
+  "empty": {
+    "postCta": "发布观察记录",
+    "photoPostCta": "带照片发布",
+    "contributionDesc": "你的报告将帮助完善秋田的外来物种地图。"
+  },
+  "area": {
+    "postsEmptyTitle": "记录{{municipality}}的第一个发现"
+  },
+  "like": {
+    "error": "点赞更新失败"
+  },
+  "profile": {
+    "saveError": "个人资料保存失败"
+  },
+  "achievement": {
+    "commentPosted": "评论已发布"
+  },
+  "progress": {
+    "title": "贡献等级",
+    "levelLabel": "等级",
+    "level": "等级 {{level}}",
+    "xp": "累计 {{xp}} XP",
+    "toNext": "距离下一级还差 {{remaining}} XP",
+    "verified": "已累积 {{count}} 条已验证的贡献",
+    "barLabel": "等级进度"
+  },
+  "unlocks": {
+    "lockedAtLevel": "将在等级 {{level}} 解锁",
+    "lockedShort": "Lv{{level}} 解锁",
+    "remainingXp": "还差 {{xp}} XP",
+    "hint": "投稿通过审核后等级会提升并解锁",
+    "features": {
+      "heatmap": "热力图视图",
+      "avatar_emoji_plus": "头像表情（额外）",
+      "map_filters_advanced": "高级筛选",
+      "csv_export": "导出你的数据（CSV）",
+      "profile_frame": "个人资料装饰",
+      "collection": "收藏（图鉴·水槽）",
+      "animation_themes": "解锁演出主题"
+    }
+  },
+  "collection": {
+    "header": "您的收藏",
+    "subtitle": "您所观察到的生物的图鉴与水槽。",
+    "lockedHint": "当投稿获得批准、贡献等级提升后即可解锁。",
+    "dex": {
+      "title": "图鉴",
+      "progress": "已观察 {{observed}} / {{total}} 种",
+      "emptyHint": "当您的观察获得批准后，各物种的卡片会逐渐填满。",
+      "observed": "已观察",
+      "notObserved": "未观察",
+      "complete": "完成",
+      "infoTypes": "信息类型",
+      "municipalities": "市区町村",
+      "verifiedCount": "已核实 {{count}} 条",
+      "firstObserved": "首次观察 {{date}}"
+    },
+    "aquarium": {
+      "title": "水槽",
+      "capacity": "大小 {{count}}",
+      "summary": "有 {{count}} 只生物正在游动。",
+      "empty": "还没有生物。请尝试发布一条观察记录。",
+      "decorationsTitle": "装饰",
+      "noDecorations": "随着等级提升，装饰会逐渐增加。"
+    },
+    "decorations": {
+      "sand": "沙底",
+      "plant": "水草",
+      "rock": "岩石",
+      "driftwood": "沉木"
+    },
+    "edu": {
+      "title": "请了解这些生物",
+      "body": "这里出现的是外来生物法的对象生物。牛蛙原则上禁止饲养、运输活体或向野外放生。克氏原螯虾属于“有条件特定外来生物”，在家中饲养无需手续，但禁止放生到野外。此水槽仅为虚拟记录。发现真实个体时请让它留在原处，只要记录下来就可以。",
+      "learnMore": "了解这些生物及正确的处理方式"
+    },
+    "viewer3d": {
+      "title": "3D 视图",
+      "view3d": "以3D查看",
+      "back2d": "返回2D",
+      "alt": "克氏原螯虾的3D模型。可以拖动或使用旋转按钮改变方向。",
+      "hint": "可以拖动旋转来观察。3D 仅在您点击此按钮时才会加载。",
+      "hint2dOnly": "在您的设备上将以2D插图显示。",
+      "loading": "正在加载3D",
+      "errorNotice": "3D 加载失败，正以2D插图显示。",
+      "retry": "重试",
+      "controls": "旋转3D模型",
+      "rotateLeft": "向左旋转",
+      "rotateRight": "向右旋转",
+      "pause": "停止自动旋转",
+      "play": "播放自动旋转"
+    }
+  },
+  "quests": {
+    "title": "调查任务",
+    "subtitle": "在力所能及的范围内，提升记录质量的小提示",
+    "optionalNote": "参与是自由的。即使没有完成，之前的记录也不会消失",
+    "done": "已完成",
+    "tryIt": "来试试吧",
+    "progress": "{{current}} / {{target}}",
+    "items": {
+      "info_variety": {
+        "title": "增加记录的种类",
+        "desc": "目击、捕获、痕迹、农业损害、未发现等，尝试用不同种类来记录"
+      },
+      "absence": {
+        "title": "把没有发现也记录下来",
+        "desc": "没有发现小龙虾的地点，也是宝贵的数据"
+      },
+      "new_area": {
+        "title": "在新的市町村观察",
+        "desc": "在还没有记录过的市町村也观察看看吧"
+      },
+      "both_species": {
+        "title": "观察两种生物",
+        "desc": "尝试把克氏原螯虾和牛蛙都记录下来"
+      },
+      "structured": {
+        "title": "尝试定点观察",
+        "desc": "确定同一个地点反复观察，就能看出变化"
+      },
+      "gps_precise": {
+        "title": "用准确的位置记录",
+        "desc": "在 GPS 精度高的地方（30 米以内）记录，地图会更准确"
+      },
+      "near_water": {
+        "title": "调查水边",
+        "desc": "用地图的『查找附近水域』找到池塘和河流，在其周边观察吧"
+      },
+      "effort_log": {
+        "title": "留下调查记录",
+        "desc": "记录个体数和调查所花的时间，也能让密度（单位努力量）地图更丰富"
+      }
+    }
+  },
+  "journey": {
+    "title": "接下来可以做的事",
+    "nextUnlockLabel": "下一个解锁的功能",
+    "allUnlocked": "所有功能都已解锁",
+    "collectionLabel": "图鉴收集情况",
+    "collectionPct": "已收集 {{pct}}%",
+    "viewCollection": "查看图鉴·水槽"
+  },
+  "celebrate": {
+    "title": "通知",
+    "levelUp": "升到了等级 {{level}}",
+    "unlocked": "「{{feature}}」现在可以使用了",
+    "newCard": "图鉴中新增了「{{name}}」",
+    "encouragement": "感谢您一直坚持",
+    "dismiss": "关闭"
+  },
+  "onboarding": {
+    "continue": "继续",
+    "back": "返回上一页",
+    "saving": "保存中…",
+    "later": "稍后",
+    "stage": {
+      "question": "问题 {{current}} / {{total}}",
+      "mapGuide": "地图怎么看"
+    },
+    "selectionHint": {
+      "region": "请选择一个地区",
+      "seen": "请选择一个目击经历"
+    },
+    "area": {
+      "akita": "秋田"
+    },
+    "greet": {
+      "bubble": "你好，我是小扎。",
+      "effort": "回答2个问题，就能从你所在地区开始看地图。大约需要1分钟。"
+    },
+    "askRegion": {
+      "q": "你住在秋田的哪个地区？",
+      "consent": "答案将保存在你的个人资料中，用于设置地图初始位置及研究。",
+      "consentLocal": "你选择的地区将保存在本设备上，用于设置地图的初始位置。"
+    },
+    "region": {
+      "akita_city": "秋田市",
+      "north": "县北（能代、大馆）",
+      "central": "县央（男鹿、由利本庄）",
+      "south": "县南（横手、汤泽）",
+      "other": "秋田以外／不确定"
+    },
+    "askSeen": {
+      "q": "你见过克氏原螯虾（小龙虾）吗？",
+      "hint": "我会根据你的回答，稍微调整接下来的介绍。"
+    },
+    "seen": {
+      "yes": "见过",
+      "no": "没见过",
+      "maybe": "可能见过…"
+    },
+    "fact": {
+      "bubble": "大家的记录越多，就越能逐步了解每个池塘的情况。",
+      "seenYes": "那个池塘，会不会已经标在地图上了？",
+      "seenNo": "先在地图上看看你附近的记录吧。",
+      "labelCoarse": "国家地图",
+      "labelFine": "大家的地图",
+      "legend": "涂色的方格＝有国家记录的地区。点＝某人发现的1条记录。"
+    },
+    "finish": {
+      "done": "准备好了！",
+      "startMap": "从{{area}}的地图开始吧",
+      "bubble": "一个图钉代表一条“发现”记录。没有图钉的地方也可能有尚未记录的生物。",
+      "diagramTitle": "地图符号示意图",
+      "tipTitle": "发现了？记下来就好。",
+      "mapOnly": "查看地图"
+    },
+    "error": {
+      "save": "未能保存答案，请重试。",
+      "retry": "重试",
+      "later": "稍后再说"
+    },
+    "privacy": "引导过程中填写的地区（5个分区）和目击经历，用于设置地图初始位置及研究。"
+  },
+  "route": {
+    "title": "到这里的路线",
+    "approximate": "大致位置",
+    "destinationLabel": "目的地",
+    "openAria": "在{{provider}}中查询路线（在新标签页打开）",
+    "provider": {
+      "google": "Google 地图",
+      "yahoo": "Yahoo! 地图",
+      "apple": "Apple 地图"
+    },
+    "providerShort": {
+      "google": "Google",
+      "yahoo": "Yahoo!",
+      "apple": "Apple"
+    }
+  },
+  "quickSave": {
+    "button": "私密保存",
+    "title": "私密保存此地点",
+    "close": "关闭",
+    "locating": "正在获取当前位置…",
+    "atCurrent": "将保存当前位置",
+    "atPin": "将保存图钉位置",
+    "accuracy": "误差约 {{m}} 米",
+    "locateFailed": "无法获取当前位置。",
+    "retryLocate": "重新获取",
+    "useMapCenter": "使用地图中心",
+    "nameLabel": "名称",
+    "nameOptional": "（留空则填入日期时间）",
+    "namePlaceholder": "例：○○沼的青鳉",
+    "noteLabel": "备注",
+    "notePlaceholder": "数量、情况等（可选）",
+    "addNote": "＋ 添加备注",
+    "privacyNote": "私密：只有你和运营方（管理员）可以查看。不会出现在公开地图和公开数据中。",
+    "submit": "私密保存",
+    "saving": "正在保存…",
+    "saved": "已私密保存「{{name}}」",
+    "queued": "当前离线，已保存在本设备。联网后会自动发送",
+    "defaultNamePrefix": "私密地点",
+    "error": {
+      "login": "请登录后保存",
+      "rateLimit": "短时间内保存次数过多，请稍后再试",
+      "queueFull": "本设备可保存的数量已达上限，请在有网络的地方发送",
+      "failed": "保存失败，请重试"
+    }
+  },
+  "fieldwork": {
+    "button": "调查",
+    "buttonProgress": "{{done}}/{{total}}",
+    "sheetClose": "关闭",
+    "common": {
+      "cancel": "取消",
+      "save": "保存",
+      "retry": "重试"
+    },
+    "panel": {
+      "title": "调查",
+      "tabs": "切换调查面板",
+      "tabPlan": "调查计划",
+      "tabRare": "珍稀物种记录",
+      "collapse": "收起",
+      "close": "关闭（计划会保留）",
+      "loading": "加载中…",
+      "loadFailed": "无法加载计划",
+      "offlineCache": "当前无网络，显示的是最后一次同步的内容（{{time}}）。有网络时才能编辑计划。",
+      "offlineNoCache": "当前无网络，无法加载计划。在有网络的地方打开一次后，离线时也能查看。",
+      "collapseAria": "收起（扩大地图。计划会保留）"
+    },
+    "plan": {
+      "today": "今天的计划",
+      "dated": "{{date}} 的计划",
+      "emptyLead": "在地图上选择地点，边导航边在每个地点留下结果。\n前一天晚上在家做好，到现场就能马上使用。",
+      "createToday": "创建今天的计划",
+      "openToday": "打开今天的计划",
+      "defaultTitle": "{{date}} 的调查",
+      "created": "已创建计划",
+      "history": "以往的计划",
+      "historyEmpty": "没有其他计划",
+      "statusDone": "已结束",
+      "titleLabel": "标题",
+      "dateLabel": "预定日期",
+      "edit": "修改标题和预定日期",
+      "progress": "已结束\u00a0{{done}}\u00a0/\u00a0{{total}}个地点（含跳过）",
+      "progressDetail": "完成\u00a0{{done}}・跳过\u00a0{{skipped}}・未调查\u00a0{{pending}}",
+      "actions": "计划操作",
+      "finish": "结束此计划",
+      "finishConfirm": "要结束此计划吗？记录会保留，之后也可以查看。",
+      "finishYes": "结束",
+      "finishedToast": "计划已结束。辛苦了",
+      "finished": "此计划已结束",
+      "reuse": "再次使用此计划",
+      "reuseHint": "以相同的地点和顺序创建今天的新计划（用于定期复查）",
+      "reused": "已用相同地点创建今天的计划",
+      "noPlan": "还没有调查计划",
+      "createPlan": "创建调查计划",
+      "dayToday": "今天（{{date}}）",
+      "dayTomorrow": "明天（{{date}}）",
+      "dayOther": "选择其他日期",
+      "tomorrow": "明天的计划"
+    },
+    "stops": {
+      "heading": "地点",
+      "empty": "还没有地点。请从下方的「添加地点」加入。",
+      "defaultName": "地点\u00a0{{n}}",
+      "status": {
+        "pending": "未调查",
+        "done": "完成",
+        "skipped": "跳过"
+      },
+      "rare": "有珍稀物种",
+      "unsent": "等待发送",
+      "moveUp": "将 {{name}} 上移",
+      "moveDown": "将 {{name}} 下移",
+      "menu": "{{name}} 的菜单",
+      "rename": "改名",
+      "note": "备注",
+      "remove": "移除",
+      "nameLabel": "地点名称",
+      "noteLabel": "地点备注",
+      "removeConfirm": "要从计划中移除此地点吗？已发布的帖子和珍稀物种记录会保留。",
+      "removeYes": "移除"
+    },
+    "add": {
+      "heading": "添加地点",
+      "pickOnMap": "在地图上选择",
+      "pickOnMapHint": "结束时请按［结束］",
+      "pickBar": "点击地图添加地点（目前{{count}}个）",
+      "pickDone": "完成",
+      "fromSpots": "从已保存的地点选择",
+      "spotsEmpty": "还没有非公开保存的地点",
+      "spotsFailed": "无法加载地点",
+      "spotsInPlan": "已在计划中",
+      "spotsAdd": "加入计划（{{count}}）",
+      "current": "添加当前位置",
+      "locating": "正在确认当前位置…",
+      "locateFailed": "无法获取当前位置",
+      "added": "已添加第{{n}}个地点",
+      "addedMany": "已添加{{count}}个地点",
+      "offline": "当前无网络，无法编辑计划（仍可在地点记录）"
+    },
+    "nav": {
+      "bulk": "一次导航剩余地点（{{count}}个地点）",
+      "bulkHint": "手机一次最多 4 个地点（3 个途经点＋目的地），因此每 4 个地点分开打开",
+      "here": "当前位置",
+      "segment": "路线{{index}}：{{from}} → {{stops}}"
+    },
+    "stop": {
+      "results": "此地点的记录：有\u00a0{{sighting}}・没有\u00a0{{absence}}・珍稀物种\u00a0{{rare}}",
+      "found": "有（发布）",
+      "foundMain": "有",
+      "foundSub": "发布",
+      "absent": "没有",
+      "absentSub": "记录未发现",
+      "rare": "记录珍稀物种",
+      "rareSub": "仅你和运营方",
+      "skip": "跳过",
+      "skipSub": "原因可选填",
+      "undo": "撤销（改为未调查）",
+      "skipReason": "跳过的原因（可选，会记在备注中）",
+      "skipPlaceholder": "例：涨水无法靠近",
+      "skipConfirm": "跳过",
+      "skipped": "已跳过此地点",
+      "undone": "已改为未调查（记录没有删除）",
+      "privateLockReason": "此地点的记录不公开位置",
+      "offlineHint": "当前无网络。「没有」「跳过」和不带照片的珍稀物种记录会先保存在设备上，联网后发送。帖子会保存为草稿，不会与此地点关联。",
+      "linked": "已将帖子关联到此地点",
+      "linkQueued": "已发布。与地点的关联将在联网后发送",
+      "resultsNoRare": "此地点的记录：有\u00a0{{sighting}}・没有\u00a0{{absence}}"
+    },
+    "position": {
+      "locating": "记录位置：正在确认当前位置…（最多 8 秒）",
+      "gps": "记录位置：当前位置（<nw>误差约{{m}}米</nw>）",
+      "gpsNoAccuracy": "记录位置：当前位置",
+      "manual": "记录位置：地图中心",
+      "freeFailed": "无法获取当前位置",
+      "retry": "重新获取当前位置",
+      "useMapCenter": "使用地图中心",
+      "map": "记录位置：此地点的坐标",
+      "reasonNoFix": "（因为无法获取当前位置）",
+      "reasonInaccurate": "（因为当前位置的误差大于100米）",
+      "reasonFar": "（因为离现在的位置<nw>约{{distance}}</nw>）"
+    },
+    "absence": {
+      "title": "记录「没有发现」",
+      "speciesLabel": "没有发现的物种",
+      "needSpecies": "请至少选择一个物种",
+      "minutesLabel": "调查用时（分钟，可选）",
+      "minutesPlaceholder": "例：30",
+      "minutesInvalid": "请输入 1〜480 分钟",
+      "disclosurePublic": "地图上的位置会取整到约 100 米见方的区块",
+      "disclosurePrivate": "此地点的记录不公开位置",
+      "submit": "记录「没有发现」（{{count}}条）",
+      "submitting": "正在记录…",
+      "saved": "已记录「没有发现」",
+      "review": "未发现记录经运营方确认后公开",
+      "reviewAdmin": "这是运营方账号，无需确认即公开"
+    },
+    "rare": {
+      "title": "记录珍稀物种",
+      "speciesLabel": "物种",
+      "needSpecies": "请选择物种",
+      "otherLabel": "物种名称",
+      "otherPlaceholder": "例：东北七鳃鳗",
+      "needLabel": "请输入物种名称",
+      "countLabel": "数量（可选）",
+      "countInvalid": "数量请输入 0〜100000",
+      "observedLabel": "观察日期时间",
+      "noteLabel": "备注（可选）",
+      "notePlaceholder": "状态、环境等",
+      "photosLabel": "照片（最多 3 张，可选）",
+      "photosAdd": "选择照片",
+      "photoAlt": "照片 {{n}}",
+      "photoRemove": "移除照片 {{n}}",
+      "photosExif": "保存前会删除拍摄位置等信息（EXIF）",
+      "photosInvalid": "有无法使用的照片（jpeg、png、webp，最大 20MB）",
+      "photosOffline": "无网络时不能添加照片。可以不带照片保存（联网后发送）。",
+      "privacy": "此记录只有你和运营方能看到。不会出现在他人的地图、列表或公开数据中。",
+      "submit": "记录珍稀物种（非公开）",
+      "submitting": "正在保存…",
+      "saved": "已非公开记录（可在珍稀物种标签中查看）",
+      "duplicate": "此记录已经保存过了",
+      "retryUpload": "网络中断了。请再保存一次（不会产生重复记录）",
+      "countUnit": "只"
+    },
+    "rareTab": {
+      "lead": "发现的珍稀物种可以在这里非公开记录。只有你和运营方能看到。",
+      "show": "在我的地图上显示珍稀物种",
+      "on": "显示中（仅自己）",
+      "off": "隐藏",
+      "showHint": "其他人看不到。为避免截图泄露地点，平时会隐藏。",
+      "record": "记录珍稀物种",
+      "heading": "我的记录（{{count}} 条）",
+      "empty": "还没有记录",
+      "loadFailed": "无法加载记录",
+      "count": "{{count}} 只",
+      "atStop": "在计划中记录",
+      "photos": "查看{{count}}张照片",
+      "privateNote": "非公开（仅你和运营方）",
+      "delete": "删除",
+      "deleteConfirm": "要删除此记录吗？照片也会删除，无法恢复。",
+      "deleteYes": "删除",
+      "deleted": "已删除记录",
+      "photosLeft": "记录已删除，但照片未能删除",
+      "menu": "{{name}} 的菜单",
+      "photosPartlyLeft": "记录已删除，但有 {{count}} 张照片未能删除"
+    },
+    "queue": {
+      "pending": "待发送\u00a0{{count}}条",
+      "failed": "有未能发送的记录。请在有网络的地方重新发送，或将其丢弃",
+      "sendNow": "立即发送",
+      "sending": "正在发送…",
+      "saved": "当前无网络，已保存在设备上。联网后发送",
+      "discard": "丢弃",
+      "kind": {
+        "absence": "未发现记录",
+        "status_done": "将地点设为完成",
+        "status_skipped": "跳过地点",
+        "status_pending": "将地点改回未调查",
+        "rare": "珍稀物种记录",
+        "link": "帖子与地点的关联",
+        "protect": "将帖子位置设为非公开"
+      },
+      "discardConfirm": "要丢弃此记录吗？此操作无法撤销。",
+      "discardYes": "丢弃"
+    },
+    "error": {
+      "offline": "当前无网络，暂时无法操作",
+      "limit": "短时间内保存次数过多。请稍后再试",
+      "postLimit": "已达到发帖上限（24 小时 5 条）。请稍后再试",
+      "denied": "没有权限，或对象已不存在",
+      "queueFull": "设备可保存的条数已达上限。请在有网络的地方发送",
+      "photosOffline": "无网络时不能添加照片",
+      "failed": "无法保存。请重试",
+      "planDayLimit": "每天最多可创建 30 个计划。请明天再试",
+      "planTotalLimit": "每人最多可有 1000 个计划",
+      "stopHourLimit": "每小时最多可添加 300 个地点。请稍后再试",
+      "stopPlanLimit": "一个计划最多可包含 100 个地点",
+      "rareHourLimit": "每小时最多可记录 60 条珍稀物种。请稍后再试",
+      "rareTotalLimit": "每人最多可保存 5000 条珍稀物种记录",
+      "reorderStale": "地点已在其他画面中更改，已重新加载。请重新排序",
+      "partialQueued": "只记录了一部分。其余已放入待发送（{{reason}}）",
+      "protectQueueFull": "待发送已满，无法在设备上保存将附近帖子设为非公开的处理。请在有网络的地方发送待发送内容"
+    },
+    "marker": {
+      "openStop": "打开此地点",
+      "rareTitle": "珍稀物种记录（非公开）",
+      "legend": "珍稀物种记录（仅自己）"
+    },
+    "bridge": {
+      "addToPlan": "加入计划",
+      "recordRare": "记录珍稀物种",
+      "added": "已加入「{{title}}」（第{{n}}个）"
+    },
+    "admin": {
+      "nav": "珍稀物种记录",
+      "title": "珍稀物种记录",
+      "noticeTitle": "注意保管：不得对外公开",
+      "noticeBody": "这是用户以非公开方式留下的珍稀物种记录。地点一旦被人知道就可能被捕捉，因此请勿将截图或 CSV 发到社交媒体、邮件、共享云盘等外部。是否公开由运营方逐个判断。",
+      "exportCsv": "导出 CSV",
+      "fetchFailed": "无法加载",
+      "empty": "还没有记录",
+      "count": "{{count}}条",
+      "countValue": "{{count}} 只",
+      "observed": "观察",
+      "user": "用户",
+      "fromPlan": "来自计划地点",
+      "photoUnavailable": "无法显示",
+      "source": {
+        "gps": "当前位置",
+        "map": "地图上的位置"
+      },
+      "accuracy": "误差约{{m}}米"
+    },
+    "rareSpecies": {
+      "nihon_zarigani": "日本蝲蛄 (Cambaroides japonicus)",
+      "medaka": "青鳉 (Oryzias)",
+      "zeni_tanago": "鱊鱼 (Acheilognathus typus)",
+      "shinai_motsugo": "麦穗鱼类 (Pseudorasbora pumila)",
+      "tohoku_sanshouo": "东北小鲵 (Hynobius lichenatus)",
+      "kuro_sanshouo": "黑小鲵 (Hynobius nigrescens)",
+      "gengorou": "龙虱类 (Dytiscidae)",
+      "tagame": "田鳖 (Kirkaldyia deyrolli)",
+      "other": "其他"
+    },
+    "safety": {
+      "title": "为了安全",
+      "water": "不要下水",
+      "children": "不要让孩子单独前往",
+      "trespass": "不要进入禁止入内的场所和私有土地"
+    },
+    "next": {
+      "label": "下一个地点",
+      "prefix": "下一个：",
+      "open": "打开此地点（导航・记录）",
+      "tag": "下一个"
+    },
+    "rareBand": {
+      "text": "正在显示珍稀物种・注意截图",
+      "hide": "隐藏"
+    },
+    "signOut": {
+      "title": "有尚未发送的调查记录",
+      "body": "退出登录后，将无法从此设备发送。",
+      "send": "发送后退出登录",
+      "discard": "丢弃并退出登录",
+      "cancel": "取消",
+      "sending": "正在发送…",
+      "sendFailed": "有未能发送的记录。请在有网络的地方重试",
+      "lead": "此设备上有尚未发送的记录。",
+      "queued": "调查待发送\u00a0{{count}}条",
+      "drafts": "离线保存的帖子草稿\u00a0{{count}}条",
+      "sendBlocked": "有因上限等原因无法发送的记录。请在调查面板和我的页面确认后丢弃，或稍后发送"
+    }
+  },
+  "water": {
+    "listTitle": "附近水域",
+    "openList": "水域列表",
+    "closeList": "关闭列表",
+    "distance": "距地图中心 {{distance}}",
+    "genericName": "无名水域",
+    "community": "用户提供的水域",
+    "select": "在地图上查看",
+    "selected": "已选中",
+    "publicRecordCount": "附近有 {{count}} 条公开记录",
+    "publicRecordUnknown": "无法确认公开记录",
+    "noPublicRecords": "未找到公开记录的候选水域",
+    "onlyNoRecords": "仅显示未找到公开记录的候选水域",
+    "chooseNoRecord": "选择未找到公开记录的候选水域",
+    "noCandidates": "没有符合条件的水域。",
+    "recordsNote": "候选水域根据水域及周边150米内的公开位置记录确定。这不代表该地从未调查过，也不代表没有生物。",
+    "shoreHint": "此位置只是岸边参考点。调查前请确认可以进入的地点。",
+    "addToPlan": "加入调查计划",
+    "reportButton": "提供地图上未标注的水域",
+    "pickReportHint": "请在地图上选择水域位置。",
+    "pickReportCancel": "取消选择位置",
+    "pickReportConfirm": "提供此位置的信息",
+    "selectedPosition": "所选位置：{{lat}}, {{lng}}",
+    "publicReadFailed": "无法确认公开记录，暂时无法判断候选水域。",
+    "communityReadFailed": "未能获取公开水域信息，部分水域可能未显示。请重新搜索。",
+    "report": {
+      "title": "提供未标注的水域",
+      "name": "水域名称",
+      "namePlaceholder": "不知道名称时可填写“无名水域”",
+      "note": "补充说明（选填）",
+      "notePlaceholder": "地标或水域的情况",
+      "position": "所选位置",
+      "photos": "水域照片",
+      "addPhotos": "添加照片",
+      "photoAlt": "水域照片 {{number}}",
+      "removePhoto": "删除照片 {{number}}",
+      "photoHint": "照片会自动缩小。请添加1至3张JPEG、PNG、WebP或HEIC照片。无法读取的格式请改用其他照片。",
+      "preparing": "正在准备照片… {{current}}/{{total}}",
+      "privacy": "审核采纳后将公开名称和大致位置。照片和补充说明仅供本人及管理员查看。",
+      "submit": "提交信息",
+      "submitting": "正在提交…",
+      "success": "已收到信息，管理员将进行审核。",
+      "status": {
+        "pending": "待审核",
+        "accepted": "已采纳",
+        "rejected": "未采纳",
+        "all": "全部"
+      },
+      "errors": {
+        "name": "请填写80个字符以内的水域名称。",
+        "note": "补充说明请勿超过1000个字符。",
+        "photos": "请选择1至3张水域照片。",
+        "position": "请重新选择水域位置。",
+        "fileType": "请选择JPEG、PNG、WebP或HEIC照片。",
+        "fileSize": "每张原始照片请勿超过25MB。",
+        "conversion": "无法转换此照片，请选择JPEG等其他照片。",
+        "save": "提交失败，输入的信息已保留。请用相同信息重试。",
+        "accountChanged": "登录状态已改变。请关闭此页面后重新打开。"
+      }
+    },
+    "admin": {
+      "nav": "水域信息",
+      "title": "审核水域信息",
+      "notice": "照片、补充说明和精确位置仅供本人及管理员查看。采纳后，确认过的名称和大致位置将在公开水域列表中显示。",
+      "filter": "审核状态",
+      "count": "显示 {{count}} 条信息",
+      "limited": "显示该状态的最新{{limit}}条信息。处理待审核信息后将显示下一批。",
+      "empty": "没有此状态的信息。",
+      "loadFailed": "无法加载信息，请重试。",
+      "photoUnavailable": "无法加载照片，可以重试。",
+      "publicName": "公开的水域名称",
+      "nameRequired": "请填写80个字符以内的公开名称。",
+      "accept": "采纳并公开",
+      "reject": "不采纳",
+      "unpublish": "取消公开",
+      "saving": "正在保存…",
+      "acceptedNotice": "已采纳并公开名称和大致位置。",
+      "rejectedNotice": "未采纳该信息。",
+      "unpublishedNotice": "已取消公开并从水域列表中移除。",
+      "reviewFailed": "无法保存审核结果，请重试。"
+    }
+  },
+  "homeHub": {
+    "home": "首页",
+    "dex": "图鉴",
+    "myPage": "我的主页",
+    "myRecords": "我的记录",
+    "backHome": "返回首页",
+    "navigation": "主导航",
+    "campaigns": "参与与介绍",
+    "carousel": "轮播",
+    "nextBanner": "下一个横幅",
+    "more": "查看更多",
+    "hero": {
+      "eyebrow": "大家一起记录水边外来物种的地图",
+      "title": "你的一次“发现”，\n守护秋田的自然。",
+      "description": "发现小龙虾或牛蛙，用手机拍下来记录即可。你的记录会汇入地图，成为守护秋田自然的线索。注册永久免费。",
+      "signup": "免费注册并记录",
+      "map": "不注册先看地图",
+      "operator": "Zaridasu 是由一位热爱秋田自然的大学生开发的免费服务。收集的记录将用于守护秋田自然的研究以及县市的相关工作。",
+      "about": "记录的用途与联系方式"
+    },
+    "startRecording": "开始记录",
+    "viewMap": "查看地图",
+    "level": "Lv.{{level}}  水边探索者",
+    "totalXp": "总计 {{count}} XP",
+    "nextXp": "距下一级还需 {{count}} XP",
+    "levelProgress": "升级进度",
+    "approved": "已审核记录",
+    "speciesCount": "发现物种",
+    "badges": "获得徽章",
+    "viewBadges": "查看我的徽章",
+    "badgeRule": "审核通过的记录可获得徽章和XP。",
+    "earned": "已获得",
+    "lockedBadge": "审核通过{{count}}条记录后获得",
+    "badgeNames": {
+      "0": "第一步",
+      "1": "探索者",
+      "2": "小龙虾猎手",
+      "3": "秋田之眼"
+    },
+    "loading": "加载中…",
+    "accountError": "部分个人记录无法加载。",
+    "profileError": "无法加载个人资料。",
+    "progressError": "无法加载进度",
+    "feedError": "无法加载记录。请检查网络后重试。",
+    "saveError": "无法保存在此设备。请检查浏览器的存储设置。",
+    "postRail": "记录卡片。可横向滚动浏览",
+    "observation": "水域记录",
+    "noPhoto": "无照片记录",
+    "absenceRow": "未发现{{species}}",
+    "photolessRow": "{{species}}：{{type}}",
+    "groupCount": "{{count}}条",
+    "photoError": "无法显示照片",
+    "locationPrivate": "详细位置不公开",
+    "likesDetail": "{{count}}个赞，查看详情",
+    "commentsDetail": "{{count}}条评论，查看讨论",
+    "save": "保存在此设备",
+    "unsave": "取消此设备上的保存",
+    "viewSaved": "查看已保存记录（{{count}}）",
+    "savedTitle": "保存在本设备的记录",
+    "savedNotice": "在此设备的浏览器中最多保存200条。仅显示目前仍公开的记录。",
+    "noSaved": "没有可显示的已保存公开记录。",
+    "localSave": "仅保存在此设备和浏览器中",
+    "pickup": "精选记录",
+    "pickupDescription": "来自近期公开记录的水边小发现。",
+    "newPosts": "最新记录",
+    "popular": "热门记录",
+    "popularScope": "按最新24条公开记录的点赞数排序。",
+    "questions": "最新提问",
+    "viewConversation": "查看讨论",
+    "readFaq": "查看常见问题",
+    "noPhotos": "还没有带照片的记录。没有照片也能记录。",
+    "noPosts": "还没有公开记录。欢迎分享第一次发现。",
+    "noPopular": "还没有被点赞的记录。可以先看看最新记录。",
+    "noQuestions": "近期记录还没有提问。可在记录详情页提问。",
+    "gaps": {
+      "title": "还缺少的记录",
+      "description": "根据公开记录统计，列出目前还比较少的内容。“没找到”的记录同样是重要线索。",
+      "action": "记录",
+      "count": "{{count}}条",
+      "species": {
+        "none": "还没有{{species}}的记录。",
+        "few": "{{species}}的记录只有{{count}}条。",
+        "description": "发现后，请留下照片和位置。"
+      },
+      "absence": {
+        "title": "“没找到”的记录有{{count}}条。",
+        "description": "查找的地点和时间会成为调查的线索。"
+      },
+      "area": {
+        "title": "有记录的市町村为{{count}}个（共{{total}}个）。",
+        "description": "也请记录其他水边的情况。"
+      },
+      "guide": {
+        "species": "寻找记录较少的物种",
+        "absence": "也记录“没找到”",
+        "area": "记录其他市町村的水边"
+      }
+    },
+    "collections": "图鉴",
+    "speciesGuide": "查看物种特征与记录",
+    "reading": "记录指南",
+    "guideByline": "ザリダス使用指南",
+    "news": "通知",
+    "monitorTag": "协助调查",
+    "monitorNews": "请通过体验问卷告诉我们您的感受",
+    "guideTag": "使用方法",
+    "guideNews": "查看记录指南",
+    "tagline": "把水边的发现，汇成共同的记录。",
+    "legalNav": "条款与联系方式",
+    "hintTitle": "也请记录周围环境。",
+    "hintDescription": "没有发现生物的记录，也能帮助我们了解水域。",
+    "recordingHints": "查看记录指南",
+    "guideTitle": "记录指南",
+    "illustrationNote": "指南和横幅照片为生成示意图。记录列表中的照片来自公开记录。",
+    "illustrationTag": "说明用图片",
+    "banner": {
+      "fieldwork": {
+        "tag": "一起来参与",
+        "title": "一起记录\n秋田的水域。",
+        "caption": "从身边的发现开始"
+      },
+      "monitor": {
+        "tag": "体验问卷",
+        "title": "请告诉我们\n您的使用感受。",
+        "caption": "遇到操作困难也请告诉我们"
+      },
+      "research": {
+        "tag": "关于ザリダス",
+        "title": "每一份记录，\n都能帮助调查。",
+        "caption": "了解这项活动的目的"
+      }
+    },
+    "articles": {
+      "water": {
+        "title": "再仔细看看\n熟悉的水道。"
+      },
+      "photos": {
+        "title": "如何拍下\n清楚的小龙虾记录。"
+      }
+    },
+    "guide": {
+      "water": "在散步或上学途中，留意身边的水道。除了生物，也观察水流、植物和周边环境。\n记录时间与地点，有助于了解水域。",
+      "photos": "在安全的位置拍摄生物全貌及周边环境。不必过度靠近，也不必为拍照移动生物。\n避免拍入人脸、私人住址等信息。没有照片也能记录。",
+      "species": "有些物种的公开记录还很少。在身边的水边发现时，请连同照片和地点一起记录。第一条记录将帮助我们了解该物种的分布。\n无需勉强捕捉或移动动物，请在安全的地方观察。",
+      "area": "方便时，可以记录不同市町村的水域，无需为完成任务专程出行。审核通过的记录会计入个人图鉴。",
+      "absence": "寻找后未发现生物时，可提交未发现记录。请留下地点、时间与搜索时长。\n一次没有发现，并不证明该地没有这种生物。"
+    },
+    "faq": {
+      "login": {
+        "question": "仅浏览也需要注册吗？",
+        "answer": "无需注册即可浏览首页、地图及公开记录。提交记录、保存个人图鉴和徽章时需要注册或登录。"
+      },
+      "status": {
+        "question": "提交后会立即公开吗？",
+        "answer": "记录需经过审核才会公开。可在我的主页查看待审核或退回的记录。"
+      },
+      "safety": {
+        "question": "观察时应注意什么？",
+        "answer": "请从允许进入且安全的位置观察，注意脚下、水位和天气。无需勉强捕捉或移动生物。安全比记录更重要。"
+      }
+    }
+  },
+  "activityGrass": {
+    "title": "活动记录",
+    "summary": "过去一年中有<big>{{days}}</big>天留下了记录（共{{records}}条）",
+    "note": "审核中的记录计入，未通过审核的记录不计入。",
+    "hintScroll": "向右滑动表格可查看一年前的记录。",
+    "hintSelect": "点按方格，或从下方列表选择日期，可查看当天的明细。",
+    "gridLabel": "记录日历（过去一年）。可用方向键切换日期。",
+    "cellLabel": "{{date}}，{{count}}条记录",
+    "cellLabelNone": "{{date}}，无记录",
+    "legendTitle": "每日记录数",
+    "legendRange": "{{from}}–{{to}}",
+    "legendOrMore": "{{n}}以上",
+    "detailLabel": "所选日期",
+    "detailLabelLatest": "最近一次记录的日期",
+    "detailDay": "{{date}}　{{count}}条记录",
+    "detailNone": "{{date}}　没有记录",
+    "detailBreakdown": "明细：{{items}}",
+    "detailPending": "其中审核中{{count}}条",
+    "typeCount": "{{type}}{{count}}条",
+    "itemSeparator": "、",
+    "listOpen": "展开有记录的日期列表",
+    "listClose": "收起有记录的日期列表",
+    "listCount": "{{count}}条",
+    "listMore": "显示更多（还有{{count}}天）",
+    "empty": "还没有记录。发布第一条记录后，当天的方格就会着色。",
+    "emptyAction": "发布记录",
+    "loadError": "无法加载活动记录。"
+  }
+}

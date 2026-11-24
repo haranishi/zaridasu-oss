@@ -1,0 +1,2577 @@
+{
+  "banner": {
+    "neverShowAgain": "Don't show this again"
+  },
+  "intro": {
+    "prompt": {
+      "kicker": "New to Zaridasu?",
+      "title": "Help map non-native species in Akita",
+      "body": "Answer two quick questions and learn how to read the map in one minute.",
+      "read": "Take the 1-minute tour",
+      "later": "Later",
+      "never": "Don't show this again"
+    },
+    "modal": {
+      "title": "The Zaridasu story",
+      "prev": "Back",
+      "next": "Next",
+      "close": "Close",
+      "progress": "{{current}} / {{total}}",
+      "neverShowAgain": "Don't show this again"
+    },
+    "slides": {
+      "1": {
+        "title": "Living things are disappearing from our ponds",
+        "body": "The American Crayfish was brought to Japan by people in 1927, as food for American Bullfrogs. In ponds where their numbers grow, the water plants disappear and the water turns brown and cloudy. The small creatures that lived there slowly vanish too.",
+        "imageAlt": "A drawing of the same pond in two states, side by side. On the left, a clear pond with swaying water plants, small fish, water insects and tadpoles. On the right, the water plants are gone, the water is brown and cloudy, and only an American Crayfish is left on the bottom."
+      },
+      "2": {
+        "title": "But we still do not know where they are",
+        "body": "The maps published by the national government only go down to the level of a whole city or town. They cannot tell you whether the pond next door has crayfish in it. There are also waters where crayfish have not arrived yet.",
+        "imageAlt": "A drawing comparing two levels of map detail. On the left, a coarse map where large blocks are filled in with a single colour, even though one block holds several ponds. On the right, a fine map with a small dot on each individual pond.",
+        "quote": "確認情報がない場所にも、生息している可能性はあることに注意。 (Japanese original. Unofficial translation by Zaridasu: \"Please note that they may also be living in places where no sighting records exist.\")",
+        "quoteSource": "Source: Ministry of the Environment website, \"なぜそこら中に？　まだ大丈夫なところもあります！\" (accessed August 5, 2026)",
+        "quoteLink": "Read it on the Ministry of the Environment website"
+      },
+      "3": {
+        "title": "So we are making the map together",
+        "body": "When many \"I found one\" reports come together, they make a map fine enough to show each single pond. That lets us decide which waters to look after first, and it turns this into a story about the pond near your home, not somewhere far away.",
+        "imageAlt": "A drawing of people standing by the water with phones, with small dots travelling from them onto a map and building up a fine distribution map that shows each pond. Zari-kun, the crayfish mascot, watches from the side."
+      },
+      "4": {
+        "title": "There are only three steps",
+        "body": "Find it, take a photo and post it, and it appears on the map. That is all. Even without a photo, \"I saw one\" is still a valuable report. It takes less than a minute.",
+        "imageAlt": "A drawing of three steps from left to right. On the left, someone spots an American Crayfish by the water. In the middle, they take a photo with a phone. On the right, a single red dot appears on the map."
+      },
+      "5": {
+        "title": "Just recording it is enough",
+        "body": "You do not need to take it home. Releasing it somewhere else is against the law, so please leave the animal where it is. If you already keep one at home, you can go on keeping it, and no paperwork is needed.",
+        "imageAlt": "A drawing of a person crouching by the water and simply taking a photo of an American Crayfish with a phone. They are not reaching out, and they carry no bucket or net. The crayfish stays in the water."
+      },
+      "6": {
+        "title": "Would you like to start?",
+        "body": "You can look at the map right away without signing up. Zaridasu is free for everyone.",
+        "imageAlt": "A drawing of Zari-kun, the crayfish mascot, raising a claw in welcome. Behind him are the water's edge and a map with a few red dots on it."
+      }
+    },
+    "cta": {
+      "map": "See the map",
+      "post": "Post a sighting",
+      "about": "Learn more",
+      "lp": "See the Zaridasu introduction page"
+    },
+    "drawer": {
+      "label": "What is Zaridasu?"
+    }
+  },
+  "lang": {
+    "ja": "日本語",
+    "en": "English",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "header": {
+    "skipToMain": "Skip to main content",
+    "subtitle": "Waterside invasive species map",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "mainNav": "Main navigation",
+    "langSwitch": "Switch language",
+    "userMenu": "User menu",
+    "pageTitle": {
+      "home": "Zaridasu",
+      "trends": "Trends",
+      "ranking": "Ranking",
+      "dashboard": "My Page",
+      "about": "How to use",
+      "terms": "Terms",
+      "privacy": "Privacy"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "trends": "Trends",
+    "ranking": "Ranking",
+    "area": "By Area",
+    "about": "About / Species Law",
+    "dashboard": "My Dashboard",
+    "admin": "Admin Panel",
+    "post": "Post a Sighting",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "logout": "Log Out",
+    "switchLang": "Language",
+    "contact": "Contact",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "species": {
+    "american": "American Crayfish",
+    "bullfrog": "American Bullfrog"
+  },
+  "infoType": {
+    "sighting": "Sighting",
+    "capture": "Capture",
+    "trace": "Trace",
+    "damage": "Crop Damage",
+    "absence": "Absence confirmation"
+  },
+  "filter": {
+    "all": "All",
+    "period": "Period",
+    "species": "Species",
+    "infoType": "Type",
+    "municipality": "Municipality",
+    "sort": "Sort",
+    "search": "Search",
+    "searchPlaceholder": "Search by species, location, comment",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "speciesSort": "By Species",
+    "week": "Last 7 days",
+    "month": "Last 30 days",
+    "threeMonths": "Last 3 months",
+    "allPeriod": "All time",
+    "boundsFilter": "Current map area only",
+    "filter": "Filter",
+    "reset": "Reset",
+    "apply": "Apply",
+    "filterSettings": "Filter Settings",
+    "appliedCount": "{{count}} active",
+    "allMunicipalities": "All municipalities",
+    "allSpecies": "All species",
+    "allInfoTypes": "All types",
+    "sortNewest": "Newest",
+    "sortOldest": "Oldest",
+    "sortSpecies": "By Species"
+  },
+  "map": {
+    "postButton": "Post Sighting",
+    "areaCount": "{{count}} in area",
+    "totalCount": "/ {{total}} total",
+    "loadCount": "{{count}} reports",
+    "loading": "Loading...",
+    "loadMore": "Load more",
+    "noResults": "No results found",
+    "tab": {
+      "map": "🗺 Map",
+      "list": "📋 List"
+    },
+    "legend": "Legend",
+    "heatmapOn": "Heatmap ON",
+    "heatmap": "Heatmap",
+    "locate": "Show my location",
+    "heatmapLegend": {
+      "title": "Observation density",
+      "low": "Low",
+      "high": "High",
+      "caption": "Areas with more reports appear darker (refined by catch-per-effort where count and survey time are given; absence records excluded)"
+    },
+    "filterActive": "Filtered: {{count}}",
+    "currentLocation": "My Location",
+    "locateStop": "Stop following my location",
+    "locateCancel": "Cancel finding my location",
+    "locateResume": "Return to my location and follow",
+    "currentLocationAccuracy": "My Location (about {{meters}} m accuracy)",
+    "locateFilterOff": "Turned off \"Current map area only\" so your map area isn't sent to the server. It won't turn back on by itself.",
+    "locateFilterBusy": "\"Current map area only\" can't be used while following. Move the map to pause, or stop following, to use it.",
+    "locateHint": {
+      "locating": "Finding your location…\nTap again to cancel.",
+      "locatingSlow": "This is taking a while.\nSignal is usually better outdoors.\nTap again to cancel.",
+      "following": "The map follows your location.\nTap again to stop.",
+      "paused": "Paused because you moved the map.\nTap this button to return to your location."
+    },
+    "locateError": {
+      "denied": "Location access isn't allowed. Allow it in your browser settings, then tap the arrow button at the bottom right again.",
+      "unsupported": "This device or browser doesn't support location.",
+      "unavailable": "Couldn't get your location. Go outdoors and tap the arrow button at the bottom right again.",
+      "timeout": "Couldn't get your location, so it was cancelled. Go outdoors and tap the arrow button at the bottom right again."
+    },
+    "layerSelect": "Map Layer",
+    "nearbyWater": {
+      "button": "Find nearby water",
+      "loading": "Searching for water…",
+      "show": "Show",
+      "hide": "Hide",
+      "count": "{{count}} found",
+      "empty": "No mapped water bodies found in this area",
+      "error": "Couldn't load water bodies. Please try again.",
+      "scope": "Search within {{radius}}km of the map center",
+      "retry": "Retry",
+      "previous": "Previous search results",
+      "genericName": "Unnamed water body"
+    },
+    "layers": {
+      "osm": "Standard",
+      "pale": "Light",
+      "std": "Detailed",
+      "photo": "Aerial Photo"
+    },
+    "pin": {
+      "button": "Drop a pin and get directions",
+      "hint": "Tap the map to drop a pin (long-press also works)",
+      "cancel": "Stop pin mode",
+      "title": "Dropped pin",
+      "saveHere": "Save privately",
+      "postHere": "Post here",
+      "remove": "Remove pin"
+    },
+    "spot": {
+      "legend": "Private spots (only you)",
+      "pending": "Not sent yet (will send automatically when online)",
+      "privateNote": "Private (only you and the operators)",
+      "rename": "Rename",
+      "renameSave": "Save",
+      "renameFailed": "Couldn't rename",
+      "delete": "Delete",
+      "deleteConfirm": "Delete this spot? This can't be undone.",
+      "deleteYes": "Delete",
+      "deleteFailed": "Couldn't delete",
+      "cancel": "Cancel"
+    }
+  },
+  "postForm": {
+    "title": "Post a Sighting",
+    "close": "Close",
+    "location": "Location",
+    "locationRequired": "*",
+    "locationHint": "Tap / click the map to select a location",
+    "manualLocation": "Enter a location without the map",
+    "manualLocationHint": "Enter latitude and longitude directly, or get your current location.",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "coordinateRangeError": "Enter latitude from -90 to 90 and longitude from -180 to 180.",
+    "useCurrentLocation": "Use current location",
+    "locating": "Getting current location…",
+    "geoUnsupported": "This device or browser does not support location access.",
+    "geolocationRetryHint": "Check your settings and press “Use current location” again, or enter latitude and longitude.",
+    "mapInstructions": "You can click the map to select a location. With the keyboard, focus the map, move its center with the arrow keys, then press Enter or Space to confirm.",
+    "mapAriaLabel": "Map for selecting the sighting location",
+    "locationSelected": "{{lat}}, {{lng}}",
+    "locationError": "Tap the map to select a location",
+    "locationPrompt": "Click the map to select a location",
+    "outsideTargetArea": "The selected location is outside our focus area (Akita). You can still post, but this app focuses on Akita Prefecture.",
+    "accuracyValue": "±{{meters}}m",
+    "accuracyManual": "Manual selection (no accuracy)",
+    "accuracy_good": "Good",
+    "accuracy_warn": "Fair",
+    "accuracy_bad": "Low accuracy",
+    "species": "Species",
+    "infoType": "Type",
+    "count": "Count",
+    "countUnit": "(optional, individuals)",
+    "countPlaceholder": "e.g. 3",
+    "countValidation": "Count must be an integer between {{min}} and {{max}}",
+    "observedAt": "Observed Date",
+    "observedAtUnit": "(optional)",
+    "municipality": "Municipality",
+    "municipalityFetching": "📍 Detecting…",
+    "municipalityPlaceholder": "Select (optional)",
+    "comment": "Comment",
+    "commentUnit": "(optional, max {{max}} characters)",
+    "commentPlaceholder": "Details about sighting, location, etc.",
+    "commentValidation": "Comment must be {{max}} characters or fewer",
+    "photos": "Photos",
+    "photosUnit": "(optional, up to {{max}} photos)",
+    "addPhoto": "Add",
+    "photoTips": {
+      "summary": "📸 Photo tips (improves AI accuracy)",
+      "angle": "Angle: shoot from above or an angle that shows key features",
+      "frame": "Framing: keep the whole body at 1/3–1/2 of the frame (avoid too close/far)",
+      "lighting": "Lighting: shoot in a bright spot, avoiding shadows and backlight",
+      "focus": "Focus: focus on the subject and keep the shot steady",
+      "parts": "Parts: show the claws, rostrum, and body color",
+      "example": "Good: whole body, sharp, well-lit / Avoid: dark, too far, blurry"
+    },
+    "submit": "🦞 Submit",
+    "submitting": "Submitting...",
+    "offline": "📡 Offline",
+    "offlineMessage": "⚠️ You are offline. Your input is saved and will be submitted when reconnected.",
+    "successMessage": "Posted successfully!",
+    "draftRestored": "Previous input restored",
+    "draftClear": "Clear",
+    "loggedInPost": "Posting as logged-in user",
+    "loggedInDesc": "This post will be shown as \"Verified\" with higher credibility.",
+    "honeypot": "website",
+    "errorClose": "Close error",
+    "geoPermissionDenied": "Location permission denied. Please allow location access in browser settings.",
+    "geoTimeout": "Location detection timed out. Please try again.",
+    "geoUnavailable": "Location information is unavailable.",
+    "geoDefault": "Cannot get location",
+    "photoSizeError": "Photo exceeds max size",
+    "draftSaved": "Saved as draft. You can submit from My Page when back online.",
+    "absenceMode": "Absence Confirmation Mode",
+    "absenceModeDesc": "Record a location where no invasive species were found after a survey. This will be reflected on the map immediately without review.",
+    "surveyDuration": "Survey Duration",
+    "surveyDurationUnit": "(optional, minutes)",
+    "surveyDurationPlaceholder": "e.g. 30",
+    "surveyDurationHint": "Enter this with the count to refine the map's density view (finds per unit of effort).",
+    "offlineNotice": "You are offline — you can save as a draft to your device",
+    "uploadingPhotos": "Uploading photos... {{current}}/{{total}}",
+    "saving": "Saving...",
+    "saveDraft": "Save Draft",
+    "photoPreview": "Preview {{n}}",
+    "removePhoto": "Remove photo {{n}}",
+    "exifDetected": "Location info detected from photo. Apply to map pin?",
+    "exifApply": "Apply",
+    "exifClose": "Close",
+    "temperaturePlaceholder": "e.g. 18.5",
+    "humidityPlaceholder": "e.g. 65",
+    "surveyLocked": "Since this is a result linked to a survey request, the species is fixed to the one specified in the request",
+    "warningClose": "Close warning",
+    "fileTypeError": "{{name}}: Unsupported file format (JPEG, PNG, WebP, HEIC only)",
+    "fileSizeError": "{{name}} exceeds {{max}}MB. Choose a smaller photo.",
+    "lowResolutionWarning": "The image resolution may be low ({{width}}x{{height}})",
+    "blurryWarning": "The photo may be blurry. You can still post it",
+    "timeUntilHours": "{{hours}}h {{minutes}}m",
+    "timeUntilMinutes": "{{minutes}}m",
+    "loginRequired": "You must be logged in to post. Please log in or sign up before posting.",
+    "rateLimitReached": "You have reached the 24-hour posting limit ({{limit}} posts). You can post again in {{time}}.",
+    "selectLocation": "Please select a location on the map.",
+    "locationOutOfBounds": "The location is outside Akita Prefecture. Please select a valid location on the map.",
+    "audioUploadFailed": "Failed to upload the audio file.",
+    "rateLimitGeneric": "You have reached the posting limit. Please wait a while and try again.",
+    "photoUploadPartial": "Failed to upload photos ({{success}} of {{total}} succeeded). Please try again.",
+    "draftSaveFailed": "Failed to save draft",
+    "offlineAudioDropWarning": "Recorded audio cannot be saved to an offline draft. Reconnect and post again to attach the audio.",
+    "disclosure": {
+      "label": "Location visibility",
+      "public": "Public",
+      "private": "Private",
+      "publicHint": "Shown on the map (usually blurred to about 111 m).",
+      "privateHint": "The location won't appear on the map or in open data (only you and the operators can see it). Use this for places where rare species live. Don't put location clues in the comment or photos. To make a private location public again, you need to contact the operators."
+    },
+    "offlineLoginRequired": "You need to log in to save a draft while offline",
+    "photoConversionError": "Could not convert {{name}}. Choose another photo or a JPEG/PNG file.",
+    "preparingPhotos": "Preparing photos… ({{current}}/{{total}})",
+    "autoResizeHint": "Photos are resized automatically when selected (up to {{max}}MB each).",
+    "photosReady": "Photos are ready to post ({{size}}MB total)."
+  },
+  "postCard": {
+    "anonymous": "Anonymous",
+    "official": "Official",
+    "verified": "Verified",
+    "unknown": "Unknown",
+    "count": "{{count}} individuals",
+    "detail": "View detail",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this post?",
+    "deleteCancel": "Cancel",
+    "deleteOk": "Delete",
+    "deleting": "Deleting...",
+    "report": "Report",
+    "verifiedTitle": "Posted by a logged-in user",
+    "officialTitle": "Official data registered by the management team",
+    "editTitle": "Edit this post",
+    "deleteTitle": "Delete this post"
+  },
+  "postList": {
+    "loadMoreError": "Failed to load more posts",
+    "signupPrompt": "Register for more features!",
+    "signupBenefit1": "💬 Comment on posts",
+    "signupBenefit2": "📊 View history in My Dashboard",
+    "signupButton": "Sign Up Free →",
+    "noResults": "No matching results",
+    "tryFilter": "Try changing the filters",
+    "noFilterResults": "No posts match the current filter",
+    "tryResetFilter": "Reset filters to see all posts",
+    "resetFilter": "Reset filters"
+  },
+  "comment": {
+    "title": "Comments",
+    "noComments": "No comments yet",
+    "placeholder": "Write a comment...",
+    "submit": "Post",
+    "submitting": "Posting...",
+    "deleteLabel": "Delete",
+    "officialBadge": "Official",
+    "adminPosting": "Posting as admin (official badge will be added)",
+    "error": "Failed to post comment",
+    "emailRequired": "⚠️ Email verification required",
+    "emailRequiredDesc": "Please verify your email address to comment.",
+    "loginRequired": "💬 Registration required to comment",
+    "loginRequiredDesc": "Register for free to unlock features",
+    "benefit1": "Comment on posts",
+    "benefit2": "View posting history in My Dashboard",
+    "signup": "Register for Free",
+    "login": "Log In",
+    "resendEmail": "Resend confirmation email",
+    "resendSending": "Sending...",
+    "resendCooldown": "Resend (in {{sec}}s)",
+    "deleteConfirmPrompt": "Delete?",
+    "deleteConfirm": "Delete",
+    "deleteCancel": "Cancel",
+    "deleteConfirmAria": "Delete comment",
+    "deleteCancelAria": "Cancel comment deletion",
+    "emptyTitle": "Be the first to comment",
+    "deleteError": "Failed to delete comment"
+  },
+  "detail": {
+    "title": "Post Detail",
+    "edit": "Edit",
+    "observedAt": "Observed: {{date}}",
+    "postedAt": "Posted: {{date}}",
+    "location": "Akita, {{municipality}}",
+    "count": "Count: {{count}}",
+    "verified": "Verified Post",
+    "verifiedDesc": "Posted by a logged-in user",
+    "anonymous": "Anonymous Post",
+    "official": "Official Info",
+    "comment": "Comment",
+    "photos": "Photos",
+    "expandPhoto": "Expand photo {{n}}",
+    "foundAt": "Found Location",
+    "coordinates": "Coordinates: {{lat}}, {{lng}}",
+    "like": "Helpful",
+    "share": "Share:",
+    "back": "Back to Map",
+    "report": "Report",
+    "notFound": "Post not found",
+    "backToMap": "Back to Top",
+    "loading": "Loading...",
+    "unknown": "Unknown",
+    "emailNotConfirmed": "Email verification required",
+    "emailNotConfirmedLike": "Please verify your email address to like posts.",
+    "resendEmail": "Resend confirmation email",
+    "resendSending": "Sending...",
+    "resendCooldown": "Resend (in {{sec}}s)",
+    "seoTitle": "{{species}} {{infoType}} info - {{municipality}}, Akita",
+    "seoDescription": "A {{species}} {{infoType}} was reported in {{municipality}}, Akita ({{date}}). {{comment}}",
+    "seoDescriptionFallback": "Check the map for details.",
+    "locationPrefix": "Akita,",
+    "breadcrumbHome": "Home",
+    "pendingNotice": "Under Review — This post has not been published yet",
+    "pendingNoticeDesc": "It will be published after admin review. Currently only visible to the poster.",
+    "rejectedNotice": "Rejected — This post is not published",
+    "rejectedReason": "Reason: {{reason}}",
+    "rejectedHint": "Please revise and resubmit, or contact the administrator.",
+    "breadcrumbSpeciesInfo": "{{species}} {{infoType}} Info",
+    "areaOtherInfo": "See other invasive species info in {{municipality}}",
+    "speciesMoreInfo": "Learn more about {{species}}",
+    "aiJudgment": "🤖 AI Judgment",
+    "aiJudging": "Analyzing...",
+    "aiDetectedSpecies": "Detected Species",
+    "aiSpeciesMatch": "Match with Report",
+    "aiMatchYes": "✅ Match",
+    "aiMatchNo": "❌ Mismatch",
+    "aiConfidence": "Confidence",
+    "aiImageQuality": "Image Quality",
+    "aiPerPhotoTitle": "Per-photo results ({{analyzed}}/{{total}})",
+    "aiPerPhotoError": "Failed",
+    "aiNote": "This is AI-generated reference information",
+    "aiSpeciesAmerican": "American Crayfish",
+    "aiSpeciesBullfrog": "American Bullfrog",
+    "aiSpeciesOther": "Other",
+    "aiSpeciesUnclear": "Unknown",
+    "aiQualityGood": "Good",
+    "aiQualityAcceptable": "Acceptable",
+    "aiQualityPoor": "Poor",
+    "aiFeedbackTitle": "📸 Photo feedback for you",
+    "aiErrorOwnerBody": "We couldn't analyze your photo well this time. Next time, frame the subject large and centered in good lighting with sharp focus for better recognition. Your report has been recorded — thank you!",
+    "aiMismatchTitle": "So close! A little more and it's certain",
+    "aiMismatchBody": "The AI thought this was most likely \"{{detected}}\" (slightly different from your report). Use the tips below and try another shot next time.",
+    "aiAdviceIntro": "Tips to improve accuracy next time:",
+    "aiAdvice": {
+      "angle": "Shoot from above or at an angle that shows key features",
+      "distance": "Avoid too close/far — keep the subject at 1/3–1/2 of the frame",
+      "lighting": "Shoot in bright light, avoiding shadows and backlight",
+      "focus": "Focus on the subject and keep the shot steady",
+      "closer": "Get a little closer so the subject appears larger",
+      "whole_body": "Capture the whole body (claws, tail, etc.)"
+    },
+    "coordinatesCoarse": "approximate location",
+    "locationHidden": "The precise location of this record is not published.",
+    "hideLocation": {
+      "button": "Make this post's location private",
+      "confirm": "The location and place names will be removed from the map, open data and area pages (only you and the operators can see them). You can't make it public again yourself. Make it private?",
+      "confirmYes": "Make private",
+      "cancel": "Cancel",
+      "done": "The location is now private",
+      "failed": "Couldn't make it private. Please try again.",
+      "ownerNotice": "This post's location is private. The map and coordinates are shown only to you and the operators."
+    }
+  },
+  "auth": {
+    "login": "Log In",
+    "signup": "Sign Up",
+    "email": "Email Address",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset Password",
+    "submit": "Submit",
+    "close": "Close",
+    "tabs": {
+      "login": "Log In",
+      "signup": "Sign Up",
+      "reset": "Reset password"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "emailNotConfirmed": "Email not confirmed. Please click the link in the email you received during registration.",
+      "alreadyRegistered": "This email address is already registered",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "passwordRequirements": "Password must be at least 8 characters and contain both letters and numbers",
+      "passwordMismatch": "Passwords do not match",
+      "resendFailed": "Failed to resend. Please try again later.",
+      "googleFailed": "Google sign-in failed. Please try again.",
+      "invalidEmail": "The email address format is invalid",
+      "captchaRequired": "Please complete the \"I'm not a robot\" verification.",
+      "captchaUnavailable": "Could not load the security check. Please reload the page and try again."
+    },
+    "resendEmail": "Resend confirmation email",
+    "resendEmailSending": "Sending...",
+    "resendEmailCooldown": "Resend (in {{sec}}s)",
+    "emailSent": "Confirmation email sent. Please click the link in the email to activate your account.",
+    "emailResent": "Confirmation email resent. Please check your inbox.",
+    "resetSent": "Password reset email sent.",
+    "signupRequired": "A free account is needed to record.",
+    "signupBenefits": {
+      "post": "Send records with a photo and location",
+      "comment": "Comment on records",
+      "dashboard": "Review your records and stats"
+    },
+    "passwordConfirm": "Confirm Password",
+    "passwordConfirmPlaceholder": "Enter again",
+    "passwordMinLength": "8+ chars (letters + numbers)",
+    "passwordRules": {
+      "minLength": "8+ characters",
+      "hasLetter": "Contains a letter",
+      "hasNumber": "Contains a number"
+    },
+    "submitLogin": "Log In",
+    "submitSignup": "Register",
+    "submitReset": "Send Email",
+    "processing": "Processing...",
+    "forgotPasswordLink": "Forgot password?",
+    "goToLogin": "Go to login",
+    "goToReset": "Reset password",
+    "googleLogin": "Continue with Google",
+    "orDivider": "or",
+    "tabsLabel": "Authentication options",
+    "signOutFailed": "Couldn't log out. Please try again where you have a connection",
+    "consent": {
+      "lead": "Before you sign up, please read the ",
+      "and": " and ",
+      "tail": "."
+    }
+  },
+  "survey": {
+    "formTitle": "Create Survey Request",
+    "detailTitle": "Survey Request",
+    "navButton": "Request",
+    "location": "Location to investigate",
+    "species": "Target species",
+    "speciesUnknown": "Unknown",
+    "reason": "Reason for survey",
+    "reasonPlaceholder": "e.g. Heard crayfish sounds in this area, there might be some in the nearby pond, etc.",
+    "reasonLabel": "Reason",
+    "urgency": "Urgency",
+    "urgencyNormal": "Normal",
+    "urgencyUrgent": "Urgent",
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "respond": "Submit Survey Results",
+    "close": "Close this request",
+    "closeConfirm": "Close this survey request? This cannot be reopened.",
+    "closeConfirmAction": "Close request",
+    "closeFailed": "Failed to close. Please try again later.",
+    "notFound": "Survey request not found",
+    "anonymous": "Anonymous",
+    "viewProfile": "View profile",
+    "viewDetail": "View details",
+    "relatedPosts": "Related survey results ({{count}})",
+    "markerTitle": "Survey Request",
+    "legendLabel": "Survey Request",
+    "status": {
+      "open": "Open",
+      "responded": "Responded",
+      "closed": "Closed"
+    },
+    "errors": {
+      "noPosition": "Tap the map to select a location",
+      "noReason": "Please enter a reason for the survey",
+      "loginRequired": "You must be logged in",
+      "outOfBounds": "The location is outside Akita Prefecture.",
+      "reasonTooLong": "Please enter a reason within 500 characters."
+    },
+    "mapLoading": "Loading map",
+    "commentDeleteLabel": "Delete",
+    "commentDeleteConfirmPrompt": "Delete?",
+    "commentDeleteConfirm": "Delete",
+    "commentDeleteCancel": "Cancel",
+    "respondersEmptyTitle": "Looking for helpers",
+    "commentsEmptyTitle": "Leave the first comment to show support",
+    "listEmptyTitle": "Create the first survey request",
+    "listEmptyDesc": "Ask others to check a spot you're curious about, and find out together.",
+    "listEmptyFiltered": "No requests match your filters",
+    "resetFilters": "Reset filters",
+    "createRequestCta": "Create a survey request",
+    "respondError": "Failed to update your response",
+    "commentDeleteError": "Failed to delete comment"
+  },
+  "report": {
+    "title": "Report this post",
+    "reasonLabel": "Reason",
+    "reasons": {
+      "spam": "Spam / duplicate post",
+      "wrongLocation": "Location is clearly wrong",
+      "inappropriate": "Inappropriate content",
+      "other": "Other"
+    },
+    "commentLabel": "Additional comment",
+    "commentOptional": "(optional)",
+    "commentPlaceholder": "Please provide details if any",
+    "errorNoReason": "Please select a reason",
+    "errorSubmit": "Failed to submit. Please try again.",
+    "done": "Report received",
+    "doneDesc": "Thank you for your report. We will review it.",
+    "close": "Close",
+    "cancel": "Cancel",
+    "submit": "Report"
+  },
+  "edit": {
+    "title": "Edit Post",
+    "species": "Species",
+    "infoType": "Type",
+    "municipality": "Municipality",
+    "municipalityPlaceholder": "Select (optional)",
+    "count": "Count",
+    "countOptional": "(optional)",
+    "countPlaceholder": "Enter count",
+    "observedAt": "Observed Date",
+    "observedAtOptional": "(optional)",
+    "comment": "Comment",
+    "photos": "Photos",
+    "photosMax": "Max {{max}} photos",
+    "noPhotos": "No photos",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving..."
+  },
+  "delete": {
+    "title": "Delete this post?",
+    "irreversible": "This action cannot be undone.",
+    "cancel": "Cancel",
+    "confirm": "Delete",
+    "deleting": "Deleting..."
+  },
+  "howTo": {
+    "title": "How to Use / Member Benefits",
+    "step1Title": "Tap a location",
+    "step1Desc": "Tap the map where you found the species",
+    "step2Title": "Enter details",
+    "step2Desc": "Enter species, type, photos and submit",
+    "step3Title": "Share with everyone",
+    "step3Desc": "View invasive species info across Akita on the map",
+    "benefitsTitle": "Register for free to unlock features",
+    "benefit1": "Comment on posts",
+    "benefit2": "View stats in Dashboard",
+    "benefit3": "Export data as CSV",
+    "signupButton": "Register for Free"
+  },
+  "signupBanner": {
+    "title": "Want to do more?",
+    "benefit1": "Comment on posts",
+    "benefit2": "View posting history in My Dashboard",
+    "signupButton": "Register for Free",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Log In"
+  },
+  "app": {
+    "offline": "⚠️ You are offline. Some features may not be available."
+  },
+  "trends": {
+    "title": "Trends",
+    "seoTitle": "Sighting Trends & Statistics",
+    "seoDescription": "Statistical data on invasive species sightings in Akita Prefecture. View monthly trends, species breakdown, and municipality rankings.",
+    "kpi": {
+      "totalPosts": "Total Posts",
+      "thisMonth": "This Month",
+      "municipalities": "Reporting Municipalities",
+      "thisMonthInline": "This month: {{count}}"
+    },
+    "monthlyChart": "Monthly Posts (Last 12 Months)",
+    "monthlyChartSole": "Monthly Reports So Far",
+    "speciesBreakdown": "Species Breakdown",
+    "infoTypeBreakdown": "Info Type Breakdown",
+    "municipalityRank": "Municipalities with reports ({{count}})",
+    "municipalityCoverage": "This breakdown covers {{listed}} of {{total}} reports. Reports with no municipality recorded are not included.",
+    "countSuffix": "",
+    "dataNote": "Data is based on user reports and updated in real time.",
+    "earlyStageNote": "There are only {{count}} reports so far. We are just getting started, so your single report fills in the biggest blank on the map.",
+    "sparseTitle": "Reports are just starting to come in",
+    "soleMonthHeadline": "{{count}} in {{month}}",
+    "soleMonthNote": "So far this is the only month with reports. Every other month is still zero, so there is no trend to read yet."
+  },
+  "about": {
+    "title": "About This Service",
+    "serviceTitle": "Zaridasu",
+    "serviceDesc": "Zaridasu is a map service for sharing sighting and distribution information of invasive species (American Crayfish and American Bullfrog) in Akita Prefecture, Japan. You can contribute to local ecosystem conservation by reporting sightings, captures, traces, and agricultural damage.",
+    "howToUse": "How to Use",
+    "speciesGuide": "About the Target Species",
+    "law": "About the Invasive Species Act",
+    "lawSubtitle": "Act for the Prevention of Damage to Ecosystems Caused by Specified Invasive Alien Species",
+    "dataUsage": "Data Utilization",
+    "dataUsageDesc": "Posted data may be used for distribution surveys, ecosystem conservation research, and invasive species countermeasures in Akita Prefecture. No personally identifiable information is collected.",
+    "contact": "Contact",
+    "contactDesc": "For bug reports, feedback, or questions, please use the contact form.",
+    "contactButton": "Open Contact Form",
+    "relatedLinks": "Related Links (Ministry of the Environment, Japan)",
+    "steps": {
+      "1": "Tap \"Post a Sighting\" on the top screen",
+      "2": "Tap the map to select the location",
+      "3": "Enter species, type, municipality, etc.",
+      "4": "Attach a photo and submit (optional)"
+    },
+    "faq": {
+      "q1": "How do I use Zaridasu?",
+      "a1": "Tap \"Post a Sighting\" on the top screen, then select the location on the map. Enter species, type, municipality, etc., attach a photo (optional), and submit.",
+      "q2": "What kind of creature is the American Crayfish?",
+      "a2": "The American Crayfish (Procambarus clarkii) is a widely distributed invasive species, red and large. They live in agricultural canals, rice paddies, and ponds. Since June 2023 they have been a \"Conditionally Specified Invasive Alien Species\". You can keep one as a pet at home just as before, with no paperwork required. However, releasing them into ponds, rivers, or other outdoor waters, and selling, buying, distributing, or importing them, are prohibited.",
+      "q3": "What kind of creature is the American Bullfrog?",
+      "a3": "The American Bullfrog (Lithobates catesbeianus) is a large frog native to North America, 15-20cm in length. They live in waterfronts and wetlands and prey on native frogs, fish, and insects. They have been a \"Specified Invasive Alien Species\" since 2006, so keeping, transporting, importing, selling, and releasing them are prohibited in principle (except with a permit for research and similar purposes).",
+      "q4": "What should I do with captured crayfish or bullfrogs?",
+      "a4": "You do not have to catch anything. Finding one and reporting it with a photo is enough. For the American Crayfish, catch and release on the spot is fine, but once you have taken one home, releasing it outdoors later is against the law, so please think carefully about whether you can care for it for life before taking it home. For the American Bullfrog, even taking it home requires a permit.",
+      "q5": "How is the information posted on Zaridasu used?",
+      "a5": "Posted data may be used for distribution surveys, ecosystem conservation research, and invasive species countermeasures in Akita Prefecture. No personally identifiable information is collected."
+    },
+    "species_info": {
+      "american": {
+        "status": "Conditionally Specified Invasive Alien Species",
+        "desc": "A large crayfish native to North America. Red, 10-15cm long. Widely inhabit agricultural canals, rice paddies, and ponds, causing damage to aquatic plants and agricultural structures. A Conditionally Specified Invasive Alien Species since June 2023. You can keep one as a pet at home as before without any paperwork, but releasing it outdoors and selling, buying, distributing, or importing it are prohibited."
+      },
+      "bullfrog": {
+        "status": "Specified Invasive Alien Species",
+        "desc": "A large frog native to North America. 15-20cm long with a distinctive low voice. Inhabit waterfronts, wetlands, and rice paddies, preying on native creatures. A Specified Invasive Alien Species since 2006. Unlike the American Crayfish, keeping and transporting them also requires a permit."
+      }
+    },
+    "law_info": {
+      "american": {
+        "title": "American Crayfish",
+        "desc": "Designated as a \"Conditionally Specified Invasive Alien Species\" on June 1, 2023. You can keep one as a pet at home just as before, and no application or notification is required. However, <0>releasing them into ponds, rivers, or other outdoor waters, or letting them escape, is prohibited</0>. Selling, buying, distributing, and importing them are not allowed either.",
+        "rule1": "Releasing into the wild ✕",
+        "rule2": "Selling / buying / distributing / importing ✕",
+        "allowed": "Keeping one at home ○ (no paperwork needed)"
+      },
+      "bullfrog": {
+        "title": "American Bullfrog",
+        "desc": "Designated as a \"Specified Invasive Alien Species\" since 2006. Unlike the American Crayfish, <0>keeping and transporting them is also prohibited in principle</0> (except with a permit for research and similar purposes). Releasing them outdoors, selling them, and importing them are prohibited as well.",
+        "rule1": "Keeping / transporting ✕ (permit required)",
+        "rule2": "Releasing / selling / importing ✕"
+      },
+      "warning": "When you find one, taking a photo and reporting it is all you need to do. Please leave the animal where it is. Once you have taken an animal home, releasing it outdoors later is against the law. For the American Bullfrog, even taking it home requires a permit.",
+      "envLink1": "Rules for the American Crayfish and the Red-eared Slider (Ministry of the Environment website)",
+      "envLink2": "Rules for Specified Invasive Alien Species such as the American Bullfrog (Ministry of the Environment website)",
+      "envLink3": "About the Invasive Alien Species Act (Ministry of the Environment website)"
+    }
+  },
+  "footer": {
+    "aboutService": "About This Service",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "copyright": "© {{year}} Zaridasu. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving...",
+    "close": "Close",
+    "required": "Required",
+    "optional": "Optional",
+    "darkMode": "Switch to Dark Mode",
+    "lightMode": "Switch to Light Mode",
+    "loadError": "Failed to load",
+    "backToTop": "Back to top",
+    "back": "Back"
+  },
+  "admin": {
+    "login": {
+      "title": "Zaridasu Admin",
+      "subtitle": "Admins only",
+      "email": "Email Address",
+      "password": "Password",
+      "submit": "Log In",
+      "submitting": "Logging in...",
+      "error": "Invalid email or password",
+      "rateLimited": "Too many attempts. Please try again in {{minutes}} minutes.",
+      "backToSite": "← Back to site"
+    },
+    "session": {
+      "timeoutWarning": "Your session will expire soon due to inactivity. Interact with the page to stay signed in."
+    },
+    "nav": {
+      "title": "Admin Panel",
+      "dashboard": "Dashboard",
+      "posts": "Posts",
+      "reports": "Reports",
+      "users": "Users",
+      "comments": "Comments",
+      "logs": "Audit Logs",
+      "signOut": "Sign Out",
+      "publicSite": "Public Site",
+      "logout": "Log Out",
+      "authChecking": "Checking auth...",
+      "spots": "Private spots"
+    },
+    "errorBoundary": {
+      "title": "Something went wrong",
+      "description": "An error occurred in the admin panel. Please try again.",
+      "errorId": "Error ID: {{id}}",
+      "retry": "Try again",
+      "dashboard": "Dashboard"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "loading": "Loading data...",
+      "allPeriod": "All time",
+      "kpi": {
+        "posts": "Posts in Period",
+        "verified": "Verified Posts",
+        "verifiedRate": "Verified Rate",
+        "pendingReports": "Pending Reports"
+      },
+      "chart": {
+        "monthly": "Monthly Posts",
+        "monthlyDesc": "Trend for selected period",
+        "postCount": "Posts"
+      },
+      "breakdown": {
+        "species": "By Species",
+        "infoType": "By Type"
+      },
+      "recentLogs": "Recent Actions",
+      "viewAll": "View all →",
+      "adminFallback": "Admin",
+      "quickActions": {
+        "managePosts": "Manage Posts",
+        "managePostsDesc": "Filter, delete, CSV export",
+        "checkReports": "Check Reports",
+        "noPendingReports": "No pending reports",
+        "pendingReports": "{{count}} pending report(s)"
+      },
+      "dateRange": {
+        "thisMonth": "This Month",
+        "lastMonth": "Last Month",
+        "last3Months": "Last 3 Months",
+        "last6Months": "Last 6 Months",
+        "thisYear": "This Year",
+        "allPeriod": "All Time"
+      }
+    },
+    "posts": {
+      "title": "Post Management",
+      "bulkDelete": "Delete {{count}} selected",
+      "bulkProgressApprove": "Approving {{done}}/{{total}}...",
+      "bulkResult": {
+        "success": "Bulk operation: {{succeeded}} succeeded",
+        "withFailures": "{{succeeded}} succeeded, {{failed}} failed"
+      },
+      "pendingCountUnavailable": "Pending review count is unavailable",
+      "pendingEmpty": "No posts are waiting for review",
+      "exportCsv": "Export CSV",
+      "filter": {
+        "allSpecies": "All Species",
+        "allInfoTypes": "All Types",
+        "allMunicipalities": "All Municipalities",
+        "keyword": "Search keyword",
+        "allPosts": "All Posts",
+        "verifiedOnly": "🔵 Verified only",
+        "anonymousOnly": "⚪ Anonymous only"
+      },
+      "table": {
+        "range": "{{from}}–{{to}} of {{total}}",
+        "date": "Date",
+        "auth": "Auth",
+        "municipality": "Municipality",
+        "species": "Species",
+        "infoType": "Type",
+        "comment": "Comment",
+        "photo": "Photos"
+      },
+      "badge": {
+        "anonymous": "Anonymous",
+        "verified": "✓ Verified"
+      },
+      "action": {
+        "makeOfficial": "Make Official",
+        "official": "★ Official",
+        "delete": "Delete"
+      },
+      "statusPending": "Pending Review",
+      "statusApproved": "Published",
+      "statusRejected": "Rejected",
+      "statusAll": "All",
+      "empty": "No posts found",
+      "loading": "Loading...",
+      "prev": "← Prev",
+      "next": "Next →",
+      "deleteDialog": {
+        "title": "Delete this post?",
+        "irreversible": "This action cannot be undone.",
+        "cancel": "Cancel",
+        "confirm": "Delete"
+      },
+      "bulkDialog": {
+        "title": "Delete {{count}} posts?",
+        "desc": "Selected posts and photos will be permanently deleted.",
+        "warning": "This action cannot be undone.",
+        "cancel": "Cancel",
+        "confirm": "Delete {{count}} posts"
+      },
+      "bulkProgress": "Deleting {{done}}/{{total}}...",
+      "error": {
+        "fetchFailed": "Failed to fetch data",
+        "deleteFailed": "Failed to delete post",
+        "officialFailed": "Failed to toggle official flag",
+        "disclosureFailed": "Failed to change the disclosure level."
+      },
+      "csvHeaders": {
+        "id": "ID",
+        "date": "Date",
+        "lat": "Lat",
+        "lng": "Lng",
+        "municipality": "Municipality",
+        "species": "Species",
+        "infoType": "Type",
+        "comment": "Comment",
+        "photoCount": "Photos",
+        "authType": "Auth"
+      },
+      "anonymousLabel": "Anonymous",
+      "verifiedLabel": "Verified",
+      "disclosure": {
+        "label": "Location visibility",
+        "updated": "Disclosure level updated.",
+        "speciesUpdated": "Species default disclosure updated.",
+        "speciesTitle": "Default disclosure by species",
+        "speciesDesc": "Set the default location visibility for new posts, per species.",
+        "apply": "Apply",
+        "level": {
+          "precise": "Exact location",
+          "coarsened": "Approximate (~111m)",
+          "hidden": "Hidden"
+        }
+      }
+    },
+    "reports": {
+      "title": "Report Management",
+      "tab": {
+        "pending": "Pending",
+        "resolved": "Resolved"
+      },
+      "loading": "Loading...",
+      "emptyPending": "No pending reports",
+      "emptyResolved": "No resolved reports",
+      "reason": {
+        "spam": "Spam / Promotion",
+        "wrong_location": "Wrong location",
+        "inappropriate": "Inappropriate content",
+        "other": "Other"
+      },
+      "ip": {
+        "none": "N/A",
+        "show": "Show",
+        "hide": "Hide",
+        "sameCount": "{{count}} same IP"
+      },
+      "reporterComment": "Reporter comment: ",
+      "postDate": "Posted: ",
+      "postDeleted": "Target post has been deleted",
+      "action": {
+        "deletePost": "Delete Post",
+        "dismiss": "Dismiss"
+      },
+      "status": {
+        "resolved": "Resolved"
+      },
+      "deleteDialog": {
+        "title": "Delete this post?",
+        "message": "The post and photos will be permanently deleted. This action cannot be undone. Reports will also be removed.",
+        "confirm": "Delete Post",
+        "cancel": "Cancel"
+      },
+      "dismissDialog": {
+        "title": "Dismiss this report?",
+        "message": "This report will be marked as resolved. The post will not be deleted.",
+        "confirm": "Dismiss",
+        "cancel": "Cancel"
+      },
+      "error": {
+        "deleteFailed": "Failed to delete post",
+        "dismissFailed": "Failed to resolve report"
+      }
+    },
+    "users": {
+      "title": "User Management",
+      "summary": "{{total}} users / {{adminCount}} admins",
+      "refresh": "Refresh",
+      "empty": "No users found",
+      "error": {
+        "fetchFailed": "Failed to fetch users: {{message}}",
+        "roleFailed": "Failed to change role",
+        "title": "Error"
+      },
+      "table": {
+        "email": "Email",
+        "registeredAt": "Registered",
+        "lastLogin": "Last Login",
+        "role": "Role"
+      },
+      "role": {
+        "admin": "🛡️ Admin",
+        "user": "User"
+      },
+      "self": "You",
+      "action": {
+        "detail": "Details",
+        "grant": "Grant Admin",
+        "revoke": "Revoke Admin",
+        "noChange": "Cannot change"
+      },
+      "modal": {
+        "postCount": "📍 Posts",
+        "commentCount": "💬 Comments",
+        "reportCount": "🚨 Reports",
+        "recentPosts": "Recent Posts",
+        "recentComments": "Recent Comments",
+        "noPosts": "No posts",
+        "noComments": "No comments",
+        "noData": "No data"
+      },
+      "grantDialog": {
+        "title": "Grant admin role?",
+        "message": "This will allow the user to access the admin panel.",
+        "confirm": "Grant"
+      },
+      "revokeDialog": {
+        "title": "Revoke admin role?",
+        "message": "This will prevent the user from accessing the admin panel.",
+        "confirm": "Revoke"
+      },
+      "dialog": {
+        "cancel": "Cancel"
+      }
+    },
+    "comments": {
+      "title": "Comment Management",
+      "filter": {
+        "keyword": "Search keyword",
+        "officialOnly": "Official only"
+      },
+      "table": {
+        "range": "{{from}}–{{to}} of {{total}}",
+        "date": "Date",
+        "type": "Type",
+        "content": "Content",
+        "post": "Post"
+      },
+      "badge": {
+        "official": "★ Official",
+        "general": "General"
+      },
+      "action": {
+        "delete": "Delete"
+      },
+      "empty": "No comments found",
+      "loading": "Loading...",
+      "prev": "← Prev",
+      "next": "Next →",
+      "deleteDialog": {
+        "title": "Delete this comment?",
+        "irreversible": "This action cannot be undone.",
+        "cancel": "Cancel",
+        "confirm": "Delete"
+      },
+      "error": {
+        "deleteFailed": "Failed to delete comment"
+      }
+    },
+    "logs": {
+      "title": "Audit Logs",
+      "subtitle": "Admin activity audit log",
+      "fetchFailed": "Could not load the operation logs. Please try again.",
+      "exportCsv": "Export CSV",
+      "filter": {
+        "allActions": "All actions",
+        "allAdmins": "All admins",
+        "myOnly": "My actions only"
+      },
+      "total": "{{count}} entries",
+      "loading": "Loading...",
+      "table": {
+        "date": "Date",
+        "operator": "Operator",
+        "action": "Action",
+        "target": "Target",
+        "details": "Details"
+      },
+      "empty": "No logs found",
+      "prev": "← Prev",
+      "next": "Next →",
+      "action": {
+        "delete_post": "Delete Post",
+        "delete_comment": "Delete Comment",
+        "resolve_report": "Resolve Report",
+        "grant_admin": "Grant Admin",
+        "revoke_admin": "Revoke Admin",
+        "toggle_official": "Toggle Official",
+        "login_success": "Login Success",
+        "login_failed": "Login Failed",
+        "review_water_report": "Review water report"
+      },
+      "target": {
+        "post": "Post",
+        "comment": "Comment",
+        "report": "Report",
+        "user": "User",
+        "water_report": "Water report"
+      },
+      "csv": {
+        "date": "Date",
+        "operator": "Operator",
+        "action": "Action",
+        "targetType": "Target Type",
+        "targetId": "Target ID",
+        "details": "Details"
+      }
+    },
+    "components": {
+      "statCard": {
+        "unit": ""
+      },
+      "recentPosts": {
+        "title": "Recent Posts",
+        "viewAll": "View all →",
+        "empty": "No posts",
+        "unknown": "Unknown",
+        "municipalityUnknown": "Unknown location",
+        "anonymous": "Anonymous",
+        "verified": "✓ Verified"
+      },
+      "municipalityRanking": {
+        "title": "Top Municipalities",
+        "noData": "No data",
+        "unit": ""
+      },
+      "summaryCard": {
+        "title": "Period Comparison",
+        "previousPeriod": "Previous Period",
+        "currentPeriod": "Current Period",
+        "change": "Change",
+        "vsPrevious": "vs Previous",
+        "unit": ""
+      }
+    },
+    "aiAccuracy": {
+      "title": "⑤ AI Confidence → Hit Rate",
+      "note": "Splits AI confidence into 4 bands and cross-checks human decisions against the AI's detected species. The confirmed species of approved posts is treated as ground truth — an operational proxy (true precision/recall needs a labeled validation set).",
+      "empty": "No posts with an AI confidence score yet.",
+      "colBin": "Confidence band",
+      "colTotal": "Count",
+      "colApproved": "Approved",
+      "colRejected": "Rejected",
+      "colPending": "Pending",
+      "colAutoApproved": "Auto-approved",
+      "colApprovalRate": "Approval rate",
+      "colMatchRate": "Hit rate",
+      "binLt50": "≤50%",
+      "bin50_70": "50–70%",
+      "bin70_90": "70–90%",
+      "bin90_100": "90–100%",
+      "summary": "Overall",
+      "humanReviewed": "Human-reviewed (independent, excludes auto-approval)",
+      "humanMatchRate": "Hit rate of human approvals",
+      "avgConfidence": "Avg. confidence",
+      "approvalRateDef": "Approval rate = approved ÷ (approved + rejected). Pending is excluded from the denominator.",
+      "matchRateDef": "Hit rate = (approved AND AI-detected species = confirmed species) ÷ approved.",
+      "caveat": "Approval rate is inflated by auto-approval (which is confidence-gated). For an independent basis, refer to the human-reviewed hit rate."
+    },
+    "spots": {
+      "title": "Private spots",
+      "exportCsv": "Export CSV",
+      "noticeTitle": "Handle with care (research use, read-only)",
+      "noticeBody": "These are places users saved privately. They may include habitats of rare species. Do not publish exact locations on public pages, open data, social media or presentations.",
+      "loading": "Loading...",
+      "fetchFailed": "Failed to load",
+      "empty": "No private spots yet",
+      "count": "{{count}} spots",
+      "user": "User"
+    }
+  },
+  "account": {
+    "deleteLink": "Delete account",
+    "deleteTitle": "Delete Account",
+    "deleteWarning": "Deleting your account will:",
+    "deleteKeepPosts": "Your posts and comments will remain as anonymous",
+    "deleteRemoveProfile": "Your profile, badges, likes, survey requests, private spots, fieldwork plans, rare species records and water reports (including photos) will be deleted",
+    "deleteIrreversible": "This action cannot be undone",
+    "deleteConfirmLabel": "Type \"delete\" to confirm",
+    "deleteConfirmPlaceholder": "delete",
+    "deleteConfirmWord": "delete",
+    "deleteButton": "Delete",
+    "deleting": "Deleting...",
+    "deleteError": "Failed to delete account",
+    "deletePhotosFailed": "We couldn't delete your private photos, so the account was not deleted. Please try again where you have a connection",
+    "deleteFailedPhotosRemoved": "Couldn't delete the account (your private photos have already been deleted). Please try again"
+  },
+  "myPosts": {
+    "title": "My Posts",
+    "empty": "No posts yet.",
+    "emptyAction": " to post your first sighting.",
+    "topPage": "Go to the top page",
+    "detail": "View",
+    "status": {
+      "pending": "Under Review",
+      "approved": "Published",
+      "rejected": "Rejected"
+    }
+  },
+  "dashboard": {
+    "pendingDrafts": "Unsent drafts ({{count}})",
+    "sending": "Sending...",
+    "sendAll": "Send All",
+    "offlineLabel": "Offline",
+    "sendingProgress": "Sending: {{current}}/{{total}}",
+    "successCount": "{{count}} succeeded",
+    "failedCount": "{{count}} failed",
+    "sendingStatus": "Sending",
+    "photoCount": "📷{{count}}",
+    "deleteLabel": "Delete",
+    "cancelLabel": "Cancel",
+    "deleteTitle": "Delete",
+    "postImageAlt": "Post image",
+    "postThumbnailAlt": "Post photo thumbnail",
+    "unknown": "Unknown",
+    "statusPending": "🕐 Under Review",
+    "statusRejected": "✕ Rejected",
+    "statusApproved": "✓ Published",
+    "aiJudging": "⏳ Analyzing",
+    "aiConfirmed": "🤖 AI Confirmed {{confidence}}%",
+    "aiMismatch": "⚠️ Species Mismatch",
+    "aiUnclear": "🔍 Indeterminate",
+    "audioJudging": "⏳ Analyzing audio",
+    "audioConfirmed": "🎤 Call matched {{confidence}}%",
+    "audioMismatch": "⚠️ Call mismatch",
+    "audioUnclear": "🔍 Call indeterminate",
+    "audioPoorQuality": "🎤 Poor audio quality",
+    "aiImageReasonPrefix": "Image AI",
+    "aiAudioReasonPrefix": "Audio AI",
+    "aiConfidenceShort": "confidence {{confidence}}%",
+    "audioQuality": {
+      "good": "Quality: good",
+      "acceptable": "Quality: acceptable",
+      "poor": "Quality: poor"
+    },
+    "rejectionReason": "Rejection reason: {{reason}}",
+    "postPhotoAlt": "Post photo",
+    "editTitle": "Edit",
+    "deletePostTitle": "Delete",
+    "sendFailed": "Failed to send",
+    "canSendNow": "You're back online. You can now send your unsent drafts.",
+    "csvExportError": "Failed to export CSV.",
+    "legacyDrafts": "There are {{count}} old draft(s) whose owner is unknown (saved before drafts were kept per user). If they are yours, check them and send them.",
+    "legacyDraftsDiscard": "Discard",
+    "legacyDraftsDiscarded": "Old drafts discarded",
+    "legacyClaim": "Send as mine",
+    "legacyClaimConfirm": "Send this draft as your own post? Make sure you saved it, and check its contents first.",
+    "legacyDiscardConfirm": "Discard this draft? This cannot be undone.",
+    "legacyDraftsClaimed": "Sent as your post",
+    "legacyDraftsClaimedQueued": "Moved to your drafts. You can send it where you have a connection"
+  },
+  "validation": {
+    "generic": "Please check your input.",
+    "draftInvalid": "Could not submit because the draft contains invalid data.",
+    "location": {
+      "outOfBounds": "The location is outside Akita Prefecture. Please pick a valid spot on the map."
+    },
+    "species": {
+      "invalid": "Invalid species selected."
+    },
+    "infoType": {
+      "invalid": "Invalid information type selected."
+    },
+    "weather": {
+      "invalid": "Invalid weather selected."
+    },
+    "surveyMethod": {
+      "invalid": "Invalid survey method selected."
+    },
+    "locationSource": {
+      "invalid": "Invalid location source selected."
+    },
+    "comment": {
+      "tooLong": "Comments must be 500 characters or fewer."
+    },
+    "count": {
+      "invalid": "Count must be a whole number.",
+      "range": "Count must be a whole number between 1 and 999."
+    },
+    "humidity": {
+      "range": "Humidity must be between 0 and 100."
+    },
+    "surveyDuration": {
+      "range": "Survey duration must be between 1 and 480 minutes."
+    },
+    "content": {
+      "required": "Please enter a message.",
+      "tooLong": "The message must be 500 characters or fewer."
+    },
+    "reason": {
+      "required": "Please enter a reason.",
+      "tooLong": "The reason must be 300 characters or fewer."
+    },
+    "urgency": {
+      "invalid": "Invalid urgency selected."
+    },
+    "report": {
+      "reason": "Invalid report reason selected."
+    },
+    "siteName": {
+      "required": "Please enter a site name.",
+      "tooLong": "The site name must be 100 characters or fewer."
+    },
+    "notes": {
+      "tooLong": "Notes must be 500 characters or fewer."
+    },
+    "displayName": {
+      "required": "Please enter a nickname.",
+      "tooLong": "The nickname must be 20 characters or fewer."
+    },
+    "bio": {
+      "tooLong": "The bio must be 100 characters or fewer."
+    }
+  },
+  "weather": {
+    "sectionTitle": "Weather at Observation",
+    "fetching": "Fetching weather...",
+    "autoLabel": "Auto",
+    "noData": "Could not retrieve",
+    "noPosition": "📍 Place a pin on the map to auto-fetch weather",
+    "switchManual": "Enter manually",
+    "switchAuto": "Back to auto",
+    "label": "Weather",
+    "temperatureLabel": "Temperature (°C)",
+    "humidityLabel": "Humidity (%)",
+    "humidity": "Humidity {{value}}%",
+    "sunny": "Sunny",
+    "cloudy": "Cloudy",
+    "overcast": "Overcast",
+    "rainy": "Rainy",
+    "snowy": "Snowy",
+    "thunderstorm": "Thunderstorm",
+    "unknown": "Unknown",
+    "fetchError": "Failed to get weather info"
+  },
+  "audio": {
+    "ariaLabel": "Audio preview",
+    "previewError": "Failed to load audio.",
+    "downloadFallback": "Open file",
+    "sectionTitle": "Recorded call",
+    "permission": {
+      "denied": "Microphone access is not allowed.",
+      "notFound": "Microphone not found. Please make sure a microphone is connected.",
+      "busy": "The microphone may be in use by another app. Close it and try again.",
+      "overconstrained": "The microphone does not support the requested settings.",
+      "insecure": "An HTTPS connection is required.",
+      "unsupported": "This browser does not support recording.",
+      "aborted": "Recording was aborted. Please try again.",
+      "unknown": "Could not start recording.",
+      "showGuide": "How to allow",
+      "switchToUpload": "Choose a file instead",
+      "inAppWarning": "Microphone may not work in this in-app browser. Please reopen in Safari / Chrome.",
+      "openInBrowser": "Open in browser",
+      "copyUrl": "Copy URL",
+      "urlCopied": "URL copied",
+      "guideTitle": "How to allow the microphone",
+      "guideIntro": "Follow the steps for your device and browser.",
+      "guideClose": "Close",
+      "guide": {
+        "safariIos": {
+          "title": "iPhone / iPad (Safari)",
+          "steps": "1. Open the Settings app\n2. Safari → Camera & Microphone (or Site Settings)\n3. Select Allow or Ask\n4. Reload this page"
+        },
+        "chromeAndroid": {
+          "title": "Android (Chrome)",
+          "steps": "1. Tap the 🔒 icon at the left of the address bar\n2. Site settings → Microphone → Allow\n3. Reload this page"
+        },
+        "safariMacos": {
+          "title": "Mac (Safari)",
+          "steps": "1. Safari menu → Settings → Websites → Microphone\n2. Change this site to Allow\n3. Reload the page"
+        },
+        "chromeDesktop": {
+          "title": "PC (Chrome / Edge / Firefox)",
+          "steps": "1. Click the 🔒 icon at the left of the address bar\n2. Change Microphone to Allow\n3. Reload the page"
+        },
+        "generic": {
+          "title": "Other browsers",
+          "steps": "Allow microphone access from your browser's site settings, then reload this page."
+        }
+      }
+    }
+  },
+  "lp": {
+    "hero": {
+      "title": "Your \"I found one\" helps protect Akita's nature.",
+      "subtitle": "Spot a crayfish or bullfrog? Just snap a photo and post it. Your report becomes part of the map and helps protect Akita's nature. Free forever.",
+      "ctaPrimary": "Join for free",
+      "ctaSecondary": "See the map without signing up",
+      "imageAlt": "Zaridasu map screen"
+    },
+    "problem": {
+      "title": "What's happening in Akita's waterways",
+      "item1Title": "They are quietly spreading",
+      "item1Body": "American crayfish and bullfrogs are creatures that were not originally found in Japan. They eat small creatures in rice paddies and waterways, and their numbers keep growing.",
+      "item2Title": "We still don't know where they are",
+      "item2Body": "The first step to protecting nature is knowing where they live. But Akita is big, and there aren't enough people to survey it.",
+      "item3Title": "Your sightings make a difference",
+      "item3Body": "One crayfish you saw on a walk. A croak you heard near a rice paddy. Each small report becomes a big clue for protecting Akita's nature.",
+      "moreLink": "Learn more about these creatures"
+    },
+    "features": {
+      "title": "What makes Zaridasu fun",
+      "mapTitle": "Your report appears on the map right away",
+      "mapBody": "Posted reports show up on the Akita map immediately. Watch the one you found become part of everyone's map.",
+      "aiTitle": "Don't know the name? AI will tell you",
+      "aiBody": "AI identifies creatures from photos and calls, and shares tips for better photos — so you keep learning as you go.",
+      "requestsTitle": "Your reports are used in research",
+      "requestsBody": "Respond to researchers asking to survey specific places. Your report directly supports surveys that protect Akita's nature.",
+      "gamificationTitle": "The more you post, the more fun it gets",
+      "gamificationBody": "Earn badges and climb the rankings as you post. Your progress is visible — great for creature hunts with kids, too."
+    },
+    "how": {
+      "title": "Get started in 3 easy steps",
+      "step1Title": "Find one",
+      "step1Body": "Spot a crayfish or bullfrog near rice paddies, waterways, or rivers. Hearing a call counts, too.",
+      "step2Title": "Snap and post",
+      "step2Body": "Take a photo and pick the spot on the map. Done in a minute. No photo? You can still post.",
+      "step3Title": "It joins the map",
+      "step3Body": "After a quick check, your report appears on everyone's map and is used to protect Akita's nature."
+    },
+    "stats": {
+      "title": "Reports are coming in from all over Akita",
+      "postsLabel": "Reports collected",
+      "postsUnit": "",
+      "usersLabel": "People taking part",
+      "usersUnit": "",
+      "areaLabel": "Coverage",
+      "areaValue": "All 25 municipalities in Akita",
+      "operator": "Zaridasu is a free service built by a university student who loves Akita's nature. Collected reports support research and local government efforts to protect it."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Does it cost anything?",
+      "a1": "No. Everything, including sign-up, is completely free.",
+      "q2": "What do I need to sign up?",
+      "a2": "Just an email address or a Google account. No name or address required.",
+      "q3": "I don't know much about wildlife. Is that OK?",
+      "a3": "Absolutely. AI identifies creatures from your photos and calls, and teaches you how to tell them apart — you'll learn as you go.",
+      "q4": "Can I post without a photo?",
+      "a4": "Yes. Photos are optional. \"I saw one\" or \"I heard one\" is still a valuable report.",
+      "q5": "Can I use it outside Akita?",
+      "a5": "Anyone can view the map. Reports can only be posted for sightings within Akita Prefecture.",
+      "q6": "Do I have to catch them?",
+      "a6": "No — just reporting a sighting is enough. If you do catch one, note that releasing it alive elsewhere is prohibited by law.",
+      "a6Link": "Learn about the rules",
+      "q7": "Could other people tell my home location from where I post?",
+      "a7": "Don't worry. The map only shows where a sighting was found, not the name or contact details of who posted it. Other people can't tell who reported it, so you can take part with peace of mind.",
+      "a7Link": "Read the privacy policy"
+    },
+    "final": {
+      "title": "We're waiting for your \"I found one.\"",
+      "subtitle": "Free to join. All you need is an email address or a Google account."
+    },
+    "header": {
+      "login": "Log in",
+      "cta": "Join for free",
+      "logoLabel": "Back to top"
+    },
+    "sticky": {
+      "cta": "Join for free",
+      "note": "30-second sign-up, free forever"
+    },
+    "footer": {
+      "about": "About this service",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "navLabel": "Footer",
+      "copyright": "© {{year}} Zaridasu"
+    },
+    "marquee": {
+      "pause": "Pause",
+      "play": "Play"
+    }
+  },
+  "errors": {
+    "unexpected": "An unexpected error occurred.",
+    "rateLimitServer": "Too many posts at once. Please wait a moment and try again.",
+    "network": "A network error occurred. Please check your internet connection.",
+    "sessionExpired": "Your session has expired. Please log in again.",
+    "forbidden": "You do not have permission to perform this action.",
+    "notFound": "The file could not be found.",
+    "tooManyRequests": "Too many requests. Please wait a moment and try again.",
+    "generic": "An error occurred. Please try again."
+  },
+  "bottomNav": {
+    "map": "Map",
+    "trends": "Trends",
+    "post": "Post",
+    "ranking": "Ranking",
+    "mypage": "My Page",
+    "postAction": "Create a post"
+  },
+  "drawer": {
+    "settingsMenu": "Settings menu",
+    "menu": "Menu",
+    "mapSettings": "Map settings",
+    "heatmap": "Heatmap",
+    "mapType": "Map type",
+    "defaultMap": "Default: {{name}}",
+    "setDefaultMap": "Use this map by default",
+    "isDefaultMap": "This is your default map",
+    "defaultMapHint": "Saved in this browser for your next visit.",
+    "defaultMapSaved": "Default map saved",
+    "defaultMapSaveError": "Could not save the map setting. Check your browser's storage settings.",
+    "createSurvey": "Request a survey",
+    "surveyList": "Survey requests"
+  },
+  "home": {
+    "openGallery": "Open photo gallery",
+    "photos": "Photos",
+    "backToMap": "Back to map",
+    "map": "Map",
+    "swipeHint": "Swipe to switch",
+    "panelSwitch": "Switch view (map / photos)"
+  },
+  "toast": {
+    "notifications": "Notifications"
+  },
+  "install": {
+    "iosTitle": "How to add to Home Screen",
+    "iosStep1": "Tap the \"Share\" button at the bottom of Safari",
+    "iosStep2": "Select \"Add to Home Screen\"",
+    "iosStep3": "Tap \"Add\" to finish",
+    "gotIt": "Got it",
+    "useAsApp": "Use as an app",
+    "description": "Add to your Home Screen to launch it like an app. Notifications and offline use are supported.",
+    "addToHome": "Add to Home Screen",
+    "seeHow": "See how to add",
+    "notNow": "Not now",
+    "close": "Close"
+  },
+  "priorityArea": {
+    "label": "Priority survey areas",
+    "title": "Areas where observations are lacking now",
+    "description": "These areas have had few reports over the past three months. If you are nearby, your observations can greatly help map the distribution.",
+    "countSuffix": "({{count}})"
+  },
+  "photoGallery": {
+    "empty": "No posts with photos yet",
+    "count": "{{count}} photos",
+    "emptyTitle": "Share your first photo",
+    "emptyDesc": "Photo reports make it much easier to confirm species and build records."
+  },
+  "share": {
+    "text": "{{species}} {{infoType}} report (Akita, {{municipality}})",
+    "defaultSpecies": "crayfish",
+    "appTitle": "Zaridasu",
+    "shareNative": "Share",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied",
+    "copyFailed": "Couldn't copy"
+  },
+  "authCallback": {
+    "errors": {
+      "otpExpired": "This link has expired. Please try requesting a password reset again.",
+      "authFailed": "Authentication failed",
+      "invalidLink": "The authentication link is invalid or has expired. Please try registering your email address again.",
+      "updateFailed": "Failed to update your password"
+    },
+    "error": {
+      "title": "Authentication failed",
+      "backToTop": "Back to home",
+      "retryHint": "Please try signing up again from \"Log in\" on the home page"
+    },
+    "recovery": {
+      "title": "Set a new password",
+      "subtitle": "Please enter your new password",
+      "passwordLabel": "New password",
+      "passwordConfirmLabel": "Password (confirm)",
+      "passwordConfirmPlaceholder": "Enter again",
+      "submitting": "Updating...",
+      "submit": "Update password"
+    },
+    "confirmed": {
+      "title": "Your email address has been confirmed!",
+      "description": "Your account is now active. You can use all features.",
+      "redirecting": "Taking you to the home page in 3 seconds...",
+      "goToHome": "Go to home now"
+    },
+    "loading": "Authenticating..."
+  },
+  "ranking": {
+    "period": {
+      "all": "All time",
+      "month": "This month",
+      "year": "This year"
+    },
+    "breadcrumb": "Ranking",
+    "framing": {
+      "main": "Every report you make helps map, remove, and study invasive species in Akita Prefecture.",
+      "sub": "Discovering a variety of places and species matters more than sheer volume for understanding their distribution."
+    },
+    "viewSwitch": "Switch view",
+    "tabDiversity": "Discovery diversity",
+    "tabLeaderboard": "Post count (reference)",
+    "yourCollection": "Your collection",
+    "coverage": {
+      "infoType": "Info types (sighting, capture, trace, damage, absence)",
+      "municipality": "Municipalities covered",
+      "species": "Species discovered"
+    },
+    "infoTypeComplete": "Info types complete! You reported all 5 types of observations",
+    "infoTypeCompleteShort": "Info types complete",
+    "diversityEmpty": {
+      "title": "No records yet",
+      "desc": "Once posts are approved, discovery diversity will appear here"
+    },
+    "you": "(You)",
+    "diversitySummary": "Info types {{coverage}}/{{total}} · {{municipalities}} areas · {{species}} species",
+    "leaderboardNote": "* Post count is a reference for activity level. Sustained participation is reported to correlate with discovery diversity.",
+    "yourActivity": "Your activity",
+    "reportCount": "{{count}} reports",
+    "rankPosition": "#{{rank}}",
+    "leaderboardEmpty": "No ranking data yet",
+    "countUnit": "posts",
+    "tabQuality": "Verified quality",
+    "qualityNote": "We celebrate verified reports that passed review and their accuracy (approval rate, fixed-point surveys, GPS precision) — not likes or sheer post counts.",
+    "yourQuality": "Quality of your contributions",
+    "verifiedCount": "{{count}} verified",
+    "verifiedUnit": "verified",
+    "quality": {
+      "approvalRate": "Approval rate",
+      "structuredRate": "Fixed-point",
+      "gpsGoodRate": "GPS precision"
+    },
+    "qualityEmpty": {
+      "title": "No verified reports yet",
+      "desc": "Once your posts are approved, they appear here as verified contributions"
+    },
+    "qualitySummary": "{{verified}} verified · {{approval}} approval · {{structured}} fixed-point",
+    "diversityEmptyTitle": "Record your first finding",
+    "qualityEmptyTitle": "Aim for your first verified report",
+    "leaderboardEmptyTitle": "Post your first report",
+    "earlyStageNote": "Only {{count}} people are keeping records so far. Join now and you can be the first to report from a place nobody has covered.",
+    "sparseTitle": "More people will start keeping records"
+  },
+  "profilePage": {
+    "editTitle": "Edit profile",
+    "iconLabel": "Icon",
+    "nicknameLabel": "Nickname (up to 20 characters)",
+    "nicknamePlaceholder": "Anonymous surveyor",
+    "bioLabel": "Bio (up to 100 characters)",
+    "bioCount": "{{count}}/100",
+    "showInRanking": "Show in ranking",
+    "notifySurvey": "Receive survey request notification emails",
+    "save": "Save",
+    "header": "Profile",
+    "notFound": "Profile not found",
+    "stats": {
+      "posts": "Posts",
+      "comments": "Comments",
+      "activeArea": "Active area",
+      "municipalityCount": "{{count}} municipalities"
+    },
+    "badges": "Badges earned",
+    "recentPosts": "Recent posts",
+    "postPhotoAlt": "Photo of {{species}} post",
+    "viewRanking": "View post ranking",
+    "lifecycleSection": "Email notification settings",
+    "notifyResearchAdopted": "Notify me when my observation is used in research",
+    "notifyDormant": "Send me a friendly nudge if I've been away",
+    "notifyWeeklyDigest": "Send me the weekly digest for my area",
+    "pushSection": "Push notifications (instant)",
+    "pushEnable": "Receive push notifications on this device",
+    "pushDenied": "Notifications are blocked. Please allow them in your browser's site settings.",
+    "pushIosHint": "On iPhone / iPad, push notifications work when you open the app added to your Home Screen. Until then, we'll notify you by email.",
+    "pushUnsupported": "Your environment doesn't support push notifications. We'll notify you by email instead."
+  },
+  "offline": {
+    "title": "You're offline",
+    "body1": "No internet connection.",
+    "body2": "Please check your connection and try again.",
+    "reconnect": "Reconnect",
+    "backToTop": "Back to home"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please reload the page.",
+    "reload": "Reload page",
+    "mapTitle": "Failed to load the map",
+    "mapDescription": "Please check your connection and try again.",
+    "mapRetry": "Retry"
+  },
+  "unsubscribe": {
+    "title": "Unsubscribe",
+    "working": "Processing your unsubscribe request…",
+    "done": "You've been unsubscribed from \"{{category}}\".",
+    "stopAll": "Stop all notification emails",
+    "manageHint": "You can change these settings anytime from your profile.",
+    "invalid": "This link is invalid or has already been used.",
+    "error": "Something went wrong. Please try again later.",
+    "retry": "Try again",
+    "backHome": "Back to Zaridasu",
+    "categoryAll": "all notification emails",
+    "category": {
+      "research_adopted": "Research adoption notices",
+      "dormant_reengage": "Re-engagement nudges",
+      "weekly_digest": "Weekly digest"
+    }
+  },
+  "empty": {
+    "postCta": "Post an observation",
+    "photoPostCta": "Post with a photo",
+    "contributionDesc": "Your report helps grow Akita's invasive species map."
+  },
+  "area": {
+    "postsEmptyTitle": "Record the first finding in {{municipality}}"
+  },
+  "like": {
+    "error": "Failed to update like"
+  },
+  "profile": {
+    "saveError": "Failed to save profile"
+  },
+  "achievement": {
+    "commentPosted": "Your comment was posted"
+  },
+  "progress": {
+    "title": "Contribution level",
+    "levelLabel": "Level",
+    "level": "Level {{level}}",
+    "xp": "{{xp}} XP total",
+    "toNext": "{{remaining}} XP to the next level",
+    "verified": "{{count}} verified contributions so far",
+    "barLabel": "Level progress"
+  },
+  "unlocks": {
+    "lockedAtLevel": "Unlocks at level {{level}}",
+    "lockedShort": "Unlocks at Lv{{level}}",
+    "remainingXp": "{{xp}} XP to go",
+    "hint": "Your level rises as your posts are approved, which unlocks this",
+    "features": {
+      "heatmap": "Heatmap view",
+      "avatar_emoji_plus": "Extra avatar emoji",
+      "map_filters_advanced": "Advanced filters",
+      "csv_export": "CSV export of your data",
+      "profile_frame": "Profile decorations",
+      "collection": "Collection (field guide and tank)",
+      "animation_themes": "Unlock animation themes"
+    }
+  },
+  "collection": {
+    "header": "Your collection",
+    "subtitle": "A field guide and tank of the creatures you have observed.",
+    "lockedHint": "This unlocks as your contribution level rises with approved posts.",
+    "dex": {
+      "title": "Field guide",
+      "progress": "{{observed}} / {{total}} species observed",
+      "emptyHint": "As your observations are approved, each species card fills in little by little.",
+      "observed": "Observed",
+      "notObserved": "Not yet observed",
+      "complete": "Complete",
+      "infoTypes": "Information types",
+      "municipalities": "Municipalities",
+      "verifiedCount": "{{count}} verified",
+      "firstObserved": "First observed {{date}}"
+    },
+    "aquarium": {
+      "title": "Tank",
+      "capacity": "Size {{count}}",
+      "summary": "{{count}} creatures are swimming here.",
+      "empty": "No creatures yet. Try posting an observation.",
+      "decorationsTitle": "Decorations",
+      "noDecorations": "Decorations increase as your level rises."
+    },
+    "decorations": {
+      "sand": "Sandy bottom",
+      "plant": "Water plant",
+      "rock": "Rock",
+      "driftwood": "Driftwood"
+    },
+    "edu": {
+      "title": "Please learn about these creatures",
+      "body": "These creatures are covered by the Invasive Alien Species Act. For the American Bullfrog, keeping, transporting, or releasing live individuals is prohibited in principle. The American Crayfish is a \"Conditionally Specified Invasive Alien Species\": you may keep one at home without any paperwork, but releasing it outdoors is prohibited. This tank is only a virtual record. When you find a real one, please leave it where it is - recording it is all you need to do.",
+      "learnMore": "Learn about these creatures and how to handle them"
+    },
+    "viewer3d": {
+      "title": "3D view",
+      "view3d": "View in 3D",
+      "back2d": "Back to 2D",
+      "alt": "A 3D model of a red swamp crayfish. Drag, or use the rotate buttons, to change its orientation.",
+      "hint": "Drag to rotate and take a closer look. The 3D view loads only when you select this button.",
+      "hint2dOnly": "Your device shows the 2D illustration instead.",
+      "loading": "Loading the 3D view",
+      "errorNotice": "The 3D view could not load, so the 2D illustration is shown instead.",
+      "retry": "Try again",
+      "controls": "Rotate the 3D model",
+      "rotateLeft": "Rotate left",
+      "rotateRight": "Rotate right",
+      "pause": "Stop auto-rotation",
+      "play": "Start auto-rotation"
+    }
+  },
+  "quests": {
+    "title": "Survey missions",
+    "subtitle": "Gentle tips to improve the quality of your records, at your own pace",
+    "optionalNote": "These are optional. Skipping them never removes any of your existing records",
+    "done": "Done",
+    "tryIt": "Give it a try",
+    "progress": "{{current}} / {{target}}",
+    "items": {
+      "info_variety": {
+        "title": "Add variety to your records",
+        "desc": "Try recording different kinds: sightings, captures, traces, crop damage, or absence"
+      },
+      "absence": {
+        "title": "Record where none were found",
+        "desc": "Places where you found no crayfish are valuable data too"
+      },
+      "new_area": {
+        "title": "Observe in a new municipality",
+        "desc": "Try observing in a municipality you have not recorded yet"
+      },
+      "both_species": {
+        "title": "Observe both species",
+        "desc": "Try recording both the red swamp crayfish and the bullfrog"
+      },
+      "structured": {
+        "title": "Try a fixed-point survey",
+        "desc": "Observing the same place repeatedly makes changes easier to see"
+      },
+      "gps_precise": {
+        "title": "Record with an accurate location",
+        "desc": "Recording where GPS accuracy is high (within 30 meters) makes the map more precise"
+      },
+      "near_water": {
+        "title": "Explore the waterside",
+        "desc": "Use 'Find nearby water' on the map to spot ponds and streams, then observe around them"
+      },
+      "effort_log": {
+        "title": "Log your survey",
+        "desc": "Recording the count and the time you spent also enriches the density (catch-per-effort) map"
+      }
+    }
+  },
+  "journey": {
+    "title": "What you can do next",
+    "nextUnlockLabel": "Next feature to unlock",
+    "allUnlocked": "All features are unlocked",
+    "collectionLabel": "Field guide progress",
+    "collectionPct": "{{pct}}% collected",
+    "viewCollection": "View field guide and aquarium"
+  },
+  "celebrate": {
+    "title": "News",
+    "levelUp": "You reached level {{level}}",
+    "unlocked": "\"{{feature}}\" is now available",
+    "newCard": "\"{{name}}\" was added to your field guide",
+    "encouragement": "Thank you for keeping it up",
+    "dismiss": "Close"
+  },
+  "onboarding": {
+    "continue": "Continue",
+    "back": "Go to the previous screen",
+    "saving": "Saving…",
+    "later": "Later",
+    "stage": {
+      "question": "Question {{current}} of {{total}}",
+      "mapGuide": "How to read the map"
+    },
+    "selectionHint": {
+      "region": "Choose one area to continue",
+      "seen": "Choose one answer to continue"
+    },
+    "area": {
+      "akita": "Akita"
+    },
+    "greet": {
+      "bubble": "Hi, I’m Zari.",
+      "effort": "Two questions will set up your local map. It takes about a minute."
+    },
+    "askRegion": {
+      "q": "Which part of Akita do you live in?",
+      "consent": "Your answers will be saved to your profile to set your starting map area and support research.",
+      "consentLocal": "Your selected area is saved on this device to set the map’s starting position."
+    },
+    "region": {
+      "akita_city": "Akita City",
+      "north": "Northern Akita (Noshiro / Odate)",
+      "central": "Central Akita (Oga / Yurihonjo)",
+      "south": "Southern Akita (Yokote / Yuzawa)",
+      "other": "Outside Akita / Not sure"
+    },
+    "askSeen": {
+      "q": "Have you ever seen a red swamp crayfish?",
+      "hint": "Your answer helps me tailor the next explanation."
+    },
+    "seen": {
+      "yes": "Yes",
+      "no": "No",
+      "maybe": "Maybe…"
+    },
+    "fact": {
+      "bubble": "Community reports gradually show what has been found at each pond.",
+      "seenYes": "I wonder if that pond is on the map?",
+      "seenNo": "Start by exploring reports near you on the map.",
+      "labelCoarse": "National map",
+      "labelFine": "Our community map",
+      "legend": "A filled block = an area with a national record. A dot = one sighting someone reported."
+    },
+    "finish": {
+      "done": "You’re all set!",
+      "startMap": "Let’s start with the map of {{area}}",
+      "bubble": "Each pin marks one sighting. Places without a pin may still have wildlife that has not been recorded yet.",
+      "diagramTitle": "How to read the map (illustration)",
+      "tipTitle": "Spotted one? Just record it.",
+      "mapOnly": "Open the map"
+    },
+    "error": {
+      "save": "We couldn’t save your answers. Please try again.",
+      "retry": "Try again",
+      "later": "Later"
+    },
+    "privacy": "The area you select during onboarding (one of five regions) and your crayfish sighting experience. We use these to set your starting map area and for research."
+  },
+  "route": {
+    "title": "Directions here",
+    "approximate": "approximate location",
+    "destinationLabel": "Destination",
+    "openAria": "Get directions in {{provider}} (opens in a new tab)",
+    "provider": {
+      "google": "Google Maps",
+      "yahoo": "Yahoo! Map",
+      "apple": "Apple Maps"
+    },
+    "providerShort": {
+      "google": "Google",
+      "yahoo": "Yahoo!",
+      "apple": "Apple"
+    }
+  },
+  "quickSave": {
+    "button": "Save privately",
+    "title": "Save this place privately",
+    "close": "Close",
+    "locating": "Getting your location…",
+    "atCurrent": "Saving your current location",
+    "atPin": "Saving the pin location",
+    "accuracy": "±{{m}} m",
+    "locateFailed": "Couldn't get your location.",
+    "retryLocate": "Try again",
+    "useMapCenter": "Use map center",
+    "nameLabel": "Name",
+    "nameOptional": "(date and time if left blank)",
+    "namePlaceholder": "e.g. Medaka at the pond",
+    "noteLabel": "Note",
+    "notePlaceholder": "Count, conditions, etc. (optional)",
+    "addNote": "+ Add a note",
+    "privacyNote": "Private: only you and the operators (admins) can see it. It never appears on the public map or in open data.",
+    "submit": "Save privately",
+    "saving": "Saving…",
+    "saved": "Saved \"{{name}}\" privately",
+    "queued": "You're offline, so it was saved on this device. It will be sent automatically when you're back online.",
+    "defaultNamePrefix": "Private spot",
+    "error": {
+      "login": "Please log in to save",
+      "rateLimit": "Too many saves in a short time. Please try again later.",
+      "queueFull": "This device's offline storage is full. Send them where you have a connection.",
+      "failed": "Couldn't save. Please try again."
+    }
+  },
+  "fieldwork": {
+    "button": "Survey",
+    "buttonProgress": "{{done}}/{{total}}",
+    "sheetClose": "Close",
+    "common": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "retry": "Try again"
+    },
+    "panel": {
+      "title": "Survey",
+      "tabs": "Survey panel sections",
+      "tabPlan": "Survey plan",
+      "tabRare": "Rare species",
+      "collapse": "Minimize",
+      "close": "Close (your plan is kept)",
+      "loading": "Loading…",
+      "loadFailed": "Couldn't load your plans",
+      "offlineCache": "You're offline, so this is the last synced version ({{time}}). You can edit plans once you have a connection.",
+      "offlineNoCache": "You're offline and no plan is saved on this device. Open it once with a connection to view it offline.",
+      "collapseAria": "Collapse (see more of the map; your plan is kept)"
+    },
+    "plan": {
+      "today": "Today's plan",
+      "dated": "Plan for {{date}}",
+      "emptyLead": "Pick places on the map, get directions, and record results at each stop.\nMake it at home the night before and it is ready to use on site.",
+      "createToday": "Create today's plan",
+      "openToday": "Open today's plan",
+      "defaultTitle": "Survey {{date}}",
+      "created": "Plan created",
+      "history": "Past plans",
+      "historyEmpty": "No other plans",
+      "statusDone": "Finished",
+      "titleLabel": "Title",
+      "dateLabel": "Planned date",
+      "edit": "Edit title and date",
+      "progress": "{{done}}\u00a0/\u00a0{{total}} stops finished (incl. skipped)",
+      "progressDetail": "Done\u00a0{{done}} · Skipped\u00a0{{skipped}} · Not surveyed\u00a0{{pending}}",
+      "actions": "Plan actions",
+      "finish": "Finish this plan",
+      "finishConfirm": "Finish this plan? Your records stay and you can view them later.",
+      "finishYes": "Finish",
+      "finishedToast": "Plan finished. Good work!",
+      "finished": "This plan is finished",
+      "reuse": "Reuse this plan",
+      "reuseHint": "Creates a new plan for today with the same stops in the same order (for repeat surveys)",
+      "reused": "Created today's plan with the same stops",
+      "noPlan": "No survey plan yet",
+      "createPlan": "Create a survey plan",
+      "dayToday": "Today ({{date}})",
+      "dayTomorrow": "Tomorrow ({{date}})",
+      "dayOther": "Pick another date",
+      "tomorrow": "Tomorrow's plan"
+    },
+    "stops": {
+      "heading": "Stops",
+      "empty": "No stops yet. Add some from \"Add stops\" below.",
+      "defaultName": "Stop\u00a0{{n}}",
+      "status": {
+        "pending": "Not surveyed",
+        "done": "Done",
+        "skipped": "Skipped"
+      },
+      "rare": "Rare species",
+      "unsent": "Waiting to send",
+      "moveUp": "Move {{name}} up",
+      "moveDown": "Move {{name}} down",
+      "menu": "Menu for {{name}}",
+      "rename": "Rename",
+      "note": "Note",
+      "remove": "Remove",
+      "nameLabel": "Stop name",
+      "noteLabel": "Stop note",
+      "removeConfirm": "Remove this stop from the plan? Posts and rare species records you made stay.",
+      "removeYes": "Remove"
+    },
+    "add": {
+      "heading": "Add stops",
+      "pickOnMap": "Pick on the map",
+      "pickOnMapHint": "Press [Done] when you are finished",
+      "pickBar": "Tap the map to add stops ({{count}}\u00a0so far)",
+      "pickDone": "Done",
+      "fromSpots": "Choose from saved spots",
+      "spotsEmpty": "You haven't saved any private spots yet",
+      "spotsFailed": "Couldn't load your spots",
+      "spotsInPlan": "Already in the plan",
+      "spotsAdd": "Add to plan ({{count}})",
+      "current": "Add current location",
+      "locating": "Finding your location…",
+      "locateFailed": "Couldn't get your location",
+      "added": "Added stop {{n}}",
+      "addedMany": "Added {{count}} stops",
+      "offline": "You're offline, so plans can't be edited (you can still record at stops)"
+    },
+    "nav": {
+      "bulk": "Directions to the remaining stops ({{count}}\u00a0stops)",
+      "bulkHint": "Phones can open up to 4 stops at a time (3 waypoints + destination), so they open in groups of 4",
+      "here": "Your location",
+      "segment": "Route {{index}}: {{from}} → {{stops}}"
+    },
+    "stop": {
+      "results": "Records here: found\u00a0{{sighting}} · not found\u00a0{{absence}} · rare\u00a0{{rare}}",
+      "found": "Found (post)",
+      "foundMain": "Found",
+      "foundSub": "Post it",
+      "absent": "Not found",
+      "absentSub": "Record absence",
+      "rare": "Record rare species",
+      "rareSub": "Only you and operators",
+      "skip": "Skip",
+      "skipSub": "Reason optional",
+      "undo": "Undo (mark as not surveyed)",
+      "skipReason": "Reason for skipping (optional, saved in the note)",
+      "skipPlaceholder": "e.g. Water too high to reach",
+      "skipConfirm": "Skip",
+      "skipped": "Stop skipped",
+      "undone": "Marked as not surveyed (your records are kept)",
+      "privateLockReason": "Records at this stop do not show their location",
+      "offlineHint": "You're offline. Not found, skip and rare species records without photos are saved on this device and sent when you reconnect. Posts are saved as drafts and won't be linked to this stop.",
+      "linked": "Post linked to this stop",
+      "linkQueued": "Posted. The link to this stop will be sent when you reconnect",
+      "resultsNoRare": "Records here: found\u00a0{{sighting}} · not found\u00a0{{absence}}"
+    },
+    "position": {
+      "locating": "Record location: finding your position… (up to 8 seconds)",
+      "gps": "Recorded at: your current location (<nw>±{{m}}\u00a0m</nw>)",
+      "gpsNoAccuracy": "Record location: your current position",
+      "manual": "Record location: the map center",
+      "freeFailed": "Couldn't get your location",
+      "retry": "Get my location again",
+      "useMapCenter": "Use the map center",
+      "map": "Recorded at: this stop's coordinates",
+      "reasonNoFix": "(your current location couldn't be found)",
+      "reasonInaccurate": "(your current location is off by more than 100\u00a0m)",
+      "reasonFar": "(you are <nw>about {{distance}}</nw> away)"
+    },
+    "absence": {
+      "title": "Record \"not found\"",
+      "speciesLabel": "Species not found",
+      "needSpecies": "Choose at least one species",
+      "minutesLabel": "Survey time (minutes, optional)",
+      "minutesPlaceholder": "e.g. 30",
+      "minutesInvalid": "Enter 1–480 minutes",
+      "disclosurePublic": "The map shows the location rounded to a block about 100 m square",
+      "disclosurePrivate": "Records at this stop do not show their location",
+      "submit": "Record \"not found\" ({{count}})",
+      "submitting": "Recording…",
+      "saved": "Recorded \"not found\"",
+      "review": "Absence records are published after the operators check them",
+      "reviewAdmin": "As this is an operator account, it is published without review"
+    },
+    "rare": {
+      "title": "Record rare species",
+      "speciesLabel": "Species",
+      "needSpecies": "Choose a species",
+      "otherLabel": "Species name",
+      "otherPlaceholder": "e.g. Lethenteron reissneri",
+      "needLabel": "Enter the species name",
+      "countLabel": "Count (optional)",
+      "countInvalid": "Enter a count from 0 to 100000",
+      "observedLabel": "Observed at",
+      "noteLabel": "Note (optional)",
+      "notePlaceholder": "Condition, habitat, etc.",
+      "photosLabel": "Photos (up to 3, optional)",
+      "photosAdd": "Choose photos",
+      "photoAlt": "Photo {{n}}",
+      "photoRemove": "Remove photo {{n}}",
+      "photosExif": "Location and other EXIF data are removed before saving",
+      "photosInvalid": "Some photos couldn't be used (jpeg, png or webp, up to 20 MB)",
+      "photosOffline": "Photos can't be added while offline. You can save without photos (it's sent when you reconnect).",
+      "privacy": "Only you and the operators can see this record. It never appears on other people's maps, in lists or in public data.",
+      "submit": "Record rare species (private)",
+      "submitting": "Saving…",
+      "saved": "Recorded privately (see it in the Rare species tab)",
+      "duplicate": "This record was already saved",
+      "retryUpload": "The connection dropped. Save again (it won't create a duplicate)",
+      "countUnit": "individuals"
+    },
+    "rareTab": {
+      "lead": "Keep rare species you find here, privately. Only you and the operators can see them.",
+      "show": "Show rare species on my map",
+      "on": "Shown (only you)",
+      "off": "Hidden",
+      "showHint": "Other people can't see them. They're hidden by default so a screenshot doesn't reveal the places.",
+      "record": "Record a rare species",
+      "heading": "Your records ({{count}})",
+      "empty": "No records yet",
+      "loadFailed": "Couldn't load your records",
+      "count": "{{count}} individuals",
+      "atStop": "Recorded in a plan",
+      "photos": "See {{count}}\u00a0photos",
+      "privateNote": "Private (only you and the operators)",
+      "delete": "Delete",
+      "deleteConfirm": "Delete this record? Its photos are deleted too. This can't be undone.",
+      "deleteYes": "Delete",
+      "deleted": "Record deleted",
+      "photosLeft": "The record was deleted, but its photos couldn't be removed",
+      "menu": "Menu for {{name}}",
+      "photosPartlyLeft": "The record was deleted, but {{count}} of its photos couldn't be removed"
+    },
+    "queue": {
+      "pending": "Waiting to send:\u00a0{{count}}",
+      "failed": "Some records couldn't be sent. Send them again where you have a connection, or discard them",
+      "sendNow": "Send now",
+      "sending": "Sending…",
+      "saved": "You're offline, so it's saved on this device and will be sent when you reconnect",
+      "discard": "Discard",
+      "kind": {
+        "absence": "Absence record",
+        "status_done": "Mark stop as done",
+        "status_skipped": "Skip stop",
+        "status_pending": "Set stop back to not surveyed",
+        "rare": "Rare species record",
+        "link": "Link post to stop",
+        "protect": "Make post locations private"
+      },
+      "discardConfirm": "Discard this record? This cannot be undone.",
+      "discardYes": "Discard"
+    },
+    "error": {
+      "offline": "You're offline, so this isn't possible right now",
+      "limit": "Too many saves in a short time. Please try again later",
+      "postLimit": "You've reached the posting limit (5 per 24 hours). Please wait a while",
+      "denied": "You don't have permission, or it no longer exists",
+      "queueFull": "This device can't hold more unsent records. Send them where you have a connection",
+      "photosOffline": "Photos can't be added while offline",
+      "failed": "Couldn't save. Please try again",
+      "planDayLimit": "You can create up to 30 plans a day. Please try again tomorrow",
+      "planTotalLimit": "You can have up to 1000 plans",
+      "stopHourLimit": "You can add up to 300 stops an hour. Please try again later",
+      "stopPlanLimit": "A plan can have up to 100 stops",
+      "rareHourLimit": "You can record up to 60 rare species an hour. Please try again later",
+      "rareTotalLimit": "You can keep up to 5000 rare species records",
+      "reorderStale": "The stops changed on another screen, so the plan was reloaded. Please reorder again",
+      "partialQueued": "Only part of it was recorded. The rest is waiting to be sent ({{reason}})",
+      "protectQueueFull": "Couldn't save the step that hides nearby posts because the send queue is full. Send the queue where you have a connection"
+    },
+    "marker": {
+      "openStop": "Open this stop",
+      "rareTitle": "Rare species record (private)",
+      "legend": "Rare species records (only you)"
+    },
+    "bridge": {
+      "addToPlan": "Add to plan",
+      "recordRare": "Record rare species",
+      "added": "Added to \"{{title}}\" (stop {{n}})"
+    },
+    "admin": {
+      "nav": "Rare species records",
+      "title": "Rare species records",
+      "noticeTitle": "Handle with care: do not share outside",
+      "noticeBody": "These are rare species records users kept privately. If the places become known, the animals may be collected, so never share screenshots or CSV files outside (social media, email, shared drives, etc.). Publication is decided case by case by the operators.",
+      "exportCsv": "Export CSV",
+      "fetchFailed": "Couldn't load",
+      "empty": "No records yet",
+      "count": "{{count}}",
+      "countValue": "{{count}} individuals",
+      "observed": "Observed",
+      "user": "User",
+      "fromPlan": "From a plan stop",
+      "photoUnavailable": "Unavailable",
+      "source": {
+        "gps": "Current position",
+        "map": "Position on map"
+      },
+      "accuracy": "±{{m}}\u00a0m"
+    },
+    "rareSpecies": {
+      "nihon_zarigani": "Japanese crayfish (Cambaroides japonicus)",
+      "medaka": "Medaka (Oryzias)",
+      "zeni_tanago": "Zenitanago bitterling (Acheilognathus typus)",
+      "shinai_motsugo": "Shinai-motsugo (Pseudorasbora pumila)",
+      "tohoku_sanshouo": "Tohoku salamander (Hynobius lichenatus)",
+      "kuro_sanshouo": "Japanese black salamander (Hynobius nigrescens)",
+      "gengorou": "Diving beetles (Dytiscidae)",
+      "tagame": "Giant water bug (Kirkaldyia deyrolli)",
+      "other": "Other"
+    },
+    "safety": {
+      "title": "For your safety",
+      "water": "Don't go into the water",
+      "children": "Children shouldn't go alone",
+      "trespass": "Keep out of restricted areas and private land"
+    },
+    "next": {
+      "label": "Next stop",
+      "prefix": "Next:",
+      "open": "Open this stop (directions & records)",
+      "tag": "Next"
+    },
+    "rareBand": {
+      "text": "Showing rare species · careful with screenshots",
+      "hide": "Hide"
+    },
+    "signOut": {
+      "title": "You have unsent fieldwork records",
+      "body": "Once you log out, they can't be sent from this device.",
+      "send": "Send, then log out",
+      "discard": "Discard and log out",
+      "cancel": "Cancel",
+      "sending": "Sending…",
+      "sendFailed": "Some records couldn't be sent. Try again where you have a connection",
+      "lead": "This device has records that have not been sent yet.",
+      "queued": "Fieldwork records waiting to send:\u00a0{{count}}",
+      "drafts": "Post drafts saved while offline:\u00a0{{count}}",
+      "sendBlocked": "Some records can't be sent (limits, etc.). Check the fieldwork panel and My Page, then discard them or send later"
+    }
+  },
+  "water": {
+    "listTitle": "Nearby water bodies",
+    "openList": "Water body list",
+    "closeList": "Close list",
+    "distance": "{{distance}} from map center",
+    "genericName": "Unnamed water body",
+    "community": "Community-reported water body",
+    "select": "Show on map",
+    "selected": "Selected",
+    "publicRecordCount": "{{count}} nearby public records",
+    "publicRecordUnknown": "Public records could not be checked",
+    "noPublicRecords": "Candidate with no public records found",
+    "onlyNoRecords": "Only candidates with no public records",
+    "chooseNoRecord": "Choose a candidate with no public records",
+    "noCandidates": "No water bodies match these conditions.",
+    "recordsNote": "Candidates use public locations within the water body and a 150m buffer. They do not prove that a place is unsurveyed or that no wildlife is present.",
+    "shoreHint": "The location is a shoreline reference. Check where access is permitted before surveying.",
+    "addToPlan": "Add to plan",
+    "reportButton": "Report an unmapped water body",
+    "pickReportHint": "Select the water body location on the map.",
+    "pickReportCancel": "Cancel location selection",
+    "pickReportConfirm": "Report this location",
+    "selectedPosition": "Selected location: {{lat}}, {{lng}}",
+    "publicReadFailed": "Public records could not be checked. Candidate status is unavailable.",
+    "communityReadFailed": "Public water locations could not be loaded. Some water bodies may be missing. Please search again.",
+    "report": {
+      "title": "Report an unmapped water body",
+      "name": "Water body name",
+      "namePlaceholder": "Use “Unnamed water body” if the name is unknown",
+      "note": "Additional details (optional)",
+      "notePlaceholder": "Landmarks or details about the water body",
+      "position": "Selected location",
+      "photos": "Water body photos",
+      "addPhotos": "Add photos",
+      "photoAlt": "Water body photo {{number}}",
+      "removePhoto": "Remove photo {{number}}",
+      "photoHint": "Photos are resized automatically. Add 1–3 JPEG, PNG, WebP or HEIC photos. Choose another photo if its format cannot be decoded.",
+      "preparing": "Preparing photos… {{current}}/{{total}}",
+      "privacy": "After acceptance, the name and approximate location will be public. Photos and details are visible only to you and administrators.",
+      "submit": "Send information",
+      "submitting": "Sending…",
+      "success": "Information received. An administrator will review it.",
+      "status": {
+        "pending": "Awaiting review",
+        "accepted": "Accepted",
+        "rejected": "Declined",
+        "all": "All"
+      },
+      "errors": {
+        "name": "Enter a water body name of up to 80 characters.",
+        "note": "Keep additional details within 1,000 characters.",
+        "photos": "Choose 1–3 water body photos.",
+        "position": "Select the water body location again.",
+        "fileType": "Choose JPEG, PNG, WebP or HEIC photos.",
+        "fileSize": "Each original photo must be 25MB or smaller.",
+        "conversion": "This photo could not be converted. Choose another photo, such as a JPEG.",
+        "save": "Sending failed. Your information is retained. Retry with the same information.",
+        "accountChanged": "Your sign-in state changed. Close this screen and open it again."
+      }
+    },
+    "admin": {
+      "nav": "Water body reports",
+      "title": "Review water body reports",
+      "notice": "Photos, details and precise locations are visible only to the owner and administrators. Acceptance publishes the checked name and approximate location in the water body list.",
+      "filter": "Review status",
+      "count": "{{count}} reports shown",
+      "limited": "Showing the latest {{limit}} reports with this status. Reviewing pending reports brings the next ones into view.",
+      "empty": "There are no reports with this status.",
+      "loadFailed": "Reports could not be loaded. Please retry.",
+      "photoUnavailable": "Photo unavailable. You can retry.",
+      "publicName": "Public water body name",
+      "nameRequired": "Enter a public name of up to 80 characters.",
+      "accept": "Accept and publish",
+      "reject": "Decline",
+      "unpublish": "Remove from public list",
+      "saving": "Saving…",
+      "acceptedNotice": "Accepted. The name and approximate location are now public.",
+      "rejectedNotice": "Declined the report.",
+      "unpublishedNotice": "Removed from the public list.",
+      "reviewFailed": "The review could not be saved. Please retry."
+    }
+  },
+  "homeHub": {
+    "home": "Home",
+    "dex": "Collection",
+    "myPage": "My page",
+    "myRecords": "My observations",
+    "backHome": "Back to home",
+    "navigation": "Main navigation",
+    "campaigns": "Take part and learn",
+    "carousel": "Carousel",
+    "nextBanner": "Next banner",
+    "more": "View all",
+    "hero": {
+      "eyebrow": "Mapping waterside invasive species together",
+      "title": "Your “I found one”\nhelps protect Akita’s nature.",
+      "description": "Spot a crayfish or bullfrog? Just snap a photo and record it. Your record becomes part of the map and helps protect Akita’s nature. Free forever.",
+      "signup": "Sign up free and record",
+      "map": "See the map without signing up",
+      "operator": "Zaridasu is a free service built by a university student who loves Akita's nature. Collected records support research and local government efforts to protect it.",
+      "about": "Data use & contact"
+    },
+    "startRecording": "Start a record",
+    "viewMap": "Explore the map",
+    "level": "Lv.{{level}}  Waterside explorer",
+    "totalXp": "Total {{count}} XP",
+    "nextXp": "{{count}} XP to next level",
+    "levelProgress": "Progress to next level",
+    "approved": "Approved records",
+    "speciesCount": "Species found",
+    "badges": "Badges earned",
+    "viewBadges": "View my badges",
+    "badgeRule": "Approved records earn badges and XP.",
+    "earned": "Earned",
+    "lockedBadge": "Earn with {{count}} approved records",
+    "badgeNames": {
+      "0": "First step",
+      "1": "Explorer",
+      "2": "Crayfish hunter",
+      "3": "Eyes of Akita"
+    },
+    "loading": "Loading…",
+    "accountError": "Some of your records could not be loaded.",
+    "profileError": "Could not load your profile.",
+    "progressError": "Progress unavailable",
+    "feedError": "Could not load records. Check your connection and try again.",
+    "saveError": "Could not save on this device. Check your browser storage settings.",
+    "postRail": "Record cards. Scroll horizontally to browse",
+    "observation": "Waterside observation",
+    "noPhoto": "Record without a photo",
+    "absenceRow": "No {{species}} found",
+    "photolessRow": "{{species}}: {{type}}",
+    "groupCount": "{{count}} records",
+    "photoError": "Photo unavailable",
+    "locationPrivate": "Location details are private",
+    "likesDetail": "{{count}} likes. View details",
+    "commentsDetail": "{{count}} comments. View discussion",
+    "save": "Save on this device",
+    "unsave": "Remove from this device",
+    "viewSaved": "Saved records ({{count}})",
+    "savedTitle": "Records saved on this device",
+    "savedNotice": "Up to 200 records are saved in this browser on this device. Only records that are still public appear here.",
+    "noSaved": "No saved public records are available.",
+    "localSave": "Saved only on this device and browser",
+    "pickup": "Highlights",
+    "pickupDescription": "Small discoveries from recent public records.",
+    "newPosts": "New records",
+    "popular": "Popular records",
+    "popularScope": "Most liked among the latest 24 public records.",
+    "questions": "Recent questions",
+    "viewConversation": "View the discussion",
+    "readFaq": "Read common questions",
+    "noPhotos": "No photos yet. You can record observations without photos, too.",
+    "noPosts": "No public records yet. Share your first discovery.",
+    "noPopular": "No liked records yet. Take a look at the new records.",
+    "noQuestions": "No questions on recent records yet. You can ask on a record’s detail page.",
+    "gaps": {
+      "title": "Records we still need",
+      "description": "Counted from public records. These are the ones with the fewest so far. “Not found” records are valuable clues too.",
+      "action": "Record",
+      "count": "{{count}}",
+      "species": {
+        "none": "No {{species}} records yet.",
+        "few": "Only {{count}} {{species}} records.",
+        "description": "If you spot one, add a photo and location."
+      },
+      "absence": {
+        "title": "{{count}} “not found” records.",
+        "description": "Where and how long you looked can help research."
+      },
+      "area": {
+        "title": "Records from {{count}} of {{total}} municipalities.",
+        "description": "Try recording another waterside, too."
+      },
+      "guide": {
+        "species": "Find a species with few records",
+        "absence": "Record “not found,” too",
+        "area": "Record a waterside in another municipality"
+      }
+    },
+    "collections": "Collection",
+    "speciesGuide": "Learn about the species and its records",
+    "reading": "Recording guide",
+    "guideByline": "The Zaridasu guide",
+    "news": "Announcements",
+    "monitorTag": "Help with our study",
+    "monitorNews": "Tell us about your experience in the monitor survey",
+    "guideTag": "Getting started",
+    "guideNews": "Recording guide",
+    "tagline": "Your waterside discoveries, a shared record.",
+    "legalNav": "Legal and contact",
+    "hintTitle": "Capture the surroundings, too.",
+    "hintDescription": "Not finding an animal can also help us understand a waterside habitat.",
+    "recordingHints": "See the recording guide",
+    "guideTitle": "Recording guide",
+    "illustrationNote": "Guide and campaign photos are generated illustrations. Photos shown in the new-records feed are from public records.",
+    "illustrationTag": "Illustration",
+    "banner": {
+      "fieldwork": {
+        "tag": "Everyone can take part",
+        "title": "Akita’s waters,\nrecorded together.",
+        "caption": "Start with a discovery nearby"
+      },
+      "monitor": {
+        "tag": "Monitor survey",
+        "title": "Share your\nexperience.",
+        "caption": "Tell us where you got stuck, too"
+      },
+      "research": {
+        "tag": "About Zaridasu",
+        "title": "Small records,\nuseful for research.",
+        "caption": "Learn why we collect observations"
+      }
+    },
+    "articles": {
+      "water": {
+        "title": "Take a closer look\nat a familiar waterway."
+      },
+      "photos": {
+        "title": "Photos that help\ntell your crayfish story."
+      }
+    },
+    "guide": {
+      "water": "Look at a familiar waterway on your walk. Notice the water flow, plants and surroundings as well as the animals.\nRecording where and when you looked helps us study the habitat.",
+      "photos": "From a safe place, photograph the whole animal and its surroundings. You do not need to get too close or move an animal for a photo.\nAvoid capturing faces or private addresses. A photo is optional.",
+      "species": "Some species have few public records so far. If you find one near the water, record it with a photo and place. Your first record helps us understand where the species lives.\nYou do not need to catch or move an animal. Observe from a safe place.",
+      "area": "Try observing watersides in different municipalities when convenient. There is no need to make a special trip. Approved observations update the municipalities in your collection.",
+      "absence": "If you looked but found nothing, record an absence observation. Include where, when and how long you searched.\nNot finding an animal once does not prove it is absent from that place."
+    },
+    "faq": {
+      "login": {
+        "question": "Do I need an account just to look around?",
+        "answer": "You can view the home, map and public records without an account. Sign in to post observations and keep your own collection and badges."
+      },
+      "status": {
+        "question": "Will my observation appear immediately?",
+        "answer": "Records are published after review. Check pending or returned records from your records on My page."
+      },
+      "safety": {
+        "question": "How can I observe safely?",
+        "answer": "Observe from safe places where entry is permitted. Watch your footing, water levels and the weather. You do not need to capture or move animals. Put safety before recording."
+      }
+    }
+  },
+  "activityGrass": {
+    "title": "Recording activity",
+    "summary": "Recorded on <big>{{days}}</big> day(s) in the past year ({{records}} record(s))",
+    "note": "Records awaiting review count. Records that were not approved do not.",
+    "hintScroll": "Swipe right to look back a full year.",
+    "hintSelect": "Tap a square or pick a day from the list below to see its breakdown.",
+    "gridLabel": "Calendar of the days you recorded (past year). Use the arrow keys to move between days.",
+    "cellLabel": "{{date}}: {{count}} record(s)",
+    "cellLabelNone": "{{date}}: no records",
+    "legendTitle": "Records per day",
+    "legendRange": "{{from}}–{{to}}",
+    "legendOrMore": "{{n}}+",
+    "detailLabel": "Selected day",
+    "detailLabelLatest": "Last recorded day",
+    "detailDay": "{{date}}: {{count}} record(s)",
+    "detailNone": "{{date}}: no records",
+    "detailBreakdown": "Breakdown: {{items}}",
+    "detailPending": "{{count}} of them awaiting review",
+    "typeCount": "{{type}} {{count}}",
+    "itemSeparator": ", ",
+    "listOpen": "Show the days you recorded",
+    "listClose": "Hide the days you recorded",
+    "listCount": "{{count}} record(s)",
+    "listMore": "Show more ({{count}} more day(s))",
+    "empty": "No records yet. Post your first record and its day will be colored in.",
+    "emptyAction": "Post a record",
+    "loadError": "Could not load your activity."
+  }
+}

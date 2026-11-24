@@ -1,0 +1,63 @@
+# REQ-282 C-2: 「Supabase 既定の一括 GRANT の“後”に再適用しないと効かない」migration の宣言リスト。
+#
+# 背景: rls-tests ジョブは schema.sql 適用 → Supabase 既定の一括 GRANT（GRANT SELECT ... ON ALL
+#   TABLES / GRANT EXECUTE ON ALL FUNCTIONS）を再現する。この一括 GRANT は
+#   (1) テーブルレベル SELECT を復活させて列レベルの REVOKE（reporter_ip / lat / lng / accuracy 等の
+#       PII 保護）を上書きし、
+#   (2) 関数レベルの EXECUTE REVOKE（anon から剥がした RPC）も同時に打ち消す。
+#   そのため該当 migration を既定 GRANT の「後」にもう一度流して最小権限を再確定する必要がある
+#   （本番でも同じ理由で該当 migration が既定 GRANT 後に効く前提）。
+#
+# 運用ルール（追加漏れ防止）:
+#   - 列レベル REVOKE / 列保護トリガー / **関数の EXECUTE REVOKE**（anon・authenticated から剥がす）を
+#     新設・改訂する migration を追加したら、このファイルにも追記する
+#     （CI がこの順に psql -f で再適用する）。
+#   - 1 行 1 ファイル。'#' 始まりはコメント、空行は無視。パスは supabase/migrations/ からの相対。
+#   - **順序が重要**: 上から順に適用される。後段が前段の関数を CREATE OR REPLACE で上書きする
+#     依存があるため、並べ替えないこと（例: 000002 は 000001 が定義した protect_post_insert_columns
+#     を完全版へ上書きする）。
+#
+# 注: storage RLS（20260513000007_storage_owner_folder_upload.sql）は storage スキーマスタブを
+#   前提とする別ステップのため、この宣言リストには含めない（CI 側で個別に適用）。
+
+# reporter_ip（投稿者IP=PII）列保護の再確定（REQ-179 / REQ-208）
+20260616000005_fix_reporter_ip_column_protection.sql
+# 位置情報プライバシー: 生 lat/lng/accuracy の列保護＋公開レベルトリガー/RPC（REQ-243）
+20260703000001_location_privacy_disclosure.sql
+# 研究データ整合: protect_post_insert_columns 再定義（REQ-244・必ず 20260703000001 の後）
+20260703000002_research_data_integrity_insert_protection.sql
+# anon GRANT された RPC の EXECUTE 剥奪（REQ-292）。
+#   一括 GRANT EXECUTE ON ALL FUNCTIONS が admin_login_record / admin_login_check /
+#   check_email_exists / admin_login_password_attempt の REVOKE を打ち消すため既定 GRANT 後に再適用する。
+#   本 migration は CREATE OR REPLACE / REVOKE / DO のみで構成された冪等な内容なので、
+#   既定 GRANT 後にそのまま流しても schema.sql 適用時と同じ最終状態になる（実測確認済み）。
+#   列保護 3 本とは独立のため順序依存は無い（末尾で足りる）。
+20260730000001_req292_authz_defects_anon_granted_rpc.sql
+
+# REQ-325: 一括 GRANT 後に回答テーブルの anon 権限を剥奪する。
+20260908000001_req325_user_onboarding.sql
+# REQ-329: 投稿者の位置非公開（protect_post_insert_columns / protect_post_status の再定義）＋
+#   非公開スポット・地名退避テーブルの anon 剥奪。**必ず 20260703000002 の後**（あちらが古い
+#   トリガー関数で上書きするため、最後にこちらで REQ-329 版へ戻す）。
+20260926000001_req329_owner_location_privacy_private_spots.sql
+# REQ-330: 調査計画・希少種の記録の 4 表の anon 剥奪とトリガー関数・並べ替え RPC の EXECUTE 剥奪。
+#   本 migration は rare-photos の作成とポリシーも含むため storage の代役が要るが、代役は schema.sql より
+#   前に作成済み（ci.yml）。REQ-329 とは独立のため順序依存は無い（末尾で足りる）。
+20261001000001_req330_fieldwork.sql
+
+# Water discovery: private reports, public projection write protection and admin RPC EXECUTE.
+20261008100350_water_discovery_reports.sql
+
+# security-hardening 要件4: 配信停止トークンの列権限。一括 GRANT がテーブル全体のSELECTを復活させるため、後で当て直す。
+20261021120300_hide_unsubscribe_token_column.sql
+
+# security-hardening 要件5: 退会を妨げていた保護トリガー（protect_post_status）の修正と、監査ログの外部キー。
+#   20260926000001 が protect_post_status を旧版で上書きするため、必ずその後（末尾）に当てる。
+20261021120400_account_deletion_fixes.sql
+
+# security-hardening 要件6: 新規投稿の運用値（研究採用・AI失敗回数）の初期化。
+#   20260926000001 が protect_post_insert_columns を旧版で上書きするため、必ずその後（末尾）に当てる。
+20261021120500_protect_post_insert_ops_columns.sql
+
+# security-hardening 要件9: 一括GRANTで内部通知台帳のSELECTが復活しないよう、service_role専用に戻す。
+20261021120600_comment_notification_claims.sql

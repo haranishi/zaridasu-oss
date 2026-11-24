@@ -1,0 +1,25 @@
+{
+  "feature_name": "map-location-follow",
+  "language": "ja",
+  "phase": "implementation-complete",
+  "created_at": "2026-10-21",
+  "updated_at": "2026-10-21",
+  "scope": "地図の「現在地を表示」ボタンを、押した瞬間の1回きりの表示から、位置の継続取得による追従（追従・一時停止・再開・停止）に広げる",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": true
+    }
+  },
+  "authorization": "2026-10-21: 本人が「地図の自分の現在地が車で動いても変わらない。追従する仕組みを作り、SDDにも足してほしい」と依頼。2026-10-19の自律実行ルールに従い、要件・設計・タスクの個別承認は取らずに確定した（承認の根拠は本人の依頼とこのルール）。本人の判断が要る6項目は brief.md に既定つきで書いた。PRのマージは本人が行う。",
+  "ready_for_implementation": true,
+  "verification": "verification.md（実機の確認は本人。tasks.md の16・17が残る）"
+}

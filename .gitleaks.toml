@@ -1,0 +1,103 @@
+# REQ-210 FR-210-08 / NFR-210-04: gitleaks 設定。
+# gitleaks 標準ルールセットをそのまま継承し、本リポジトリ特有の「公開して問題ない値」
+# （NEXT_PUBLIC_* / placeholder / .env.example の擬似値 / テストのダミー秘密）を
+# allowlist で誤検知から除外する。
+# このファイルは CI（gitleaks ジョブ）と pre-commit の両方から GITLEAKS_CONFIG として参照される。
+#
+# 重要: ここで除外するのは「公開前提 or ダミー / 公知サンプル / 公開鍵 / 生成物」だけ。
+# 実シークレット（service-role key / RESEND_API_KEY / VAPID_PRIVATE_KEY / VERCEL_TOKEN /
+# Gemini API キー / Supabase access token 等）は絶対に allowlist しない。
+# 検知時の一次対応は「まず失効(rotate)→次に履歴除去」（REQ-017 / 23_Leak_Response_Playbook）。
+#
+# ───────────────────────────────────────────────────────────────────────────
+# ⚠ gitleaks のバージョン差に関する重要な注意（このファイルが「単数 [allowlist]」を使う理由）
+# ───────────────────────────────────────────────────────────────────────────
+# CI が使う gitleaks は 8.24.3（gitleaks-action v2.3.9 同梱）。この版には、
+#   [extend].useDefault = true と「複数 allowlist 構文 [[allowlists]]（配列）」を併用すると、
+#   トップレベルの [[allowlists]] ブロック（paths / regexes / commits すべて）が
+#   一切適用されない不具合がある（8.25 系以降で修正。手元の 8.30.1 では効くため
+#   旧設定は「ローカルでは通るのに CI（8.24.3）では落ちる」状態になっていた）。
+# 実機検証（8.24.3 バイナリ）結果:
+#   - [[allowlists]]（複数形）… paths も regexes も無視される → leak 検出され CI 失敗
+#   - [allowlist]（単数・レガシー）… paths / regexes / stopwords / commits すべて有効 → exit 0
+#   - 単数 [allowlist] 内に [[allowlist.allowlists]] をネストしても、その配列は同様に無視される
+# 結論: 8.24.3 と 8.30.1 の両方で確実に効く「単数 [allowlist]」に一本化する。
+#   単数形は regexTarget / matchCondition を 1 つしか持てないため、複数ブロックの意図を
+#   1 ブロックへ統合する（テスト/生成物の除外は paths を一次ゲートにし、公開鍵・公知サンプルは
+#   regexTarget="secret" の regexes、placeholder 系ダミーは stopwords で多層防御する）。
+#   既知漏洩ドキュメント（docs/verification-2026-05-13.md）は、8.24.3 が commits+matchCondition の
+#   ネストを無視するため、paths で直接ピン留めする（REQ-017 ハンドオフ）。
+
+# gitleaks v8 の組み込みデフォルトルールを土台にする（自前ルールはここでは追加しない）。
+[extend]
+useDefault = true
+
+# 単数・レガシー形式の allowlist（8.24.3 / 8.30.1 双方で確実に適用される唯一の形式）。
+[allowlist]
+description = "ザリダス: 公開前提/ダミー/公知サンプル/生成物の誤検知除外（単数形・全gitleaks版で有効）"
+
+# regexes は「検出された secret 値」に対して評価する（行ではなく値）。
+# 値の長さに依存させたくない公開鍵・公知サンプルの除外に使う。
+regexTarget = "secret"
+
+# --- paths: スキャン対象外パス（一次ゲート・最も堅実）---
+# 理由:
+#  (1) 生成物・依存・lockfile・バイナリ … 秘密パターンに誤検知されうるが本物の秘密ではない。
+#  (2) テストコード（__tests__/ と *.test.* / *.spec.*）… PII スクラブ関数の入力用 JWT や
+#      Web Push の VAPID「公開」鍵などダミー/非秘密が含まれる。値ベース除外は gitleaks の
+#      バージョン差で取りこぼすため、長さに依存しない「パス」で一次除外する。
+#      範囲はテストのディレクトリ/ファイルだけに限定＝アプリ本体・設定・スクリプトには当たらない
+#      ＝本物の秘密検知は維持。
+#  (3) docs/verification-2026-05-13.md … 既知の漏洩キー（失効・履歴除去待ち / REQ-017）を
+#      個別ピン留め。「ダミーだから無視」ではなく「漏洩済みで対応待ち」。REQ-017 完了時に削除。
+paths = [
+  # 生成物・依存・lockfile・バイナリ
+  '''(^|/)package-lock\.json$''',
+  '''(^|/)node_modules/''',
+  '''(^|/)\.next/''',
+  '''(^|/)coverage/''',
+  '''(^|/)playwright-report/''',
+  '''(^|/)test-results/''',
+  '''(^|/)dist/''',
+  '''(^|/)build/''',
+  # Deno の依存 lockfile（ハッシュが秘密パターンに誤検知されうる）
+  '''(^|/)supabase/functions/deno\.lock$''',
+  # public 配下の生成アセット（SVG/PNG 等）
+  '''(^|/)public/.*\.(svg|png|jpe?g|webp|ico|woff2?)$''',
+  # テストコードは除外しない（security-hardening 要件11）。以前は `__tests__/` と `*.test.*` / `*.spec.*` を
+  # パスごと除外していたが、試験や fixture に本物の鍵を誤記しても検出できなかった。除外を外して全履歴を
+  # 走査したが、検出は 0 件だった（2026-10-21）。公開前提の擬似値は、下の regexes / stopwords で外す。
+  # 既知の漏洩キー（REQ-017。失効・履歴除去待ち）を含む docs/verification-2026-05-13.md の扱い:
+  # 以前はこのファイルを path ごと除外していたため、同じファイルに新しい鍵が書かれても検出できなかった。
+  # 今は除外せず、履歴に残る既知の 1 件だけを .gitleaksignore（fingerprint）で外している。
+  # REQ-017（機密ローテーション・git 履歴クリーンアップ）完了時に .gitleaksignore の 1 行を削除する。
+]
+
+# --- regexes (regexTarget="secret"): 公知サンプル / 公開鍵（多層防御の保険）---
+# 注意:「テストだから」と無条件に除外しない。値として公開前提のものだけに限定する。
+# paths で実質カバー済みだが、テスト以外（ドキュメント等）に同種の非秘密が現れた場合の保険。
+regexes = [
+  # jwt.io の公知サンプル JWT（HS256・sub=1234567890）。テストやドキュメントでの固定入力。
+  '''eyJhbGciOiJIUzI1NiJ9\.eyJzdWIiOiIxMjM0NTY3ODkwIn0\.[A-Za-z0-9_-]+''',
+  # Web Push の VAPID「公開」鍵（base64url raw P-256, 'B' 始まり 86 文字以上）。設計上非秘密。
+  # 秘密鍵 (VAPID_PRIVATE_KEY) はこの値パターンに一致しない（公開鍵のみ）。
+  '''B[A-Za-z0-9_-]{86,}''',
+]
+
+# --- stopwords: ダミー/プレースホルダを示す語を含む値を除外（公開前提の擬似値）---
+# gitleaks 既定の stopword 機構（検出値にこの語が含まれれば除外）。版差の影響を受けにくい。
+# .env.example / ci.yml / コード内の "placeholder..." "your-project-id" 等の擬似値が対象。
+# 実シークレットにこれらの語は通常含まれないため、本物の秘密検知への影響はない。
+stopwords = [
+  "placeholder",      # ci.yml の SUPABASE_ACCESS_TOKEN=sbp-placeholder-... / anon=placeholder-key-... 等
+  "your-project-id",  # .env.example の Supabase プロジェクト ID プレースホルダ
+  "replace-with-",    # .env.example 等の「ここを置き換えてください」系プレースホルダ
+  "example.com",      # ドキュメントの例示ドメイン
+  "example.org",      # 同上
+]
+
+# --- 個別の既知ダミー値を増やす場合の指針 ---
+# ・テストファイル内なら基本は paths で自動カバー済み（追記不要）。
+# ・テスト外の公開鍵/公知サンプルは上の regexes（値パターン）に 1 行追記。
+# ・"〜placeholder" 等のダミー語を含む値は stopwords に語を 1 つ追記。
+#   いずれも「無視理由 / 再評価期日: YYYY-MM-DD」をコメントで残すこと。

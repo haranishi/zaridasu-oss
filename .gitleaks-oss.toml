@@ -1,0 +1,14 @@
+# 公開前の追加検査。通常のCI結果と区別し、既知漏洩の除外を使わない。
+# 標準ルールの文脈条件に依存せず、発行元のキー形式も検査する。
+[extend]
+path = ".gitleaks.toml"
+
+[[rules]]
+id = "oss-google-api-key"
+description = "Google API key format independent of assignment context"
+regex = '''AIza[0-9A-Za-z_-]{35}'''
+
+[[rules]]
+id = "oss-supabase-access-token"
+description = "Supabase personal access token format"
+regex = '''sbp_[0-9A-Za-z]{30,}'''

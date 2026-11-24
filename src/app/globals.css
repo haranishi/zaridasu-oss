@@ -1,0 +1,1222 @@
+@import 'tailwindcss';
+
+/* Leaflet base styles (REQ-026: 集約先 — MapView/MiniMap/ReviewCardMiniMap で共有) */
+@import 'leaflet/dist/leaflet.css' layer(utilities);
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --breakpoint-xs: 375px;
+
+  --color-primary-50: var(--color-brand-50);
+  --color-primary-100: var(--color-brand-100);
+  --color-primary-200: var(--color-brand-200);
+  --color-primary-300: var(--color-brand-300);
+  --color-primary-400: var(--color-brand-400);
+  --color-primary-500: var(--color-brand-500);
+  --color-primary-600: var(--color-brand-600);
+  --color-primary-700: var(--color-brand-700);
+  --color-primary-800: var(--color-brand-800);
+  --color-primary-900: var(--color-brand-900);
+
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+
+  /* REQ-322 FR-322-03: 主 CTA はグラデーションをやめ 1 色（--color-accent）にしたため、
+     グラデ下端の別名（--color-accent-to / --color-accent-hover-to）は廃止した。
+     hover は `hover:bg-(--color-accent-hover)` の任意プロパティ構文で参照する。 */
+  --color-accent: var(--color-accent);
+
+  --color-success: var(--color-success);
+  --color-success-fg: var(--color-success-fg);
+
+  --color-warning: var(--color-warning);
+  --color-warning-fg: var(--color-warning-fg);
+
+  --color-error: var(--color-error);
+  --color-error-fg: var(--color-error-fg);
+
+  --color-info: var(--color-info);
+  --color-info-fg: var(--color-info-fg);
+
+  --color-surface-2: var(--color-surface-2);
+  --color-surface: var(--color-surface);
+
+  --color-ink: var(--color-text);
+  --color-ink-heading: var(--color-heading);
+  --color-ink-muted: var(--color-text-muted);
+  --color-ink-faint: var(--color-text-faint);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+  --color-chart-7: var(--chart-7);
+  --border-color-token: var(--color-border);
+  --border-color-divider: var(--color-divider);
+
+  --font-sans:
+    Inter, Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, Yu Gothic,
+    YuGothic, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display:
+    Inter, Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, Yu Gothic,
+    YuGothic, system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.5;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.4;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 1.35;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 1.25;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: 1.2;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1.1;
+
+  --spacing-grid-1: 8px;
+  --spacing-grid-2: 16px;
+  --spacing-grid-3: 24px;
+  --spacing-grid-4: 32px;
+  --spacing-grid-6: 48px;
+  --spacing-grid-8: 64px;
+
+  --container-measure: var(--measure);
+}
+
+/* ===================================================================
+   Tailwind v4 → v3 デフォルトパレット互換（色パリティ維持）
+   - v4 は既定カラーを sRGB(hex) から OKLCH(P3) に変更したため、既定の
+     red/amber/blue/slate 等が微妙に発色シフトする（例: red-600 #dc2626 →
+     oklch ≒ #e7000b）。本アプリはブランド赤 #dc2626 を CSS 変数で固定し、
+     bg-red-600 等の既定ユーティリティもそれと一致する前提（＝同一の赤）で
+     設計され、WCAG コントラスト比も v3 の hex 値で検証済み。
+   - そこで既定カラースケールを v3 の hex に固定し、v3 と画素一致させる。
+   - v4 は「使用された色変数」のみ CSS へ出力するため、未使用ファミリを
+     並べても最終 CSS は肥大しない（hex は oklch より短く微減）。
+   - 出典: tailwindcss@3.4.19 の tailwindcss/colors。
+   =================================================================== */
+@theme {
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-200: #fecaca;
+  --color-red-300: #fca5a5;
+  --color-red-400: #f87171;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-red-800: #991b1b;
+  --color-red-900: #7f1d1d;
+  --color-red-950: #450a0a;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
+  --color-orange-950: #431407;
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+  --color-amber-950: #451a03;
+  --color-yellow-50: #fefce8;
+  --color-yellow-100: #fef9c3;
+  --color-yellow-200: #fef08a;
+  --color-yellow-300: #fde047;
+  --color-yellow-400: #facc15;
+  --color-yellow-500: #eab308;
+  --color-yellow-600: #ca8a04;
+  --color-yellow-700: #a16207;
+  --color-yellow-800: #854d0e;
+  --color-yellow-900: #713f12;
+  --color-yellow-950: #422006;
+  --color-lime-50: #f7fee7;
+  --color-lime-100: #ecfccb;
+  --color-lime-200: #d9f99d;
+  --color-lime-300: #bef264;
+  --color-lime-400: #a3e635;
+  --color-lime-500: #84cc16;
+  --color-lime-600: #65a30d;
+  --color-lime-700: #4d7c0f;
+  --color-lime-800: #3f6212;
+  --color-lime-900: #365314;
+  --color-lime-950: #1a2e05;
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
+  --color-green-950: #052e16;
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065f46;
+  --color-emerald-900: #064e3b;
+  --color-emerald-950: #022c22;
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0f766e;
+  --color-teal-800: #115e59;
+  --color-teal-900: #134e4a;
+  --color-teal-950: #042f2e;
+  --color-cyan-50: #ecfeff;
+  --color-cyan-100: #cffafe;
+  --color-cyan-200: #a5f3fc;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-600: #0891b2;
+  --color-cyan-700: #0e7490;
+  --color-cyan-800: #155e75;
+  --color-cyan-900: #164e63;
+  --color-cyan-950: #083344;
+  --color-sky-50: #f0f9ff;
+  --color-sky-100: #e0f2fe;
+  --color-sky-200: #bae6fd;
+  --color-sky-300: #7dd3fc;
+  --color-sky-400: #38bdf8;
+  --color-sky-500: #0ea5e9;
+  --color-sky-600: #0284c7;
+  --color-sky-700: #0369a1;
+  --color-sky-800: #075985;
+  --color-sky-900: #0c4a6e;
+  --color-sky-950: #082f49;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+  --color-blue-950: #172554;
+  --color-indigo-50: #eef2ff;
+  --color-indigo-100: #e0e7ff;
+  --color-indigo-200: #c7d2fe;
+  --color-indigo-300: #a5b4fc;
+  --color-indigo-400: #818cf8;
+  --color-indigo-500: #6366f1;
+  --color-indigo-600: #4f46e5;
+  --color-indigo-700: #4338ca;
+  --color-indigo-800: #3730a3;
+  --color-indigo-900: #312e81;
+  --color-indigo-950: #1e1b4b;
+  --color-violet-50: #f5f3ff;
+  --color-violet-100: #ede9fe;
+  --color-violet-200: #ddd6fe;
+  --color-violet-300: #c4b5fd;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+  --color-violet-600: #7c3aed;
+  --color-violet-700: #6d28d9;
+  --color-violet-800: #5b21b6;
+  --color-violet-900: #4c1d95;
+  --color-violet-950: #2e1065;
+  --color-purple-50: #faf5ff;
+  --color-purple-100: #f3e8ff;
+  --color-purple-200: #e9d5ff;
+  --color-purple-300: #d8b4fe;
+  --color-purple-400: #c084fc;
+  --color-purple-500: #a855f7;
+  --color-purple-600: #9333ea;
+  --color-purple-700: #7e22ce;
+  --color-purple-800: #6b21a8;
+  --color-purple-900: #581c87;
+  --color-purple-950: #3b0764;
+  --color-fuchsia-50: #fdf4ff;
+  --color-fuchsia-100: #fae8ff;
+  --color-fuchsia-200: #f5d0fe;
+  --color-fuchsia-300: #f0abfc;
+  --color-fuchsia-400: #e879f9;
+  --color-fuchsia-500: #d946ef;
+  --color-fuchsia-600: #c026d3;
+  --color-fuchsia-700: #a21caf;
+  --color-fuchsia-800: #86198f;
+  --color-fuchsia-900: #701a75;
+  --color-fuchsia-950: #4a044e;
+  --color-pink-50: #fdf2f8;
+  --color-pink-100: #fce7f3;
+  --color-pink-200: #fbcfe8;
+  --color-pink-300: #f9a8d4;
+  --color-pink-400: #f472b6;
+  --color-pink-500: #ec4899;
+  --color-pink-600: #db2777;
+  --color-pink-700: #be185d;
+  --color-pink-800: #9d174d;
+  --color-pink-900: #831843;
+  --color-pink-950: #500724;
+  --color-rose-50: #fff1f2;
+  --color-rose-100: #ffe4e6;
+  --color-rose-200: #fecdd3;
+  --color-rose-300: #fda4af;
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+  --color-rose-600: #e11d48;
+  --color-rose-700: #be123c;
+  --color-rose-800: #9f1239;
+  --color-rose-900: #881337;
+  --color-rose-950: #4c0519;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #09090b;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+  --color-stone-50: #fafaf9;
+  --color-stone-100: #f5f5f4;
+  --color-stone-200: #e7e5e4;
+  --color-stone-300: #d6d3d1;
+  --color-stone-400: #a8a29e;
+  --color-stone-500: #78716c;
+  --color-stone-600: #57534e;
+  --color-stone-700: #44403c;
+  --color-stone-800: #292524;
+  --color-stone-900: #1c1917;
+  --color-stone-950: #0c0a09;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border);
+  }
+}
+
+/* ===================================================================
+   REQ-224: デザイントークン（Single Source of Truth）
+   - 色・余白・タイポの正本。tailwind.config.js はこれを var() 参照する。
+   - HSL ベースの「色付きグレー」（ブランド赤の色相 0deg を 3-6% 混ぜた
+     ニュートラル）で 60-30-10 を体系化。
+   - ランタイムコストゼロ（静的 CSS）。テーマ切替は .dark のクラストグルのみ。
+   - 公式 HEX は docs/brand/brand-memo.md（REQ-225）と整合：
+     ブランド赤 #dc2626 / 明 #ef4444 / 暗 #b91c1c / 締め #7f1d1d。
+   - 各トークンは末尾にフォールバック相当の確定値を持ち、置換漏れでも壊れない。
+   =================================================================== */
+:root {
+  /* ---- ニュートラル（ベース 60% / 色付きグレー：hue 0 を 3-6% 混色） ---- */
+  --color-bg:          hsl(0 0% 98%);     /* ≒ gray-50  ページ背景 */
+  --color-surface:     hsl(0 0% 100%);    /* #ffffff    カード面 */
+  --color-surface-2:   hsl(0 14% 97%);    /* ≒ #fef2f2  淡い面（赤み 25%下地） */
+  --color-border:      hsl(220 13% 91%);  /* ≒ gray-200 境界線・グラフトラック */
+  --color-divider:     hsl(220 14% 96%);  /* ≒ gray-100 内側の薄い仕切り */
+  --color-text:        hsl(215 25% 27%);  /* ≒ gray-700/800 本文 */
+  --color-heading:     hsl(218 23% 23%);  /* ≒ gray-800 見出し */
+  --color-text-muted:  hsl(220 9% 40%);   /* ≒ gray-600 補足（白地 7.0:1） */
+  --color-text-faint:  hsl(220 9% 46%);   /* ≒ gray-500 最弱でも 4.6:1 を確保（旧 gray-400=2.8:1 を底上げ） */
+
+  /* ---- 活動の記録（草）：段階0は塗らず枠だけ。全セルに枠を付け、枠と下地は3:1以上（activityGrassPalette.test.ts が計算で確かめる） ---- */
+  --grass-border: #86958b;
+  --grass-1: #b7e4c0;
+  --grass-2: #6fcf8a;
+  --grass-3: #2fa75a;
+  --grass-4: #18743c;
+  --grass-ring: #1f2937;
+
+  /* ---- ブランド／メイン（30%・赤 #dc2626 系。primary の欠落段を補完） ---- */
+  --color-brand-50:  #fef2f2;
+  --color-brand-100: #fee2e2;
+  --color-brand-200: #fecaca;
+  --color-brand-300: #fca5a5;
+  --color-brand-400: #f87171;
+  --color-brand-500: #ef4444;   /* レッド500（明） */
+  --color-brand-600: #dc2626;   /* ブランド赤（主色 / theme-color） */
+  --color-brand-700: #b91c1c;   /* レッド700（暗） */
+  --color-brand-800: #991b1b;
+  --color-brand-900: #7f1d1d;   /* 締め色（マスコットの目/口など 5%） */
+
+  /* ---- アクセント（10%・主 CTA 専用 1 色。formStyles の btnPrimaryCls のみ） ----
+     種色・状態色とは用途を分ける。
+
+     REQ-320 FR-320-04: グラデ上端が #ef4444（red-500）だと、白文字が 3.76:1 で AA 未満に
+     なるうえ、同じ「押せる赤」が LP のベタ #dc2626 と別の赤に見えていた（Round 1 採点 #7:
+     主要ボタンの赤が 3 系統）。上端をブランド赤 #dc2626（白文字 4.83:1）へ寄せた。
+
+     REQ-322 FR-322-03: そのグラデの**下端 #e11d48（rose-600）が残っていた**ため、
+     LP のベタ #DC2626 と about/home のボタンが「別の赤」として並んで見えていた
+     （Round 3 採点 #7・評価者の実測 #DC2626→#E01F43）。グラデ自体を廃止し、
+     アクセントはブランド赤 1 値に統合する。近似色に別々の意味を割り当てない（REQ-224）。 */
+  --color-accent:       #dc2626;   /* 主 CTA の単色（= --color-brand-600） */
+  --color-accent-hover: #b91c1c;   /* hover（= --color-brand-700） */
+
+  /* ---- セマンティック状態色（青×オレンジ基調。赤×緑・緑×黄の素朴な対比を避ける） ----
+     色だけに依存しない（色+アイコン+テキストの3点セット）前提のトークン。 */
+  --color-success:    #047857;   /* emerald-700 相当：白地 4.8:1（旧 emerald-400/500 は薄い） */
+  --color-success-fg: #ffffff;
+  --color-warning:    #b45309;   /* amber-700 相当：白地 5.0:1（黄ではなく濃いアンバー） */
+  --color-warning-fg: #ffffff;
+  --color-error:      #dc2626;   /* red-600：白地 4.5:1 */
+  --color-error-fg:   #ffffff;
+  /* REQ-322 FR-322-03: 旧 #0369a1（sky-700）は種別色の青 #0072b2（--chart-1）と
+     見分けがつかないのに違う意味（状態: info / 種: アメリカザリガニ）を担っていた
+     （Round 3 採点 #3）。**見分けられない色に違う意味を割り当てるのが最も悪い**ので、
+     青は 1 系統へ統合し、意味の区別はアイコン・形・テキストで行う（REQ-224 の原則）。
+     白文字 5.19:1 で AA は維持（旧 5.7:1）。ダークも --chart-1 のダーク値へ揃える。 */
+  --color-info:       #0072b2;   /* = --chart-1（Wong blue）：白地 5.19:1 */
+  --color-info-fg:    #ffffff;
+
+  /* ---- データ可視化パレット（Wong 色覚安全パレット・順序固定） ----
+     P/D 型でも区別でき、グレースケールでも輝度差で判別可能な順序。
+     chart-1/2 は主役 2 種（青×オレンジ）に対応し赤×緑を回避。 */
+  --chart-1: #0072b2;   /* Wong blue      … american（アメリカザリガニ） */
+  --chart-2: #d55e00;   /* Wong vermillion… bullfrog（ウシガエル） */
+  --chart-3: #009e73;   /* Wong bluish green */
+  --chart-4: #cc79a7;   /* Wong reddish purple */
+  --chart-5: #e69f00;   /* Wong orange */
+  --chart-6: #56b4e9;   /* Wong sky blue */
+  --chart-7: #f0e442;   /* Wong yellow */
+  --chart-track: var(--color-border);   /* ドーナツ/グリッドのトラック（ダーク対応） */
+  /* REQ-323 FR-323-06: 「量」を表す棒の色。**ブランド赤は CTA とリンクだけ**に限定し、
+     データバーは無彩色にする（Round 4 採点: 「量」と「行動」が同じ赤で読み分けられない）。
+     往復の記録: 第1周は #D6D9DF（白地 1.1:1）で「読み込み失敗に見える」と減点 → 第3周で
+     ブランド赤 → 第4周で「量と行動が同色」と減点。問題は**薄すぎたこと**であって無彩色で
+     あること自体ではないので、濃い無彩色（白地 7.56:1）なら両方を満たす。
+     評価者案の #0072B2 は**アメリカザリガニの種別色**なので採らない（凡例と衝突する）。 */
+  --chart-quantity: #4b5563;   /* gray-600：白カード 7.56:1 */
+  /* REQ-322 FR-322-07: 旧 --chart-neutral（gray-500）は「強調しないデータ系列」用に
+     REQ-318 で足したが、立ち上がり期の月別グラフは**非強調の月しかデータが無い**ため
+     唯一の棒が灰色になり、「読み込みに失敗した表」に見えていた（Round 3 採点 #18）。
+     量を表す棒は 1 色（ブランド赤）に統一し、最新月の区別は色ではなくラベルの太さで示す。
+     使う所が無くなったトークンは残さない（近似色・死んだ定義を増やさないため）。 */
+
+  /* ---- 種別データ色（地図/グラフ専用。ブランド赤とは役割が違う） ----
+     FR-224-03/04：赤×緑を避け Wong の青×オレンジへ。形/グリフと併用で色だけに依存しない。 */
+  --species-american: var(--chart-1);   /* 青 */
+  --species-bullfrog: var(--chart-2);   /* オレンジ */
+  --species-unknown:  #6b7280;          /* gray-500：不明（無彩色） */
+
+  /* ---- 用途別ステート色（FR-224-06：同値でも意味別トークンに分離） ---- */
+  --state-species-unknown: #b45309;   /* 種:不明（旧 #F59E0B を warning 系の濃色へ） */
+  --state-urgency-normal:  #b45309;   /* 緊急度:通常 */
+  --state-urgency-urgent:  #c2410c;   /* 緊急度:急ぎ（orange-700） */
+  --state-survey-open:     #b45309;   /* 調査:募集中 */
+  --state-survey-responded:#0072b2;   /* 調査:対応あり（= --color-info。FR-322-03 で青を1系統に統合） */
+  --state-survey-closed:   #4b5563;   /* 調査:解決済み（gray-600） */
+
+  /* ---- 8pt グリッド（FR-224-08：8/16/24/32/48/64） ---- */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+
+  /* ---- タイポ基準（本文 16px / 行間 1.5・FR-224-08） ---- */
+  --font-sans: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+    'Noto Sans JP', 'Yu Gothic', 'YuGothic', system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  --text-body: 1rem;        /* 16px */
+  --leading-body: 1.5;
+  --measure: 42rem;         /* 1 行 35-50 字相当の本文最大幅 */
+}
+
+.dark {
+  /* ---- ニュートラル（ダーク：slate 系で対の値。色付きグレーは hue 220 を採用） ---- */
+  --color-bg:          hsl(229 41% 9%);    /* ≒ slate-950 */
+  --color-surface:     hsl(222 33% 14%);   /* ≒ slate-900 */
+  --color-surface-2:   hsl(217 33% 17%);   /* ≒ slate-800 */
+  --color-border:      hsl(215 25% 27%);   /* ≒ slate-700 */
+  --color-divider:     hsl(216 28% 22%);   /* slate-700/800 中間 */
+  --color-text:        hsl(214 32% 91%);   /* ≒ slate-200 */
+  --color-heading:     hsl(210 40% 96%);   /* ≒ slate-100 */
+  --color-text-muted:  hsl(215 20% 72%);   /* ≒ slate-300/400 中間：暗地 7:1+ */
+  --color-text-faint:  hsl(215 16% 65%);   /* ≒ slate-400：暗地で 4.5:1+ */
+
+  /* ---- 活動の記録（草）：暗地は、段階が上がるほど明るくする ---- */
+  --grass-border: #5d6e7e;
+  --grass-1: #1b4332;
+  --grass-2: #2d6a4f;
+  --grass-3: #40916c;
+  --grass-4: #74c69d;
+  --grass-ring: #f1f5f9;
+
+  /* ブランド段はダークでもそのまま（赤の意味は不変）。CTA も同じ。 */
+
+  /* セマンティック状態色（暗地で 4.5:1 を満たす明色側へ） */
+  --color-success:    #34d399;   /* emerald-400：暗地 7.0:1 */
+  --color-success-fg: #052e1b;
+  --color-warning:    #fbbf24;   /* amber-400：暗地 9.6:1 */
+  --color-warning-fg: #3a2a06;
+  --color-error:      #f87171;   /* red-400：暗地 5.9:1 */
+  --color-error-fg:   #450a0a;
+  /* REQ-322 FR-322-03: ライトと同じ理由でダークも --chart-1 のダーク値へ統合。
+     旧 #38bdf8（sky-400）は種別色ダーク #56b4e9 と見分けがつかなかった。
+     --color-info-fg(#082f49) との比は 6.01:1 で AA 維持。 */
+  --color-info:       #56b4e9;   /* = --chart-1（ダーク） */
+  --color-info-fg:    #082f49;
+
+  /* データ可視化（暗地でも視認できる Wong 明色寄り） */
+  --chart-1: #56b4e9;   /* 明るい青 … american */
+  --chart-2: #e69f00;   /* 明るいオレンジ … bullfrog */
+  --chart-3: #2dd4bf;
+  --chart-4: #f0a3c8;
+  --chart-5: #f5b942;
+  --chart-6: #7cc7f0;
+  --chart-7: #f7ec6e;
+  --chart-track: var(--color-border);
+  /* REQ-323 FR-323-06: ダークのカード面は slate-800。そこに gray-600 を置くと 1.94:1 で
+     UI 部品 3:1 を割るため、明度を反転させた無彩色（slate-400）を使う。5.71:1。 */
+  --chart-quantity: #94a3b8;   /* slate-400：slate-800 上 5.71:1 */
+  /* REQ-322 FR-322-07: --chart-neutral は廃止（:root 側のコメント参照）。 */
+
+  --species-american: var(--chart-1);
+  --species-bullfrog: var(--chart-2);
+  --species-unknown:  #9ca3af;
+
+  --state-species-unknown: #fbbf24;
+  --state-urgency-normal:  #fbbf24;
+  --state-urgency-urgent:  #fb923c;
+  --state-survey-open:     #fbbf24;
+  --state-survey-responded:#56b4e9;   /* = --color-info（ダーク・FR-322-03） */
+  --state-survey-closed:   #9ca3af;
+}
+
+/* 本文タイポ基準（FR-224-08 / AC-02：本文 16px・行間 1.5・和文ゴシック） */
+html {
+  font-family: var(--font-sans);
+  /* REQ-268 FR-268-08: 想定外の要素幅超過でページ全体が横スクロールするのを防ぐセーフティネット。
+     overflow-x:hidden は overflow-y を auto に昇格させ多数の sticky ヘッダーを壊すため、
+     スクロールコンテナを作らない overflow-x:clip を使う（Safari<16 は無視され現状維持）。 */
+  overflow-x: clip;
+}
+body {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  font-family: inherit;
+}
+
+/* 水域の一覧を開いている間、スマホ幅では右下の浮動ボタン列を隠す（一覧が覆うため）。Leaflet 標準の著作権表示は別の入れ物なので消えない。 */
+@media (max-width: 639px) {
+  .leaflet-container[data-water-list='open'] > .leaflet-bottom.leaflet-right {
+    visibility: hidden;
+  }
+}
+
+/* 水域の一覧を開いている間は、画面下に固定で出る案内（登録バナー・初回の誘い・インストール案内。
+   どれも data-bottom-promo を持つ）を、画面幅によらず隠す。いずれも地図より手前に出て一覧の下側を覆う。
+   実測（一覧の面積に対する割合）: 390×667 で登録 69%・誘い 71%・インストール 93%、1366×680 で
+   登録 81%・誘い 38%。デスクトップ幅でも、xl 以上で左寄せになる案内が左の列の一覧にかぶさるので、
+   スマホ幅だけに限らない。一覧を閉じれば元に戻る（表示状態は各コンポーネントが持ち続け、ここでは
+   見えなくするだけ）。画面下に固定の案内を新しく足すときは data-bottom-promo を付ける。 */
+body:has(.leaflet-container[data-water-list='open']) [data-bottom-promo] {
+  visibility: hidden;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+}
+
+/* REQ-268 FR-268-06: Leaflet 既定のズーム(±)ボタンはスマホで小さい(約30px)ため 44px に拡大
+   （2026-08-16 実測: 390px で 44×44px。REQ-323 の要件が言う「地図ズーム 40px」は誤診で、
+   ここは既に満たしていた） */
+.leaflet-touch .leaflet-bar a,
+.leaflet-bar a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+}
+
+/* REQ-323 FR-323-07: 地図の帰属表示（Leaflet / OpenStreetMap）のリンクが 15px 高しかなく、
+   ホーム 390px で唯一 44px に届かないタップ対象だった。
+   - 擬似要素でヒットエリアだけ広げる手は使えない: `.leaflet-container` は overflow:hidden なので
+     下へはみ出すぶんが切られ、上へ伸ばすと地図のパン操作を奪う。
+   - そこでリンク自体を 44px にする。帯は地図右下の隅（約 160×44px ＝ 390×600 の 1.9%）に収まり、
+     ODbL が要求する帰属表示がむしろ読みやすくなる。
+   - 詳細ページのミニ地図まで 44px の帯になると小さな地図を潰すので、**メイン地図だけ**に効かせる
+     （MapView の MapContainer に付けた .zari-map-main で限定する）。 */
+.zari-map-main .leaflet-control-attribution {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 6px;
+}
+.zari-map-main .leaflet-control-attribution a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 4px;
+}
+
+/* 地図の帰属表示を、64px の固定ボトムナビと下部safe areaの上に収める。
+   地図自体を縮めるため、帰属表示と右下の操作ボタンも重ならない。 */
+@media (max-width: 1023px) {
+  .zari-map-main,
+  .zari-map-placeholder-attribution {
+    margin-bottom: calc(4rem + 1px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Custom scrollbar（md以上のみ表示、スマホはネイティブスクロールに任せる） */
+@media (min-width: 768px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+  }
+  .dark .custom-scrollbar::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #475569;
+  }
+}
+
+/* Dark mode select option */
+.dark select option {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+/* Smooth transitions for theme change */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+/* Exclude animation-heavy elements */
+.animate-spin, .animate-bounce, .animate-pulse {
+  transition: none;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* スクロールバー非表示（FilterBar横スクロール用） */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ===================================================
+   ローディング画面
+   =================================================== */
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #7f1d1d 0%, #b91c1c 40%, #dc2626 70%, #ef4444 100%);
+  overflow: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.loading-screen--fade-out {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+/* 波紋 */
+.loading-ripples {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-ripple {
+  position: absolute;
+  width: min(400px, 80vmin);
+  height: min(400px, 80vmin);
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  animation: loading-ripple 3.6s ease-out infinite;
+}
+.loading-ripple:nth-child(2) { animation-delay: 1.2s; }
+.loading-ripple:nth-child(3) { animation-delay: 2.4s; }
+
+@keyframes loading-ripple {
+  0%   { transform: scale(0); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+/* 泡 */
+.loading-bubble {
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  animation: loading-float linear infinite;
+}
+.loading-bubble--1 { width: 10px; height: 10px; left: 12%; animation-duration: 6s;   animation-delay: 0s; }
+.loading-bubble--2 { width:  6px; height:  6px; left: 25%; animation-duration: 8s;   animation-delay: 1s; }
+.loading-bubble--3 { width: 14px; height: 14px; left: 40%; animation-duration: 7s;   animation-delay: 2s; }
+.loading-bubble--4 { width:  8px; height:  8px; left: 55%; animation-duration: 9s;   animation-delay: 0.5s; }
+.loading-bubble--5 { width: 12px; height: 12px; left: 68%; animation-duration: 6.5s; animation-delay: 1.5s; }
+.loading-bubble--6 { width:  5px; height:  5px; left: 78%; animation-duration: 7.5s; animation-delay: 3s; }
+.loading-bubble--7 { width: 10px; height: 10px; left: 88%; animation-duration: 8.5s; animation-delay: 0.8s; }
+.loading-bubble--8 { width:  7px; height:  7px; left:  6%; animation-duration: 6.8s; animation-delay: 2.5s; }
+
+@keyframes loading-float {
+  0%   { transform: translateY(0); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 0.6; }
+  100% { transform: translateY(-105vh); opacity: 0; }
+}
+
+/* メインコンテンツ */
+.loading-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  animation: loading-appear 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes loading-appear {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ザリガニアイコン */
+.loading-icon {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.loading-icon::before,
+.loading-icon::after {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  animation: loading-icon-ring 2s ease-in-out infinite;
+}
+.loading-icon::after {
+  inset: -24px;
+  border-color: rgba(255, 255, 255, 0.08);
+  animation-delay: 0.3s;
+}
+
+@keyframes loading-icon-ring {
+  0%, 100% { transform: scale(1);    opacity: 1; }
+  50%       { transform: scale(1.12); opacity: 0.6; }
+}
+
+.loading-crayfish {
+  display: block;
+  font-size: 72px;
+  line-height: 1;
+  animation: loading-crayfish-bounce 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes loading-crayfish-bounce {
+  0%, 100% { transform: translateY(0) rotate(-4deg)  scale(1); }
+  50%       { transform: translateY(-10px) rotate(4deg) scale(1.06); }
+}
+
+/* タイトル */
+.loading-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+  animation: loading-text-in 0.8s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.loading-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  margin: 4px 0 28px;
+  animation: loading-text-in 0.8s 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes loading-text-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* プログレスバー */
+.loading-bar-wrap {
+  width: 160px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 99px;
+  overflow: hidden;
+  animation: loading-text-in 0.6s 0.5s both;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.6), #fff, rgba(255,255,255,0.6));
+  background-size: 200% 100%;
+  transform-origin: left center;
+  animation: loading-bar-slide 1.6s ease-in-out infinite;
+}
+
+@keyframes loading-bar-slide {
+  0%   { transform: scaleX(0); background-position: 200%; }
+  60%  { transform: scaleX(1); background-position: 0%; }
+  100% { transform: scaleX(1); background-position: -200%; opacity: 0; }
+}
+
+/* ドット */
+.loading-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+  animation: loading-text-in 0.6s 0.6s both;
+}
+
+.loading-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  animation: loading-dot-pulse 1.4s ease-in-out infinite;
+}
+.loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes loading-dot-pulse {
+  0%, 80%, 100% { transform: scale(0.7); opacity: 0.4; }
+  40%            { transform: scale(1.2); opacity: 1; }
+}
+
+/* 底の波 */
+.loading-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  overflow: hidden;
+}
+
+.loading-wave svg {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 100%;
+  animation: loading-wave-move 8s linear infinite;
+}
+.loading-wave svg:nth-child(2) {
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+
+@keyframes loading-wave-move {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* トースト通知アニメーション */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-10px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0)     scale(1); }
+}
+
+/* 地図スケルトンプログレスバー */
+@keyframes skeleton-progress {
+  0% { width: 0%; }
+  50% { width: 80%; }
+  100% { width: 0%; }
+}
+
+/* REQ-323 FR-323-01: ボトムナビの真上に置く下部バナー（SignupBanner / IntroPrompt）の下端。
+   ナビは lg(1024px) 以上でヘッダー水平ナビに置き換わって消えるので、逃げ幅も同じ境界で畳む。
+   ここに集約するのは、各コンポーネントが `style={{bottom: 'calc(3.5rem + …)'}}` と手打ちしており
+   ブレークポイントを持てなかったため（インライン style にメディアクエリは書けない）。 */
+.above-bottom-nav {
+  bottom: calc(3.5rem + env(safe-area-inset-bottom, 0px));
+}
+@media (min-width: 64rem) {
+  .above-bottom-nav {
+    bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/* iOS セーフエリア対応 */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* ── REQ-176: LP (/lp) 演出 ──────────────────────────────────────────────
+   reduced-motion は上部の @media (prefers-reduced-motion: reduce) で全アニメーション/
+   トランジションが 0.01ms に潰されるため、ここでは追加対応不要。
+   .lp-reveal の表示トリガーは LandingPage 側の IntersectionObserver
+   （reduced-motion 時は即 is-in 付与）が担う。
+
+   REQ-205 (FR-205-01/02): スクロール出現の初期非表示（opacity:0）は、JS が稼働し
+   .is-in を付与できるとき（= ルートに .lp-js-ready が付くとき）のみ適用する。
+   JS 無効・ハイドレーション失敗・チャンクロード失敗では .lp-js-ready が付かないため
+   .lp-reveal は既定の可視状態（opacity:1）のまま残り、課題共感〜最終CTAの本文/CTAが
+   永続非表示にならない。reduced-motion 時の即 is-in 付与（LandingPage:130-132）とも
+   矛盾しない（どちらも最終的に可視）。 */
+
+/* スクロール出現（JS 稼働時のみ初期非表示にしてアニメーションさせる） */
+.lp-js-ready .lp-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.lp-js-ready .lp-reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+.lp-d1 { transition-delay: 0.1s; }
+.lp-d2 { transition-delay: 0.2s; }
+.lp-d3 { transition-delay: 0.3s; }
+
+/* ヒーロー登場 */
+@keyframes lp-hero-in {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: none; }
+}
+.lp-hero-in { opacity: 0; animation: lp-hero-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.lp-hd1 { animation-delay: 0.1s; }
+.lp-hd2 { animation-delay: 0.22s; }
+.lp-hd3 { animation-delay: 0.34s; }
+
+/* ヒーロー背景の浮遊オーブ */
+@keyframes lp-float-a {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50%      { transform: translate3d(42px, -28px, 0) scale(1.08); }
+}
+@keyframes lp-float-b {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50%      { transform: translate3d(-48px, 24px, 0) scale(0.94); }
+}
+.lp-orb-a { animation: lp-float-a 14s ease-in-out infinite; }
+.lp-orb-b { animation: lp-float-b 18s ease-in-out infinite; }
+
+/* 薄いグリッド背景 */
+.lp-grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(0 0 0 / 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(0 0 0 / 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.dark .lp-grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+}
+
+/* マーキー帯 */
+@keyframes lp-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.lp-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: lp-marquee 30s linear infinite;
+}
+
+/* アウトライン（縁取り）タイポ
+   REQ-323 FR-323-02: 旧 `rgb(220 38 38 / 0.55)` は白地に載ると #EC8888 相当まで薄まり
+   2.49:1 しか無かった（マーキーの文字が「みつけて、のせて、まもる。」＝本文なのに AA の半分）。
+   縁取りは文字そのものなので不透明にする。#dc2626 で白地 4.83:1 / #f87171 で slate-950 7.29:1。 */
+.lp-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--lp-stroke, #dc2626);
+}
+.dark .lp-outline {
+  --lp-stroke: #f87171;
+}
+
+/* スクロールキュー（ヒーロー下部の縦線） */
+@keyframes lp-scroll-line {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  45%  { transform: scaleY(1); transform-origin: top; }
+  55%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+.lp-scroll-line { animation: lp-scroll-line 1.8s ease-in-out infinite; }
+
+/* ── REQ-204: 無限アニメの停止手段 ──────────────────────────────────────────
+   reduced-motion 時は上部の @media ルール（!important）が iteration-count を 1 に
+   潰すため、ここでの play-state 制御は通常モーション許容ユーザー向け。!important を
+   使わないので reduced-motion ルールと矛盾しない（NFR-204-02）。 */
+
+/* FR-204-02: 画面外の要素は JS（IntersectionObserver）が付与するクラスで一時停止 */
+.lp-anim-paused {
+  animation-play-state: paused;
+}
+
+/* FR-204-01: マーキー帯はホバー／フォーカス時に自動一時停止し、停止トグルでも止める */
+.lp-marquee-track:hover,
+.lp-marquee-track:focus-within {
+  animation-play-state: paused;
+}
+.lp-marquee-stopped {
+  animation-play-state: paused;
+}
+
+/* ── REQ-226: 達成感マイクロインタラクション（軽量キーフレーム） ────────────────
+   FR-226-08 / NFR-226-01: いいね pop・バッジ解放・カウントアップ入場に使う再利用
+   キーフレームを transform / opacity のみで定義する（width/top/margin など reflow を
+   誘発するプロパティは一切使わない）。duration は 100〜300ms・入場は ease-out を既定。
+   NFR-226-02: reduced-motion は上部の @media (prefers-reduced-motion: reduce) が
+   animation-duration / iteration-count を !important で潰すため、ここでは追加対応不要
+   （最終状態＝静止表示にフォールバックする）。REQ-015 / globals.css:213-220 の土台を尊重。 */
+
+/* FR-226-02: いいね成立（false→true）時の pop。1→1.18→1 の scale だけで強調する。 */
+@keyframes like-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.18); }
+  70%  { transform: scale(0.94); }
+  100% { transform: scale(1); }
+}
+.animate-like-pop {
+  animation: like-pop 240ms ease-out;
+  /* GPU 合成ヒント（レイアウトには影響しない） */
+  will-change: transform;
+}
+
+/* FR-226-04: 新規コメント行の軽量入場（opacity + 小さな translateY）。 */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 220ms ease-out both;
+}
+
+/* FR-226-06: バッジ解放（locked→unlocked）。opacity フェード＋ scale pop の軽量質感。
+   box-shadow は別途 Tailwind 側で付与（ここはレイアウト非影響の transform/opacity のみ）。 */
+@keyframes badge-unlock {
+  0%   { opacity: 0.4; transform: scale(0.8); }
+  55%  { opacity: 1;   transform: scale(1.12); }
+  100% { opacity: 1;   transform: scale(1); }
+}
+.animate-badge-unlock {
+  animation: badge-unlock 300ms ease-out both;
+  will-change: transform, opacity;
+}
+
+/* ===================================================
+   REQ-250 (Part A): 水槽（ビオトープ）の生き物アニメーション
+   ---------------------------------------------------
+   FR-250-04 フェーズ1: 既存 SVG（CrayfishIllustration）/ 絵文字を CSS キーフレームで
+   「動く個体」に見せる。transform / opacity のみ（width/left/top など reflow を誘発する
+   プロパティは使わない＝CLS 安全・NFR-250-01）。追加依存ゼロ。
+   NFR-250-02 / reduced-motion: 上部の @media (prefers-reduced-motion: reduce)（globals.css:213-220）が
+   animation-duration / iteration-count を !important で潰すため、ここでは追加対応不要
+   （最終状態＝静止表示＝水槽に生き物が静かに並ぶ図にフォールバックする）。
+   =================================================== */
+
+/* ゆったり左右に遊泳（横断）。translateX と微小な上下・傾きだけで泳ぐ挙動を出す。 */
+@keyframes aquarium-swim {
+  0%   { transform: translate3d(0, 0, 0) rotate(0deg); }
+  25%  { transform: translate3d(22%, -6px, 0) rotate(-2deg); }
+  50%  { transform: translate3d(44%, 0, 0) rotate(0deg); }
+  75%  { transform: translate3d(22%, 6px, 0) rotate(2deg); }
+  100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+}
+.aquarium-swimmer {
+  animation: aquarium-swim var(--swim-duration, 12s) ease-in-out infinite;
+  animation-delay: var(--swim-delay, 0s);
+  will-change: transform;
+}
+
+/* 上下にふわふわ（浮遊）。遊泳と別リズムで重ねると生き物らしい揺らぎになる。 */
+@keyframes aquarium-bob {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -10px, 0); }
+}
+.aquarium-bobber {
+  animation: aquarium-bob var(--bob-duration, 5s) ease-in-out infinite;
+  animation-delay: var(--bob-delay, 0s);
+  will-change: transform;
+}
+
+/* ハサミ（鋏脚）のゆっくり開閉。CrayfishIllustration のハサミグループに付与する。
+   transform-origin を関節寄りにして小さく回すだけ（レイアウト非影響）。 */
+@keyframes aquarium-claw {
+  0%, 100% { transform: rotate(0deg); }
+  50%      { transform: rotate(-7deg); }
+}
+.aquarium-claw {
+  transform-origin: 60% 55%;
+  transform-box: fill-box;
+  animation: aquarium-claw var(--claw-duration, 3.2s) ease-in-out infinite;
+  animation-delay: var(--claw-delay, 0s);
+  will-change: transform;
+}
+
+/* 水面のゆらぎ（装飾のグラデーション帯を横にゆっくり流す）。 */
+@keyframes aquarium-shimmer {
+  0%   { transform: translate3d(-12%, 0, 0); opacity: 0.5; }
+  50%  { transform: translate3d(12%, 0, 0);  opacity: 0.85; }
+  100% { transform: translate3d(-12%, 0, 0); opacity: 0.5; }
+}
+.aquarium-shimmer {
+  animation: aquarium-shimmer 9s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* 気泡の上昇（デコレーションの泡）。small scale + translateY のみ。 */
+@keyframes aquarium-bubble {
+  0%   { transform: translate3d(0, 0, 0) scale(0.6); opacity: 0; }
+  20%  { opacity: 0.7; }
+  100% { transform: translate3d(0, -60px, 0) scale(1); opacity: 0; }
+}
+.aquarium-bubble {
+  animation: aquarium-bubble var(--bubble-duration, 6s) ease-in infinite;
+  animation-delay: var(--bubble-delay, 0s);
+  will-change: transform, opacity;
+}
+
+/* ===================================================
+   REQ-265: 地図マーカーのザリガニ演出（軽量2Dアニメ・3Dなし）
+   ---------------------------------------------------
+   アメリカザリガニ確認地点のマーカーをさりげなく揺らし、「そこにいる」を直感的に見せる。
+   ★重要: Leaflet は各マーカーの位置決めに .leaflet-marker-icon の transform（translate3d）を
+   使うため、アニメは divIcon の「内側の span（.zari-marker-wiggle）」に当て、外側の位置決め
+   transform と競合させない（マーカーがズレない）。
+   NFR-191: transform のみ＝reflow なし・GPU 合成。演出対象は american かつ非 absence に限定し、
+   ビューポートカリング＋クラスタリング（MapView）で同時描画数が抑えられる前提。
+   reduced-motion: 上部の @media (prefers-reduced-motion: reduce)（globals.css:213-220）が
+   iteration-count/duration を !important で潰すため、揺れは静止にフォールバック（追加対応不要）。
+   =================================================== */
+@keyframes zari-marker-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  20%      { transform: rotate(-4deg); }
+  60%      { transform: rotate(4deg); }
+}
+.zari-marker-wiggle {
+  display: block;
+  transform-origin: 50% 90%;
+  animation: zari-marker-wiggle 2.6s ease-in-out infinite;
+  will-change: transform;
+}

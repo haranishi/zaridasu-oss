@@ -1,0 +1,105 @@
+name: Requirement Execution
+description: Track implementation work mapped to approved requirement items.
+title: "[REQ] "
+labels:
+  - requirements
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to execute one requirement item from `docs/planning/priority-backlog.md`.
+
+  - type: input
+    id: req_id
+    attributes:
+      label: Requirement ID
+      description: "Example: M1, M2, M3, S1, S2"
+      placeholder: M1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Must
+        - Should
+        - Could
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What outcome should be achieved?
+      placeholder: Improve regression safety for critical flows.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: In-scope implementation details.
+      placeholder: |
+        - Add integration tests for post creation
+        - Add auth guard tests
+        - Add map/list sync tests
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: Explicitly list excluded work.
+      placeholder: Full E2E framework migration
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Define measurable done conditions.
+      placeholder: |
+        - CI test green
+        - Coverage statements >= 80%
+        - At least 8 new tests
+    validations:
+      required: true
+
+  - type: textarea
+    id: test_plan
+    attributes:
+      label: Test plan
+      description: How will this be verified?
+      placeholder: Unit/integration test list and manual checks.
+    validations:
+      required: true
+
+  - type: input
+    id: risks
+    attributes:
+      label: Main risk
+      description: Biggest implementation risk.
+      placeholder: Flaky async test behavior
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Execution checklist
+      options:
+        - label: Linked to backlog item in docs/planning/priority-backlog.md
+          required: true
+        - label: Added/updated tests for new behavior
+          required: true
+        - label: Updated docs if behavior/config changed
+          required: true
+        - label: Added rollout/rollback note if production behavior changed
+          required: false

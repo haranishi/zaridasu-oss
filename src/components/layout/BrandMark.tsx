@@ -1,0 +1,12 @@
+/** Approved claw-and-map-pin symbol, shared by app headers. */
+export default function BrandMark({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 306" aria-hidden="true" className={className}>
+      <path
+        d="M120 0C53.7 0 0 52.8 0 116C0 157 25 194 51 229L109 301Q116 310 124 301L187 226C215 191 240 151 240 116C240 52 186.3 0 120 0Z M174 30C142 26 98 47 65 76C34 102 18 126 25 155C30 177 43 199 53 212C63 221 78 221 91 212C109 200 115 184 111 168C108 155 102 148 98 143C93 136 96 129 104 122L116 111C106 104 109 96 125 91C120 81 127 74 142 70L143 61C139 52 157 44 174 35Q183 29 174 30Z M201 94C208 90 211 94 207 103C196 131 175 157 151 175C139 184 127 182 123 169C120 160 116 151 120 144C123 139 129 135 135 131C140 128 143 132 149 128C165 120 186 106 201 94Z"
+        fill="#dc2626"
+        fillRule="evenodd"
+      />
+    </svg>
+  )
+}

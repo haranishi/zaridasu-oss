@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "このソフトウェアを研究や記事で使う場合は、次の形で引用してください。公開データセットの引用は Zenodo の DOI を使ってください（docs/runbooks/open-data-doi.md）。"
+title: "ザリダス (Zaridasu): 市民参加型 外来種モニタリングプラットフォーム"
+type: software
+authors:
+  - family-names: "Nishihara"
+    given-names: "Ikki"
+    affiliation: "秋田県立大学 システム科学技術学部 経営システム工学科"
+version: "0.2.0"
+date-released: "2026-09-06"
+license: MIT
+repository-code: "https://github.com/haranishi/zaridasu-oss"
+url: "https://zaridasu.com"
+keywords:
+  - citizen science
+  - invasive species
+  - Procambarus clarkii
+  - Akita
+  - Next.js

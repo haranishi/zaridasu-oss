@@ -1,0 +1,63 @@
+/* 活動の記録（草）。色は globals.css の --grass-*（明暗で値が変わる）。段階0は塗らず、全セルに枠を付ける。 */
+/* 日本語は語の途中で折らない（ホームと同じ word-break: auto-phrase と text-wrap: pretty） */
+.root p { word-break: auto-phrase; text-wrap: pretty; }
+.summary { font-size: 14px; line-height: 1.4; }
+/* 合計の日数だけ大きく太くして、いちばん見てほしい数字を見出しより目立たせる */
+.big { margin: 0 2px; font-size: 28px; font-weight: 800; line-height: 1; letter-spacing: -.01em; color: var(--color-heading); }
+/* 横に送れる側の端に、うすい影を出す。続きがあることの手がかり。左は曜日の列（28px）の右端から始め、列の下に隠れかけたマスの切れ端も影で消す。送れる側は ActivityGrass.tsx が data-more-* で切り替える */
+.scrollWrap { position: relative; }
+.scrollWrap::before, .scrollWrap::after { content: ''; position: absolute; top: 0; bottom: 0; z-index: 2; width: 28px; pointer-events: none; opacity: 0; transition: opacity .15s; }
+.scrollWrap::before { left: 28px; background: linear-gradient(to right, var(--color-surface), transparent); }
+.scrollWrap::after { right: 0; background: linear-gradient(to left, var(--color-surface), transparent); }
+.scrollWrap[data-more-left='true']::before, .scrollWrap[data-more-right='true']::after { opacity: 1; }
+.scroller { overflow-x: auto; padding: 3px 0; }
+/* スマホは、押しやすい12pxのセルで横に送る。カードの幅に1年分が入る広さ（700px以上）では、10pxのセルを幅いっぱいに広げて、横に送らずに1年を見せる。 */
+.table { --cell: 12px; --gap: 3px; position: relative; width: max-content; padding-right: 3px; }
+.monthRow, .row { display: grid; grid-template-columns: 28px repeat(53, var(--cell)); column-gap: var(--gap); }
+.monthRow { height: 16px; margin-bottom: 3px; font-size: 11px; line-height: 16px; color: var(--color-text-muted); }
+.month { white-space: nowrap; }
+.grid { display: grid; row-gap: var(--gap); }
+/* 左の曜日の列は、全部の行で下地つきにして、横に送ったセルがその下に透けないようにする */
+.corner, .weekday { position: sticky; left: 0; z-index: 1; background: var(--color-surface); }
+.weekday { display: flex; align-items: center; font-size: 11px; line-height: 1; color: var(--color-text-muted); }
+.cell, .swatch { box-sizing: border-box; border: 1px solid var(--grass-border); border-radius: 3px; background: transparent; }
+.cell { width: var(--cell); height: var(--cell); cursor: pointer; }
+.swatch { width: 12px; height: 12px; }
+.cell[data-level='1'], .swatch[data-level='1'] { background: var(--grass-1); }
+.cell[data-level='2'], .swatch[data-level='2'] { background: var(--grass-2); }
+.cell[data-level='3'], .swatch[data-level='3'] { background: var(--grass-3); }
+.cell[data-level='4'], .swatch[data-level='4'] { background: var(--grass-4); }
+.cell[aria-selected='true'], .cell:focus-visible { outline: 2px solid var(--grass-ring); outline-offset: 1px; }
+.hint { margin: 8px 0 0; font-size: 12px; line-height: 18px; color: var(--color-text-muted); }
+/* スマホでは、2つの文を別の行にする（文の途中で折り返さない） */
+.hintScroll { display: block; }
+/* 凡例は、色が何件にあたるかを数字で書く（暗い配色は濃いほど明るい緑なので、「少ない／多い」では伝わらない） */
+.legend { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12px; line-height: 16px; color: var(--color-text); }
+.legendItem { display: inline-flex; align-items: center; gap: 4px; }
+/* 文字色は必ず指定する。本文の色は body から継承されず（黒のまま）、暗い配色では紺の地に黒文字（1.4:1）になる */
+.detail { scroll-margin-top: 80px; scroll-margin-bottom: 88px; border: 1px solid var(--color-border); border-radius: 12px; background: var(--color-surface-2); color: var(--color-text); padding: 12px 14px; font-size: 13px; line-height: 20px; }
+.detail p { margin: 0; }
+.detailTitle { font-weight: 700; color: var(--color-heading); }
+.detailLabel { margin-right: 8px; font-size: 12px; font-weight: 400; color: var(--color-text-muted); }
+.listToggle { display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%; min-height: 44px; padding: 0 12px; border: 1px solid var(--color-border); border-radius: 12px; background: transparent; color: var(--color-text); font-size: 13px; cursor: pointer; }
+.chevron { flex: none; transition: transform .15s; }
+.listToggle[aria-expanded='true'] .chevron { transform: rotate(180deg); }
+/* 高さを固定した内側のスクロールは使わない（ページのスクロールと入れ子になり、指で扱いにくい）。続きは「さらに表示」で足す */
+.list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--color-border); border-radius: 12px; }
+.list li + li { border-top: 1px solid var(--color-border); }
+.listItem { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 44px; padding: 8px 14px; border: 0; background: transparent; color: var(--color-text); font-size: 13px; text-align: left; cursor: pointer; }
+.listItem[aria-pressed='true'] { font-weight: 700; background: var(--color-surface-2); box-shadow: inset 3px 0 0 var(--grass-ring); }
+.listItem:focus-visible, .listToggle:focus-visible, .listMore:focus-visible { outline: 2px solid var(--grass-ring); outline-offset: -2px; }
+.listMore { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; margin-top: 8px; border: 1px solid var(--color-border); border-radius: 12px; background: transparent; color: var(--color-text); font-size: 13px; cursor: pointer; }
+
+@media (min-width: 700px) {
+  .table { --cell: 10px; --gap: 2px; width: 100%; min-width: calc(28px + 53 * 10px + 52 * 2px + 3px); }
+  .monthRow, .row { grid-template-columns: 28px repeat(53, minmax(var(--cell), 1fr)); }
+  .cell { width: auto; height: auto; aspect-ratio: 1; }
+  /* 1年分が横に送らずに入るので、「横に動かす」案内は出さない */
+  .hintScroll { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollWrap::before, .scrollWrap::after, .chevron { transition: none; }
+}

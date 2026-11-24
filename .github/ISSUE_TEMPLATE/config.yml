@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately (セキュリティ上の問題を非公開で報告)
+    url: https://github.com/haranishi/zaridasu-oss/security/advisories/new
+    about: "Use this for vulnerabilities or anything that must not be public. 公開のIssueには詳細を書かないでください。"

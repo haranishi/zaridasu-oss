@@ -1,0 +1,74 @@
+[
+  {
+    "name": "/admin/posts page chunk (gzip) [REQ-245 moved admin routes into app/admin/(protected)/]",
+    "path": ".next/static/chunks/app/admin/[(]protected[)]/posts/page-*.js",
+    "limit": "15 KB",
+    "gzip": true
+  },
+  {
+    "name": "/ (home) page chunk (gzip)",
+    "path": ".next/static/chunks/app/[(]home[)]/page-*.js",
+    "limit": "10 KB",
+    "gzip": true
+  },
+  {
+    "name": "/map page chunk (gzip) [2026-10-19: 地図を独立ルートへ移動、実測10.81 kB]",
+    "path": ".next/static/chunks/app/map/page-*.js",
+    "limit": "12 KB",
+    "gzip": true
+  },
+  {
+    "name": "/guide page chunk (gzip) [2026-10-19: 記録ガイド、実測3.44 kB]",
+    "path": ".next/static/chunks/app/guide/page-*.js",
+    "limit": "4 KB",
+    "gzip": true
+  },
+  {
+    "name": "/dashboard page chunk (gzip) [REQ-306: 2026-07-31実測20.237 kB + 約15%]",
+    "path": ".next/static/chunks/app/dashboard/page-*.js",
+    "limit": "24 KB",
+    "gzip": true
+  },
+  {
+    "name": "/trends page chunk (gzip)",
+    "path": ".next/static/chunks/app/trends/page-*.js",
+    "limit": "5 KB",
+    "gzip": true
+  },
+  {
+    "name": "/ranking page chunk (gzip) [REQ-306: 2026-07-31実測6.317 kB + 約15%]",
+    "path": ".next/static/chunks/app/ranking/page-*.js",
+    "limit": "8 KB",
+    "gzip": true
+  },
+  {
+    "name": "/post/[id] page chunk (gzip) [REQ-282 D-7: SNS共有の主要着地ページ型。REQ-278でAuthModalをdynamic化(実測14KB)し、再同梱(+6KB規模)を検知する線]",
+    "path": ".next/static/chunks/app/post/[[]id[]]/page-*.js",
+    "limit": "18 KB",
+    "gzip": true
+  },
+  {
+    "name": "/lp page chunk (gzip)",
+    "path": ".next/static/chunks/app/lp/page-*.js",
+    "limit": "10 KB",
+    "gzip": true
+  },
+  {
+    "name": "Framework + React chunk (gzip) [REQ-306 AC-06: 2026-08-12実測63.31 kB + 約4.2% / Next.js 16.3.0 のランタイム増加]",
+    "path": ".next/static/chunks/{4bd1b696,8491ebc4}-*.js",
+    "limit": "66 KB",
+    "gzip": true
+  },
+  {
+    "name": "/collection page chunk (gzip) [REQ-250: three/r3f are NOT here - they load only on '3Dで見る' click]",
+    "path": ".next/static/chunks/app/collection/page-*.js",
+    "limit": "15 KB",
+    "gzip": true
+  },
+  {
+    "name": "collection 3D vendor chunk: three + react-three-fiber (gzip) [REQ-250 opt-in, async/code-split, NOT in any route First Load JS; budget guards against 3D bloat e.g. accidental drei/model import]",
+    "path": ".next/static/chunks/crayfish3d*.js",
+    "limit": "250 KB",
+    "gzip": true
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "feature_name": "cloudflare-migration",
+  "created_at": "2026-10-30",
+  "updated_at": "2026-11-16",
+  "language": "ja",
+  "phase": "implementation",
+  "scope": "Supabase依存照合、Cloudflare Web候補の実装・検証とTurso/D1の合成データ試作。全廃・実データ移送・本番切替は段階の合格後に判断する",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": true
+    }
+  },
+  "authorization": "2026-11-14: 本人がSupabase代替とVercelからCloudflareへの移行を実行し、可能な範囲を自律的に進めるよう依頼。Googleキー・旧本番の残確認・公開repo設定は本人担当。既存Secrets抽出artifact方式の拒否は継続し、実行しない。 2026-11-15: 本人が使うCloudflareアカウントを選択。9.6の隔離preview実行を継続し、課金契約/本番切替の境界は維持する。 2026-11-16: 本人が超過料金を拒否し、無料枠を超えると停止する構成の検証実行を了承。R2有効化依頼を取り下げ、9.7のlocal候補と拒否gateを実装する。有料化・本番切替は含めない。",
+  "ready_for_implementation": true,
+  "documentation_status": "extension-reviewed",
+  "implementation_status": "in-progress",
+  "initial_source_commit": "f820066f1ae23624e60586b19e44a49ae7c8638c",
+  "source_commit": "36b80dafc9aa0ccf73c5c45617ccc3c71fe5a9d6",
+  "verification": "verification.md",
+  "execution_contract": "execution-20261114.md",
+  "current_tasks": "implementation-tasks.md",
+  "approval_basis": "本人の2026-11-14の移行実行・可能範囲の自律進行指示と共通ルールに基づき、9節の境界内で進める。独立タスクレビューの分割/先行fixture/SDK隔離を反映済み。",
+  "zero_overage_execution": "zero-overage-execution-20261116.md",
+  "zero_overage_scope": "本人の了承は超過課金なしの要件と検証実行。D1/renderer DOは技術候補で、本番採用・機能縮小は未承認。",
+  "zero_overage_verification": "zero-overage-verification-20261116.md"
+}

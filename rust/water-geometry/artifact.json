@@ -1,0 +1,6 @@
+{
+  "url": "/wasm/water-geometry.d6752e32a91d8c04.wasm",
+  "sha256": "d6752e32a91d8c04f64851bd07d0532d60762e9e5f9226524b41ba4dcbd7301c",
+  "sourceSha256": "a1fe559bd8ac484340e3aeb6432f0c3762021a0ce4fc378942f3d7c0719d7275",
+  "compiler": "rustc 1.99.0 (b940084d7 2026-09-28)"
+}

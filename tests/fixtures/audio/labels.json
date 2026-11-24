@@ -1,0 +1,11 @@
+{
+  "$schema": "./labels.schema.json",
+  "description": "REQ-075 Phase 0: AI 判定評価用の音声ラベル。各サンプルは tests/fixtures/audio/<class>/ 配下に配置。",
+  "classes": ["bullfrog", "native_frog", "noise", "unclear"],
+  "constraints": {
+    "max_size_bytes": 1048576,
+    "max_duration_ms": 10000,
+    "allowed_mime_types": ["audio/webm", "audio/mpeg", "audio/ogg"]
+  },
+  "samples": []
+}

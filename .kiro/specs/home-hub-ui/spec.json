@@ -1,0 +1,17 @@
+{
+  "feature_name": "home-hub-ui",
+  "language": "ja",
+  "phase": "implementation-complete",
+  "created_at": "2026-10-19",
+  "updated_at": "2026-10-21",
+  "revision_2026_10_19_evening": "User approved the 7-item home clarity revision (hero, order, hide empty, gaps, generated-image notes, sign-up dialog, post-sign-up lands on Home plus tracking). Production release and PR merge stay user-gated.",
+  "scope": "App opening home screen, not marketing LP",
+  "approvals": {
+    "requirements": { "generated": true, "approved": true },
+    "design": { "generated": true, "approved": true },
+    "tasks": { "generated": true, "approved": true }
+  },
+  "authorization": "2026-10-19: user accepted the concrete Figma home proposal and its recorded implementation tasks, and explicitly requested production deployment, commit, push, PR creation and merge.",
+  "ready_for_implementation": true,
+  "figma_file_url": "#private-link-removed"
+}
