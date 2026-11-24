@@ -61,7 +61,7 @@ test('preview browser runs compiled application without Sentry or GTM requests d
   assert.equal(response.status(), 200)
   assert.equal(response.headers()['x-robots-tag'], 'noindex, nofollow')
   assert.ok(ownScripts > 0, 'real compiled browser scripts must run')
-  const menu = page.getByTestId('header-menu')
+  const menu = page.getByTestId('header-menu').filter({ visible: true })
   await menu.click()
   assert.equal(await menu.getAttribute('aria-expanded'), 'true', 'the application must hydrate and handle input')
   assert.equal(await page.locator('#gtm-init').count(), 0)

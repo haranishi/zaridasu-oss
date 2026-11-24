@@ -198,7 +198,7 @@ test('actual browser hydrates and changes A→B chunked→A→anonymous without 
   const cookie = await h.login(); const [name, value] = cookie.split('=')
   await context.addCookies([{ name, value, url: h.origin, secure: true, httpOnly: true, sameSite: 'Strict' }])
   assert.equal((await page.goto(h.origin, { waitUntil: 'networkidle' })).status(), 200); assert.ok(scripts > 0)
-  const menu = page.getByTestId('header-menu'); await menu.click(); assert.equal(await menu.getAttribute('aria-expanded'), 'true')
+  const menu = page.getByTestId('header-menu').filter({ visible: true }); await menu.click(); assert.equal(await menu.getAttribute('aria-expanded'), 'true')
   assert.equal(await page.locator('#gtm-init').count(), 0)
   for (const [identity, largeCookie, label] of [['a', false, 'Fixture A'], ['b', true, 'Fixture B'], ['a', false, 'Fixture A']]) {
     const status = await page.evaluate(async ({ identity, largeCookie }) => (await fetch('/__preview/identity', {

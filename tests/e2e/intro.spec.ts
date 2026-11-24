@@ -89,7 +89,7 @@ test('AC-05: opt-out 済みでもメニューからストーリーを開ける',
   await expect(page.getByTestId('intro-prompt')).toHaveCount(0)
 
   // ハンバーガー → 「ザリダスってなに？」
-  await page.getByTestId('header-menu').click()
+  await page.getByTestId('header-menu').filter({ visible: true }).click()
   await page.getByTestId('drawer-intro').click()
 
   await expect(page.getByTestId('onboarding')).toBeVisible({ timeout: 15_000 })

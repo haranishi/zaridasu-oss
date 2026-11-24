@@ -3,7 +3,7 @@ import { test, expect, type Page } from '@playwright/test'
 async function openGuideFromMenu(page: Page) {
   // 本番SSRでは、ストリーミング用の非表示Headerが一時的に併存する。
   // hydration完了を待ってから、実際のメニューを操作する。
-  const menu = page.getByTestId('header-menu')
+  const menu = page.getByTestId('header-menu').filter({ visible: true })
   await expect(menu).toHaveCount(1)
   await menu.click()
   await page.getByTestId('drawer-intro').click()
