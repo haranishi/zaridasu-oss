@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useCallback, useRef } from 'react'
+import type { TFunction } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { supabase } from '@/lib/supabase/client'
 import { useAuth } from '@/context/AuthContext'
@@ -44,7 +45,7 @@ interface UserActivity {
 interface UserDetailModalProps {
   user: UserRecord
   onClose: () => void
-  t: (key: string, options?: Record<string, unknown>) => string
+  t: TFunction
 }
 
 function UserDetailModal({ user, onClose, t }: UserDetailModalProps) {

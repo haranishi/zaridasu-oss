@@ -203,7 +203,7 @@ test('browser streams actual Wasm and preserves SW scope, update cleanup, offlin
   const warmedLazyPaths = [...new Set(Object.values(lazyDependencies).flat())]
   await page.goto(server.origin, { waitUntil: 'networkidle' })
   await page.locator('.loading-screen').waitFor({ state: 'detached' })
-  await page.getByTestId('header-menu').click()
+  await page.getByTestId('header-menu').filter({ visible: true }).click()
   await page.getByRole('dialog').getByTestId('drawer-intro').waitFor({ state: 'visible' })
   await page.keyboard.press('Escape')
   await page.getByRole('dialog').waitFor({ state: 'hidden' })
@@ -225,7 +225,7 @@ test('browser streams actual Wasm and preserves SW scope, update cleanup, offlin
   const offlineRoot = await page.goto(server.origin, { waitUntil: 'domcontentloaded' })
   assert.equal(offlineRoot.status(), 200)
   assert.equal(offlineRoot.fromServiceWorker(), true)
-  const menu = page.getByTestId('header-menu')
+  const menu = page.getByTestId('header-menu').filter({ visible: true })
   try {
     await menu.click({ timeout: 5_000 })
     await page.getByRole('dialog').getByTestId('drawer-intro').waitFor({ state: 'visible', timeout: 5_000 })

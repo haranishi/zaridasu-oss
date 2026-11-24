@@ -482,7 +482,7 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-      - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359 # v3.0.1
+      - uses: supabase/setup-cli@689adcfb80d947100a1eab127289b97d1fb07b13 # v3.2.0
         with:
           # flake 対策: version を固定ピン留めする（edge-functions-deploy-lag と同様）。
           # 'latest' は毎回 Supabase API へ問い合わせ Gateway Time-out で落ちうる。
@@ -639,7 +639,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Dependency Review
-        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
+        uses: actions/dependency-review-action@bbc44d14a204704ccc493733616cd1e93a0321ec # v5.0.1
         with:
           # high 以上の新規脆弱性が導入されたら fail させる。
           fail-on-severity: high

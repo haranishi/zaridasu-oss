@@ -119,7 +119,7 @@ test('actual preview browser hydrates behind the perimeter while CSP denies exte
   const response = await page.goto(h.origin, { waitUntil: 'networkidle' })
   assert.equal(response.status(), 200)
   assert.ok(scripts > 0)
-  const menu = page.getByTestId('header-menu')
+  const menu = page.getByTestId('header-menu').filter({ visible: true })
   await menu.click()
   assert.equal(await menu.getAttribute('aria-expanded'), 'true')
   assert.equal(await page.locator('#gtm-init').count(), 0)

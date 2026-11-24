@@ -141,7 +141,7 @@ for (const [lang, text] of Object.entries(SUBTITLES)) {
     await expect(eyebrow).toBeVisible()
     expect((await eyebrow.boundingBox())!.height).toBeLessThanOrEqual(20) // 12px・行の高さ18px＝1行
     await page.goto('/map')
-    const header = page.locator('header').getByText(text.header, { exact: true })
+    const header = page.locator('header').getByText(text.header, { exact: true }).filter({ visible: true })
     await expect(header).toBeVisible()
     expect(await header.evaluate(el => el.scrollWidth <= el.clientWidth)).toBe(true) // 省略記号（…）になっていない
   })

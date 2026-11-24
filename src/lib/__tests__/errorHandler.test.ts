@@ -1,3 +1,4 @@
+import type { TFunction } from 'i18next'
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import {
   getErrorMessage,
@@ -28,7 +29,7 @@ const tStub = (key: string, params?: Record<string, unknown>): string => {
   if (!params) return value
   return value.replace(/\{\{(\w+)\}\}/g, (_match: string, name: string) => (params[name] != null ? String(params[name]) : ''))
 }
-const resolve = (err: unknown) => resolveErrorMessage(getErrorMessage(err), tStub)
+const resolve = (err: unknown) => resolveErrorMessage(getErrorMessage(err), tStub as unknown as TFunction)
 
 describe('getErrorMessage()', () => {
   it('null / undefined → 汎用メッセージ', () => {
