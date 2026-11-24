@@ -5,6 +5,7 @@
 // 上限（P0001）は DB の文言で種類を分ける（supabase/migrations/20261001000001_req330_fieldwork.sql と
 // posts の check_post_rate_limit）。どの上限に当たったかが分からないと、利用者は何を待てばよいか分からない。
 
+import type { TFunction } from 'i18next'
 import { isNetworkError } from '@/lib/privateSpots'
 
 export type FieldworkErrorReason =
@@ -64,7 +65,7 @@ export function errorReason(err: unknown): FieldworkErrorReason {
 }
 
 /** 失敗を画面の文言にする。partialQueued は残りが送れなかった理由も添える。 */
-export function errorMessage(err: unknown, t: (key: string, opts?: Record<string, unknown>) => string): string {
+export function errorMessage(err: unknown, t: TFunction): string {
   const reason = errorReason(err)
   if (reason === 'partialQueued' && err instanceof FieldworkError) {
     return t('fieldwork.error.partialQueued', { reason: t(`fieldwork.error.${err.detail ?? 'failed'}`) })

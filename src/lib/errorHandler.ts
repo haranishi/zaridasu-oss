@@ -22,6 +22,7 @@
  * context 引数は 'PostForm' 等の発生箇所ラベル（固定文字列）に限定する。
  */
 
+import type { TFunction } from 'i18next'
 import type { ErrorReporter } from '@/lib/errorReporter'
 import { noopReporter } from '@/lib/errorReporter'
 
@@ -49,10 +50,10 @@ export interface ErrorMessage {
  */
 export function resolveErrorMessage(
   msg: ErrorMessage,
-  translate: (key: string, options?: Record<string, unknown>) => string,
+  translate: TFunction,
 ): string {
   if (msg.raw != null && msg.raw !== '') return msg.raw
-  return translate(msg.key, msg.params)
+  return msg.params ? translate(msg.key, msg.params) : translate(msg.key)
 }
 
 /** 現在のレポーター（デフォルトは no-op） */

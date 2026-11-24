@@ -304,7 +304,7 @@ export function usePostForm(): UsePostFormResult {
         count: fields.count,
       })
       if (validationError) {
-        setError(t(validationError.key, validationError.params))
+        setError(validationError.params ? t(validationError.key, validationError.params) : t(validationError.key))
         return false
       }
 
